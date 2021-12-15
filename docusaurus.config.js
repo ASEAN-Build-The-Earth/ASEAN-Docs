@@ -46,16 +46,24 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'how-to-join',
             position: 'left',
-            label: 'Tutorial',
+            label: 'How to join ASEAN BTE',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            to: '/docs/',
+            label: 'Blog',
+            position: 'left'
+          },
           {
             href: 'https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs',
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          }
         ],
       },
       footer: {
@@ -103,6 +111,19 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'th'],
+    localeConfigs: {
+      en: {
+        label: 'English'
+      },
+      th: {
+        label: 'Thai'
+      },
+    },
+  },
 };
 
 module.exports = config;

@@ -1,32 +1,35 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
+import Translate, { translate } from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: 'How to join ASEAN BTE',
+    title: <Translate>How to join ASEAN BTE</Translate>,
     description: (
       <>
-        <strong>Apply for ASEAN builder:</strong>
+        <strong><Translate>Apply for ASEAN builder</Translate>:</strong>
         <div>
-          <strong>1.</strong> Go to <a href="https://buildtheearth.net/bte-asean"><code>https://buildtheearth.net/bte-asean</code></a>, answer the application questions, then we will review it. <br />
-          <strong>2.</strong> If you are a builder, please join our server with the BTE modpack. <br />
-          <strong>3.</strong> We will give you Builder role in the server then you can build!. <br />
-          <p>Server IP: <code>asean.my.to</code></p>
+          <strong>1.</strong><Translate>Go to</Translate> <a href="https://buildtheearth.net/bte-asean"><code>https://buildtheearth.net/bte-asean</code></a>, <Translate>answer the application questions, then we will review it</Translate>.<br />
+          <strong>2.</strong> <Translate>If you are a builder, please join our server with the BTE modpack.</Translate> <br />
+          <strong>3.</strong> <Translate>We will give you Builder role in the server then you can build</Translate>!. <br />
+          <p><Translate>Server IP</Translate>: <code>asean.my.to</code></p>
         </div>
       </>
     ),
   },
   {
-    title: 'Trial Builder Program ',
+    title: <Translate>Trial Builder Program</Translate>,
     description: (
       <>
-        Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website.
+        <Translate>Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website.</Translate>
         <br />
-        - There are some easy houses for beginner in Singapore. They all have decent 3D models.
-        Just contact a Leader, Co-Leader or an Admin if you want to be a trial builder, after that, do <code>/warp trial</code> in the server to be there. Outlines are all ready for you. <br />
-        - Location: <code>1.302362, 103.886411</code> (search this on google map). <br />
-        - Official builders can also build in this trial area.
+        - <Translate>
+          There are some easy houses for beginner in Singapore. They all have decent 3D models.
+          Just contact a Leader, Co-Leader or an Admin if you want to be a trial builder, after that, do
+        </Translate> <code>/warp trial</code> <Translate>in the server to be there. Outlines are all ready for you.</Translate> <br />
+        - <Translate>Location</Translate>: <code>1.302362, 103.886411</code> <Translate>(search this on google map)</Translate>. <br />
+        - <Translate>Official builders can also build in this trial area.</Translate>
       </>
     ),
   }
