@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'ASEAN BTE',
   tagline: 'We are building southeast asia in minecraft!',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://ASEAN-Docs.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
