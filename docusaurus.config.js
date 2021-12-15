@@ -7,7 +7,7 @@ const config = {
   tagline: 'We are building southeast asia in minecraft!',
   url: 'https://ASEAN-Docs.netlify.app',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/aseanbte_logo.png',
   organizationName: 'ASEAN-Build-The-Earth',
