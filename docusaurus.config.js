@@ -20,12 +20,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: '',
+          editUrl: 'https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs',
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            '',
+            'https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
