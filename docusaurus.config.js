@@ -20,12 +20,17 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs',
+          editUrl: ({ locale, versionDocsDirPath, docPath }) => {
+            if (locale !== 'en') {
+              return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/blob/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
+            }
+            return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/docs/${docPath}`;
+          },
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs',
+            'https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -63,7 +68,7 @@ const config = {
           {
             type: 'localeDropdown',
             position: 'right',
-          }
+          },
         ],
       },
       footer: {
@@ -114,7 +119,7 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'th', 'my'],
+    locales: ['en', 'th', 'my', 'vi'],
     localeConfigs: {
       en: {
         label: 'English'
@@ -124,6 +129,9 @@ const config = {
       },
       my: {
         label: 'Malay'
+      },
+      vi: {
+        label: 'Vietnamese'
       },
     },
   },

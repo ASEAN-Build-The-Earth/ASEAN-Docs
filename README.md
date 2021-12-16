@@ -19,29 +19,13 @@ Before installation, please make sure you have already installed following tools
 4. Install dependencies with `npm install`
 5. Run `npm start`
 
-## How to translate the docs ?
+## How to translate/edit the docs ?
 
-If the language is been already configured in `docusaurus.config.js`, skip to step 4
+Go to docs page which you want to transalte/edit and click the edit button and do the following changes. Don't change the content inside `---`
 
-1. Configure the language in `docusaurus.config.js` by adding the languages's aliases to [this](https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/blob/main/docusaurus.config.js#L117) list.
-2. Start the locale site by using the following commmand 
+After editing the file, click the propose changes button and wait until the maintainers review it.
 
-   ```bash 
-   npm run start -- --locale <locale-aliases>
-   ```
-3. Run the following commands to get the copy of the docs, where you can translate them
-   
-   ```bash
-   mkdir -p i18n/<locale-aliases>/docusaurus-plugin-content-docs/current
-
-   cp -r docs/** i18n/<locale-aliases>/docusaurus-plugin-content-docs/current
-   ```
-
-4. Open `i18n/<locale-aliases>/docusaurus-plugin-content-docs/current` directory, you would find the copy of all the docs in this directory and you could edit them.
-
-5. Run `npm build` after translation.
-
-## How to translate the content of the website ?
+## How to translate/edit the content of the website ?
 
 If the language is been already configured in `docusaurus.config.js`, skip to step 
 
