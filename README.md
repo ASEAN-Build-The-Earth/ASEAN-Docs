@@ -6,16 +6,12 @@ Made with [Docusaurus](https://docusaurus.io/)
 
 ## Prerequisites
 
-<hr>
-
 Before installation, please make sure you have already installed following tools:
 
 - [Git](https://git-scm.com/downloads)
 - [NodeJs](https://nodejs.org/en/download/)
 
 ## Installation Steps
-
-<hr>
 
 1. Fork the project
 2. Clone the project
@@ -24,8 +20,6 @@ Before installation, please make sure you have already installed following tools
 5. Run `npm start`
 
 ## How to translate the docs ?
-
-<hr>
 
 If the language is been already configured in `docusaurus.config.js`, skip to step 4
 
@@ -48,8 +42,6 @@ If the language is been already configured in `docusaurus.config.js`, skip to st
 5. Run `npm build` after translation.
 
 ## How to translate the content of the website ?
-
-<hr>
 
 If the language is been already configured in `docusaurus.config.js`, skip to step 
 
