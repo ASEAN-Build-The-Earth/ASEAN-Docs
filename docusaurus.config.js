@@ -114,13 +114,16 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'th'],
+    locales: ['en', 'th', 'my'],
     localeConfigs: {
       en: {
         label: 'English'
       },
       th: {
         label: 'Thai'
+      },
+      my: {
+        label: 'Malay'
       },
     },
   },
