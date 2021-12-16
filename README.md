@@ -1,41 +1,76 @@
-# Website
+# ASEAN BTE Docs
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+[ASEAN BTE Docs](https://asean-docs.netlify.app) website consists all the important docs related to builder guide, plot system workflow, API etc..
 
-### Installation
+Made with [Docusaurus](https://docusaurus.io/)
 
-```
-$ yarn
-```
+## Prerequisites
 
-### Local Development
+<hr>
 
-```
-$ yarn start
-```
+Before installation, please make sure you have already installed following tools:
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+- [Git](https://git-scm.com/downloads)
+- [NodeJs](https://nodejs.org/en/download/)
 
-### Build
+## Installation Steps
 
-```
-$ yarn build
-```
+<hr>
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+1. Fork the project
+2. Clone the project
+3. Navigate to the project directory `cd ASEAN-Docs`
+4. Install dependencies with `npm install`
+5. Run `npm start`
 
-### Deployment
+## How to translate the docs ?
 
-Using SSH:
+<hr>
 
-```
-$ USE_SSH=true yarn deploy
-```
+If the language is been already configured in `docusaurus.config.js`, skip to step 4
 
-Not using SSH:
+1. Configure the language in `docusaurus.config.js` by adding the languages's aliases to [this](https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/blob/main/docusaurus.config.js#L117) list.
+2. Start the locale site by using the following commmand 
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+   ```bash 
+   npm run start -- --locale <locale-aliases>
+   ```
+3. Run the following commands to get the copy of the docs, where you can translate them
+   
+   ```bash
+   mkdir -p i18n/<locale-aliases>/docusaurus-plugin-content-docs/current
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+   cp -r docs/** i18n/<locale-aliases>/docusaurus-plugin-content-docs/current
+   ```
+
+4. Open `i18n/<locale-aliases>/docusaurus-plugin-content-docs/current` directory, you would find the copy of all the docs in this directory and you could edit them.
+
+5. Run `npm build` after translation.
+
+## How to translate the content of the website ?
+
+<hr>
+
+If the language is been already configured in `docusaurus.config.js`, skip to step 
+
+If the text is wrapped under `Translate` tag, skip to step 
+
+1. Configure the language in `docusaurus.config.js` by adding the languages's aliases to [this](https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/blob/main/docusaurus.config.js#L117) list.
+2. Start the locale site by using the following commmand 
+
+   ```bash 
+   npm run start -- --locale <locale-aliases>
+   ```
+3. Import the `Translate` module of docusaurus
+4. Wrap the text which is to be translated by using the `Translate` tag. Make sure that the text which is wrapped is simple, plain text without any tags in between them
+5. Run the following command, to generate JSON files where you could add the translated version of the text 
+   ```bash
+   npm run write-translations -- --locale <locale-aliases>
+   ```
+6. After translation, run `npm build`.
+
+## Contributors 
+
+<a href="https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ASEAN-Build-The-Earth/ASEAN-Docs" />
+</a>
