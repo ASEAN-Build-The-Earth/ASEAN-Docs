@@ -1,15 +1,15 @@
 ---
-title: Cách thức tham gia BTE ASEAN
+title: How to join ASEAN BTE
 id: how-to-join
 slidebar_position: 0
 ---
 
-1. Đi đến https://buildtheearth.net/bte-asean, trả lời các câu hỏi ứng dụng, sau đó chúng tôi sẽ xem xét nó.
-2. Nếu bạn là người xây dựng, vui lòng tham gia máy chủ của chúng tôi với modpack BTE.
-3. Chúng tôi sẽ cung cấp cho bạn vai trò Người xây dựng trong máy chủ sau đó bạn có thể xây dựng!
+1. Go to https://buildtheearth.net/bte-asean, answer the application questions, then we will review it.
+2. If you are a builder, please join our server with the BTE modpack
+3. We will give you Builder role in the server then you can build!
 
-> IP máy chủ: `asean.my.to`
+> Server IP: `asean.my.to`
 
-**Để ý:** 
-- Nếu bạn không có bất kỳ bản dựng tỷ lệ 1: 1 nào cho ứng dụng, vui lòng đọc [#📌trial-builder](https://discord.com/channels/702883639574396969/773024727265968169) 
-- Cracked Minecraft bị cấm! Điều này là do chúng tôi tuân theo các quy tắc của BuildTheEarth cũng như của Mojang. Tất cả tiến trình xây dựng của bạn trong Minecraft đã crack sẽ không được chấp nhận!
+**Notice:** 
+- If you don’t have any 1:1 scale build for application, please read [#📌trial-builder](https://discord.com/channels/702883639574396969/773024727265968169) 
+- Cracked Minecraft is banned! This is because we follow the BuildTheEarth’s rules as well as Mojang’s. All of your building progress in cracked Minecraft will not be accepted!
