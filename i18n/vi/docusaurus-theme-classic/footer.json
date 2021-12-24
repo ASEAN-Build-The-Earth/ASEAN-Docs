@@ -4,19 +4,19 @@
     "description": "The title of the footer links column with title=Docs in the footer"
   },
   "link.title.Community": {
-    "message": "Cộng đồng",
+    "message": "Community",
     "description": "The title of the footer links column with title=Community in the footer"
   },
   "link.title.More": {
-    "message": "Hơn",
+    "message": "More",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.How to join ASEAN BTE": {
-    "message": "Cách thức tham gia BTE ASEAN",
+    "message": "How to join ASEAN BTE",
     "description": "The label of footer link with label=How to join ASEAN BTE linking to /docs/how-to-join"
   },
   "link.item.label.Discord": {
-    "message": "Bất hòa",
+    "message": "Discord",
     "description": "The label of footer link with label=Discord linking to https://discord.gg/cHCwd7BWdZ"
   },
   "link.item.label.Twitter": {

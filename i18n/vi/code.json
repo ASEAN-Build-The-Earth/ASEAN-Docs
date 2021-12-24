@@ -1,52 +1,52 @@
 {
   "How to join ASEAN BTE": {
-    "message": "Cách thức tham gia BTE ASEAN"
+    "message": "How to join ASEAN BTE"
   },
   "Apply for ASEAN builder": {
-    "message": "Áp dụng cho nhà xây dựng ASEAN"
+    "message": "Apply for ASEAN builder"
   },
   "Go to": {
-    "message": "Đi đến"
+    "message": "Go to"
   },
   "answer the application questions, then we will review it": {
-    "message": "trả lời các câu hỏi ứng dụng, sau đó chúng tôi sẽ xem xét nó"
+    "message": "answer the application questions, then we will review it"
   },
   "If you are a builder, please join our server with the BTE modpack.": {
-    "message": "Nếu bạn là người xây dựng, vui lòng tham gia máy chủ của chúng tôi với modpack BTE."
+    "message": "If you are a builder, please join our server with the BTE modpack."
   },
   "We will give you Builder role in the server then you can build": {
-    "message": "Chúng tôi sẽ cung cấp cho bạn vai trò Người xây dựng trong máy chủ sau đó bạn có thể xây dựng"
+    "message": "We will give you Builder role in the server then you can build"
   },
   "Server IP": {
-    "message": "IP máy chủ"
+    "message": "Server IP"
   },
   "Trial Builder Program": {
-    "message": "Chương trình người xây dựng thử nghiệm"
+    "message": "Trial Builder Program"
   },
   "Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website.": {
-    "message": "Chương trình người xây dựng thử nghiệm cho phép khách truy cập xây dựng trên máy chủ ASEAN trước khi trở thành người xây dựng trong một trong các nhóm xây dựng. Du khách có thể sử dụng các tòa nhà của họ mà họ đã xây dựng trong khu vực thử nghiệm làm đơn đăng ký cho các nhóm xây dựng trên trang web BTE."
+    "message": "Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website."
   },
   "There are some easy houses for beginner in Singapore. They all have decent 3D models. Just contact a Leader, Co-Leader or an Admin if you want to be a trial builder, after that, do": {
-    "message": "Có một số ngôi nhà dễ dàng cho người mới bắt đầu ở Singapore. Tất cả đều có mô hình 3D khá. Chỉ cần liên hệ với Người lãnh đạo, Người đồng lãnh đạo hoặc Quản trị viên nếu bạn muốn trở thành người xây dựng thử nghiệm, sau đó, hãy"
+    "message": "There are some easy houses for beginner in Singapore. They all have decent 3D models. Just contact a Leader, Co-Leader or an Admin if you want to be a trial builder, after that, do"
   },
   "in the server to be there. Outlines are all ready for you.": {
-    "message": "trong máy chủ để ở đó. Phác thảo tất cả đã sẵn sàng cho bạn."
+    "message": "in the server to be there. Outlines are all ready for you."
   },
   "Location": {
-    "message": "Địa điểm"
+    "message": "Location"
   },
   "(search this on google map)": {
-    "message": "(tìm kiếm cái này trên bản đồ google)"
+    "message": "(search this on google map)"
   },
   "Official builders can also build in this trial area.": {
-    "message": "Các nhà xây dựng chính thức cũng có thể xây dựng trong khu vực thử nghiệm này."
+    "message": "Official builders can also build in this trial area."
   },
   "theme.ErrorPageContent.title": {
-    "message": "Trang này bị lỗi.",
+    "message": "This page crashed.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Thử lại",
+    "message": "Try again",
     "description": "The label of the button to try again when the page crashed"
   },
   "theme.NotFound.title": {
@@ -61,13 +61,13 @@
     "message": "Vui lòng liên hệ với trang web đã dẫn bạn tới đây và thông báo cho họ biết rằng đường dẫn này bị hỏng.",
     "description": "The 2nd paragraph of the 404 page"
   },
-  "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Đóng",
-    "description": "The ARIA label for close button of announcement bar"
-  },
   "theme.BackToTopButton.buttonAriaLabel": {
     "message": "Trở lại đầu trang",
     "description": "The ARIA label for the back to top button"
+  },
+  "theme.AnnouncementBar.closeButtonAriaLabel": {
+    "message": "Đóng",
+    "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.archive.title": {
     "message": "Lưu trữ",
@@ -217,6 +217,10 @@
     "message": "← Trở lại menu chính",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
+  "theme.navbar.mobileVersionsDropdown.label": {
+    "message": "Versions",
+    "description": "The label for the navbar versions dropdown on mobile view"
+  },
   "theme.common.skipToMainContent": {
     "message": "Nhảy tới nội dung",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
@@ -224,10 +228,6 @@
   "theme.tags.tagsListLabel": {
     "message": "Thẻ:",
     "description": "The label alongside a tag list"
-  },
-  "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Phiên bản",
-    "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
     "message": "Trên trang này",

@@ -4,11 +4,11 @@
     "description": "The title in the navbar"
   },
   "item.label.How to join ASEAN BTE": {
-    "message": "วิธีเข้าร่วม ASEAN BTE",
+    "message": "How to join ASEAN BTE",
     "description": "Navbar item with label How to join ASEAN BTE"
   },
   "item.label.Blog": {
-    "message": "บล็อก",
+    "message": "Blog",
     "description": "Navbar item with label Blog"
   },
   "item.label.GitHub": {
