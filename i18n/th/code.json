@@ -1,45 +1,45 @@
 {
   "How to join ASEAN BTE": {
-    "message": "วิธีเข้าร่วม ASEAN BTE"
-  },
-  "Trial Builder Program": {
-    "message": "โปรแกรมสร้างตัวทดลอง"
+    "message": "How to join ASEAN BTE"
   },
   "Apply for ASEAN builder": {
-    "message": "สมัครผู้สร้างอาเซียน"
+    "message": "Apply for ASEAN builder"
   },
   "Go to": {
-    "message": "ไปที่"
+    "message": "Go to"
   },
   "answer the application questions, then we will review it": {
-    "message": "ตอบคำถามการสมัครแล้วเราจะตรวจสอบมัน"
-  },
-  "Server IP": {
-    "message": "IP ของเซิร์ฟเวอร์"
-  },
-  "Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website.": {
-    "message": "โปรแกรมตัวสร้างรุ่นทดลองอนุญาตให้ผู้เยี่ยมชมสร้างบนเซิร์ฟเวอร์อาเซียนก่อนที่จะเป็นผู้สร้างในหนึ่งในทีมงานสร้าง ผู้เยี่ยมชมสามารถใช้อาคารที่พวกเขาสร้างขึ้นในพื้นที่ทดลองเพื่อส่งใบสมัครเพื่อสร้างทีมบนเว็บไซต์ BTE"
-  },
-  "There are some easy houses for beginner in Singapore. They all have decent 3D models. Just contact a Leader, Co-Leader or an Admin if you want to be a trial builder, after that, do": {
-    "message": "มีบ้านง่ายๆ สำหรับผู้เริ่มต้นในสิงคโปร์ พวกเขาทั้งหมดมีโมเดล 3 มิติที่ดี เพียงติดต่อ Leader, Co-Leader หรือ Admin หากคุณต้องการเป็นผู้สร้างรุ่นทดลอง หลังจากนั้น ให้ทำ"
-  },
-  "in the server to be there. Outlines are all ready for you.": {
-    "message": "ในเซิร์ฟเวอร์ที่จะอยู่ที่นั่น โครงร่างทั้งหมดพร้อมสำหรับคุณแล้ว"
-  },
-  "Location": {
-    "message": "ที่ตั้ง"
-  },
-  "(search this on google map)": {
-    "message": "(ค้นหาใน google map)"
-  },
-  "Official builders can also build in this trial area.": {
-    "message": "ผู้สร้างอย่างเป็นทางการสามารถสร้างได้ในพื้นที่ทดลองนี้"
+    "message": "answer the application questions, then we will review it"
   },
   "If you are a builder, please join our server with the BTE modpack.": {
-    "message": "หากคุณเป็นผู้สร้าง โปรดเข้าร่วมเซิร์ฟเวอร์ของเราด้วย BTE modpack"
+    "message": "If you are a builder, please join our server with the BTE modpack."
   },
   "We will give you Builder role in the server then you can build": {
-    "message": "เราจะให้บทบาทผู้สร้างในเซิร์ฟเวอร์แก่คุณ จากนั้นคุณสามารถสร้างได้"
+    "message": "We will give you Builder role in the server then you can build"
+  },
+  "Server IP": {
+    "message": "Server IP"
+  },
+  "Trial Builder Program": {
+    "message": "Trial Builder Program"
+  },
+  "Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website.": {
+    "message": "Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website."
+  },
+  "There are some easy houses for beginner in Singapore. They all have decent 3D models. Just contact a Leader, Co-Leader or an Admin if you want to be a trial builder, after that, do": {
+    "message": "There are some easy houses for beginner in Singapore. They all have decent 3D models. Just contact a Leader, Co-Leader or an Admin if you want to be a trial builder, after that, do"
+  },
+  "in the server to be there. Outlines are all ready for you.": {
+    "message": "in the server to be there. Outlines are all ready for you."
+  },
+  "Location": {
+    "message": "Location"
+  },
+  "(search this on google map)": {
+    "message": "(search this on google map)"
+  },
+  "Official builders can also build in this trial area.": {
+    "message": "Official builders can also build in this trial area."
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
