@@ -21,3 +21,16 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.heroTitle {
+  text-shadow: 3px 4px 7px black;
+ }
+
+ html[data-theme='light'] .heroTitle {
+  color: white; /* overwrite banner text for light theme */
+ }
+
+
+
+

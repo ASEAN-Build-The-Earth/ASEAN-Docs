@@ -7,10 +7,36 @@ import CodeBlock from '@theme/CodeBlock';
 // https://github.com/yocontra/react-responsive
 import { useMediaQuery } from 'react-responsive'
 
+// <Highlight color="#C03A3A"></Highlight>
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
 
-
-
-
+/* responsible thing */
+const WideDesktop = ({ children }) => {
+  const isDesktop = useMediaQuery({minWidth: 1440 })
+  return isDesktop ? children : null
+}
+const Desktop = ({ children }) => {
+  const isDesktop = useMediaQuery({minWidth: 997, maxWidth: 1439 })
+  return isDesktop ? children : null
+}
+const Tablet = ({ children }) => {
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 996 })
+  return isTablet ? children : null
+}
+const Mobile = ({ children }) => {
+  const isMobile = useMediaQuery({ maxWidth: 767 })
+  return isMobile ? children : null
+}
 
 
 const FeatureList = [
@@ -18,6 +44,7 @@ const FeatureList = [
     title: <Translate>ASEAN BuildTheEarth</Translate>,
     description: (
       <>
+      <Highlight color="#C03A3A">TODO: PLEASE WRITE LONG TEAM INTRODUCTION HERE</Highlight>
         <br/>
         <Translate>Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website.</Translate>
         <br/>
@@ -158,34 +185,4 @@ export default function HomepageFeatures() {
   );
 }
 
-// <Highlight color="#C03A3A"></Highlight>
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-    {children}
-  </span>
-);
-
-/* responsible thing */
-const WideDesktop = ({ children }) => {
-  const isDesktop = useMediaQuery({minWidth: 1440 })
-  return isDesktop ? children : null
-}
-const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({minWidth: 997, maxWidth: 1439 })
-  return isDesktop ? children : null
-}
-const Tablet = ({ children }) => {
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 996 })
-  return isTablet ? children : null
-}
-const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
-  return isMobile ? children : null
-}
 
