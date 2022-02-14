@@ -1,6 +1,27 @@
 {
   "name": "aseanbte-builderdocs",
   "version": "1.0.0",
+  "description": "ASEAN BTE Builder Document",
+  "homepage": "https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs#readme",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:ASEAN-Build-The-Earth/ASEAN-Docs.git"
+	},
+  "bugs": {
+		"url": "https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/issues"
+	},
+  "author": {
+    "name": "Association of Southeast Asian Nation Build The Earth",
+    "email": "bteasean@gmail.com",
+    "url": "https://github.com/ASEAN-Build-The-Earth"
+  },
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

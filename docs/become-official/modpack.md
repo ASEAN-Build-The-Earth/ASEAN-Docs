@@ -1,10 +1,9 @@
 ---
-id: links
-title: Important links
-slidebar_position: 2
+title: Official Builder Madpack
+id: modpack
 ---
 
-
+{ describe that we requires bte modpack in our main t++ server }
 
 
 ### Installing modpack 

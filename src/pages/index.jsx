@@ -12,8 +12,15 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className={clsx('hero__title', styles.heroTitle)}>{siteConfig.title}</h1>
-        <p className={clsx("hero__subtitle", styles.heroTitle)}>{siteConfig.tagline}</p>
+        <h1 className={clsx('hero__title', styles.title, styles.shadowed)}>{siteConfig.title}</h1>
+        <p className={clsx("hero__subtitle", styles.title, styles.shadowed)}>{siteConfig.tagline}</p>
+        <div className={styles.buttons_div}>
+          <Link
+            className={clsx("button button--secondary button--lg", styles.button)}
+            to="get-started">
+            Starts Building ⚒
+          </Link>
+        </div>
       </div>
     </header>
   );
@@ -24,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title="ASEAN BTE Docs"
-      description="We are building southeast asia in minecraft!">
+      description="We are building southeast asia in minecraft scale 1:1!">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

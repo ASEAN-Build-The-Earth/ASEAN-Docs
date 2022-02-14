@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ASEAN BTE',
-  tagline: 'We are building southeast asia in minecraft!',
+  tagline: 'We are building southeast asia in minecraft scale 1:1!',
   url: 'https://ASEAN-Docs.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
@@ -46,6 +46,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: { defaultMode: "dark", },
+      autoCollapseSidebarCategories: true,
+      hideableSidebar: true, // idk what this do
       navbar: {
         title: 'ASEAN BTE',
         logo: {
@@ -57,7 +60,7 @@ const config = {
             type: 'doc',
             docId: 'get-started',
             position: 'left',
-            label: 'How to join ASEAN BTE',
+            label: 'Get Started',
           },
           /*{
             to: '/docs/',

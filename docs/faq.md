@@ -4,15 +4,32 @@ id: faq
 slidebar_position: 1
 ---
 
-:::note
+<details><summary><i>How can I build</i></summary>
 
-Some **content** with _markdown_ `syntax`. Check [this `api`](#).
+{answer}
+</details>
 
-:::
+<details><summary><i>How can I build</i></summary>
 
+{answer}
+</details>
 
-<details>
-<summary><i>this is a question</i></summary>
+<details><summary><i>How can I build</i></summary>
 
-sdds
+{answer}
+</details>
+
+<details><summary><i>How can I build</i></summary>
+
+{answer}
+</details>
+
+<details><summary><i>How can I build</i></summary>
+
+{answer}
+</details>
+
+<details><summary><i>How can I build</i></summary>
+
+{answer}
 </details>

@@ -9,6 +9,7 @@
   -o-background-size: cover;
   background-position: 50% 30%;
   background-size: cover;
+  background-color: rgb(208, 228, 245);
 }
 
 @media screen and (max-width: 966px) {
@@ -17,21 +18,37 @@
   }
 }
 
-.buttons {
+
+.buttons_div {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
-
-.heroTitle {
+.shadowed {
   text-shadow: 3px 4px 7px black;
- }
+}
 
- html[data-theme='light'] .heroTitle {
-  color: white; /* overwrite banner text for light theme */
- }
+html[data-theme='light'] .title {
+color: white; /* overwrite banner text for light theme */
+}
 
+.button {
+  box-shadow: 3px 4px 7px black;
+  background-color: rgb(248, 223, 0);
+  border-color: rgb(129, 78, 0);
+  
+}
 
+.button:hover{ 
+  background-color: rgb(223, 248, 0);
+  border-color: rgb(0, 129, 69);
+}
+
+.button:active {
+  background-color: rgb(146, 245, 65);
+  border-color: rgb(0, 114, 129);
+}
 
 
