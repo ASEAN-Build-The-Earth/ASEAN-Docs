@@ -22,7 +22,7 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          id: 'how-to-join',
+          id: 'get-started',
         },
         {
           type: 'doc',

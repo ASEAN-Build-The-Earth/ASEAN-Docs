@@ -2,34 +2,80 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
+import CodeBlock from '@theme/CodeBlock';
+
+// <Highlight color="#C03A3A"></Highlight>
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
 
 const FeatureList = [
   {
-    title: <Translate>How to join ASEAN BTE</Translate>,
+    title: <Translate>ASEAN BuildTheEarth</Translate>,
     description: (
       <>
-        <strong><Translate>Apply for ASEAN builder</Translate>:</strong>
-        <div>
-          <strong>1.</strong><Translate>Go to</Translate> <a href="https://buildtheearth.net/bte-asean"><code>https://buildtheearth.net/bte-asean</code></a>, <Translate>answer the application questions, then we will review it</Translate>.<br />
-          <strong>2.</strong> <Translate>If you are a builder, please join our server with the BTE modpack.</Translate> <br />
-          <strong>3.</strong> <Translate>We will give you Builder role in the server then you can build</Translate>!. <br />
-          <p><Translate>Server IP</Translate>: <code>asean.my.to</code></p>
-        </div>
+        <Translate>Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website.</Translate>
+        <br/>
+        <Translate>
+          There are some easy houses for beginner in Singapore. They all have decent 3D models.
+          Just contact a Leader, Co-Leader or an Admin if you want to be a trial builder, after that, do
+        </Translate>
+        <hr/>
+        {/*
+          <div className={styles.center}>
+            <blockquote>
+              <table><tbody><tr><td>
+                <div align="Left"><i><sub>Requirements</sub></i></div>
+                <li><Translate>Minecraft</Translate>: <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition"><Translate>Java Edition</Translate></a> / <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition"><Translate>Bedrock Edition</Translate></a><br/></li>
+              </td></tr></tbody></table>
+            </blockquote>
+          </div>
+        */}
       </>
     ),
   },
   {
-    title: <Translate>Trial Builder Program</Translate>,
+    title: <Translate>How to join ASEAN BTE</Translate>,
     description: (
       <>
-        <Translate>Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website.</Translate>
-        <br />
-        - <Translate>
-          There are some easy houses for beginner in Singapore. They all have decent 3D models.
-          Just contact a Leader, Co-Leader or an Admin if you want to be a trial builder, after that, do
-        </Translate> <code>/warp trial</code> <Translate>in the server to be there. Outlines are all ready for you.</Translate> <br />
-        - <Translate>Location</Translate>: <code>1.302362, 103.886411</code> <Translate>(search this on google map)</Translate>. <br />
-        - <Translate>Official builders can also build in this trial area.</Translate>
+        <strong><Translate>Get started as a new builder</Translate>:</strong>
+        <div>
+          <br/>
+          <strong>1.</strong> <Translate>Join the server ip</Translate>.<br/><br/>
+          <strong>2.</strong> <Translate>If you are a builder, please join our server with the BTE modpack.</Translate> <br/><br/>
+          <strong>3.</strong> <Translate>We will give you Builder role in the server then you can build</Translate>!. <br/>
+        </div>
+        
+        <hr/>
+        <div>
+              <table align="Left"><tbody><tr><td>
+                <div align="Left"><i><b>Server ip</b></i></div>
+                <sub><CodeBlock className="language-js" title="java">
+                139.99.91.188:25569
+                </CodeBlock>
+                <CodeBlock className="language-js" title="bedrock">
+                IP: 139.99.91.188 
+                PORT: 19132
+                </CodeBlock></sub>
+                {/* <li><Translate>Crack Minecraft account is not allowed</Translate> <br/></li>  */}
+              </td></tr></tbody></table>
+    
+              <table align="Right"><tbody><tr><td>
+                <div align="Left"><i><b><sub>Requirements</sub></b></i></div>
+                <li  align="Left"><Translate>Minecraft</Translate>: <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition"><Translate>Java Edition</Translate></a> / <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition"><Translate>Bedrock Edition</Translate></a><br/></li>
+                <div align="Left"><i><b><sub>Disclaimer</sub></b></i></div>
+                <li  align="Left"><Highlight color="#C03A3A"><Translate>Cracked Minecraft</Translate></Highlight> <Translate>is not allowed</Translate><br/></li>
+                {/* <li><Translate>Crack Minecraft account is not allowed</Translate> <br/></li>  */}
+              </td></tr></tbody></table>
+          </div>
       </>
     ),
   }
@@ -59,3 +105,6 @@ export default function HomepageFeatures() {
     </section>
   );
 }
+
+
+

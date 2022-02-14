@@ -19,6 +19,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: "/", // change default "doc/" root path
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: ({ locale, versionDocsDirPath, docPath }) => {
             if (locale !== 'en') {
@@ -27,11 +28,14 @@ const config = {
             return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/docs/${docPath}`;
           },
         },
+        blog: false,
+        /* no doc
         blog: {
           showReadingTime: true,
           editUrl:
             'https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/',
         },
+        */
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -46,23 +50,23 @@ const config = {
         title: 'ASEAN BTE',
         logo: {
           alt: 'ASEAN BTE',
-          src: 'img/aseanbte_logo.png',
+          src: 'img/aseanbte_logo.gif',
         },
         items: [
           {
             type: 'doc',
-            docId: 'how-to-join',
+            docId: 'get-started',
             position: 'left',
             label: 'How to join ASEAN BTE',
           },
-          {
+          /*{
             to: '/docs/',
             label: 'Blog',
             position: 'left'
-          },
+          }, */
           {
-            href: 'https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs',
-            label: 'GitHub',
+            href: 'https://discord.gg/DNwnKmkQpw',
+            label: 'Discord',
             position: 'right',
           },
           {
@@ -88,7 +92,7 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.gg/cHCwd7BWdZ',
+                href: 'https://discord.gg/DNwnKmkQpw',
               },
               {
                 label: 'Twitter',
@@ -99,10 +103,10 @@ const config = {
           {
             title: 'More',
             items: [
-              {
+              /*{
                 label: 'Blog',
                 to: '/blog',
-              },
+              },*/
               {
                 label: 'GitHub',
                 href: 'https://github.com/ASEAN-Build-The-Earth',

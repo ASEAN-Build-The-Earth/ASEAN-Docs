@@ -1,6 +1,6 @@
 ---
-title: How to join ASEAN BTE
-id: how-to-join
+title: Get Started in ASEAN BuildTheEarth
+id: get-started
 slidebar_position: 0
 ---
 
