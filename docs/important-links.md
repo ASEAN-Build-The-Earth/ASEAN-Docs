@@ -1,8 +1,11 @@
 ---
 id: links
 title: Important links
-slidebar_position: 1
+slidebar_position: 2
 ---
+
+
+
 
 ### Installing modpack 
 - Windows: https://bte-installer.s3.amazonaws.com/public/installer/v1.19.2/BTEInstaller-1.19.2-windows.zip

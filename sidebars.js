@@ -25,6 +25,10 @@ const sidebars = {
           id: 'get-started',
         },
         {
+          type: "doc",
+          id: "faq",
+        },
+        {
           type: 'doc',
           id: 'links'
         }
