@@ -10,8 +10,41 @@
   width: 200px;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/* Wide Desktop */
+@media screen and (min-width: 1440px) {
+ 
+  .ip_box { float: left; }
+  .req_box { float: right; }
+}
+/* Desktop */
+@media screen and (min-width: 997px) and (max-width: 1439px) {
+  .ip_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .req_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 996px) {
+  .ip_box { float: left; }
+  .req_box { float: right; }
+}
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .ip_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .req_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

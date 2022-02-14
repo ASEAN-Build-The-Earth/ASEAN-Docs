@@ -4,9 +4,6 @@ import styles from './HomepageFeatures.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
 import CodeBlock from '@theme/CodeBlock';
 
-// https://github.com/yocontra/react-responsive
-import { useMediaQuery } from 'react-responsive'
-
 // <Highlight color="#C03A3A"></Highlight>
 export const Highlight = ({children, color}) => (
   <span
@@ -19,25 +16,6 @@ export const Highlight = ({children, color}) => (
     {children}
   </span>
 );
-
-/* responsible thing */
-const WideDesktop = ({ children }) => {
-  const isDesktop = useMediaQuery({minWidth: 1440 })
-  return isDesktop ? children : null
-}
-const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({minWidth: 997, maxWidth: 1439 })
-  return isDesktop ? children : null
-}
-const Tablet = ({ children }) => {
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 996 })
-  return isTablet ? children : null
-}
-const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 767 })
-  return isMobile ? children : null
-}
-
 
 const FeatureList = [
   {
@@ -70,90 +48,25 @@ const FeatureList = [
         
         <hr/>
         <div>
-        { /* Hard-coded resonsive cus idk how to make it better way lmao */}
-          <WideDesktop>
-            <div>
-              <table align="Left"><tbody><tr><td>
-                <div align="Left"><i><b>Server ip</b></i></div>
-                <sub><CodeBlock className="language-js" title="java">
-                139.99.91.188:25569
-                </CodeBlock>
-                <CodeBlock className="language-js" title="bedrock">
-                IP: 139.99.91.188 
-                PORT: 19132
-                </CodeBlock></sub>
-              </td></tr></tbody></table>
-            </div>
-            <table align="Right"><tbody><tr><td>
-                <div align="Left"><i><b><sub>Requirements</sub></b></i></div>
-                <li  align="Left"><Translate>Minecraft</Translate>: <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition"><Translate>Java Edition</Translate></a> / <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition"><Translate>Bedrock Edition</Translate></a><br/></li>
-                <div align="Left"><i><b><sub>Disclaimer</sub></b></i></div>
-                <li  align="Left"><Highlight color="#C03A3A"><Translate>Cracked Minecraft</Translate></Highlight> <Translate>is not allowed</Translate><br/></li>
+          <div className={styles.ip_div}>
+            <table className={styles.ip_box}><tbody><tr><td>
+              <div align="Left"><i><b><Translate>Server ip</Translate></b></i></div>
+              <sub><CodeBlock className="language-js" title="java">
+              139.99.91.188:25569
+              </CodeBlock>
+              <CodeBlock className="language-js" title="bedrock">
+              IP: 139.99.91.188 
+              PORT: 19132
+              </CodeBlock></sub>
             </td></tr></tbody></table>
-          </WideDesktop>
-          
-          <Desktop>
-            <div className={styles.center}>
-              <table><tbody><tr><td>
-                <div align="Left"><i><b>Server ip</b></i></div>
-                <sub><CodeBlock className="language-js" title="java">
-                139.99.91.188:25569
-                </CodeBlock>
-                <CodeBlock className="language-js" title="bedrock">
-                IP: 139.99.91.188 
-                PORT: 19132
-                </CodeBlock></sub>
-              </td></tr></tbody></table>
-            </div>
-            <table className={styles.center}><tbody><tr><td>
-                <div align="Left"><i><b><sub>Requirements</sub></b></i></div>
-                <li  align="Left"><Translate>Minecraft</Translate>: <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition"><Translate>Java Edition</Translate></a> / <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition"><Translate>Bedrock Edition</Translate></a><br/></li>
-                <div align="Left"><i><b><sub>Disclaimer</sub></b></i></div>
-                <li  align="Left"><Highlight color="#C03A3A"><Translate>Cracked Minecraft</Translate></Highlight> <Translate>is not allowed</Translate><br/></li>
-            </td></tr></tbody></table>
-          </Desktop>
+          </div>
+          <table className={styles.req_box}><tbody><tr><td>
+              <div align="Left"><i><b><sub><Translate>Requirements</Translate></sub></b></i></div>
+              <li  align="Left"><Translate>Minecraft</Translate>: <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition"><Translate>Java Edition</Translate></a> / <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition"><Translate>Bedrock Edition</Translate></a><br/></li>
+              <div align="Left"><i><b><sub>Disclaimer</sub></b></i></div>
+              <li  align="Left"><Highlight color="#C03A3A"><Translate>Cracked Minecraft</Translate></Highlight> <Translate>is not allowed</Translate><br/></li>
+          </td></tr></tbody></table>
 
-          <Tablet>
-            <div>
-              <table align="Left"><tbody><tr><td>
-                <div align="Left"><i><b>Server ip</b></i></div>
-                <sub><CodeBlock className="language-js" title="java">
-                139.99.91.188:25569
-                </CodeBlock>
-                <CodeBlock className="language-js" title="bedrock">
-                IP: 139.99.91.188 
-                PORT: 19132
-                </CodeBlock></sub>
-              </td></tr></tbody></table>
-            </div>
-            <table align="Right"><tbody><tr><td>
-                <div align="Left"><i><b><sub>Requirements</sub></b></i></div>
-                <li  align="Left"><Translate>Minecraft</Translate>: <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition"><Translate>Java Edition</Translate></a> / <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition"><Translate>Bedrock Edition</Translate></a><br/></li>
-                <div align="Left"><i><b><sub>Disclaimer</sub></b></i></div>
-                <li  align="Left"><Highlight color="#C03A3A"><Translate>Cracked Minecraft</Translate></Highlight> <Translate>is not allowed</Translate><br/></li>
-            </td></tr></tbody></table>
-          </Tablet>
-
-          <Mobile>
-            <div className={styles.center}>
-              <table><tbody><tr><td>
-                <div align="Left"><i><b>Server ip</b></i></div>
-                <sub><CodeBlock className="language-js" title="java">
-                139.99.91.188:25569
-                </CodeBlock>
-                <CodeBlock className="language-js" title="bedrock">
-                IP: 139.99.91.188 
-                PORT: 19132
-                </CodeBlock></sub>
-              </td></tr></tbody></table>
-            </div>
-            <table className={styles.center}><tbody><tr><td>
-                <div align="Left"><i><b><sub>Requirements</sub></b></i></div>
-                <li  align="Left"><Translate>Minecraft</Translate>: <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition"><Translate>Java Edition</Translate></a> / <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition"><Translate>Bedrock Edition</Translate></a><br/></li>
-                <div align="Left"><i><b><sub>Disclaimer</sub></b></i></div>
-                <li  align="Left"><Highlight color="#C03A3A"><Translate>Cracked Minecraft</Translate></Highlight> <Translate>is not allowed</Translate><br/></li>
-            </td></tr></tbody></table>
-          </Mobile>
         </div>
       </>
     ),
