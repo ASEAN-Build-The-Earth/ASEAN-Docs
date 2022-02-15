@@ -3,19 +3,7 @@ import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
 import CodeBlock from '@theme/CodeBlock';
-
-// <Highlight color="#C03A3A"></Highlight>
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-    {children}
-  </span>
-);
+import Highlight from "../../util/styling"
 
 const FeatureList = [
   {
@@ -64,7 +52,7 @@ const FeatureList = [
               <div align="Left"><i><b><sub><Translate>Requirements</Translate></sub></b></i></div>
               <li  align="Left"><Translate>Minecraft</Translate>: <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition"><Translate>Java Edition</Translate></a> / <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition"><Translate>Bedrock Edition</Translate></a><br/></li>
               <div align="Left"><i><b><sub>Disclaimer</sub></b></i></div>
-              <li  align="Left"><Highlight color="#C03A3A"><Translate>Cracked Minecraft</Translate></Highlight> <Translate>is not allowed</Translate><br/></li>
+              <li  align="Left"><Highlight color="#C03A3A" textColor="#FEF6E8"><Translate>Cracked Minecraft</Translate></Highlight> <Translate>is not allowed</Translate><br/></li>
           </td></tr></tbody></table>
 
         </div>
