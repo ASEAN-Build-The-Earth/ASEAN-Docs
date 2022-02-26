@@ -3,14 +3,14 @@ import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 import Translate, { translate } from '@docusaurus/Translate';
 import CodeBlock from '@theme/CodeBlock';
-import Highlight from "../../util/styling"
+import styling from "../../util/styling"
 
 const FeatureList = [
   {
     title: <Translate>ASEAN BuildTheEarth</Translate>,
     description: (
       <>
-      <Highlight color="#C03A3A">TODO: PLEASE WRITE LONG TEAM INTRODUCTION HERE</Highlight>
+      <styling.Highlight color="#C03A3A">TODO: PLEASE WRITE LONG TEAM INTRODUCTION HERE</styling.Highlight>
         <br/>
         <Translate>Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website.</Translate>
         <br/>
@@ -52,7 +52,7 @@ const FeatureList = [
               <div align="Left"><i><b><sub><Translate>Requirements</Translate></sub></b></i></div>
               <li  align="Left"><Translate>Minecraft</Translate>: <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition"><Translate>Java Edition</Translate></a> / <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition"><Translate>Bedrock Edition</Translate></a><br/></li>
               <div align="Left"><i><b><sub>Disclaimer</sub></b></i></div>
-              <li  align="Left"><Highlight color="#C03A3A" textColor="#FEF6E8"><Translate>Cracked Minecraft</Translate></Highlight> <Translate>is not allowed</Translate><br/></li>
+              <li  align="Left"><styling.Highlight color="#C03A3A" textColor="#FEF6E8"><Translate>Cracked Minecraft</Translate></styling.Highlight> <Translate>is not allowed</Translate><br/></li>
           </td></tr></tbody></table>
 
         </div>

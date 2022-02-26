@@ -7,27 +7,28 @@ slidebar_position: 0
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CodeBlock from '@theme/CodeBlock';
+import Admonition from '@theme/Admonition';
+
+import asset from '../util/styling'
 
 ## 1. Join our discord server!
-<iframe src="https://discord.com/widget?id=702883639574396969&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+We have discord as our main comminuty hub, you'll miss a lot infomation if you dont join our discord.
+<asset.inviteButton link="https://discord.gg/DNwnKmkQpw">Go to Discord Server </asset.inviteButton>
 
 ## 2. If you are a builder, please join our server with the BTE modpack
-
-
-
-
-<table><tbody><tr><td>
+<table><td>
     <b>Server IP</b>
 <Tabs>
     <TabItem value="java" label="Java Edition" default>
-        <CodeBlock className="language-js" >
+        <CodeBlock className="language-js" title="IP">
             139.99.91.188:25569
         </CodeBlock>
-        <sub>
-            <b>Java edition includes:</b><br/>
-            The version of Minecraft that is on PS4, XBOX, and Nintendo Switch<br/>
-            The version of Minecraft that is on Mobile (formerly Pocket Edition)<br/>
-        </sub>
+        <Admonition type="note">
+            <sub><div style={{ lineHeight: 1.5}}>
+                <b>Java edition includes:</b><br/>
+                Windows, Linux and macOS<br/>
+            </div></sub>
+        </Admonition>
     </TabItem>
     <TabItem value="bedrock" label="Bedrock Edition">
         <span style={{ display: "inline-block",
@@ -45,14 +46,16 @@ import CodeBlock from '@theme/CodeBlock';
         </CodeBlock>
         </span>
         <br/>
-        <sub>
-            <b>Bedrock edition includes:</b><br/>
-            The version of Minecraft that is on PS4, XBOX, and Nintendo Switch<br/>
-            The version of Minecraft that is on Mobile (formerly Pocket Edition)<br/>
-        </sub>
+            <Admonition type="note">
+                <sub><div style={{ lineHeight: 1.5}}>
+                    <b>Bedrock edition includes:</b><br/>
+                    The version of Minecraft that is on PS4, XBOX, and Nintendo Switch.<br/>
+                    The version of Minecraft that is on Mobile (formerly Pocket Edition).<br/>
+                </div></sub>
+            </Admonition>
     </TabItem>
 </Tabs>
-</td></tr></tbody></table>
+</td></table>
 
 ## 3. We will give you Builder role in the server then you can build!
 **Notice:** 
