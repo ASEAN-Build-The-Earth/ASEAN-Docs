@@ -18,37 +18,12 @@
   }
 }
 
-
-.buttons_div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
 .shadowed {
   text-shadow: 3px 4px 7px black;
 }
 
 html[data-theme='light'] .title {
 color: white; /* overwrite banner text for light theme */
-}
-
-.button {
-  box-shadow: 3px 4px 7px black;
-  background-color: rgb(248, 223, 0);
-  border-color: rgb(0, 0, 0);
-  
-}
-
-.button:hover{ 
-  background-color: rgb(223, 248, 0);
-  border-color: rgb(0, 0, 0);
-}
-
-.button:active {
-  background-color: rgb(146, 245, 65);
-  border-color: rgb(0, 0, 0);
 }
 
 

@@ -14,13 +14,6 @@ function HomepageHeader() {
       <div className="container">
         <h1 className={clsx('hero__title', styles.title, styles.shadowed)}>{siteConfig.title}</h1>
         <p className={clsx("hero__subtitle", styles.title, styles.shadowed)}>{siteConfig.tagline}</p>
-        <div className={styles.buttons_div}>
-          <Link
-            className={clsx("button button--secondary button--lg", styles.button)}
-            to="get-started">
-            Starts Building ⚒
-          </Link>
-        </div>
       </div>
     </header>
   );

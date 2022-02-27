@@ -1,9 +1,17 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
+
 import Translate, { translate } from '@docusaurus/Translate';
 import CodeBlock from '@theme/CodeBlock';
+import Link from '@docusaurus/Link';
+import Admonition from '@theme/Admonition';
+import Details from '@theme/Details'
+
 import styling from "../../util/styling"
+import book_icon from "../../static/img/icons/book_1.png"
+import grassblock_icon from "../../static/img/icons/dancing_grassblock.gif"
+import feather_icon from "../../static/img/icons/feather.png"
 
 const FeatureList = [
   {
@@ -23,39 +31,68 @@ const FeatureList = [
     ),
   },
   {
-    title: <Translate>How to join ASEAN BTE</Translate>,
+    title: <><img src={grassblock_icon} alt="Our Server" style={{ filter: "drop-shadow(1px 1px 1px #222)"}} /></>,
     description: (
       <>
-        <strong><Translate>Get started as a new builder</Translate>:</strong>
-        <div>
-          <br/>
-          <strong>1.</strong> <Translate>Join the server ip</Translate>.<br/><br/>
-          <strong>2.</strong> <Translate>If you are a builder, please join our server with the BTE modpack.</Translate> <br/><br/>
-          <strong>3.</strong> <Translate>We will give you Builder role in the server then you can build</Translate>!. <br/>
-        </div>
-        
-        <hr/>
-        <div>
+        {/* Server IP and Requirement box */}
+        <div className={styles.container}>
           <div className={styles.ip_div}>
-            <table className={styles.ip_box}><tbody><tr><td>
+            <table className={styles.ip_box} ><td id={styles.box_styles}>
               <div align="Left"><i><b><Translate>Server ip</Translate></b></i></div>
               <sub><CodeBlock className="language-js" title="java">
-              139.99.91.188:25569
+                139.99.91.188:25569
               </CodeBlock>
               <CodeBlock className="language-js" title="bedrock">
-              IP: 139.99.91.188 
-              PORT: 19132
+                IP: 139.99.91.188 
+                PORT: 19132
               </CodeBlock></sub>
-            </td></tr></tbody></table>
+            </td></table>
           </div>
-          <table className={styles.req_box}><tbody><tr><td>
-              <div align="Left"><i><b><sub><Translate>Requirements</Translate></sub></b></i></div>
-              <li  align="Left"><Translate>Minecraft</Translate>: <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition"><Translate>Java Edition</Translate></a> / <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition"><Translate>Bedrock Edition</Translate></a><br/></li>
-              <div align="Left"><i><b><sub>Disclaimer</sub></b></i></div>
-              <li  align="Left"><styling.Highlight color="#C03A3A" textColor="#FEF6E8"><Translate>Cracked Minecraft</Translate></styling.Highlight> <Translate>is not allowed</Translate><br/></li>
-          </td></tr></tbody></table>
-
+          <div className={styles.req_div} >
+            <table className={styles.req_box}><td id={styles.box_styles}>
+                <div align="Left"><i><b><sub><Translate>Requirements</Translate></sub></b></i></div>
+                <div align="Left">
+                  <Details summary={<summary><Translate>Minecraft</Translate></summary>}>
+                    <sub style={{ lineHeight: 1}}>
+                      <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition"><styling.Highlight textColor="#19BE88"><Translate>Java Edition</Translate></styling.Highlight></a> 
+                      <Translate> and </Translate> 
+                      <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition"><styling.Highlight textColor="#19BE88"><Translate>Bedrock Edition</Translate></styling.Highlight></a>
+                      <Translate> is supported</Translate>
+                    </sub>
+                  </Details>
+                </div>
+                <div align="Left">
+                      <Admonition type="caution">
+                        <sub>
+                          <styling.Highlight color="#C03A3A" textColor="#FEF6E8"><Translate>Cracked Minecraft</Translate></styling.Highlight> <Translate>is not allowed</Translate>
+                        </sub>
+                      </Admonition>
+                    </div>
+            </td></table>
+          </div>  
         </div>
+
+        {/* Go To Doc Button */}
+        <div className={styles.button_div}>
+          <Link
+            className={clsx("button button--secondary button--lg", styles.button_container)}
+            to="get-started">
+            <div id={styles.button_text}>Starts Building</div>
+            <div id={styles.button_iconcontainer}>
+              <img src={book_icon} alt="book" id={styles.button_icon}  /> 
+            </div>  
+          </Link> 
+          <div className={styles.buttons_overlay}>
+              <div className={styles.button_overlay_text}>
+                <p><b>Go To Document </b></p>
+                <div className={styles.button_overlay_icon}>
+                  <img src={feather_icon} alt="↗" style={{width:"100%", position:"absolute"}} />
+                </div>
+              </div> 
+              
+          </div>
+        </div>
+
       </>
     ),
   }

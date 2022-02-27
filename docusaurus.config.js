@@ -53,7 +53,7 @@ const config = {
         title: 'ASEAN BTE',
         logo: {
           alt: 'ASEAN BTE',
-          src: 'img/aseanbte_logo.gif',
+          src: 'img/icons/aseanbte_logo.gif',
         },
         items: [
           {
