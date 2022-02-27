@@ -1,3 +1,6 @@
+/**
+ * This file contains custom styling by JSX components to be usein project/docs
+ */
 import React from 'react';
 import clsx from 'clsx';
 import styles from './css/styling.module.css'
@@ -25,33 +28,41 @@ const Highlight = ({children, color, textColor}) => {
   </span>
 }
 
+
+
 /**
- * @param children invite button label
- * @param link discord invite link
- * @returns div of discord invite button and iframe of server widget preview
+ * Make a pair of 2 JSX/HTML elment to display by left and right of screen (responsive for mobile)
+ * ```jsx
+ * <MakePair pair_left={<>ELEMENTS</>} pair_right={<>ELEMENTS</>} />
+ * ```
+ * @param pair_left elements to display at the left side of pair
+ * @param pair_right elements to display at the right side of pair
+ * @returns nicely setup responsive pair of 2 div left and right
  */
-const inviteButton = ({children, link}) => {
-  const { isDarkTheme } = useColorMode();
+const MakePair = ({pair_left, pair_right}) => {
   return (
-  <div id={styles.wrap}>
-    <table className={styles.cover_table}>
-      <tr id={styles.scaled_element}><th className={styles.invite_table}>
-        <a className={styles.invite_button} href={link} target="_blank">
-        <b>{children}</b>
-        <svg pointsAtY="1" width="18" height="18" aria-hidden="true" viewBox="0 -2 24 25" class=" ">
-        <path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg>
-        </a>
-      </th></tr>
-      <tr><th style={{ padding: "0px", backgroundColor: "#23272a", borderRadius: "4px", borderColor: "#23272a"}}>
-        <iframe src={isDarkTheme ? 'https://discord.com/widget?id=702883639574396969&theme=dark' : 'https://discord.com/widget?id=702883639574396969&theme=light'} 
-          id={styles.scaled_element} height="500" allowtransparency="true" frameborder="0" 
-          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">  
-        </iframe>
-      </th></tr>
-    </table>
-  </div>
+    <section className={styles.features}>
+      <div className="container">
+        <div className="row">
+          <div className={clsx('col col--6')}>
+            {/* center the div vertically */}
+            <div style={{ height:"100%", display:"grid", placeItems:"center" }}> 
+              <div className="text--center padding-horiz--md">
+                {pair_left}
+              </div>
+            </div>
+          </div>
+          <div className={clsx('col col--6')}>
+            <div style={{ height:"100%", display:"grid", placeItems:"center" }}> 
+              <div className="text--center padding-horiz--md">
+                {pair_right}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
-
-export default { Highlight, inviteButton };
+export default { Highlight, MakePair };
