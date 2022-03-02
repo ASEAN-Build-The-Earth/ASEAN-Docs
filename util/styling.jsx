@@ -10,14 +10,14 @@ import { useColorMode } from '@docusaurus/theme-common'; //theme detector
 /**
  * Highlight component use for hightligting text's background 
  * ```html
- * <Highlight color="#25c2a0" textColor="#fff" >Docusaurus green</Highlight>
+ * <Hl color="#25c2a0" textColor="#fff" >Docusaurus green</Hl>
  * ```
  * @param children display text
  * @param color text highlight color
  * @param textColor display text's color
  * @returns styled text by color and textColor
  */
-const Highlight = ({children, color, textColor}) => {
+const Hl = ({children, color, textColor}) => {
   return <span
     style={{
       backgroundColor: color? color : null,
@@ -98,10 +98,21 @@ const StraightLine = ({bend}) => {
 }
 
 /** 
- * source: https://github.com/facebook/docusaurus/tree/main/website/src/components/BrowserWindow
+ * heavily modified from: https://github.com/facebook/docusaurus/tree/main/website/src/components/BrowserWindow
+ * ```jsx
+ * <MinecraftWindow 
+ *     width="fit-content" 
+ *     title="MY_TITLE" 
+ *     useDropdown="true" 
+ *     dropdownContents={[ { id: "title", name: "Server IP" }, { id: "1", name: "139.99.91.188" } ]}
+ * ><img src={THIS_THIS_CHRILDREN_PARAM}/>
+ * </MinecraftWindow>
+ * ```
  * @param children a chrildren to be cover by the window later
  * @param width width style for the window ( mostly uses "fit-content" )
- * @param title title of the window
+ * @param title (default: "Minecraft"): title of the window
+ * @param useDropdown (default: "false"): if "true", when the 3-dots icon is hovered info dropdown will pop up (default: server ip info box)
+ * @param dropdownContents (Javascript List): a list of contents with key for drop downn box to function.
  * @returns chrildren covered with bordered window-like minecraft screen
  */
 const MinecraftWindow = ({
@@ -177,4 +188,4 @@ const MinecraftWindow = ({
 }
 
 
-export default { Highlight, MakePair, StraightLine, MinecraftWindow};
+export default {  Hl, MakePair, StraightLine, MinecraftWindow};

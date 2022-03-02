@@ -20,7 +20,7 @@ const FeatureList = [
     title: <Translate>ASEAN BuildTheEarth</Translate>,
     description: (
       <>
-      <styling.Highlight color="#C03A3A">TODO: PLEASE WRITE LONG TEAM INTRODUCTION HERE</styling.Highlight>
+      <styling.Hl color="#C03A3A">TODO: PLEASE WRITE LONG TEAM INTRODUCTION HERE</styling.Hl>
         <br/>
         <Translate>Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website.</Translate>
         <br/>
@@ -75,11 +75,11 @@ const FeatureList = [
                 <div align="Left">
                       <Admonition type="caution">
                         <sub>
-                          <styling.Highlight color="#C03A3A" textColor="#FEF6E8">
+                          <styling.Hl color="#C03A3A" textColor="#FEF6E8">
                             <Translate descripton="section of 'Cracked Minecraft is not allowed'">
                               Cracked Minecraft
                             </Translate>
-                          </styling.Highlight> <Translate descripton="section of 'Cracked Minecraft is not allowed'">is not allowed</Translate>
+                          </styling.Hl> <Translate descripton="section of 'Cracked Minecraft is not allowed'">is not allowed</Translate>
                         </sub>
                       </Admonition>
                     </div>
