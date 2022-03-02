@@ -57,7 +57,7 @@ module.exports = {
                 "getting-started/building-first-build/plot-system/creating-plot",
                 {
                   type: "doc",
-                  label: "Your Plot's Info",
+                  label: "Where is your plot ?",
                   id: "getting-started/building-first-build/plot-system/getting-reference",
                 },
                 {

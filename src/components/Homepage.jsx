@@ -8,6 +8,7 @@ import Link from '@docusaurus/Link';
 import Admonition from '@theme/Admonition';
 import Details from '@theme/Details'
 import Image from '@theme/IdealImage';
+import AnnouncementBar from '@theme/AnnouncementBar';
 
 import styling from "../../util/styling"
 import book_icon from "../../static/img/icons/book_1.png"
@@ -55,17 +56,30 @@ const FeatureList = [
                 <div align="Left">
                   <Details summary={<summary><Translate>Minecraft</Translate></summary>}>
                     <sub style={{ lineHeight: 1}}>
-                      <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition"><styling.Highlight textColor="#19BE88"><Translate>Java Edition</Translate></styling.Highlight></a> 
-                      <Translate> and </Translate> 
-                      <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition"><styling.Highlight textColor="#19BE88"><Translate>Bedrock Edition</Translate></styling.Highlight></a>
-                      <Translate> is supported</Translate>
+                      <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition">
+                        <Translate descripton="a section of 'Java Edition and Bedrock Edition is supported'">
+                          Java Edition
+                        </Translate>
+                      </a> <Translate descripton="a section of 'Java Edition and Bedrock Edition is supported'">
+                          and
+                        </Translate> <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition">
+                        <Translate descripton="section of 'Java Edition and Bedrock Edition is supported'">
+                          Bedrock Edition
+                        </Translate>
+                      </a> <Translate descripton="section of 'Java Edition and Bedrock Edition is supported'">
+                        is supported
+                      </Translate>
                     </sub>
                   </Details>
                 </div>
                 <div align="Left">
                       <Admonition type="caution">
                         <sub>
-                          <styling.Highlight color="#C03A3A" textColor="#FEF6E8"><Translate>Cracked Minecraft</Translate></styling.Highlight> <Translate>is not allowed</Translate>
+                          <styling.Highlight color="#C03A3A" textColor="#FEF6E8">
+                            <Translate descripton="section of 'Cracked Minecraft is not allowed'">
+                              Cracked Minecraft
+                            </Translate>
+                          </styling.Highlight> <Translate descripton="section of 'Cracked Minecraft is not allowed'">is not allowed</Translate>
                         </sub>
                       </Admonition>
                     </div>
@@ -80,7 +94,7 @@ const FeatureList = [
             <ul className={clsx("breadcrumbs breadcrumbs--lg", styles.breadcrumbs_cover)}>
               <li class="breadcrumbs__item">
                 <a class="breadcrumbs__link" href="#url">
-                  Starts Building     
+                  <Translate descripton="The big Start building button (please keep the text count for this low)">Starts Building</Translate>     
                 </a>
               </li>
               <Image img={book_icon} alt="book" id={styles.button_icon} />
@@ -122,7 +136,7 @@ const FeatureList = [
               </div>
             </div>
             <div className={styles.button_overlay_text}>
-              <p><strong>Go To Document </strong></p>
+              <p><strong><Translate descripton="The pop up message when you hover to Start Building button (please keep the text count for this low)">Go To Documen</Translate>t</strong> </p>
               <div className={styles.button_overlay_icon}>
                 <Image img={feather_icon} alt="↗" style={{width:"100%", position:"absolute"}} />
               </div>
