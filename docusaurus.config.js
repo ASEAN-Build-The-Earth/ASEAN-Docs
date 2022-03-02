@@ -170,11 +170,21 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      // extra annoucement
+      announcementBar: {
+        id: 'annouce_wip-caution',
+        content:
+          '<strong>Hey, This website is still in a heavy development, If you want to help us, ask our admin in discord server or contribute directly in our <a href="https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs">github repository</a></strong>',
+        backgroundColor: '#f69c00',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
     }),
+    
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'th', 'my', 'vi'],
+    locales: ['en', 'th', 'my', 'vn'],
     localeConfigs: {
       en: {
         label: 'English'
@@ -185,7 +195,7 @@ const config = {
       my: {
         label: 'Malay'
       },
-      vi: {
+      vn: {
         label: 'Vietnamese'
       },
     },

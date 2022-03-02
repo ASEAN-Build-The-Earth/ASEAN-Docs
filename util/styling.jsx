@@ -3,7 +3,8 @@
  */
 import React from 'react';
 import clsx from 'clsx';
-import styles from './css/styling.module.css'
+import styles from './css/styling.module.css';
+import CodeBlock from "@theme/CodeBlock";
 import { useColorMode } from '@docusaurus/theme-common'; //theme detector
 
 /**
@@ -106,7 +107,33 @@ const StraightLine = ({bend}) => {
 const MinecraftWindow = ({
   children,
   width,
-  title = 'Minecraft',
+  title = "Minecraft",
+  useDropdown = "false",
+  dropdownContents = [ /* we have little ip box as default dropdown! */
+    {
+      id: "title",
+      name: "Server IP",
+    },
+    {
+      id: "1",
+      name: <>
+        Java Edition
+        <CodeBlock language="javascript">
+          IP: 139.99.91.188:25569
+        </CodeBlock>
+      </>,
+    },
+    {
+      id: "2",
+      name: <>
+        Bedrock Edition
+        <CodeBlock language="javascript">
+          IP: 139.99.91.188 
+          PORT: 19132
+        </CodeBlock>
+      </>,
+    },
+  ],
 }) => {
   return (
     <div className={styles.browserWindow} style={{width}}>
@@ -115,11 +142,32 @@ const MinecraftWindow = ({
         
         <div className={styles.browserWindowAddressBar}>{title}</div>
         <div className={styles.browserWindowMenuIcon}>
-          <div>
-            <span className={styles.bar} />
-            <span className={styles.bar} />
-            <span className={styles.bar} />
+        {useDropdown.toLowerCase() == "true" ? ( 
+                    /* we have cute little ip box as default content */
+            <div class="dropdown dropdown--hoverable">
+            <button className={clsx("button button--link", styles.dropdown_button)}>
+              <span className={styles.bar} />
+              <span className={styles.bar} />
+              <span className={styles.bar} />
+            </button>
+            <ul className={clsx("dropdown__menu", styles.dropdown_menu)}> {
+                dropdownContents.map((item) => ( /* loop thru drop down items */
+                  item.id == "title" ? 
+                    (<li><a key={item.id}><em>{item.name}</em></a></li>) 
+                    :
+                    (<li><a class="dropdown__link" ><p key={item.id}>{item.name}</p></a></li>)
+                  )
+                )
+              }
+            </ul>
           </div>
+          ) : (
+            <div>
+              <span className={styles.bar} />
+              <span className={styles.bar} />
+              <span className={styles.bar} />
+            </div>
+          )}
         </div>
       </div>
 

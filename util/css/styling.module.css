@@ -86,4 +86,16 @@
   /* padding: 1rem; */
   background-color: var(--ifm-color-emphasis-200);
 }
+
+.dropdown_button {
+  padding: 0rem 0.2em;
+  transition: .2s;
+}
+.dropdown_button:hover, .dropdown_button:active{
+  transform: rotateZ(90deg);
+  opacity: 0.5;
+}
+.dropdown_menu {
+  transform: translateX(-15.5rem) !important;
+}
 /*#endregion */
