@@ -1,0 +1,91 @@
+---
+title: Get Started in ASEAN BuildTheEarth
+id: get-started
+slidebar_position: 0
+---
+
+import Tabs from '@theme/Tabs';
+import Details from '@theme/Details'
+import TabItem from '@theme/TabItem';
+import CodeBlock from '@theme/CodeBlock';
+import Admonition from '@theme/Admonition';
+import Image from '@theme/IdealImage';
+
+import Assets from '../util/assets';
+import Styling from '../util/styling';
+import WelcomeImage from '../static/img/docs/getting-started/aseanbte_welcome.png'
+
+<!-- Heading #1 -->
+<Styling.MakePair 
+    pair_left = {
+        <div>
+            <h2>1. Join our discord server!</h2><br/>
+            We have discord as our main comminuty hub, you'll miss a lot infomation if you dont join our discord.<hr/>
+        </div>
+    } 
+    pair_right = { <><Assets.InviteButton link="https://discord.gg/DNwnKmkQpw">Go to Discord Server </Assets.InviteButton></> } 
+/>
+<Styling.StraightLine bend="Right"/>
+
+<!-- Heading #2 -->
+<Styling.MakePair 
+    pair_left = { /* a server ip box */
+        <div align="Left"> 
+            <table><td>
+                <b>Server IP</b>
+                <Tabs>
+                    <TabItem value="java" label="Java Edition" default>
+                        <CodeBlock className="language-js" title="IP">
+                            139.99.91.188:25569
+                        </CodeBlock>
+                        <Admonition type="note">
+                            <sub><div style={{ lineHeight: 1.5}}>
+                                <b>Java edition includes:</b><br/>
+                                Windows, Linux and macOS<br/>
+                            </div></sub>
+                        </Admonition>
+                    </TabItem>
+                    <TabItem value="bedrock" label="Bedrock Edition">
+                        <Assets.BedrockIpBox IP="139.99.91.188" PORT="19132" />
+                        <br/>
+                            <Admonition type="note">
+                                <sub><div style={{ lineHeight: 1.5}}>
+                                    <b>Bedrock edition includes:</b><br/>
+                                    The version of Minecraft that is on PS4, XBOX, and Nintendo Switch.<br/>
+                                    The version of Minecraft that is on Mobile (formerly Pocket Edition).<br/>
+                                </div></sub>
+                            </Admonition>
+                    </TabItem>
+                </Tabs>
+            </td></table>
+        </div>
+    }
+    pair_right_m = {
+        <div>
+            <h2>2. Join our Server</h2><br/>
+            We have discord as our main comminuty hub, you'll miss a lot infomation if you dont join our discord.<hr/>
+            <Admonition type="danger" title="CAUTION">
+                <Details 
+                    style={{"--ifm-alert-border-color":"rgb(255, 50, 56, 0.3)", "--ifm-alert-background-color": "rgba(255, 0, 0, 0.05)", "--docusaurus-details-decoration-color": "rgb(225, 50, 56, 1)"}}
+                    summary={ <summary><strong><Translate>Cracked Minecraft is banned!</Translate></strong></summary>}
+                >   <sup style={{display: "inline-block", lineHeight:"1.2"}}>This is because we follow the BuildTheEarth’s rules as well as Mojang’s. All of your building progress in cracked Minecraft will not be accepted!</sup>
+                </Details>
+            </Admonition>
+        </div>
+    } 
+/>
+<Styling.StraightLine bend="Left"/>
+
+<!-- Heading #3 -->
+<Styling.MakePair 
+    pair_left = {
+        <div>
+            <h2>3. Take a Tour in our server</h2><br/>
+            We have discord as our main comminuty hub, you'll miss a lot infomation if you dont join our discord.<hr/>
+        </div>
+    } 
+    pair_right = { 
+        <div align="Left"><Styling.MinecraftWindow width="fit-content"><Image img={WelcomeImage} alt="Welsome To ASEAN BTE" /></Styling.MinecraftWindow></div>
+    } 
+/>
+<Styling.StraightLine bend="Right"/>

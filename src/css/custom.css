@@ -1,14 +1,56 @@
+/*#region color patellate */
 :root {
+  --ifm-code-font-size: 95%; 
   /* docusaurus color patellate */
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+/* ASEAN BTE Color Patellate*/
+  --ifm-color-primary: #366510;
+  --ifm-color-primary-dark: #315b0e;
+  --ifm-color-primary-darker: #2e560e;
+  --ifm-color-primary-darkest: #26470b;
+  --ifm-color-primary-light: #3b6f12;
+  --ifm-color-primary-lighter: #3e7412;
+  --ifm-color-primary-lightest: #468315;
+
+  --ifm-color-info: #83a249;
+  --ifm-color-info-dark: #769242;
+  --ifm-color-info-darker: #6f8a3e;
+  --ifm-color-info-darkest: #5c7133;
+  --ifm-color-info-light: #90b152;
+  --ifm-color-info-lighter: #95b55a;
+  --ifm-color-info-lightest: #a4bf72;
+  --ifm-color-info-contrast-background: #edf0e8;
 }
+[data-theme='dark'] {
+  --ifm-color-primary-lightest: #ffeccb;
+  --ifm-color-primary-lighter: #ffd896;
+  --ifm-color-primary-light: #ffd284;
+  --ifm-color-primary: #ffc561;
+  --ifm-color-primary-dark: #ffb83e;
+  --ifm-color-primary-darker: #ffb22c;
+  --ifm-color-primary-darkest: #f69c00;
+
+  --ifm-color-info: #566c2d;
+  --ifm-color-info-dark: #4d6129;
+  --ifm-color-info-darker: #495c26;
+  --ifm-color-info-darkest: #3c4c20;
+  --ifm-color-info-light: #5f7732;
+  --ifm-color-info-lighter: #637c34;
+  --ifm-color-info-lightest: #708c3b;
+}
+html[data-theme='dark'] { 
+  --ifm-color-info-contrast-background: #283018;
+}
+.alert a { /* hyperlink's underline on foldout style */
+  text-decoration-color: #1fc25d;
+}
+[data-theme='light'] .navbar{
+  --ifm-navbar-background-color: #fcfcfc;
+}
+[data-theme='light'] {
+--ifm-card-background-color: rgb(249 249 249);
+}
+/*#endregion color patellate */
+
 
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
@@ -27,3 +69,15 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 html[data-theme='dark'] .hero--primary {
   --ifm-hero-text-color: white !important;
 }
+
+
+/* DEFAULT PATELLATE
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%; 
+*/

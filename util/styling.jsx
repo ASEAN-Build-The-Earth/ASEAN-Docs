@@ -37,25 +37,28 @@ const Highlight = ({children, color, textColor}) => {
  * ```
  * @param pair_left elements to display at the left side of pair
  * @param pair_right elements to display at the right side of pair
+ * @param pair_right_m pair on the left side will snap to top of the row in mobile mode, so if you want right pair to be on top, use this
  * @returns nicely setup responsive pair of 2 div left and right
  */
-const MakePair = ({pair_left, pair_right}) => {
+const MakePair = ({pair_left, pair_right, pair_right_m}) => {
+  // check if right pair is assign to be snap on top
+  const isReverse = new Boolean(React.isValidElement(pair_right_m)); 
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
+        <div className="row" className={isReverse.valueOf()? clsx("row", styles.reverse_column) : clsx("row") }>
           <div className={clsx('col col--6')}>
             {/* center the div vertically */}
             <div style={{ height:"100%", display:"grid", placeItems:"center" }}> 
               <div className="text--center padding-horiz--md">
-                {pair_left}
+                { pair_left }
               </div>
             </div>
           </div>
           <div className={clsx('col col--6')}>
             <div style={{ height:"100%", display:"grid", placeItems:"center" }}> 
               <div className="text--center padding-horiz--md">
-                {pair_right}
+                { isReverse.valueOf()? pair_right_m : pair_right }
               </div>
             </div>
           </div>
@@ -65,4 +68,65 @@ const MakePair = ({pair_left, pair_right}) => {
   );
 }
 
-export default { Highlight, MakePair };
+/**
+ * Insert a SVG ling to website
+ * ```html
+ * <StraightLine bend="right" />
+ * ```
+ * @param bend line option: "left": bend down to the left, "right": bend down to the right, "none": no bending
+ * @returns div of svg displaying line
+ */
+const StraightLine = ({bend}) => {
+  const getStyle = (bendType) => {
+    switch (bendType.toLowerCase()) {
+      case "right":
+        return <svg width="100%" height="100%"><g><line x1="5%" y1="5%" x2="95%" y2="95%" stroke="rgb(190, 195, 201, 0.3)" stroke-width="3" fill="rgb(190, 195, 201, 0.3)"></line></g></svg>;
+      case "left":
+        return <svg width="100%" height="100%"><g><line x1="5%" y1="95%" x2="95%" y2="5%" stroke="rgb(190, 195, 201, 0.3)" stroke-width="3" fill="rgb(190, 195, 201, 0.3)"></line></g></svg>;
+      case "none":
+        return <svg width="100%" height="100%"><g><line x1="5%" y1="50%" x2="95%" y2="50%" stroke="rgb(190, 195, 201, 0.3)" stroke-width="3" fill="rgb(190, 195, 201, 0.3)"></line></g></svg>;
+      default:
+        return <strong style={{color:"red"}}>The Input line parameter invalid, please use "left", "right", "none"</strong>;
+    };
+  }
+  return (
+    <div style={{height:"3rem"}}>
+      { getStyle(bend) }
+    </div>
+  )
+}
+
+/** 
+ * source: https://github.com/facebook/docusaurus/tree/main/website/src/components/BrowserWindow
+ * @param children a chrildren to be cover by the window later
+ * @param width width style for the window ( mostly uses "fit-content" )
+ * @param title title of the window
+ * @returns chrildren covered with bordered window-like minecraft screen
+ */
+const MinecraftWindow = ({
+  children,
+  width,
+  title = 'Minecraft',
+}) => {
+  return (
+    <div className={styles.browserWindow} style={{width}}>
+      <div className={styles.browserWindowHeader}>
+          <img src={require("../static//img/icons/grassblock_icon.png").default} width="40rem"></img>
+        
+        <div className={styles.browserWindowAddressBar}>{title}</div>
+        <div className={styles.browserWindowMenuIcon}>
+          <div>
+            <span className={styles.bar} />
+            <span className={styles.bar} />
+            <span className={styles.bar} />
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.browserWindowBody}>{children}</div>
+    </div>
+  );
+}
+
+
+export default { Highlight, MakePair, StraightLine, MinecraftWindow};

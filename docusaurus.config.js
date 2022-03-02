@@ -19,14 +19,17 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: "/", // change default "doc/" root path
-          sidebarPath: require.resolve('./sidebars.js'),
+          path: 'docs.intro',
+          routeBasePath: "intro", // change default "doc/" root path
+          sidebarPath: require.resolve('./sidebars_intro.js'),
           editUrl: ({ locale, versionDocsDirPath, docPath }) => {
             if (locale !== 'en') {
               return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/blob/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
             }
             return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/docs/${docPath}`;
           },
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: false,
         /* no doc
@@ -40,6 +43,42 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [ /* Builder guide page */
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'builder-guide',
+        path: 'docs.builder-guide',
+        routeBasePath: 'guide',
+        editUrl: ({locale, versionDocsDirPath, docPath}) => {
+          if (locale !== 'en') {
+            return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/docs/${locale}`;
+          }
+          return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/docs/${docPath}`;
+        },
+        sidebarPath: require.resolve('./sidebars_builder-guide.js'),
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      }),
+    ],
+    [ /**Responsive Image quality plugin 
+       * src: https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-ideal-image)
+       * ```jsx
+       * <Image img={require('./path/to/img.png')} />
+       * ```
+       */
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1920, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: true, // see in build ver only
+      },
     ],
   ],
 
@@ -61,6 +100,11 @@ const config = {
             docId: 'get-started',
             position: 'left',
             label: 'Get Started',
+          },
+          { 
+            to: 'guide/builder-guide',
+            position: 'left',
+            label: 'Builder Guide',
           },
           /*{
             to: '/docs/',
@@ -85,8 +129,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'How to join ASEAN BTE',
-                to: '/docs/how-to-join',
+                label: 'Get Started',
+                to: 'intro/get-started',
+              },
+              {
+                label: 'Builder Guide',
+                to: 'guide/builder-guide',
               },
             ],
           },
