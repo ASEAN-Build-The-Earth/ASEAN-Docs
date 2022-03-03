@@ -29,11 +29,14 @@ the plot's buildsite is originally outlined in the [Master server](../visiting#1
 ## Overview
 &nbsp;&nbsp;&nbsp;&nbsp;Each plot given to builder is a floating island looking land with an outline of the main building in the plot.
 The outline is a rough repesentation of building's shell by [Google Map](https://www.google.com/maps/) satellite image for builder to build on top of it.
-- Before you go to next page, we recommend log in to our [Plot server](../visiting#2-plot-server) and folow along with this document.
+
+:::tip Before you go to next page
+- we recommend log in to our [Plot server](../visiting#2-plot-server) and folow along with this document.
 
 ```mdx-code-block
 <Styling.MinecraftWindow width="fit-content" useDropdown="true"><img src={require('@site//static/img/docs/plot-system/plot_join.gif').default} alt="Guide Image"/></Styling.MinecraftWindow>
 ```
+:::
 
 - Now let's see the workflow from creating your plot to submitting your first BuildTheEarth build via plot system!
 
