@@ -9,8 +9,8 @@ Continue to next page to get started on it.
 ```mdx-code-block
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
-import Styling from '../../util/styling';
-import Phattie_Gif from '../../static/img/docs/plot-system/plot.gif';
+import Styling from '@site//util/styling';
+import Phattie_Gif from '@site//static/img/docs/plot-system/plot.gif';
 
 <Styling.MinecraftWindow title={ <a href="https://www.youtube.com/watch?v=YSHpFk646ts"><span style={ {color:"var(--ifm-font-color-base)"} }>Minecraft</span></a> } width="fit-content"><img src={Phattie_Gif} alt="Guide Image"/></Styling.MinecraftWindow>
 

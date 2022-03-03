@@ -3,9 +3,9 @@ title: Plot System
 id: plot-system
 ---
 ```mdx-code-block
-import Styling from '../../../util/styling';
+import Styling from '@site//util/styling';
 import Image from '@theme/IdealImage';
-import BuildsiteImage from '../../../static/img/docs/plot-system/buildsite_exmp.png';
+import BuildsiteImage from '@site//static/img/docs/plot-system/buildsite_exmp.png';
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 ```
@@ -32,7 +32,7 @@ The outline is a rough repesentation of building's shell by [Google Map](https:/
 - Before you go to next page, we recommend log in to our [Plot server](../visiting#2-plot-server) and folow along with this document.
 
 ```mdx-code-block
-<Styling.MinecraftWindow width="fit-content" useDropdown="true"><img src={require('../../../static/img/docs/plot-system/plot_join.gif').default} alt="Guide Image"/></Styling.MinecraftWindow>
+<Styling.MinecraftWindow width="fit-content" useDropdown="true"><img src={require('@site//static/img/docs/plot-system/plot_join.gif').default} alt="Guide Image"/></Styling.MinecraftWindow>
 ```
 
 - Now let's see the workflow from creating your plot to submitting your first BuildTheEarth build via plot system!

@@ -65,7 +65,7 @@
 }
 
 .minecraft_icon {
-  background-image: url(../../static//img/icons/grassblock_icon.png);
+  background-image: url(@site/static//img/icons/grassblock_icon.png);
   width: 2rem;
 
 }

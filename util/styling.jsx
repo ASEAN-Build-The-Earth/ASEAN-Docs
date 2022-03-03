@@ -149,7 +149,7 @@ const MinecraftWindow = ({
   return (
     <div className={styles.browserWindow} style={{width}}>
       <div className={styles.browserWindowHeader}>
-          <img src={require("../static//img/icons/grassblock_icon.png").default} width="40rem"></img>
+          <img src={require("@site/static//img/icons/grassblock_icon.png").default} width="40rem"></img>
         
         <div className={styles.browserWindowAddressBar}>{title}</div>
         <div className={styles.browserWindowMenuIcon}>

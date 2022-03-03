@@ -8,12 +8,11 @@ import Link from '@docusaurus/Link';
 import Admonition from '@theme/Admonition';
 import Details from '@theme/Details'
 import Image from '@theme/IdealImage';
-import AnnouncementBar from '@theme/AnnouncementBar';
 
-import styling from "../../util/styling"
-import book_icon from "../../static/img/icons/book_1.png"
-import grassblock_icon from "../../static/img/icons/dancing_grassblock.gif"
-import feather_icon from "../../static/img/icons/feather.png"
+import styling from "@site/util/styling"
+import book_icon from "@site/static/img/icons/book_1.png"
+import grassblock_icon from "@site/static/img/icons/dancing_grassblock.gif"
+import feather_icon from "@site/static/img/icons/feather.png"
 
 const FeatureList = [
   {
