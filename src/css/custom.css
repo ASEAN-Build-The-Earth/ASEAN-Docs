@@ -3,13 +3,13 @@
   --ifm-code-font-size: 95%; 
   /* docusaurus color patellate */
 /* ASEAN BTE Color Patellate*/
-  --ifm-color-primary: #366510;
-  --ifm-color-primary-dark: #315b0e;
-  --ifm-color-primary-darker: #2e560e;
-  --ifm-color-primary-darkest: #26470b;
-  --ifm-color-primary-light: #3b6f12;
-  --ifm-color-primary-lighter: #3e7412;
-  --ifm-color-primary-lightest: #468315;
+  --ifm-color-primary: #3c9c16;
+  --ifm-color-primary-dark: #368c14;
+  --ifm-color-primary-darker: #338513;
+  --ifm-color-primary-darkest: #2a6d0f;
+  --ifm-color-primary-light: #42ac18;
+  --ifm-color-primary-lighter: #45b319;
+  --ifm-color-primary-lightest: #4ecb1d;
 
   --ifm-color-info: #83a249;
   --ifm-color-info-dark: #769242;
