@@ -3,13 +3,17 @@ title: Plot System
 id: plot-system
 ---
 ```mdx-code-block
-import Styling from '@site//util/styling';
+import Styling from '@site/util/styling';
 import Image from '@theme/IdealImage';
-import BuildsiteImage from '@site//static/img/docs/plot-system/buildsite_exmp.png';
+import BuildsiteImage from '@site/static/img/docs/plot-system/buildsite_exmp.png';
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 ```
+<!-- Brief Intro -->
+As we introduced before we have a server dedicated for newcomer to try building their first build called <em style={{color:"var(--ifm-link-color)"}}>Plot System</em>,<br/>
+Continue to next page to get started on it.
 
+<!-- Main Topic -->
 ## What is Plot System ?
 &nbsp;&nbsp;&nbsp;&nbsp;Plot system is a BuldTheEarth Building system made for newcomer and beginner builder to try out building.<br/>
 Builder entered  the server will have an option to build in any build site created by official builder.

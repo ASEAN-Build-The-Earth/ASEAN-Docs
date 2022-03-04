@@ -45,7 +45,13 @@ module.exports = {
           },
           collapsed: false,
           items: [
-            { /* "Plot system" Category */
+            {
+              type: "doc",
+              label: "BTE Building",
+              id: "getting-started/building-first-build/bte-building"
+            },
+            { 
+              /* "Plot system" Category */
               type: 'category',
               label: 'Plot System',
               link: {
@@ -65,35 +71,23 @@ module.exports = {
                   label: "Finishing your plot",
                   id: "getting-started/building-first-build/plot-system/finishing-plot"
                 },
-                "getting-started/building-first-build/plot-system/submitting-plot"
+                "getting-started/building-first-build/plot-system/submitting-plot",
               ],
             },
+            "getting-started/building-first-build/what-next"
           ],
-        },
-        {
-          type: "category",
-          label: 'Basic Building',
-          link: {
-            type: 'generated-index',
-          },
-          items: [
-            {
-              type: "doc",
-              label: "BTE Buildings",
-              id: "getting-started/basic-building/bte-building"
-            }
-          ]
         },
       ],
     },
     /* "Becoming Official Builder" Category */
     {
       type: 'category',
-      label: 'Becoming Official Builder',
+      label: 'Become Official Builder',
       collapsible: true,
       collapsed: true,
       link: {
-        type: "generated-index"
+        type: "doc",
+        id: "become-official"
       },
       items: [
         {
