@@ -3,7 +3,7 @@ title: Plot System
 id: plot-system
 ---
 ```mdx-code-block
-import Styling from '@site/util/styling';
+import MinecraftWindow from '@site/src/components/MinecraftWindow';
 import Image from '@theme/IdealImage';
 import BuildsiteImage from '@site/static/img/docs/plot-system/buildsite_exmp.png';
 import DocCardList from '@theme/DocCardList';
@@ -38,7 +38,7 @@ The outline is a rough repesentation of building's shell by [Google Map](https:/
 - we recommend log in to our [Plot server](../visiting#2-plot-server) and folow along with this document.
 
 ```mdx-code-block
-<Styling.MinecraftWindow width="fit-content" useDropdown="true"><img src={require('@site//static/img/docs/plot-system/plot_join.gif').default} alt="Guide Image"/></Styling.MinecraftWindow>
+<MinecraftWindow width="fit-content" useDropdown="true"><img src={require('@site//static/img/docs/plot-system/plot_join.gif').default} alt="Guide Image"/></MinecraftWindow>
 ```
 :::
 

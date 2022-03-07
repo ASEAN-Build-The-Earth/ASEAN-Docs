@@ -5,7 +5,9 @@ id: creating-plot
 
 ```mdx-code-block
 
-import Styling from "@site/util/styling";
+import MinecraftWindow from "@site/src/components/MinecraftWindow";
+import Text from "@site/src/components/TextDecoration";
+
 import Image from "@theme/IdealImage";
 import Admonition from '@theme/Admonition';
 
@@ -24,9 +26,9 @@ import guide_difficulty from "@site/static/img/docs/creating-plot/plot-difficult
 ## Companion panel
 ```mdx-code-block
 
-<Styling.MinecraftWindow width="fit-content" useDropdown="true">
+<MinecraftWindow width="fit-content" useDropdown="true">
     <Image img={guide_panel} alt="companion_panel" width="500rem" />
-</Styling.MinecraftWindow>
+</MinecraftWindow>
 
 ```
 
@@ -40,9 +42,9 @@ The server panel is basically your plot system hub and your builder profile, it 
 
 <Admonition type="info">
     <div style={{lineHeight:"200%"}}>
-        <Styling.Hl color="#55FF55" ><strong style={{textShadow:"2px 1px 3px #575757"}}>Easy</strong></Styling.Hl> 1 - 2 small house and simple detail<br/>
-        <Styling.Hl color="#FFAA00" ><strong style={{textShadow:"2px 1px 3px #575757"}}>Medium</strong></Styling.Hl> detailed row houses or medium sized city block building<br/>
-        <Styling.Hl color="#FF5555" ><strong style={{textShadow:"2px 1px 3px #575757"}}>Hard</strong></Styling.Hl> big city block to big skyscraper <br/>
+        <Text.Hl color="#55FF55" ><strong style={{textShadow:"2px 1px 3px #575757"}}>Easy</strong></Text.Hl> 1 - 2 small house and simple detail<br/>
+        <Text.Hl color="#FFAA00" ><strong style={{textShadow:"2px 1px 3px #575757"}}>Medium</strong></Text.Hl> detailed row houses or medium sized city block building<br/>
+        <Text.Hl color="#FF5555" ><strong style={{textShadow:"2px 1px 3px #575757"}}>Hard</strong></Text.Hl> big city block to big skyscraper <br/>
     </div>
 </Admonition>
 
@@ -71,6 +73,6 @@ after you decided your interested buildsite and difficulty, simply press the bui
 
 ```mdx-code-block
 
-<Styling.MinecraftWindow width="fit-content" useDropdown="true"><img src={guide_create} width="500rem" alt="Guide Image"/></Styling.MinecraftWindow>
+<MinecraftWindow width="fit-content" useDropdown="true"><img src={guide_create} width="500rem" alt="Guide Image"/></MinecraftWindow>
 
 ```
