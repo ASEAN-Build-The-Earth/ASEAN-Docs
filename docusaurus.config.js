@@ -9,7 +9,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/aseanbte_logo.png',
+  favicon: 'img/icons/aseanbte_logo.png',
   organizationName: 'ASEAN-Build-The-Earth',
   projectName: 'ASEAN-Docs',
 
@@ -66,7 +66,7 @@ const config = {
       }),
     ],
     [ /**Responsive Image quality plugin 
-       * src: https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-ideal-image)
+       * src: (https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-ideal-image)
        * ```jsx
        * <Image img={require('./path/to/img.png')} />
        * ```
@@ -106,11 +106,11 @@ const config = {
             position: 'left',
             label: 'Builder Guide',
           },
-          /*{
-            to: '/docs/',
-            label: 'Blog',
+          {
+            to: 'support', 
+            label: 'Support us', 
             position: 'left'
-          }, */
+          },
           {
             href: 'https://discord.gg/DNwnKmkQpw',
             label: 'Discord',

@@ -1,0 +1,10 @@
+@keyframes isLoading{
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    90% { opacity: 0.8; }
+    100% { opacity: 0; }
+}
+
+.loading_svg {
+    animation: 1s linear 0s 1 isLoading;
+}

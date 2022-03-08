@@ -11,25 +11,27 @@ import CodeBlock from '@theme/CodeBlock';
 import Admonition from '@theme/Admonition';
 import Image from '@theme/IdealImage';
 
-import Assets from '@site/util/assets';
-import Styling from '@site/util/styling';
+import MinecraftWindow from '@site/src/components/MinecraftWindow';
+import BedrockIpBox from '@site/src/components/BedrockIpBox';
+import StraightLine from '@site/src/components/StraightLine';
+import MakePair from '@site/src/components/MakePair';
+import InviteButton from '@site/src/components/InviteButton';
 import WelcomeImage from '@site/static/img/docs/getting-started/aseanbte_welcome.png'
 
-
 <!-- Heading #1 -->
-<Styling.MakePair 
+<MakePair 
     pair_left = {
         <div>
             <h2>1. Join our discord server!</h2><br/>
             We have discord as our comminuty hub<hr/>
         </div>
     } 
-    pair_right = { <><Assets.InviteButton link="https://discord.gg/DNwnKmkQpw">Go to Discord Server </Assets.InviteButton></> } 
+    pair_right = { <><InviteButton link="https://discord.gg/DNwnKmkQpw">Go to Discord Server </InviteButton></> } 
 />
-<Styling.StraightLine bend="Right"/>
+<StraightLine bend="Right"/>
 
 <!-- Heading #2 -->
-<Styling.MakePair 
+<MakePair 
     pair_left = { /* a server ip box */
         <div align="Left"> 
             <table><td>
@@ -47,7 +49,7 @@ import WelcomeImage from '@site/static/img/docs/getting-started/aseanbte_welcome
                         </Admonition>
                     </TabItem>
                     <TabItem value="bedrock" label="Bedrock Edition">
-                        <Assets.BedrockIpBox IP="139.99.91.188" PORT="19132" />
+                        <BedrockIpBox IP="139.99.91.188" PORT="19132" />
                         <br/>
                             <Admonition type="note">
                                 <sub><div style={{ lineHeight: 1.5}}>
@@ -66,18 +68,26 @@ import WelcomeImage from '@site/static/img/docs/getting-started/aseanbte_welcome
             You can join our server's by using these IPs.<hr/>
             <Admonition type="danger" title="CAUTION">
                 <Details 
-                    style={{"--ifm-alert-border-color":"rgb(255, 50, 56, 0.3)", "--ifm-alert-background-color": "rgba(255, 0, 0, 0.05)", "--docusaurus-details-decoration-color": "rgb(225, 50, 56, 1)"}}
+                    style={{
+                        "--ifm-alert-border-color": "rgb(255, 50, 56, 0.3)", 
+                        "--ifm-alert-background-color": "rgba(255, 0, 0, 0.05)", 
+                        "--docusaurus-details-decoration-color": "rgb(225, 50, 56, 1)"
+                    }}
                     summary={ <summary><strong><Translate>Cracked Minecraft is banned!</Translate></strong></summary>}
-                >   <sup style={{display: "inline-block", lineHeight:"1.2"}}>This is because we follow the BuildTheEarth’s rules as well as Mojang’s. All of your building progress in cracked Minecraft will not be accepted!</sup>
+                >   
+                <sup style={{display: "inline-block", lineHeight:"1.2"}}>
+                    This is because we follow the BuildTheEarth’s rules as well as Mojang’s. 
+                    All of your building progress in cracked Minecraft will not be accepted!
+                </sup>
                 </Details>
             </Admonition>
         </div>
     } 
 />
-<Styling.StraightLine bend="Left"/>
+<StraightLine bend="Left"/>
 
 <!-- Heading #3 -->
-<Styling.MakePair 
+<MakePair 
     pair_left = {
         <div>
             <h2>3. Take a Tour in our server</h2><br/>
@@ -85,7 +95,7 @@ import WelcomeImage from '@site/static/img/docs/getting-started/aseanbte_welcome
         </div>
     } 
     pair_right = { 
-        <div align="Left"><Styling.MinecraftWindow width="fit-content" useDropdown="false"><Image img={WelcomeImage} alt="Welsome To ASEAN BTE" /></Styling.MinecraftWindow></div>
+        <div align="Left"><MinecraftWindow width="fit-content" useDropdown="false"><Image img={WelcomeImage} alt="Welsome To ASEAN BTE" /></MinecraftWindow></div>
     } 
 />
-<Styling.StraightLine bend="Right"/>
+<StraightLine bend="Right"/>

@@ -4,7 +4,8 @@ id: submitting-plot
 ---
 ```mdx-code-block
 
-import Styling from '@site/util/styling';
+import MinecraftWindow from '@site/src/components/MinecraftWindow';
+import Text from '@site/src/components/TextDecoration';
 import Image from "@theme/IdealImage";
 import GuideSubmit from "@site/static/img/docs/finishing-plot/guide_submit.gif"
 import GuideFeedback from "@site/static/img/docs/plot-system/plot-feedback.png"
@@ -14,7 +15,7 @@ import GuideFeedback from "@site/static/img/docs/plot-system/plot-feedback.png"
 Before submitting your plot, please check everything first if everything is ready to be reviewed. You can submit the plot to our reviewer by using your companion's plot profile or quickly type out `/plot submit` to submit it.
 
 ```mdx-code-block
-<Styling.MinecraftWindow width="fit-content"><img src={GuideSubmit} width="500rem" alt="Guide Image"/></Styling.MinecraftWindow>
+<MinecraftWindow width="fit-content"><img src={GuideSubmit} width="500rem" alt="Guide Image"/></MinecraftWindow>
 ```
 
 The plot will be submitted and within 24 hours our reviewers would review your plot and give feedback and the score of your build.
@@ -31,7 +32,7 @@ Submit your plot again with your improvement and you'll suddenly get approve by 
 </details>
 
 ```mdx-code-block
-<Styling.MinecraftWindow width="fit-content"><Image img={GuideFeedback} width="400rem" alt="Guide Image"/></Styling.MinecraftWindow>
+<MinecraftWindow width="fit-content"><Image img={GuideFeedback} width="400rem" alt="Guide Image"/></MinecraftWindow>
 ```
 
 Accepted plots will be pasted on the [Master world](../../visiting#1-master-server) and will be pasted in the buildsite you built on.
@@ -40,5 +41,5 @@ Accepted plots will be pasted on the [Master world](../../visiting#1-master-serv
 ---
 
 ```mdx-code-block
-<dd><h2>That's it. You successfully built your first building in <Styling.Hl textColor="#4fb925">BuildTheEarth</Styling.Hl> project in name of <Styling.Hl textColor="var(--ifm-color-primary)">ASEAN BTE Team</Styling.Hl>!!!</h2></dd>
+<dd><h2>That's it. You successfully built your first building in <Text.Hl textColor="#4fb925">BuildTheEarth</Text.Hl> project in name of <Text.Hl textColor="var(--ifm-color-primary)">ASEAN BTE Team</Text.Hl>!!!</h2></dd>
 ```

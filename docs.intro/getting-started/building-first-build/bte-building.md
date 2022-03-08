@@ -5,7 +5,6 @@ id: bte-building
 ```mdx-code-block
 
 import Admonition from '@theme/Admonition';
-import Styling from '@site/util/styling';
 import Image from '@theme/IdealImage';
 
 import IMG_BadBuild from '@site/static/img/docs/bte-buildings/bad_build.png';
