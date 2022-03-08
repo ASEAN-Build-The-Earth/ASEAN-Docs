@@ -1,0 +1,90 @@
+.kofi_container {
+    position: relative;
+}
+.kofi_card {
+    max-width: 600px !important;
+}
+.kofi_button {
+    background-color: var(--ifm-color-emphasis-200);
+    border-color: var(--ifm-color-emphasis-100);
+    color: var(--ifm-color-emphasis-900);
+}
+.kofi_button:hover {
+    background-color: var(--ifm-color-emphasis-300);
+    border-color: var(--ifm-color-emphasis-100);
+    color: var(--ifm-color-emphasis-800);
+}
+#button_icon {
+    width: 7%;
+    transform: scaleX(-1);
+    background-color: var(--ifm-color-emphasis-200);
+    border-radius: 100%;
+    padding: 0;
+    transition: 0.2s;
+}
+
+#button_icon[tiny_kofi_btn_anim="1"] {
+    /*  whoever curious and click the tiny kofi img ontop of iframe
+        gets secret flicking animtion :D 
+    */
+    animation: 0.5s linear 0s 1 tiny_kofi_btn_anim
+}
+
+.kofi_iframe {
+    overflow: hidden !important;
+    width: 100%;
+    padding: 4px;
+    padding-top: 100px;
+
+    box-shadow: /* a background color to fill up iframe's left-over padding */
+        inset 0px 96px 0px 4px #ffffff70, 
+        inset 0px -4px 0px 0px #ffffff70;
+    border-radius: 6px;
+    
+    background-image: url(@site/static/img/background/homepage_banner.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 30%;
+    background-size: cover;
+
+    animation: 1s linear 0s 1 loading_anim;
+}
+.kofi_bg {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(54,54,54);
+    background: linear-gradient(45deg, rgba(54,54,54,1) 0%, rgba(54,54,54,1) 46%, rgba(45,45,45,1) 100%);
+    opacity: 0;
+    width: 100%;
+    height: 100%;;
+    padding: 20px;
+    border-radius: 6px;
+    animation: 1s linear 0s 1 fading_bg;
+}
+html[data-theme='light'] .kofi_bg {
+    background: rgb(217,217,217);
+    background: 
+        linear-gradient(45deg, rgba(217,217,217,1) 0%, 
+        rgba(232,230,230,1) 46%, 
+        rgba(205,204,204,1) 100%);
+}
+@keyframes tiny_kofi_btn_anim {
+    0% { transform: scaleX(-1); background-color: var(--ifm-color-emphasis-200); }
+    33% { transform: scaleX(-1) rotateZ(-20deg); }
+    50% { background-color: #13C3FF; transform: scaleX(-1) rotateZ(0deg); }
+    66% { transform: scaleX(-1) rotateZ(20deg); }
+    100% { transform: scaleX(-1); background-color: var(--ifm-color-emphasis-200); }
+}
+@keyframes loading_anim{
+    0% { opacity: 0; }
+    80% { opacity: 0; }
+    90% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+@keyframes fading_bg{
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    90% { opacity: 0.8; }
+    100% { opacity: 0; }
+}

@@ -12,8 +12,8 @@ import kofi_pixel_icon from "@site/static/img/icons/kofi_pixel_logo.png";
 
 const ButtonContents = [
     {
-        "id" : "donate_button",
-        "component": <>
+        id : "donate_button",
+        component: <>
             <div className={styles.button_div} style={{transform:"scaleX(-1)"}}>
                 <Link to="support" className={clsx("button button--link", styles.button_container)}>
                     <nav aria-label="breadcrumbs">
@@ -25,7 +25,7 @@ const ButtonContents = [
                                     </Translate>     
                                 </a>
                             </li>
-                            <Image img={kofi_icon} alt="book" id={styles.button_icon} style={{backgroundColor: "#13C3FF", padding:"0px"}}/>
+                            <Image img={kofi_icon} alt="kofi" id={styles.button_icon} style={{backgroundColor: "#13C3FF", padding:"0px"}}/>
                         </ul>
                     </nav>
                 </Link> 
@@ -40,8 +40,8 @@ const ButtonContents = [
         </>
     },
     {
-        "id" : "get_started_button",
-        "component": <>
+        id : "get_started_button",
+        component: <>
             <div className={styles.button_div}>
                 <Link to="intro/get-started" className={clsx("button button--link", styles.button_container)}>
                     <nav aria-label="breadcrumbs">
@@ -53,7 +53,7 @@ const ButtonContents = [
                                     </Translate>     
                                 </a>
                             </li>
-                            <Image img={book_icon} alt="book" id={styles.button_icon} />
+                            <Image img={book_icon} alt="doc↗" id={styles.button_icon} />
                         </ul>
                     </nav>
                 </Link> 
@@ -141,7 +141,7 @@ const ButtonHeader = () => {
                         <div className={clsx('col col--6', styles.contents_column)}>
                             <div className="text--center padding-horiz--md">
                                 <div key={item.id}>
-                                    {item.component}
+                                    { item.component }                         
                                 </div>
                             </div>
                         </div>

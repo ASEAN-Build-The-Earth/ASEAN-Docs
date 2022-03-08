@@ -1,4 +1,9 @@
-/*#region color patellate */
+/**custom.css
+ * This file contains custom color patellate and css style for docusaurus website
+ * This file is pinned in root element so using any var from this file will be 100% safe
+ */
+
+/*#region main patellate */
 :root {
   --ifm-code-font-size: 95%; 
   /* docusaurus color patellate */
@@ -58,8 +63,7 @@ html[data-theme='dark'] {
 [data-theme='light'] {
 --ifm-card-background-color: rgb(249 249 249);
 }
-/*#endregion color patellate */
-
+/*#endregion main patellate */
 
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);

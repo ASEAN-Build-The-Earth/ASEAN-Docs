@@ -1,56 +1,86 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './support.module.css';
-import LoadingSvg from './components/LoadingSvg'
+import Translate from '@docusaurus/Translate';
 
+import PageContainer from './components/PageContainer';
+import KofiWidget from './components/KofiWidget';
+import Propaganda from './components/Propaganda';
 
+/**This is main function exporting the support page
+ * *Note: components folder doesnt contains text to translate, 
+ * its all beautifully organized in this function
+ * @returns Support page element deployed at `@site/support`
+ */
 export default function SupportPage() {
-    const [loading_anim, set_loading] = React.useState(true);   
-
     return (
         <Layout
-          title="Support us"
-          description="via kofi">
-          <main>
-            <div className={clsx('hero hero--primary', styles.hero_banner)} style={{height:"100%"}}> 
-                <div class="container">
-                    <div class="row row--no-gutters">
-                        <div class="col">
-                            dsfdfs
-                        </div>
-                        <div class="col">
-                            <div class="card-demo">
-                            <div class="card">
-                                <div class="card__header">
-                                <h3>Lorem Ipsum</h3>
-                                </div>
-                                <div class="card__body">
-                                    <div className={styles.kofi_container}>
-                                        <iframe id='kofiframe' 
-                                            src='https://ko-fi.com/bteasean/?hidefeed=true&widget=true&embed=true&preview=true' 
-                                            height='712px' 
-                                            title='bteasean'
-                                            loading="eager"
-                                            className={styles.kofi_iframe}
-                                            loading_anim={loading_anim}
-                                            onAnimationStart={() => set_loading(true)}
-                                            onAnimationEnd={() => set_loading(false)}
-                                        />   
-                                        { loading_anim? <><div className={styles.kofi_bg}/><LoadingSvg /></> : <></>  }
-                                    </div>
-                                </div>
-                                <div class="card__footer">
-                                    <button class="button button--secondary button--block">See All</button>
-                                </div>
+            title="Support us"
+            description="Support ASEAN BTE by donating via kofi.">
+            <main>
+                <PageContainer>
+                    <Propaganda>
+                        <h1><Translate description="Header title of support page">
+                                Support ASEAN BTE
+                            </Translate>
+                        </h1>
+                        <h4><Translate description="Propaganda message for supporting aseanbte">
+                                Hey if you want to see the server grow.
+                                Consider donating to us! We don't have a minimum donation. 
+                                So feels free to donate any number you'd like.
+                            </Translate>
+                        </h4>
+                        <br/>
+                        <h1><Translate description="The topic in support page propaganda">
+                                Where will my money go?
+                            </Translate>
+                        </h1>
+                        <div className="row">
+                            <div className={clsx("col col--6", styles.quote_row)}>
+                                <blockquote id={styles.propaganda_quote}>
+                                    <span className="badge badge--info">90%
+                                    </span> <span className="badge badge--warning" id={styles.badge}>
+                                        <Translate description="The badge-like component below the First support quote">
+                                            main focus
+                                        </Translate>
+                                    </span>
+                                    <h4><Translate description="First quote of 'Where will my money go?' topic">
+                                            Supports minecraft server quality and performance.
+                                        </Translate>
+                                    </h4>
+                                    <dt id={styles.quote_description}><sup>
+                                        <Translate description="Description of 'Supports minecraft server' from support page quote">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna. 
+                                        </Translate>
+                                    </sup></dt>
+                                </blockquote>
                             </div>
+                            <div className={clsx("col col--6", styles.quote_row)}>
+                                <blockquote id={styles.propaganda_quote}>
+                                    <span className="badge badge--info">10%</span>
+                                    <h4><Translate description="Second quote of 'Where will my money go?' topic">
+                                            Supports our builder workflow.
+                                        </Translate>
+                                    </h4>
+                                    <dt id={styles.quote_description}><sup>
+                                        <Translate description="Description of 'Supports our builder workflow' from support page quote">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                        </Translate>
+                                    </sup></dt>
+                                </blockquote>
                             </div>
                         </div>
-                    </div>
-                    </div>
-            </div>
-          </main>
+                    </Propaganda>
+                    <KofiWidget>
+                        <Translate description="The visit kofi site button at the bottom of kofi widget">
+                            Visit Donation Site
+                        </Translate>
+                    </KofiWidget>
+                </PageContainer>
+            </main>
         </Layout>
-      );
+    );
 }

@@ -2,12 +2,10 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './homepage.module.css';
 
-import Translate, { translate } from '@docusaurus/Translate';
+import Translate from '@docusaurus/Translate';
 import CodeBlock from '@theme/CodeBlock';
-import Link from '@docusaurus/Link';
 import Admonition from '@theme/Admonition';
 import Details from '@theme/Details'
-import Image from '@theme/IdealImage';
 import ButtonHeader from "./components/HomepageButton"
 
 import text from "@site/src/components/TextDecoration"
