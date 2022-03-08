@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ASEAN BTE',
-  tagline: 'We are building southeast asia in minecraft scale 1:1!',
+  tagline: 'We are building southeast asia in minecraft 1:1 scale!',
   url: 'https://ASEAN-Docs.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'ignore',

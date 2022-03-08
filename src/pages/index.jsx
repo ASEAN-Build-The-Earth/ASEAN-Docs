@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <Layout
       title="ASEAN BTE Docs"
-      description="We are building southeast asia in minecraft scale 1:1!">
+      description="We are building southeast asia in minecraft 1:1 scale!">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
