@@ -3,7 +3,7 @@ title: Getting your plot's location and reference
 id: getting-reference
 ---
 
-When you started new plot the minecraft chat will prompt you your plot location and links in <a href="https://google.com/maps">google map</a> and <a href="https://google.com/earth">google earth</a> as well as <a href="https://www.openstreetmap.org">open street map</a><br/>
+When you started new plot the minecraft chat will display your plot location and related links in <a href="https://google.com/maps">google map</a> and <a href="https://google.com/earth">google earth</a> as well as <a href="https://www.openstreetmap.org">open street map</a><br/>
 However if you lost the link, you can still get it by typing `/plot links`.
 
 ```mdx-code-block

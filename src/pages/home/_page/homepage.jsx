@@ -39,10 +39,10 @@ const ContentList = [
           <div className={styles.ip_div}>
             <table className={styles.ip_box} ><td id={styles.box_styles}>
               <div align="Left"><i><b><Translate>Server ip</Translate></b></i></div>
-              <sub><CodeBlock className="language-js" title="java">
+              <sub><CodeBlock className="language-js" title="Java">
                 139.99.91.188:25569
               </CodeBlock>
-              <CodeBlock className="language-js" title="bedrock">
+              <CodeBlock className="language-js" title="Bedrock">
                 IP: 139.99.91.188 
                 PORT: 19132
               </CodeBlock></sub>
