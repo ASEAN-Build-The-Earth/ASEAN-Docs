@@ -18,7 +18,8 @@ export default function KofiWidget({children}) {
                             tiny_kofi_btn_anim={tiny_kofi_btn_anim} 
                             onMouseDown={() => {set_tiny_kofi_btn(1)}}
                             onAnimationEnd={() => {set_tiny_kofi_btn(0)}} 
-                            id={styles.button_icon}/>
+                            id={styles.button_icon}
+                        />
                     </div>
                     <div className="card__body" style={{paddingTop:"0"}}>
                         <div className={styles.kofi_container}>

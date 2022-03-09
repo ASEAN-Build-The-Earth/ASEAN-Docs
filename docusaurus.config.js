@@ -4,7 +4,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ASEAN BTE',
-  tagline: 'We are building southeast asia in minecraft 1:1 scale!',
+  tagline: 'We are building southeast asia in Minecraft 1:1 scale!',
   url: 'https://ASEAN-Docs.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
@@ -154,10 +154,10 @@ const config = {
           {
             title: 'More',
             items: [
-              /*{
-                label: 'Blog',
-                to: '/blog',
-              },*/
+              {
+                label: 'Support Us',
+                to: '/support',
+              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/ASEAN-Build-The-Earth',
@@ -175,7 +175,7 @@ const config = {
         id: 'annouce_wip-caution',
         content:
           '<strong>Hey, This website is still in a heavy development, If you want to help us, ask our admin in discord server or contribute directly in our <a href="https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs">github repository</a></strong>',
-        backgroundColor: '#f69c00',
+        backgroundColor: '#99ffcc',
         textColor: '#091E42',
         isCloseable: false,
       },

@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageButton.module.css'
 
-import Translate, { translate } from '@docusaurus/Translate';;
+import Translate from '@docusaurus/Translate';;
 import Link from '@docusaurus/Link';
 import Image from '@theme/IdealImage';
 import book_icon from "@site/static/img/icons/book_1.png"

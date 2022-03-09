@@ -42,9 +42,12 @@ The server panel is basically your plot system hub and your builder profile, it 
 
 <Admonition type="info">
     <div style={{lineHeight:"200%"}}>
-        <Text.Hl color="#55FF55" ><strong style={{textShadow:"2px 1px 3px #575757"}}>Easy</strong></Text.Hl> 1 - 2 small house and simple detail<br/>
-        <Text.Hl color="#FFAA00" ><strong style={{textShadow:"2px 1px 3px #575757"}}>Medium</strong></Text.Hl> detailed row houses or medium sized city block building<br/>
-        <Text.Hl color="#FF5555" ><strong style={{textShadow:"2px 1px 3px #575757"}}>Hard</strong></Text.Hl> big city block to big skyscraper <br/>
+        <strong style={{textShadow:"rgb(27 110 34 / 60%) 0px 0px 4px"}}><Text.Hl color="#55FF55">Easy</Text.Hl> </strong>
+            1 - 2 small house and simple detail.<br/>
+        <strong style={{textShadow:"rgb(27 110 34 / 60%) 0px 0px 4px"}}><Text.Hl color="#FFAA00">Medium</Text.Hl> </strong> 
+            detailed row houses or medium sized city block building.<br/>
+        <strong style={{textShadow:"rgb(27 110 34 / 60%) 0px 0px 4px"}}><Text.Hl color="#FF5555">Hard</Text.Hl> </strong>
+            big city block to big skyscraper <br/>
     </div>
 </Admonition>
 

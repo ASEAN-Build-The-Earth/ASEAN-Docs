@@ -45,6 +45,6 @@ html[data-theme='dark'] .propaganda_container { background-color: rgba(139, 139,
     .propaganda_container { border-radius: 1rem 1rem 1rem 0; }
     .propaganda_arrow {
         border-bottom: 3.5rem solid transparent;
-        border-left: 4rem solid var(--ifm-color-emphasis-100);
+        border-left: 4rem solid rgba(255, 255, 255, 0.2);
     }
 }

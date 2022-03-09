@@ -7,6 +7,7 @@ import CodeBlock from '@theme/CodeBlock';
 import Admonition from '@theme/Admonition';
 import Details from '@theme/Details'
 import ButtonHeader from "./components/HomepageButton"
+import MarkdownBlock from "@site/src/components/MarkdownBlock"
 
 import text from "@site/src/components/TextDecoration"
 import grassblock_icon from "@site/static/img/icons/dancing_grassblock.gif"
@@ -14,70 +15,80 @@ import grassblock_icon from "@site/static/img/icons/dancing_grassblock.gif"
 
 const ContentList = [
   {
-    title: <Translate>ASEAN BuildTheEarth</Translate>,
+    title: <Translate description="Homepage ASEAN BTE label">ASEAN BuildTheEarth</Translate>,
     description: (
       <>
         <br/>
-        <Translate>
-          We are The Association of Southeast Asian Nations Build the Earth. 
-          We are part of the build the earth project which aims to build the world 1:1 scale in Minecraft! 
-          We currently oversee the progress of Brunei, Myanmar, 
-          Cambodia, Timor-Leste, Indonesia, Laos, Malaysia, the Philippines, 
-          Singapore, Thailand, and Vietnam.
-        </Translate>
-        <br/>
+        <MarkdownBlock>
+          <Translate description="ASEAN BTE long description at the homepage">
+            We are The Association of Southeast Asian Nations Build the Earth. 
+            We are part of the [build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! 
+            We currently oversee the progress of Brunei, Myanmar, 
+            Cambodia, Timor-Leste, Indonesia, Laos, Malaysia, the Philippines, 
+            Singapore, Thailand, and Vietnam.
+          </Translate>
+        </MarkdownBlock>
         <hr/> 
       </>
     ),
   },
   {
-    title: <><img src={grassblock_icon} alt="Our Server" style={{ filter: "drop-shadow(1px 1px 1px #222)"}} /></>,
+    title: <img src={grassblock_icon} alt="Our Server" style={{ filter: "drop-shadow(1px 1px 1px #222)"}} />,
     description: (
       <>
         {/* Server IP and Requirement box */}
         <div className={styles.container}>
           <div className={styles.ip_div}>
             <table className={styles.ip_box} ><td id={styles.box_styles}>
-              <div align="Left"><i><b><Translate>Server ip</Translate></b></i></div>
-              <sub><CodeBlock className="language-js" title="Java">
-                139.99.91.188:25569
-              </CodeBlock>
-              <CodeBlock className="language-js" title="Bedrock">
-                IP: 139.99.91.188 
-                PORT: 19132
-              </CodeBlock></sub>
+              <div align="Left"><i><b>
+                <Translate description="'Server ip' box at the homepage">
+                  Server ip
+                </Translate>
+              </b></i></div>
+              <sub>
+                <CodeBlock className="language-js" title="Java">
+                  139.99.91.188:25569
+                </CodeBlock>
+                <CodeBlock className="language-js" title="Bedrock">
+                  IP: 139.99.91.188 
+                  PORT: 19132
+                </CodeBlock>
+              </sub>
             </td></table>
           </div>
           <div className={styles.req_div} >
             <table className={styles.req_box}><td id={styles.box_styles}>
-              <div align="Left"><i><b><sub><Translate>Requirements</Translate></sub></b></i></div>
+              <div align="Left"><i><b><sub>
+                <Translate description="Requirements box at homepage">
+                  Requirements
+                </Translate>
+              </sub></b></i></div>
               <div align="Left">
-                <Details summary={<summary><Translate>Minecraft</Translate></summary>}>
-                  <sub style={{ lineHeight: 1}}>
-                    <a href="https://www.minecraft.net/en-us/store/minecraft-java-edition">
-                      <Translate descripton="a section of 'Java Edition and Bedrock Edition is supported'">
-                        Java Edition
+                <Details summary={
+                <summary><Translate description="the first and only requirement in the homepage requirement box">
+                    Minecraft
+                </Translate></summary>}>
+                  <sub>
+                    <MarkdownBlock>
+                      <Translate descripton="Extra foldout section of Minecraft in homepage describing we supports all version of it">
+                          [Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and 
+                          [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) is supported.
                       </Translate>
-                    </a> <Translate descripton="a section of 'Java Edition and Bedrock Edition is supported'">
-                        and
-                      </Translate> <a href="https://minecraft.fandom.com/wiki/Bedrock_Edition">
-                      <Translate descripton="section of 'Java Edition and Bedrock Edition is supported'">
-                        Bedrock Edition
-                      </Translate>
-                    </a> <Translate descripton="section of 'Java Edition and Bedrock Edition is supported'">
-                      is supported
-                    </Translate>
+                    </MarkdownBlock>
                   </sub>
                 </Details>
               </div>
               <div align="Left">
                 <Admonition type="caution">
                   <sub>
-                    <text.Hl color="#C03A3A" textColor="#FEF6E8">
+                    <strong><text.Hl color="#C03A3A" textColor="#FEF6E8">
                       <Translate descripton="section of 'Cracked Minecraft is not allowed'">
                         Cracked Minecraft
                       </Translate>
-                    </text.Hl> <Translate descripton="section of 'Cracked Minecraft is not allowed'">is not allowed</Translate>
+                    </text.Hl> </strong> 
+                    <Translate descripton="section of 'Cracked Minecraft is not allowed'">
+                      is not allowed.
+                    </Translate>
                   </sub>
                 </Admonition>
               </div>
@@ -118,7 +129,7 @@ function Header() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        {/*this title is based on {siteConfig.title & tagline} but exports raw to use Translate tag */}
+        {/*these title is based on {siteConfig.title & tagline} but exports raw to use Translate tag */}
         <h1 className={clsx('hero__title', styles.title, styles.shadowed)}>     
           <Translate description="A hero title of homepage document">
             ASEAN BTE
@@ -131,14 +142,13 @@ function Header() {
         </p>
         <div className={styles.intro_button}>
           <section className={clsx(styles.intro_button_contents)}>
-          <div className="container">
-            <div className={clsx("row", styles.reverse_row)} >
-              <ButtonHeader />
+            <div className="container">
+              <div className={clsx("row", styles.reverse_row)} >
+                <ButtonHeader />
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
         </div>
-        
       </div>
     </header>
   );

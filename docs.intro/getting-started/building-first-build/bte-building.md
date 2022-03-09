@@ -6,6 +6,7 @@ id: bte-building
 
 import Admonition from '@theme/Admonition';
 import Image from '@theme/IdealImage';
+import Text from '@site/src/components/TextDecoration'
 
 import IMG_BadBuild from '@site/static/img/docs/bte-buildings/bad_build.png';
 import IMG_GoodBuild from '@site/static/img/docs/bte-buildings/good_build.png';
@@ -20,7 +21,7 @@ import IMG_NorminalIRLRoof from '@site/static/img/docs/bte-buildings/normal_roof
 Before we build anything, you first need to know  what its look like to build with us
 
 ## Most building is diagnal❕
-As we are building the earth one by one scale, everything has to be accurate and align to each other that makes it impossible to have every build being in straight line. well think of it our Erth is not square and flat!
+<Text.Tab>As we are building the earth one by one scale, everything has to be accurate and align to each other that makes it impossible to have every build being in straight line. well think of it our Erth is not square and flat!</Text.Tab>
 
 ```mdx-code-block
 
@@ -31,9 +32,9 @@ As we are building the earth one by one scale, everything has to be accurate and
 ```
 
 ## Every build looks smaller than you think
-&nbsp;&nbsp;&nbsp;&nbsp;Many newcomer think 1:1 scale like its relative to your minecraft character and missunderstand it.<br/>
+<Text.Tab/>Many newcomer think 1:1 scale like its relative to your minecraft character and missunderstand it.<br/>
 for example if you built a normal house with 4 blocks tall floor its mean u built a 4 meter high building and make it looks out of place while
-typical building in our project only have 2 - 3 blocks height as you can see in the example below.
+typical building in our project only have 2 - 3 blocks height as you can see in the example below.<br/><br/>
 
 <!-- good bad card -->
 ```mdx-code-block
@@ -89,8 +90,8 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
         </div>
         <div class="card__body" style={{padding:"0 var(--ifm-card-horizontal-spacing) var(--ifm-card-vertical-spacing) "}}>
             <p>
-                As you can see, its very hard to actually find steep 45 degrees roof.<br/>
-                Turns out we have many new builder built every roof with full 45 degrees block or stair that makes the building seems unatural.
+                As you can see, its very hard to actually find steep 45 degrees roof in real world.<br/>
+                It turns out we have many new builder built every roof with full 45 degrees block or stair that makes the building seems unatural.
             </p>
         </div>
         <div class="container">
