@@ -27,7 +27,7 @@ export default function SupportPage() {
                         </h1>
                         <h4><Translate description="Propaganda message for supporting aseanbte">
                                 Hey if you want to see the server grow.
-                                Consider donating to us! We don't have a minimum donation. 
+                                Consider donating to us! The minimum donation amount is $3
                                 So feels free to donate any number you'd like.
                             </Translate>
                         </h4>
