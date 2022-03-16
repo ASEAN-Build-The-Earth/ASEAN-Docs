@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './MinecraftWindow.module.css';
 import CodeBlock from "@theme/CodeBlock";
+import Translate from '@docusaurus/Translate';
 
 const DEFAULT_IP_BOX = [
   {
@@ -51,7 +52,7 @@ const MinecraftWindow = (
     {
       children,
       width,
-      title = "Minecraft",
+      title = <Translate description="Minecraft label of the MinecraftWindow style">Minecraft</Translate>,
       useDropdown = "false",
       dropdownContents = DEFAULT_IP_BOX
     }
@@ -59,7 +60,7 @@ const MinecraftWindow = (
   return (
     <div className={styles.browserWindow} style={{width}}>
       <div className={styles.browserWindowHeader}>
-          <img src={require("@site/static//img/icons/grassblock_icon.png").default} width="40rem"></img>
+          <img src={require("@site/static/img/icons/grassblock_icon.png").default} width="40rem"></img>
         
         <div className={styles.browserWindowAddressBar}>{title}</div>
         <div className={styles.browserWindowMenuIcon}>

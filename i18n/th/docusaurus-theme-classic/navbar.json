@@ -3,16 +3,20 @@
     "message": "ASEAN BTE",
     "description": "The title in the navbar"
   },
-  "item.label.How to join ASEAN BTE": {
-    "message": "How to join ASEAN BTE",
-    "description": "Navbar item with label How to join ASEAN BTE"
+  "item.label.Get Started": {
+    "message": "Get Started",
+    "description": "Navbar item with label Get Started"
   },
-  "item.label.Blog": {
-    "message": "Blog",
-    "description": "Navbar item with label Blog"
+  "item.label.Builder Guide": {
+    "message": "Builder Guide",
+    "description": "Navbar item with label Builder Guide"
   },
-  "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Navbar item with label GitHub"
+  "item.label.Support Us": {
+    "message": "Support Us",
+    "description": "Navbar item with label Support Us"
+  },
+  "item.label.Discord": {
+    "message": "Discord",
+    "description": "Navbar item with label Discord"
   }
 }

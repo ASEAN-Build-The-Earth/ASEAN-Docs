@@ -1,45 +1,111 @@
 {
-  "How to join ASEAN BTE": {
-    "message": "How to join ASEAN BTE"
+  "IP": {
+    "message": "ไอพี",
+    "description": "IP label at the get-start page"
   },
-  "Apply for ASEAN builder": {
-    "message": "Apply for ASEAN builder"
+  "PORT": {
+    "message": "พอร์ต",
+    "description": "PORT label at the get-start page"
   },
-  "Go to": {
-    "message": "Go to"
+  "Minecraft": {
+    "message": "ไมน์คราฟ",
+    "description": "the first and only requirement in the homepage requirement box"
   },
-  "answer the application questions, then we will review it": {
-    "message": "answer the application questions, then we will review it"
+  "ASEAN BuildTheEarth": {
+    "message": "บิ๊ลด์เดอร์เอิร์ต อาเซียน",
+    "description": "Homepage ASEAN BTE label"
   },
-  "If you are a builder, please join our server with the BTE modpack.": {
-    "message": "If you are a builder, please join our server with the BTE modpack."
+  "We are The Association of Southeast Asian Nations Build the Earth. We are part of the [build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! We currently oversee the progress of Brunei, Myanmar, Cambodia, Timor-Leste, Indonesia, Laos, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.": {
+    "message": "We are The Association of Southeast Asian Nations Build the Earth. We are part of the [build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! We currently oversee the progress of Brunei, Myanmar, Cambodia, Timor-Leste, Indonesia, Laos, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.",
+    "description": "ASEAN BTE long description at the homepage"
   },
-  "We will give you Builder role in the server then you can build": {
-    "message": "We will give you Builder role in the server then you can build"
+  "Server ip": {
+    "message": "เซิร์ฟเวอร์ ไอพี",
+    "description": "'Server ip' box at the homepage"
   },
-  "Server IP": {
-    "message": "Server IP"
+  "Java": {
+    "message": "Java",
+    "description": "Java label at homepage"
   },
-  "Trial Builder Program": {
-    "message": "Trial Builder Program"
+  "Bedrock": {
+    "message": "Bedrock",
+    "description": "Bedrock label at homepage"
   },
-  "Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website.": {
-    "message": "Trial builder program allows visitors to build on the ASEAN server before becoming a builder in one of the build teams. Visitors can use their buildings that they have built in the trial area as an application submission for build teams on the BTE website."
+  "Requirements": {
+    "message": "Requirements",
+    "description": "Requirements box at homepage"
   },
-  "There are some easy houses for beginner in Singapore. They all have decent 3D models. Just contact a Leader, Co-Leader or an Admin if you want to be a trial builder, after that, do": {
-    "message": "There are some easy houses for beginner in Singapore. They all have decent 3D models. Just contact a Leader, Co-Leader or an Admin if you want to be a trial builder, after that, do"
+  "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) is supported.": {
+    "message": "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) is supported.",
+    "description": "Extra foldout section of Minecraft in homepage describing we supports all version of it"
   },
-  "in the server to be there. Outlines are all ready for you.": {
-    "message": "in the server to be there. Outlines are all ready for you."
+  "Cracked Minecraft": {
+    "message": "Cracked Minecraft",
+    "description": "section of 'Cracked Minecraft is not allowed'"
   },
-  "Location": {
-    "message": "Location"
+  "is not allowed.": {
+    "message": "is not allowed.",
+    "description": "section of 'Cracked Minecraft is not allowed'"
   },
-  "(search this on google map)": {
-    "message": "(search this on google map)"
+  "ASEAN BTE": {
+    "message": "ASEAN BTE",
+    "description": "A hero title of homepage document"
   },
-  "Official builders can also build in this trial area.": {
-    "message": "Official builders can also build in this trial area."
+  "We are building southeast asia in Minecraft 1:1 scale!": {
+    "message": "We are building southeast asia in Minecraft 1:1 scale!",
+    "description": "A hero description of homepage document"
+  },
+  "Support ASEAN BTE": {
+    "message": "Support ASEAN BTE",
+    "description": "Header title of support page"
+  },
+  "Hey if you want to see the server grow. Consider donating to us at the minimum of [1 dollar USD](https://www.google.com/search?q=1+usd)! \\n Feel free to donate any number you'd like.": {
+    "message": "Hey if you want to see the server grow. Consider donating to us at the minimum of [1 dollar USD](https://www.google.com/search?q=1+usd)! \\n Feel free to donate any number you'd like.",
+    "description": "Propaganda message for supporting aseanbte (able to edit the '1 dollar USD' to local currency) "
+  },
+  "Where will my money go?": {
+    "message": "Where will my money go?",
+    "description": "The topic in support page propaganda"
+  },
+  "main focus": {
+    "message": "main focus",
+    "description": "The badge-like component below the First support quote"
+  },
+  "Supports minecraft server quality and performance.": {
+    "message": "Supports minecraft server quality and performance.",
+    "description": "First quote of 'Where will my money go?' topic"
+  },
+  "90% of the funding here would go to server funding which is paying for our virtual private server (VPS) which hosts our servers as well as discord bots. By providing funding you are keeping our servers alive literally.": {
+    "message": "90% of the funding here would go to server funding which is paying for our virtual private server (VPS) which hosts our servers as well as discord bots. By providing funding you are keeping our servers alive literally.",
+    "description": "Description of 'Supports minecraft server' from support page quote"
+  },
+  "Savings": {
+    "message": "Savings",
+    "description": "Second quote of 'Where will my money go?' topic"
+  },
+  "The 10% would be saved up and only be spent in the team investing in new systems or products or if a major incident happens": {
+    "message": "The 10% would be saved up and only be spent in the team investing in new systems or products or if a major incident happens",
+    "description": "Description of 'Supports our builder workflow' from support page quote"
+  },
+  "Visit Donation Site": {
+    "message": "Visit Donation Site",
+    "description": "The visit kofi site button at the bottom of kofi widget"
+  },
+  "Support us": {
+    "message": "สนับสนุนเรา",
+    "description": "The big Start building button (please keep the text count very low to prevent newline)"
+  },
+  "Donate on kofi": {
+    "message": "โดเนทใน kofi",
+    "description": "The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)"
+  },
+  "Start Building": {
+    "message": "เริ่มสร้างโลกกับเรา",
+    "description": "The big Start building button (please keep the text count very low to prevent newline)"
+  },
+  "Go To Document": {
+    "message": "ไปที่คู่มือ",
+    "description": "The pop up message when you hover to the homepage Start Building button (please keep the text count for this low)"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
@@ -93,6 +159,10 @@
     "message": "One min read|{readingTime} min read",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
+  "theme.blog.post.readMoreLabel": {
+    "message": "Read more about {title}",
+    "description": "The ARIA label for the link to full blog posts from excerpts"
+  },
   "theme.blog.post.readMore": {
     "message": "Read More",
     "description": "The label used in blog post item excerpts to link to full blog posts"
@@ -137,6 +207,22 @@
     "message": "Copy",
     "description": "The copy button label on code blocks"
   },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Switch between dark and light mode (currently {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "dark mode",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "light mode",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.DocCard.categoryDescription": {
+    "message": "{count} items",
+    "description": "The default description for a category card in the generated index about how many items this category includes"
+  },
   "theme.docs.sidebar.expandButtonTitle": {
     "message": "Expand sidebar",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
@@ -176,6 +262,9 @@
   "theme.docs.tagDocListPageTitle": {
     "message": "{nDocsTagged} with \"{tagName}\"",
     "description": "The title of the page for a docs tag"
+  },
+  "theme.docs.versionBadge.label": {
+    "message": "Version: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
     "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
@@ -232,6 +321,30 @@
   "theme.TOCCollapsible.toggleButtonLabel": {
     "message": "On this page",
     "description": "The label used by the button on the collapsible TOC component"
+  },
+  "theme.navbar.mobileLanguageDropdown.label": {
+    "message": "Languages",
+    "description": "The label for the mobile language switcher dropdown"
+  },
+  "theme.IdealImageMessage.loading": {
+    "message": "Loading...",
+    "description": "When the full-scale image is loading"
+  },
+  "theme.IdealImageMessage.load": {
+    "message": "Click to load{sizeMessage}",
+    "description": "To prompt users to load the full image. sizeMessage is a parenthesized size figure."
+  },
+  "theme.IdealImageMessage.offline": {
+    "message": "Your browser is offline. Image not loaded",
+    "description": "When the user is viewing an offline document"
+  },
+  "theme.IdealImageMessage.404error": {
+    "message": "404. Image not found",
+    "description": "When the image is not found"
+  },
+  "theme.IdealImageMessage.error": {
+    "message": "Error. Click to reload",
+    "description": "When the image fails to load for unknown error"
   },
   "theme.tags.tagsPageTitle": {
     "message": "Tags",

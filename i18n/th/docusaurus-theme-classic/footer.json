@@ -3,32 +3,44 @@
     "message": "Docs",
     "description": "The title of the footer links column with title=Docs in the footer"
   },
-  "link.title.Community": {
-    "message": "Community",
-    "description": "The title of the footer links column with title=Community in the footer"
+  "link.title.Discord Community": {
+    "message": "Discord Community",
+    "description": "The title of the footer links column with title=Discord Community in the footer"
   },
   "link.title.More": {
     "message": "More",
     "description": "The title of the footer links column with title=More in the footer"
   },
-  "link.item.label.How to join ASEAN BTE": {
-    "message": "How to join ASEAN BTE",
-    "description": "The label of footer link with label=How to join ASEAN BTE linking to /docs/how-to-join"
+  "link.item.label.Get Started": {
+    "message": "Get Started",
+    "description": "The label of footer link with label=Get Started linking to intro/get-started"
   },
-  "link.item.label.Discord": {
-    "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discord.gg/cHCwd7BWdZ"
+  "link.item.label.Builder Guide": {
+    "message": "Builder Guide",
+    "description": "The label of footer link with label=Builder Guide linking to guide/builder-guide"
   },
-  "link.item.label.Twitter": {
-    "message": "Twitter",
-    "description": "The label of footer link with label=Twitter linking to https://twitter.com/AseanBte"
+  "link.item.label.BuildTheEarth.net": {
+    "message": "BuildTheEarth.net",
+    "description": "The label of footer link with label=BuildTheEarth.net linking to https://discord.gg/buildtheearth"
   },
-  "link.item.label.Blog": {
-    "message": "Blog",
-    "description": "The label of footer link with label=Blog linking to /blog"
+  "link.item.label.ASEAN BTE": {
+    "message": "ASEAN BTE",
+    "description": "The label of footer link with label=ASEAN BTE linking to https://discord.gg/DNwnKmkQpw"
+  },
+  "link.item.label.Asia BTE": {
+    "message": "Asia BTE",
+    "description": "The label of footer link with label=Asia BTE linking to https://discord.gg/R5dfd4Fc8b"
+  },
+  "link.item.label.Support Us": {
+    "message": "Support Us",
+    "description": "The label of footer link with label=Support Us linking to /support"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/ASEAN-Build-The-Earth"
+  },
+  "link.item.label.Official BTE Website": {
+    "message": "Official BTE Website",
+    "description": "The label of footer link with label=Official BTE Website linking to https://buildtheearth.net/"
   }
 }
