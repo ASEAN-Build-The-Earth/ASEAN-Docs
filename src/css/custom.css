@@ -83,6 +83,22 @@ html[data-theme='dark'] .hero--primary {
   --ifm-hero-text-color: white !important;
 }
 
+/**
+ * Support and respect for whoever prefer their display animation to be reduced
+ * src: [https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion]
+ * ref: [https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites]
+ */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto i !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
 
 /* DEFAULT PATELLATE
   --ifm-color-primary: #25c2a0;
