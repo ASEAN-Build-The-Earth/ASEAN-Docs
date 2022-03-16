@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import styles from './support.module.css';
 import Translate from '@docusaurus/Translate';
+import MarkdownBlock from "@site/src/components/MarkdownBlock"
 
 import PageContainer from './components/PageContainer';
 import KofiWidget from './components/KofiWidget';
@@ -25,11 +26,14 @@ export default function SupportPage() {
                                 Support ASEAN BTE
                             </Translate>
                         </h1>
-                        <h4><Translate description="Propaganda message for supporting aseanbte">
-                                Hey if you want to see the server grow.
-                                Consider donating to us! 
-                                Feel free to donate any number you'd like.
-                            </Translate>
+                        <h4><MarkdownBlock className={styles.propaganda_msg}>
+                                <Translate description="Propaganda message for supporting aseanbte (able to edit the '1 dollar USD' to local currency) ">
+                                    Hey if you want to see the server grow.
+                                    Consider donating to us at the minimum of [1 dollar USD](https://www.google.com/search?q=1+usd)! 
+                                    \n
+                                    Feel free to donate any number you'd like.
+                                </Translate>
+                            </MarkdownBlock>
                         </h4>
                         <br/>
                         <h1><Translate description="The topic in support page propaganda">
@@ -51,8 +55,8 @@ export default function SupportPage() {
                                     </h4>
                                     <dt id={styles.quote_description}><sup>
                                         <Translate description="Description of 'Supports minecraft server' from support page quote">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna. 
+                                            90% of the funding here would go to server funding which is paying for our virtual private server (VPS)  
+                                            which hosts our servers as well as discord bots. By providing funding you are keeping our servers alive literally.
                                         </Translate>
                                     </sup></dt>
                                 </blockquote>
@@ -61,13 +65,12 @@ export default function SupportPage() {
                                 <blockquote id={styles.propaganda_quote}>
                                     <span className="badge badge--info">10%</span>
                                     <h4><Translate description="Second quote of 'Where will my money go?' topic">
-                                            Supports our builder workflow.
+                                            Savings
                                         </Translate>
                                     </h4>
                                     <dt id={styles.quote_description}><sup>
                                         <Translate description="Description of 'Supports our builder workflow' from support page quote">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                            The 10% would be saved up and only be spent in the team investing in new systems or products or if a major incident happens 
                                         </Translate>
                                     </sup></dt>
                                 </blockquote>
