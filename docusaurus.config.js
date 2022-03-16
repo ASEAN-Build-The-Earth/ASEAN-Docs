@@ -119,6 +119,12 @@ const config = {
           {
             type: 'localeDropdown',
             position: 'right',
+            dropdownItemsBefore: [
+              { // [TODO]: replace this href to our google doc translate site
+                href: 'https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs',
+                label: 'Help Us Translate',
+              },
+            ],
           },
         ],
       },
