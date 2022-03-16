@@ -5,7 +5,6 @@ id: bte-building
 ```mdx-code-block
 
 import Admonition from '@theme/Admonition';
-import Image from '@theme/IdealImage';
 import Text from '@site/src/components/TextDecoration'
 
 import IMG_BadBuild from '@site/static/img/docs/bte-buildings/bad_build.png';
@@ -26,7 +25,7 @@ Before we build anything, you first need to know  what its look like to build wi
 ```mdx-code-block
 
 <Admonition type="info" title={<p style={ { display: "inline-flex", textTransform:"none", fontStyle:"italic" } }>Typical BuildTheEarth building outline</p>} >
-    <Image img={IMG_DiagnalBuild} alt="every building is diagnal" style={{borderRadius:"6px"}} className="item shadow--md" />
+    <img src={IMG_DiagnalBuild} alt="every building is diagnal" style={{borderRadius:"6px"}} className="item shadow--md" />
 </Admonition>
 
 ```
@@ -51,7 +50,7 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
                     </p>
                 } 
             >
-                <Image img={IMG_BadBuild} alt="bad build" style={{borderRadius:"6px"}} className="item shadow--md" />
+                <img src={IMG_BadBuild} alt="bad build" style={{borderRadius:"6px"}} className="item shadow--md" />
             </Admonition>
         </div>
         <div class="col">
@@ -64,7 +63,7 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
                     </p>
                 } 
             >
-                <Image img={IMG_GoodBuild} alt="good build" style={{borderRadius:"6px"}} className="item shadow--md" />
+                <img src={IMG_GoodBuild} alt="good build" style={{borderRadius:"6px"}} className="item shadow--md" />
             </Admonition>
         </div>
     </div>
@@ -81,10 +80,10 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
         <div class="card__image">
             <div class="row row--no-gutters">
                 <div class="col">
-                    <Image img={IMG_NorminalIRLRoof} alt="bad roof" style={{borderWidth:"2px", borderBottomStyle:"solid", borderColor:"var(--ifm-color-emphasis-200)"}} className="item shadow--md" />
+                    <img src={IMG_NorminalIRLRoof} alt="bad roof" style={{borderWidth:"2px", borderBottomStyle:"solid", borderColor:"var(--ifm-color-emphasis-200)"}} className="item shadow--md" />
                 </div>
                 <div class="col">
-                    <Image img={IMG_NormalIRLRoof} alt="bad roof" style={{transform:"translateY(-20px)", borderWidth:"2px", borderBottomStyle:"solid", borderColor:"var(--ifm-color-emphasis-200)"}} className="item shadow--md" />
+                    <img src={IMG_NormalIRLRoof} alt="bad roof" style={{transform:"translateY(-20px)", borderWidth:"2px", borderBottomStyle:"solid", borderColor:"var(--ifm-color-emphasis-200)"}} className="item shadow--md" />
                 </div>
             </div>
         </div>
@@ -106,7 +105,7 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
                             </p>
                         } 
                     >
-                        <Image img={IMG_BadRoof} alt="bad roof" style={{borderRadius:"6px"}} className="item shadow--md" />
+                        <img src={IMG_BadRoof} alt="bad roof" style={{borderRadius:"6px"}} className="item shadow--md" />
                     </Admonition>
                 </div>
                 <div class="col">
@@ -119,7 +118,7 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
                             </p>
                         } 
                     >
-                        <Image img={IMG_GoodRoof} alt="good roof" style={{borderRadius:"6px"}} className="item shadow--md" />
+                        <img src={IMG_GoodRoof} alt="good roof" style={{borderRadius:"6px"}} className="item shadow--md" />
                     </Admonition>
                 </div>
             </div>

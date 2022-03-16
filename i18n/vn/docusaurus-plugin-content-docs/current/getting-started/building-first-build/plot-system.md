@@ -5,7 +5,6 @@ id: plot-system
 ```mdx-code-block
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
 import Text from '@site/src/components/TextDecoration';
-import Image from '@theme/IdealImage';
 import BuildsiteImage from '@site/static/img/docs/plot-system/buildsite_exmp.png';
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
@@ -27,7 +26,7 @@ the plot's buildsite is originally outlined in the [Master server](../visiting#1
 
 :::info our buildsite at Malaysia, Klang
 <dt><sup>this buildsite is registered in plot system too!</sup></dt>
-<Image img={BuildsiteImage} width="500rem" className="item shadow--md" style={{borderRadius:"6px"}} alt="Welsome To ASEAN BTE" />
+<img src={BuildsiteImage} width="500rem" className="item shadow--md" style={{borderRadius:"6px"}} alt="Welsome To ASEAN BTE" />
 :::
 </details>
 

@@ -5,7 +5,6 @@ id: finishing-plot
 ```mdx-code-block
 
 import MinecraftWindow from "@site/src/components/MinecraftWindow";
-import Image from "@theme/IdealImage";
 
 import Guide_0 from "@site/static/img/docs/finishing-plot/guide_0.png"
 import Guide_1 from "@site/static/img/docs/finishing-plot/guide_1.png"
@@ -25,7 +24,7 @@ This might be hard but you have to check how your building looks like vs in mine
 dont be confuse if your plot outline looks off, you can also adjust the outline to fit your real life building better.
 
 ```mdx-code-block
-<MinecraftWindow width="fit-content"><Image img={Guide_0} width="750rem" alt="guild_1_image" /></MinecraftWindow>
+<MinecraftWindow width="fit-content"><img src={Guide_0} width="750rem" alt="guild_1_image" /></MinecraftWindow>
 ```
 
 ### 2. Build a rough building shell
@@ -33,7 +32,7 @@ After you're good with understanding your build, pick a few block, it doesnt nee
 and use those block to build a rough shell of your build covering every important point of your build.
 
 ```mdx-code-block
-<MinecraftWindow width="fit-content"><Image img={Guide_1} width="750rem" alt="guild_1_image" /></MinecraftWindow>
+<MinecraftWindow width="fit-content"><img src={Guide_1} width="750rem" alt="guild_1_image" /></MinecraftWindow>
 ```
 
 ### 3. Fill up your outlined shell
@@ -41,7 +40,7 @@ Choose a block choice of your for building, it has to fit the building color but
 Then fill the outlined shell with blocks you choosed. 
 
 ```mdx-code-block
-<MinecraftWindow width="fit-content"><Image img={Guide_2} width="750rem" alt="guild_2_image" /></MinecraftWindow>
+<MinecraftWindow width="fit-content"><img src={Guide_2} width="750rem" alt="guild_2_image" /></MinecraftWindow>
 ```
 
 ### 4. Build assets and decoration
@@ -53,7 +52,7 @@ however if you feels like to build it, go ahead but we don't encouraged
 :::
 
 ```mdx-code-block
-<MinecraftWindow width="fit-content"><Image img={Guide_3} width="750rem" alt="guild_3_image" /></MinecraftWindow>
+<MinecraftWindow width="fit-content"><img src={Guide_3} width="750rem" alt="guild_3_image" /></MinecraftWindow>
 ```
 
 ### 5. Polish the build and exterior
@@ -70,7 +69,7 @@ Last final step is to polish out your build<br/>
 </td></table>
 
 ```mdx-code-block
-<MinecraftWindow width="fit-content"><Image img={Guide_4} width="750rem" alt="guild_4_image" /></MinecraftWindow>
+<MinecraftWindow width="fit-content"><img src={Guide_4} width="750rem" alt="guild_4_image" /></MinecraftWindow>
 ```
 
 

@@ -6,7 +6,6 @@ id: submitting-plot
 
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
 import Text from '@site/src/components/TextDecoration';
-import Image from "@theme/IdealImage";
 import GuideSubmit from "@site/static/img/docs/finishing-plot/guide_submit.gif"
 import GuideFeedback from "@site/static/img/docs/plot-system/plot-feedback.png"
 
@@ -32,7 +31,7 @@ Submit your plot again with your improvement and you'll suddenly get approve by 
 </details>
 
 ```mdx-code-block
-<MinecraftWindow width="fit-content"><Image img={GuideFeedback} width="400rem" alt="Guide Image"/></MinecraftWindow>
+<MinecraftWindow width="fit-content"><img src={GuideFeedback} width="400rem" alt="Guide Image"/></MinecraftWindow>
 ```
 
 Accepted plots will be pasted on the [Master world](../../visiting#1-master-server) and will be pasted in the buildsite you built on.

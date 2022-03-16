@@ -65,21 +65,6 @@ const config = {
         showLastUpdateTime: true,
       }),
     ],
-    [ /**Responsive Image quality plugin 
-       * src: (https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-ideal-image)
-       * ```jsx
-       * <Image img={require('./path/to/img.png')} />
-       * ```
-       */
-      '@docusaurus/plugin-ideal-image',
-      {
-        quality: 70,
-        max: 1920, // max resized image's size.
-        min: 640, // min resized image's size. if original is lower, use that size.
-        steps: 2, // the max number of images generated between min and max (inclusive)
-        disableInDev: true, // see in build ver only
-      },
-    ],
   ],
 
   themeConfig:

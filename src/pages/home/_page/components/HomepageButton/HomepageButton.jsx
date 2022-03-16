@@ -4,7 +4,6 @@ import styles from './HomepageButton.module.css'
 
 import Translate from '@docusaurus/Translate';;
 import Link from '@docusaurus/Link';
-import Image from '@theme/IdealImage';
 import book_icon from "@site/static/img/icons/book_1.png"
 import kofi_icon from "@site/static/img/icons/kofi_logo.png"
 import feather_icon from "@site/static/img/icons/feather.png"
@@ -25,11 +24,11 @@ const ButtonContents = [
                                     </Translate>     
                                 </a>
                             </li>
-                            <Image img={kofi_icon} alt="kofi" id={styles.button_icon} style={{backgroundColor: "#13C3FF", padding:"0px"}}/>
+                            <img src={kofi_icon} alt="kofi" id={styles.button_icon} style={{backgroundColor: "#13C3FF", padding:"0px"}}/>
                         </ul>
                     </nav>
                 </Link> 
-                <ButtonOverlay mirror="true" color="#FF5E5B" icon={<Image img={kofi_pixel_icon} alt="↗" style={{width:"100%", position:"absolute", transform:"translateY(1rem)"}} />}>
+                <ButtonOverlay mirror="true" color="#FF5E5B" icon={<img src={kofi_pixel_icon} alt="↗" style={{width:"100%", position:"absolute", transform:"translateY(1rem)"}} />}>
                     <span className={styles.button_overlay_text_support} >
                         <Translate description="The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)">
                             Donate on kofi
@@ -53,11 +52,11 @@ const ButtonContents = [
                                     </Translate>     
                                 </a>
                             </li>
-                            <Image img={book_icon} alt="doc↗" id={styles.button_icon} />
+                            <img src={book_icon} alt="doc↗" id={styles.button_icon} />
                         </ul>
                     </nav>
                 </Link> 
-                <ButtonOverlay icon={<Image img={feather_icon} alt="↗" style={{width:"100%", position:"absolute", imageRendering: "pixelated"}} />}>
+                <ButtonOverlay icon={<img src={feather_icon} alt="↗" style={{width:"100%", position:"absolute", imageRendering: "pixelated"}} />}>
                     <span className={styles.button_overlay_text_getstart} >
                         <Translate description="The pop up message when you hover to the homepage Start Building button (please keep the text count for this low)">
                             Go To Document
