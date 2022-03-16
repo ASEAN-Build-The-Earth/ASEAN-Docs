@@ -46,10 +46,12 @@ const ContentList = [
                 </Translate>
               </b></i></div>
               <sub>
-                <CodeBlock className="language-js" title="Java">
+                <CodeBlock className="language-js" 
+                  title={<Translate description="Java label at homepage">Java</Translate>}>
                   139.99.91.188:25569
                 </CodeBlock>
-                <CodeBlock className="language-js" title="Bedrock">
+                <CodeBlock className="language-js" 
+                  title={<Translate description="Bedrock label at homepage">Bedrock</Translate>}>
                   IP: 139.99.91.188 
                   PORT: 19132
                 </CodeBlock>
@@ -70,7 +72,7 @@ const ContentList = [
                 </Translate></summary>}>
                   <sub>
                     <MarkdownBlock>
-                      <Translate descripton="Extra foldout section of Minecraft in homepage describing we supports all version of it">
+                      <Translate description="Extra foldout section of Minecraft in homepage describing we supports all version of it">
                           [Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and 
                           [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) is supported.
                       </Translate>
@@ -82,11 +84,11 @@ const ContentList = [
                 <Admonition type="caution">
                   <sub>
                     <strong><text.Hl color="#C03A3A" textColor="#FEF6E8">
-                      <Translate descripton="section of 'Cracked Minecraft is not allowed'">
+                      <Translate description="section of 'Cracked Minecraft is not allowed'">
                         Cracked Minecraft
                       </Translate>
                     </text.Hl> </strong> 
-                    <Translate descripton="section of 'Cracked Minecraft is not allowed'">
+                    <Translate description="section of 'Cracked Minecraft is not allowed'">
                       is not allowed.
                     </Translate>
                   </sub>

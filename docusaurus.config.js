@@ -108,7 +108,7 @@ const config = {
           },
           {
             to: 'support', 
-            label: 'Support us', 
+            label: 'Support Us', 
             position: 'left'
           },
           {
@@ -145,16 +145,20 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Discord Community',
             items: [
               {
-                label: 'Discord',
+                label: 'BuildTheEarth.net',
+                href: 'https://discord.gg/buildtheearth',
+              },
+              {
+                label: 'ASEAN BTE',
                 href: 'https://discord.gg/DNwnKmkQpw',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/AseanBte',
-              },
+                label: 'Asia BTE',
+                href: 'https://discord.gg/R5dfd4Fc8b'
+              }
             ],
           },
           {
@@ -168,6 +172,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/ASEAN-Build-The-Earth',
               },
+              {
+                label: 'Official BTE Website',
+                href: 'https://buildtheearth.net/'
+              }
             ],
           },
         ],
@@ -190,19 +198,40 @@ const config = {
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'th', 'my', 'vn'],
+    locales: ['en', 'th', 'my', 'id', 'vn', 'ph'],
     localeConfigs: {
+      /**
+       * htmlLang code: [https://gist.github.com/JamieMason/3748498]
+       */
       en: {
-        label: 'English'
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
       },
       th: {
-        label: 'Thai'
+        label: 'Thai',
+        direction: 'ltr',
+        htmlLang: 'th-TH',
       },
       my: {
-        label: 'Malay'
+        label: 'Malay',
+        direction: 'ltr',
+        htmlLang: 'ms-MY',
+      },
+      id: {
+        label: 'Indo',
+        direction: 'ltr',
+        htmlLang: 'id-ID',
       },
       vn: {
-        label: 'Vietnamese'
+        label: 'Vietnam',
+        direction: 'ltr',
+        htmlLang: 'vi-VN',
+      },
+      ph: {
+        label: 'Philippines',
+        direction: 'ltr',
+        htmlLang: 'en-PH',
       },
     },
   },

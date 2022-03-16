@@ -3,16 +3,20 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.docs.category.Getting Started": {
+  "sidebar.docs_intro.category.Getting Started": {
     "message": "Getting Started",
-    "description": "The label for category Getting Started in sidebar docs"
+    "description": "The label for category Getting Started in sidebar docs_intro"
   },
-  "sidebar.docs.category.Building Tips": {
-    "message": "Building Tips",
-    "description": "The label for category Building Tips in sidebar docs"
+  "sidebar.docs_intro.category.Building Your First Build": {
+    "message": "Building Your First Build",
+    "description": "The label for category Building Your First Build in sidebar docs_intro"
   },
-  "sidebar.docs.category.Useful WorldEdit commands": {
-    "message": "Useful WorldEdit commands",
-    "description": "The label for category Useful WorldEdit commands in sidebar docs"
+  "sidebar.docs_intro.category.Plot System": {
+    "message": "Plot System",
+    "description": "The label for category Plot System in sidebar docs_intro"
+  },
+  "sidebar.docs_intro.category.Become Official Builder": {
+    "message": "Become Official Builder",
+    "description": "The label for category Become Official Builder in sidebar docs_intro"
   }
 }

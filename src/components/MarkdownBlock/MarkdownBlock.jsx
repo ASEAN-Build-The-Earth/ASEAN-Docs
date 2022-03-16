@@ -25,6 +25,7 @@ if (children?.type === Translate) {
         return translate({
         id: children.props.id,
         message: children?.props?.children,
+        description: children?.props?.description
         });
     } else {
         return children;

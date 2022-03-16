@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs_builderGuide.category.Building in BTE": {
+    "message": "Building in BTE",
+    "description": "The label for category Building in BTE in sidebar docs_builderGuide"
+  },
+  "sidebar.docs_builderGuide.category.Basic BTE Building": {
+    "message": "Basic BTE Building",
+    "description": "The label for category Basic BTE Building in sidebar docs_builderGuide"
+  },
+  "sidebar.docs_builderGuide.category.Advance Building": {
+    "message": "Advance Building",
+    "description": "The label for category Advance Building in sidebar docs_builderGuide"
+  },
+  "sidebar.docs_builderGuide.category.Tips": {
+    "message": "Tips",
+    "description": "The label for category Tips in sidebar docs_builderGuide"
+  },
+  "sidebar.docs_builderGuide.category.World Edit": {
+    "message": "World Edit",
+    "description": "The label for category World Edit in sidebar docs_builderGuide"
+  },
+  "sidebar.docs_builderGuide.category.Basic of World Edit": {
+    "message": "Basic of World Edit",
+    "description": "The label for category Basic of World Edit in sidebar docs_builderGuide"
+  },
+  "sidebar.docs_builderGuide.category.Basic Commands": {
+    "message": "Basic Commands",
+    "description": "The label for category Basic Commands in sidebar docs_builderGuide"
+  },
+  "sidebar.docs_builderGuide.category.Advanced Commands": {
+    "message": "Advanced Commands",
+    "description": "The label for category Advanced Commands in sidebar docs_builderGuide"
+  }
+}
