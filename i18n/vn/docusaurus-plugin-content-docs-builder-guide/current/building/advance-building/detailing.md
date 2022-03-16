@@ -1,0 +1,4 @@
+---
+title: detailing
+id: detailing
+---
