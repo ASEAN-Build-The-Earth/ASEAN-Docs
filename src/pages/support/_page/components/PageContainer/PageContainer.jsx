@@ -1,4 +1,4 @@
-import React, { Suspense }  from 'react';
+import React  from 'react';
 import clsx from 'clsx';
 import styles from './PageContainer.module.css';
 import { useColorMode } from '@docusaurus/theme-common';
@@ -11,11 +11,12 @@ const DecayBanner = () => <div className={clsx(styles.banner_container, styles.b
 
 function BannerRanderer() {
     const { isDarkTheme } = useColorMode();
-    const { src, error } = useImage({
+    const { src, error, isLoading } = useImage({
       srcList: isDarkTheme? DarkBanner : LightBanner,
+      useSuspense: false
     })
 
-    return error? <DecayBanner />
+    return isLoading || error? <DecayBanner />
       : <div className={styles.banner_container}>
             <img src={src} className={styles.banner_img} />
         </div>
@@ -26,9 +27,7 @@ export default function PageContainer({children})
     
     return ( 
         <div className={clsx('hero hero--info', styles.hero_banner)}> 
-            <Suspense fallback={<DecayBanner />}>
-                <BannerRanderer/>
-            </Suspense>
+            <BannerRanderer/>
             <div className={styles.contents_container}>
                 <div class="row row--no-gutters">
                     {children}

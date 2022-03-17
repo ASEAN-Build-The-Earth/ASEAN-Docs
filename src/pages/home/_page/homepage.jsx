@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import clsx from 'clsx';
 import styles from './homepage.module.css';
 import { useImage } from 'react-image'
@@ -131,8 +131,8 @@ function Contents() {
 
 const DecayBanner = () => <div className={clsx(styles.banner_container, styles.banner_loader)} />;
 function BannerRanderer() {
-    const { src, error } = useImage({ srcList: HeaderBanner })
-    return error? <DecayBanner />
+    const { src, error, isLoading } = useImage({ srcList: HeaderBanner, useSuspense: false })
+    return isLoading || error? <DecayBanner />
       : <div className={styles.banner_container}>
             <img src={src} className={styles.banner_img} />
         </div>
@@ -141,9 +141,7 @@ function BannerRanderer() {
 function Header() {
   return (
     <header className={clsx('hero hero--info', styles.hero_banner)}>
-      <Suspense fallback={<DecayBanner />}>
-        <BannerRanderer/>
-      </Suspense>
+      <BannerRanderer/>
       <div className={clsx("container", styles.header_container)}>
         {/*these title is based on {siteConfig.title & tagline} but exports raw to use Translate tag */}
         <h1 className={clsx('hero__title', styles.title, styles.shadowed)}>     
