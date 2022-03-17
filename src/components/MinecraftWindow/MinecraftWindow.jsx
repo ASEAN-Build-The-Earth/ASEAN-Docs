@@ -52,13 +52,14 @@ const MinecraftWindow = (
     {
       children,
       width,
+      maxWidth,
       title = <Translate description="Minecraft label of the MinecraftWindow style">Minecraft</Translate>,
       useDropdown = "false",
       dropdownContents = DEFAULT_IP_BOX
     }
   ) => {
   return (
-    <div className={styles.browserWindow} style={{width}}>
+    <div className={styles.browserWindow} style={maxWidth? {maxWidth} : {width}}>
       <div className={styles.browserWindowHeader}>
           <img src={require("@site/static/img/icons/grassblock_icon.png").default} width="40rem"></img>
         
@@ -92,7 +93,7 @@ const MinecraftWindow = (
           )}
         </div>
       </div>
-      <div className={styles.browserWindowBody}>{children}</div>
+      <div className={styles.browserWindowBody} style={maxWidth? {maxWidth} : {width}}>{children}</div>
     </div>
   );
 }

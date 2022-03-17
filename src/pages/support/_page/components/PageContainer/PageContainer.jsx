@@ -10,21 +10,27 @@ import LightBanner from "@site/static/img/background/supportpage_banner_light.pn
 const DecayBanner = () => <div className={clsx(styles.banner_container, styles.banner_loader)} />;
 
 function BannerRanderer() {
+    const darkBanner = useImage({ srcList: DarkBanner, useSuspense: false })
+    const lightBanner = useImage({ srcList: LightBanner, useSuspense: false })
     const { isDarkTheme } = useColorMode();
-    const { src, error, isLoading } = useImage({
-      srcList: isDarkTheme? DarkBanner : LightBanner,
-      useSuspense: false
-    })
 
-    return isLoading || error? <DecayBanner />
-      : <div className={styles.banner_container}>
-            <img src={src} className={styles.banner_img} />
-        </div>
+    return (
+        isDarkTheme ? (
+            darkBanner.error? <DecayBanner /> : darkBanner.isLoading? <DecayBanner />
+            : <div className={styles.banner_container}>
+                <img src={darkBanner.src} className={styles.banner_img} />
+            </div>
+        ) : (
+            lightBanner.error? <DecayBanner /> : lightBanner.isLoading? <DecayBanner />
+            : <div className={styles.banner_container}>
+                <img src={lightBanner.src} className={styles.banner_img} />
+            </div>
+        )
+    )
 }
 
 export default function PageContainer({children}) 
 {
-    
     return ( 
         <div className={clsx('hero hero--info', styles.hero_banner)}> 
             <BannerRanderer/>

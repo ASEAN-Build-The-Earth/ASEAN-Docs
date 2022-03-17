@@ -4,10 +4,12 @@ id: plot-system
 ---
 ```mdx-code-block
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
+import Img from '@site/src/components/Img'
 import Text from '@site/src/components/TextDecoration';
 import BuildsiteImage from '@site/static/img/docs/plot-system/buildsite_exmp.png';
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
+import JoiningPlotImage from '@site/static/img/docs/plot-system/plot_join.gif';
 ```
 <!-- Brief Intro -->
 As we introduced before we have a server dedicated for newcomer to try building their first build called <em style={{color:"var(--ifm-link-color)"}}>Plot System</em>,<br/>
@@ -26,7 +28,7 @@ the plot's buildsite is originally outlined in the [Master server](../visiting#1
 
 :::info our buildsite at Malaysia, Klang
 <dt><sup>this buildsite is registered in plot system too!</sup></dt>
-<img src={BuildsiteImage} width="500rem" className="item shadow--md" style={{borderRadius:"6px"}} alt="Welsome To ASEAN BTE" />
+<Img src={BuildsiteImage} width="848" height="477" className="item shadow--md" style={{borderRadius:"6px"}} alt="Welsome To ASEAN BTE" />
 :::
 </details>
 
@@ -39,7 +41,7 @@ The outline is a rough repesentation of building's shell by [Google Map](https:/
 - we recommend log in to our [Plot server](../visiting#2-plot-server) and folow along with this document.
 
 ```mdx-code-block
-<MinecraftWindow width="fit-content" useDropdown="true"><img src={require('@site//static/img/docs/plot-system/plot_join.gif').default} alt="Guide Image"/></MinecraftWindow>
+<MinecraftWindow maxWidth="600px" useDropdown="true"><Img src={JoiningPlotImage} width="600" height="318" alt="Guide Image"/></MinecraftWindow>
 ```
 :::
 

@@ -9,7 +9,7 @@
 
 .banner_loader {
     background-color: #101f28;
-    filter: blur(700px);
+    filter: blur(20px);
 }
 html[data-theme="light"] .banner_loader {
     background-color: #e0e5eb;
@@ -22,7 +22,7 @@ html[data-theme="light"] .banner_loader {
     object-fit: cover;
     -o-object-fit: cover;
     pointer-events: none;
-    animation: 2.5s linear 0s 1 first_loaded;
+    animation: 1s linear 0s 1 first_loaded;
 }
 
 .contents_container {
@@ -33,7 +33,7 @@ html[data-theme="light"] .banner_loader {
 }
 
 @keyframes first_loaded {
-    0% { filter: blur(700px); }
+    0% { filter: blur(20px); }
     100% { filter: blur(0px); }
 }
 

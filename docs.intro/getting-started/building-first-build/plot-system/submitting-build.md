@@ -5,6 +5,7 @@ id: submitting-plot
 ```mdx-code-block
 
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
+import Img from '@site/src/components/Img';
 import Text from '@site/src/components/TextDecoration';
 import GuideSubmit from "@site/static/img/docs/finishing-plot/guide_submit.gif"
 import GuideFeedback from "@site/static/img/docs/plot-system/plot-feedback.png"
@@ -14,7 +15,7 @@ import GuideFeedback from "@site/static/img/docs/plot-system/plot-feedback.png"
 Before submitting your plot, please check everything first if everything is ready to be reviewed. You can submit the plot to our reviewer by using your companion's plot profile or quickly type out `/plot submit` to submit it.
 
 ```mdx-code-block
-<MinecraftWindow width="fit-content"><img src={GuideSubmit} width="500rem" alt="Guide Image"/></MinecraftWindow>
+<MinecraftWindow maxWidth="30rem"><Img src={GuideSubmit} width="600" height="482" alt="Guide Image"/></MinecraftWindow>
 ```
 
 The plot will be submitted and within 24 hours our reviewers would review your plot and give feedback and the score of your build.
@@ -31,7 +32,7 @@ Submit your plot again with your improvement and you'll suddenly get approve by 
 </details>
 
 ```mdx-code-block
-<MinecraftWindow width="fit-content"><img src={GuideFeedback} width="400rem" alt="Guide Image"/></MinecraftWindow>
+<MinecraftWindow maxWidth="30rem"><Img src={GuideFeedback} width="533" height="426" alt="Guide Image"/></MinecraftWindow>
 ```
 
 Accepted plots will be pasted on the [Master world](../../visiting#1-master-server) and will be pasted in the buildsite you built on.

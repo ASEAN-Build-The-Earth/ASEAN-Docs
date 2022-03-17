@@ -8,10 +8,13 @@ However if you lost the link, you can still get it by typing `/plot links`.
 
 ```mdx-code-block
 
+import Img from '@site/src/components/Img';
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
 import guide_links from "@site/static/img/docs/finishing-plot/guide_links.gif"
 
-<MinecraftWindow width="fit-content"><img src={guide_links} width="500rem" alt="Guide Image"/></MinecraftWindow>
+<MinecraftWindow maxWidth="600px">
+    <Img src={guide_links} width="600" height="327" alt="Guide Image"/>
+</MinecraftWindow>
 
 ```
 

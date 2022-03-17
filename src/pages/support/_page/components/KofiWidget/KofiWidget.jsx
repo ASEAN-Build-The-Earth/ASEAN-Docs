@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './KofiWidget.module.css';
 import kofi_icon from "@site/static/img/icons/kofi_logo.png"
-import LoadingSvg from '../LoadingSvg'
+import LoadingSvg from '@site/src/components/LoadingSvg'
 
 export default function KofiWidget({children}) {
     const [loading_anim, set_loading] = React.useState(true);   

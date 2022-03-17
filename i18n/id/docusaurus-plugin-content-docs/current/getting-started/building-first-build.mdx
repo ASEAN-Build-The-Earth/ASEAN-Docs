@@ -7,7 +7,7 @@ import DocCardList from '@theme/DocCardList';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
 import Phattie_Gif from '@site//static/img/docs/plot-system/plot.gif';
-
+import Img from '@site/src/components/Img'
 
 <p> In this section, we will start from touring you how different BTE Building is 
     to basic minecraft build then send with getting you to build your first build in <span 
@@ -23,9 +23,9 @@ import Phattie_Gif from '@site//static/img/docs/plot-system/plot.gif';
         <span style={ {color:"var(--ifm-font-color-base)"} }>
             Minecraft
         </span></a> } 
-    width="fit-content">
+    maxWidth="100vw">
 {/* children */}
-    <img style={{width:"100vw"}} src={Phattie_Gif} alt="Guide Image"/>
+    <Img imgWidth="100vw" maxWidth="100vw" width="800" height="450" src={Phattie_Gif} alt="Guide Image"/>
 </MinecraftWindow>
 
 <DocCardList items={useCurrentSidebarCategory().items}/>

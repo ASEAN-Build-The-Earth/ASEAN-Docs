@@ -6,6 +6,7 @@ id: bte-building
 
 import Admonition from '@theme/Admonition';
 import Text from '@site/src/components/TextDecoration'
+import Img from '@site/src/components/Img'
 
 import IMG_BadBuild from '@site/static/img/docs/bte-buildings/bad_build.png';
 import IMG_GoodBuild from '@site/static/img/docs/bte-buildings/good_build.png';
@@ -25,7 +26,7 @@ Before we build anything, you first need to know  what its look like to build wi
 ```mdx-code-block
 
 <Admonition type="info" title={<p style={ { display: "inline-flex", textTransform:"none", fontStyle:"italic" } }>Typical BuildTheEarth building outline</p>} >
-    <img src={IMG_DiagnalBuild} alt="every building is diagnal" style={{borderRadius:"6px"}} className="item shadow--md" />
+    <Img src={IMG_DiagnalBuild} width="1920" height="1009" alt="every building is diagnal" style={{borderRadius:"6px"}} className="item shadow--md" />
 </Admonition>
 
 ```
@@ -50,7 +51,7 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
                     </p>
                 } 
             >
-                <img src={IMG_BadBuild} alt="bad build" style={{borderRadius:"6px"}} className="item shadow--md" />
+                <Img src={IMG_BadBuild} width="1920" height="1017" alt="bad build" style={{borderRadius:"6px"}} className="item shadow--md" />
             </Admonition>
         </div>
         <div class="col">
@@ -63,7 +64,7 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
                     </p>
                 } 
             >
-                <img src={IMG_GoodBuild} alt="good build" style={{borderRadius:"6px"}} className="item shadow--md" />
+                <Img src={IMG_GoodBuild} width="1920" height="1015" alt="good build" style={{borderRadius:"6px"}} className="item shadow--md" />
             </Admonition>
         </div>
     </div>
@@ -80,10 +81,10 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
         <div class="card__image">
             <div class="row row--no-gutters">
                 <div class="col">
-                    <img src={IMG_NorminalIRLRoof} alt="bad roof" style={{borderWidth:"2px", borderBottomStyle:"solid", borderColor:"var(--ifm-color-emphasis-200)"}} className="item shadow--md" />
+                    <Img src={IMG_NorminalIRLRoof} width="764" height="321" alt="bad roof" style={{borderWidth:"2px", borderBottomStyle:"solid", borderColor:"var(--ifm-color-emphasis-200)"}} className="item shadow--md" />
                 </div>
                 <div class="col">
-                    <img src={IMG_NormalIRLRoof} alt="bad roof" style={{transform:"translateY(-20px)", borderWidth:"2px", borderBottomStyle:"solid", borderColor:"var(--ifm-color-emphasis-200)"}} className="item shadow--md" />
+                    <Img src={IMG_NormalIRLRoof} width="1708" height="787" alt="bad roof" style={{transform:"translateY(-20px)", borderWidth:"2px", borderBottomStyle:"solid", borderColor:"var(--ifm-color-emphasis-200)"}} className="item shadow--md" />
                 </div>
             </div>
         </div>
@@ -105,7 +106,7 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
                             </p>
                         } 
                     >
-                        <img src={IMG_BadRoof} alt="bad roof" style={{borderRadius:"6px"}} className="item shadow--md" />
+                        <Img src={IMG_BadRoof} width="1910" height="1020" alt="bad roof" style={{borderRadius:"6px"}} className="item shadow--md" />
                     </Admonition>
                 </div>
                 <div class="col">
@@ -118,7 +119,7 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
                             </p>
                         } 
                     >
-                        <img src={IMG_GoodRoof} alt="good roof" style={{borderRadius:"6px"}} className="item shadow--md" />
+                        <Img src={IMG_GoodRoof} width="1910" height="1024" alt="good roof" style={{borderRadius:"6px"}} className="item shadow--md" />
                     </Admonition>
                 </div>
             </div>

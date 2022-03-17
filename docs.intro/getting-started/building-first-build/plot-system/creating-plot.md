@@ -8,6 +8,7 @@ id: creating-plot
 import MinecraftWindow from "@site/src/components/MinecraftWindow";
 import Text from "@site/src/components/TextDecoration";
 import Admonition from '@theme/Admonition';
+import Img from '@site/src/components/Img';
 
 import guide_create from "@site/static/img/docs/creating-plot/guide_create.gif";
 import guide_companion from "@site/static/img/docs/creating-plot/your-companion.png";
@@ -18,14 +19,15 @@ import guide_difficulty from "@site/static/img/docs/creating-plot/plot-difficult
 ```
 <div class="container"><div class="row">
     <div class="col col--6"><dd>After you joined our plot server, you'll have a netherstar (Compaion) in your inventory.</dd><hr/></div>
-    <div class="col col--6"><img src={guide_companion} alt="companion" width="250rem" style={{borderRadius:"6px"}} className="item shadow--md" /></div>
+    <div class="col col--6"><Img src={guide_companion} alt="companion" width="844" height="352" 
+        style={{borderRadius:"6px", transformOrigin:"top center",transform:"scale(0.8)"}} className="item shadow--md" /></div>
 </div></div>
 
 ## Companion panel
 ```mdx-code-block
 
-<MinecraftWindow width="fit-content" useDropdown="true">
-    <img src={guide_panel} alt="companion_panel" width="500rem" />
+<MinecraftWindow maxWidth="600px" useDropdown="true">
+    <Img src={guide_panel} width="703" height="509" alt="companion_panel" />
 </MinecraftWindow>
 
 ```
@@ -62,9 +64,9 @@ Due to the fact this system is new, you can only choose build site at `Malaysia,
 The system sets the default difficulty as automatic, you could accidentally have to build hard plot if you forget to choose the difficulty.
 
 ```mdx-code-block
-
-<img src={guide_difficulty} alt="difficulty" width="500rem" />
-
+<MinecraftWindow maxWidth="600px" useDropdown="true">
+    <Img src={guide_difficulty} alt="difficulty" width="1088" height="499" />
+</MinecraftWindow>
 ```
 :::
 
@@ -74,6 +76,8 @@ After you decided the buildsite and difficulty, simply press the buildsite icon 
 
 ```mdx-code-block
 
-<MinecraftWindow width="fit-content" useDropdown="true"><img src={guide_create} width="500rem" alt="Guide Image"/></MinecraftWindow>
+<MinecraftWindow maxWidth="600px" useDropdown="true">
+    <Img src={guide_create} width="600" height="318" alt="Guide Image"/>
+</MinecraftWindow>
 
 ```

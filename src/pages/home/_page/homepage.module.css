@@ -4,7 +4,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: #839c46;
+  background-color: #101f28;
 }
 .header_container { z-index: 2; }
 .banner_container {
@@ -18,8 +18,11 @@
 }
 
 .banner_loader {
-  background-color: #90b64a;
-  filter: blur(700px);
+  background-color: #101f28;
+  filter: blur(20px);
+}
+html[data-theme="light"] .banner_loader {
+  background-color: #e0e5eb;
 }
 .banner_img {
   top: 0;
@@ -29,11 +32,11 @@
   object-fit: cover;
   -o-object-fit: cover;
   pointer-events: none;
-  animation: 2.5s linear 0s 1 first_loaded;
+  animation: 1s linear 0s 1 first_loaded;
 }
 
 @keyframes first_loaded {
-  0% { filter: blur(700px); }
+  0% { filter: blur(20px); }
   100% { filter: blur(0px); }
 }
 
