@@ -1,17 +1,42 @@
 /*#region HEADER */
-.heroBanner {
+.hero_banner {
   padding: 8rem 0 16rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-image: url(@site/static/img/background/homepage_banner.png);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-position: 50% 40%;
-  background-size: cover;
-  background-color: rgb(208, 228, 245);
+  background-color: #839c46;
 }
+.header_container { z-index: 2; }
+.banner_container {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+  pointer-events: none;
+}
+
+.banner_loader {
+  background-color: #90b64a;
+  filter: blur(700px);
+}
+.banner_img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  pointer-events: none;
+  animation: 2.5s linear 0s 1 first_loaded;
+}
+
+@keyframes first_loaded {
+  0% { filter: blur(700px); }
+  100% { filter: blur(0px); }
+}
+
 
 .intro_button {
   position: absolute;
@@ -23,12 +48,12 @@
 }
 
 @media screen and (max-width: 997px) {
-  .heroBanner {
+  .hero_banner {
     padding: 2rem 0 30rem 0;
   }
 }
 @media screen and (max-width: 607px) {
-  .heroBanner {
+  .hero_banner {
     padding: 2rem 0 25rem 0;
   }
 }

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import clsx from 'clsx';
 import styles from './homepage.module.css';
+import { useImage } from 'react-image'
 
 import Translate from '@docusaurus/Translate';
 import CodeBlock from '@theme/CodeBlock';
@@ -9,6 +10,7 @@ import Details from '@theme/Details'
 import ButtonHeader from "./components/HomepageButton"
 import MarkdownBlock from "@site/src/components/MarkdownBlock"
 
+import HeaderBanner from "@site/static/img/background/homepage_banner.png"
 import text from "@site/src/components/TextDecoration"
 import grassblock_icon from "@site/static/img/icons/dancing_grassblock.gif"
 
@@ -127,10 +129,22 @@ function Contents() {
   </>);
 }
 
+const DecayBanner = () => <div className={clsx(styles.banner_container, styles.banner_loader)} />;
+function BannerRanderer() {
+    const { src, error } = useImage({ srcList: HeaderBanner })
+    return error? <DecayBanner />
+      : <div className={styles.banner_container}>
+            <img src={src} className={styles.banner_img} />
+        </div>
+}
+
 function Header() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
+    <header className={clsx('hero hero--info', styles.hero_banner)}>
+      <Suspense fallback={<DecayBanner />}>
+        <BannerRanderer/>
+      </Suspense>
+      <div className={clsx("container", styles.header_container)}>
         {/*these title is based on {siteConfig.title & tagline} but exports raw to use Translate tag */}
         <h1 className={clsx('hero__title', styles.title, styles.shadowed)}>     
           <Translate description="A hero title of homepage document">

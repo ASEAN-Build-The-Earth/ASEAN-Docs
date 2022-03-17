@@ -1,18 +1,40 @@
-.banner_img {
-    pointer-events: none;
+.banner_container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
     position: absolute;
+    pointer-events: none;
+}
+
+.banner_loader {
+    background-color: #101f28;
+    filter: blur(700px);
+}
+html[data-theme="light"] .banner_loader {
+    background-color: #e0e5eb;
+}
+.banner_img {
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     -o-object-fit: cover;
-    z-index: 1; 
+    pointer-events: none;
+    animation: 2.5s linear 0s 1 first_loaded;
 }
 
 .contents_container {
-    z-index: 2;
+    z-index: 1;
     width: 100%;
     padding: 4rem;
     margin-left: 10rem;
+}
+
+@keyframes first_loaded {
+    0% { filter: blur(700px); }
+    100% { filter: blur(0px); }
 }
 
 @media screen and (max-width: 1240px) {
