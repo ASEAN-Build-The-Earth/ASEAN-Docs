@@ -20,7 +20,7 @@ const ButtonContents = [
                             <li class="breadcrumbs__item">
                                 <a class="breadcrumbs__link" style={{transform:"scaleX(-1)"}}>
                                     <Translate description="The big Start building button (please keep the text count very low to prevent newline)">
-                                        Support us
+                                        Support Us
                                     </Translate>     
                                 </a>
                             </li>
@@ -48,7 +48,7 @@ const ButtonContents = [
                             <li class="breadcrumbs__item">
                                 <a class="breadcrumbs__link">
                                     <Translate description="The big Start building button (please keep the text count very low to prevent newline)">
-                                        Start Building
+                                        Get Started
                                     </Translate>     
                                 </a>
                             </li>

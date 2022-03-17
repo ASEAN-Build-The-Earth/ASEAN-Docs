@@ -44,7 +44,7 @@ const ContentList = [
             <table className={styles.ip_box} ><td id={styles.box_styles}>
               <div align="Left"><i><b>
                 <Translate description="'Server ip' box at the homepage">
-                  Server ip
+                  Server IP
                 </Translate>
               </b></i></div>
               <sub>

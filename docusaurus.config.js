@@ -188,33 +188,27 @@ const config = {
       /**
        * htmlLang code: [https://gist.github.com/JamieMason/3748498]
        */
-      en: {
-        label: 'English',
+      en: { label: 'English',
         direction: 'ltr',
         htmlLang: 'en-US',
       },
-      th: {
-        label: 'Thai',
+      th: { label: 'Thai',
         direction: 'ltr',
         htmlLang: 'th-TH',
       },
-      my: {
-        label: 'Malay',
+      my: { label: 'Malay',
         direction: 'ltr',
         htmlLang: 'ms-MY',
       },
-      id: {
-        label: 'Indo',
+      id: { label: 'Indonesian',
         direction: 'ltr',
         htmlLang: 'id-ID',
       },
-      vn: {
-        label: 'Vietnam',
+      vn: { label: 'Vietnamese',
         direction: 'ltr',
         htmlLang: 'vi-VN',
       },
-      ph: {
-        label: 'Philippines',
+      ph: { label: 'Filipino',
         direction: 'ltr',
         htmlLang: 'en-PH',
       },

@@ -12,7 +12,9 @@
     border-radius: 4px;
     transition: 0.3s;
 }
-
+#scaled_element {
+    pointer-events: all;
+}
 .cover_table {
     display: table-caption;
     background-color: #23272a;

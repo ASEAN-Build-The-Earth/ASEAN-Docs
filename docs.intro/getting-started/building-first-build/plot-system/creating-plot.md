@@ -30,7 +30,7 @@ import guide_difficulty from "@site/static/img/docs/creating-plot/plot-difficult
 
 ```
 
-Switch to your companion in the inventory then <kbd>Right Click</kbd> or <kbd>/companion</kbd> to open theyour Plot system server panel.
+Switch to your companion in the inventory then <kbd>Right Click</kbd> or <kbd>/companion</kbd> to open your Plot system server panel.
 The server panel is basically your plot system hub and your builder profile, it is included with many things such as..
 - The main inventory grid displays the available build sites that you can build in
 - down in the bottom right of the grid is your builder profile and utility, you can see your builder points and your on-going plots here

@@ -10,7 +10,7 @@ import { useColorMode } from '@docusaurus/theme-common'; //theme detector
  */
 const InviteButton = ({link, children}) => {
     const { isDarkTheme } = useColorMode();
-    const [widgetIn, setWidgetIn] = React.useState(0)
+    const [widgetIn, setWidgetIn] = useState(0)
     let isAnimating;
     let isMouseOver;
 
@@ -25,9 +25,10 @@ const InviteButton = ({link, children}) => {
           </a>
         </th></tr>
         <tr><th style={
-          isDarkTheme ? /* inline style cus im lazy */
-          { padding: "0px", backgroundColor: "#23272a", borderRadius: "4px", borderColor: "#23272a"} : 
-          { padding: "0px", backgroundColor: "#7289da", borderRadius: "4px", borderColor: "#7289da"}} >
+            isDarkTheme ? /* inline style cus im lazy */
+            { padding: "0px", backgroundColor: "#23272a", borderRadius: "4px", borderColor: "#23272a"} : 
+            { padding: "0px", backgroundColor: "#7289da", borderRadius: "4px", borderColor: "#7289da"}} 
+          >
             <iframe /* discord widget iframe */
               className={styles.discord_widget} 
               src={isDarkTheme ? 'https://discord.com/widget?id=702883639574396969&theme=dark' : 'https://discord.com/widget?id=702883639574396969&theme=light'} 
@@ -38,7 +39,7 @@ const InviteButton = ({link, children}) => {
               onMouseEnter={() => { isMouseOver = true; if(!isAnimating) setWidgetIn(1); }}
               onMouseLeave={() => { isMouseOver = false;  if(isAnimating !== true) setWidgetIn(2); }}
               onAnimationEnd={() =>  { isAnimating = false; if(isMouseOver !== undefined)  setWidgetIn(2); }}
-              onAnimationStart={() =>{ isAnimating = true; }}
+              onAnimationStart={() =>{ isAnimating = true; }}            
             ></iframe> 
         </th></tr>
       </table>
