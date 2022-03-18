@@ -22,7 +22,7 @@ const config = {
           path: 'docs.intro',
           routeBasePath: "intro", // change default "doc/" root path
           sidebarPath: require.resolve('./sidebars_intro.js'),
-          editUrl: ({ locale, versionDocsDirPath, docPath }) => {
+          editUrl: ({ locale, docPath }) => {
             if (locale !== 'en') {
               return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/blob/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
             }
@@ -31,8 +31,12 @@ const config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
+        gtag: {
+          trackingID: '3352452083',
+          anonymizeIP: true,
+        },
         blog: false,
-        /* no doc
+        /* no blog
         blog: {
           showReadingTime: true,
           editUrl:
@@ -54,9 +58,9 @@ const config = {
         id: 'builder-guide',
         path: 'docs.builder-guide',
         routeBasePath: 'guide',
-        editUrl: ({locale, versionDocsDirPath, docPath}) => {
+        editUrl: ({locale, docPath}) => {
           if (locale !== 'en') {
-            return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/docs/${locale}`;
+            return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/docs/${locale}/docusaurus-plugin-content-docs-builder-guide/current/${docPath}`;
           }
           return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/docs/${docPath}`;
         },
@@ -73,6 +77,7 @@ const config = {
       colorMode: { defaultMode: "dark", },
       autoCollapseSidebarCategories: true,
       hideableSidebar: true, // idk what this do
+      image: "img/icons/aseanbte_logo.gif", //meta og image
       navbar: {
         title: 'ASEAN BTE',
         logo: {
