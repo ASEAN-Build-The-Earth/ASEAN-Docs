@@ -11,6 +11,7 @@ import ButtonHeader from "./components/HomepageButton"
 import MarkdownBlock from "@site/src/components/MarkdownBlock"
 
 import HeaderBanner from "@site/static/img/background/homepage_banner.png"
+import CompressedHeaderBanner from "@site/static/img/background/homepage_banner.min.png"
 import text from "@site/src/components/TextDecoration"
 import grassblock_icon from "@site/static/img/icons/dancing_grassblock.gif"
 
@@ -129,13 +130,20 @@ function Contents() {
   </>);
 }
 
-const DecayBanner = () => <div className={clsx(styles.banner_container, styles.banner_loader)} />;
+const DecayBanner = () => {
+  const { src, error, isLoading } = useImage({ srcList: CompressedHeaderBanner, useSuspense: false })
+  return (
+    error !== null? <div className={clsx(styles.banner_container, styles.banner_loader)}/> 
+    : isLoading?  <div className={clsx(styles.banner_container, styles.banner_loader)}/>
+    : <div className={clsx(styles.banner_container, styles.banner_loader)} style={{backgroundImage:`url(${src})`}}/>
+  );
+} 
 function BannerRanderer() {
     const { src, error, isLoading } = useImage({ srcList: HeaderBanner, useSuspense: false })
-    return isLoading || error? <DecayBanner />
+    return error !== null? <DecayBanner /> : isLoading?  <DecayBanner />
       : <div className={styles.banner_container}>
             <img src={src} className={styles.banner_img} />
-        </div>
+    </div>
 }
 
 function Header() {

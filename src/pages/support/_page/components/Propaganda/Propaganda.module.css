@@ -64,9 +64,9 @@ html[data-theme='dark'] .propaganda_container { background-color: rgba(139, 139,
     html[data-theme='dark'] .propaganda_container {
         animation: .5s linear 0s 1 lerp_gradient_in;
         background-color: rgba(139, 139, 139, 0.2);
-        background: linear-gradient(5deg, 
-            rgb(47, 58, 71) 5%, 
-            rgba(47, 58, 71, 0.9) 25%, 
+        background: linear-gradient(5deg,             
+            rgb(47, 58, 71) 5%,             
+            rgba(38, 47, 59, 90%) 25%,             
             rgba(139, 139, 139, 0.2) 48%);
     }
 }
@@ -104,16 +104,16 @@ html[data-theme='dark'] .propaganda_container { background-color: rgba(139, 139,
 }
 @keyframes lerp_gradient_out_dark {
     100% {
-        background: linear-gradient(5deg, 
-            rgb(47, 58, 71) 5%, 
-            rgba(47, 58, 71, 0.9) 25%, 
+        background: linear-gradient(5deg,             
+            rgb(47, 58, 71) 5%,             
+            rgba(38, 47, 59, 90%) 25%,             
             rgba(139, 139, 139, 0.2) 48%);
         background-size: 100% 200%;
     }
     0% {
-        background: linear-gradient(5deg, 
-            rgb(47, 58, 71) 5%, 
-            rgba(47, 58, 71, 0.9) 25%, 
+        background: linear-gradient(5deg,             
+            rgb(47, 58, 71) 5%,             
+            rgba(38, 47, 59, 90%) 25%,             
             rgba(139, 139, 139, 0.2) 48%);
         background-size: 100% 100%;
     }

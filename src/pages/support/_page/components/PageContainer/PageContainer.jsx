@@ -5,9 +5,27 @@ import { useColorMode } from '@docusaurus/theme-common';
 import { useImage } from 'react-image'
 
 import DarkBanner from "@site/static/img/background/supportpage_banner_dark.png";
+import CompressedDarkBanner from "@site/static/img/background/supportpage_banner_dark.min.png";
 import LightBanner from "@site/static/img/background/supportpage_banner_light.png";
+import CompressedLightBanner from "@site/static/img/background/supportpage_banner_light.min.png";
 
-const DecayBanner = () => <div className={clsx(styles.banner_container, styles.banner_loader)} />;
+const DecayBanner = () => {
+    const darkBanner = useImage({ srcList: CompressedDarkBanner, useSuspense: false })
+    const lightBanner = useImage({ srcList: CompressedLightBanner, useSuspense: false })
+    const { isDarkTheme } = useColorMode();
+
+    return ( 
+        isDarkTheme ? (
+            darkBanner.error !== null? <div className={clsx(styles.banner_container, styles.banner_loader)}/> 
+            : darkBanner.isLoading?  <div className={clsx(styles.banner_container, styles.banner_loader)}/>
+            : <div className={clsx(styles.banner_container, styles.banner_loader)} style={{backgroundImage:`url(${darkBanner.src})`}}/>
+        ) : (
+            lightBanner.error !== null? <div className={clsx(styles.banner_container, styles.banner_loader)}/> 
+            : lightBanner.isLoading?  <div className={clsx(styles.banner_container, styles.banner_loader)}/>
+            : <div className={clsx(styles.banner_container, styles.banner_loader)} style={{backgroundImage:`url(${lightBanner.src})`}}/>
+        )
+    );
+  } 
 
 function BannerRanderer() {
     const darkBanner = useImage({ srcList: DarkBanner, useSuspense: false })

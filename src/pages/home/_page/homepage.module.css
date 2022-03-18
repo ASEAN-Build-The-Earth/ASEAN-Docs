@@ -4,7 +4,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: #101f28;
+  background-color: #646464;
 }
 .header_container { z-index: 2; }
 .banner_container {
@@ -18,11 +18,11 @@
 }
 
 .banner_loader {
-  background-color: #101f28;
-  filter: blur(20px);
-}
-html[data-theme="light"] .banner_loader {
-  background-color: #e0e5eb;
+  background-color: #646464;
+  background-size: cover;
+  background-position: 50% 50%;
+  filter: blur(20px) grayscale(100%);
+  -webkit-filter: blur(20px)  grayscale(100%); /* Safari 6.0 - 9.0 */
 }
 .banner_img {
   top: 0;
@@ -36,8 +36,8 @@ html[data-theme="light"] .banner_loader {
 }
 
 @keyframes first_loaded {
-  0% { filter: blur(20px); }
-  100% { filter: blur(0px); }
+  0% { filter: blur(20px) grayscale(100%); -webkit-filter: blur(20px)  grayscale(100%); }
+  100% { filter: unset; -webkit-filter: unset; }
 }
 
 

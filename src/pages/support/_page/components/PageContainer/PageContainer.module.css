@@ -9,7 +9,11 @@
 
 .banner_loader {
     background-color: #101f28;
+    
+    background-size: cover;
+    background-position: 50% 50%;
     filter: blur(20px);
+    -webkit-filter: blur(20px); /* Safari 6.0 - 9.0 */
 }
 html[data-theme="light"] .banner_loader {
     background-color: #e0e5eb;
