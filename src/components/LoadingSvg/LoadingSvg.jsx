@@ -1,7 +1,5 @@
 import React from "react"
-import styles from "./LoadingSvg.module.css"
 import { useColorMode } from '@docusaurus/theme-common';
-import clsx from 'clsx';
 
 /**
  * Loading SVG Style 4 
@@ -13,16 +11,9 @@ const Svg = ({color, ...props}) => {
     return (
         <svg version="1.1" 
             id="L4" x="0px" y="0px" 
-            style={{
-                position: "absolute",
-                width: "260px",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-28%, -50%)",
-                ...props.style
-            }}
+            style={{ ...props.style }}
             className={props.className? props.className : null}
-            viewBox="0 0 100 100" enable-background="new 0 0 0 0">
+            viewBox="0 40 100 20" enable-background="new 0 0 0 0">
             <circle fill={color} stroke="none" cx="6" cy="50" r="6">
                 <animate
                 attributeName="opacity"
@@ -51,14 +42,12 @@ const Svg = ({color, ...props}) => {
     );
 }
 
-export default function LoadingSvg({svgOnly, ...props}) {
+export default function LoadingSvg({fillColor, ...props}) {
     const { isDarkTheme } = useColorMode();
     return (<>{
-        (svgOnly === "true") ?  isDarkTheme? 
-        <Svg color="#666666" {...props}/> : <Svg color="#888888" {...props}/> 
-        : 
-        <div className={ props.className? props.className : styles.loading_svg }>
-            { isDarkTheme? <Svg color="#666666" {...props}/> : <Svg color="#888888" {...props}/> }
-        </div>
+     fillColor ? 
+        <Svg color={fillColor} {...props}/> 
+        : isDarkTheme? 
+            <Svg color="#666666" {...props}/> : <Svg color="#888888" {...props}/>      
     }</>);
 }

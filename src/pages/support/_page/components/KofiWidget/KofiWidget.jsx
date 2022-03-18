@@ -32,7 +32,13 @@ export default function KofiWidget({children}) {
                                 onAnimationStart={() => set_loading(true)}
                                 onAnimationEnd={() => set_loading(false)}
                             />   
-                            { loading_anim? <><div className={styles.kofi_bg}/><LoadingSvg /></> : <></>  }
+                            { loading_anim? <>
+                                <div className={styles.kofi_bg}/>
+                                <div className={ styles.loading_svg }>
+                                    <LoadingSvg className={styles.svg_loader}/>
+                                </div>
+                            </> : <></>  
+                            }
                         </div>
                     </div>
                     <div className="card__footer">

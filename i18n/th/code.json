@@ -329,5 +329,17 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "Sorry, could not load this image :(": {
+    "message": "Sorry, could not load this image :(",
+    "description": "Error message when any image could not be loaded."
+  },
+  "Loading image...": {
+    "message": "Loading image...",
+    "description": "Loading message of all image in document"
+  },
+  "Loading done!": {
+    "message": "Loading done!",
+    "description": "A message on any image when the loading is done"
   }
 }

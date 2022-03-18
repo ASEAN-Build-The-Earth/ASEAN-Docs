@@ -14,6 +14,16 @@
     border-color: var(--ifm-color-emphasis-100);
     color: var(--ifm-color-emphasis-800);
 }
+.svg_loader {
+    position: absolute;
+    width: 260px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-28%, -50%);
+}
+.loading_svg {
+    animation: 1s linear 0s 1 isLoading;
+}
 #button_icon {
     width: 7%;
     transform: scaleX(-1);
@@ -83,6 +93,12 @@ html[data-theme='light'] .kofi_bg {
     100% { opacity: 1; }
 }
 @keyframes fading_bg{
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    90% { opacity: 0.8; }
+    100% { opacity: 0; }
+}
+@keyframes isLoading{
     0% { opacity: 1; }
     80% { opacity: 1; }
     90% { opacity: 0.8; }
