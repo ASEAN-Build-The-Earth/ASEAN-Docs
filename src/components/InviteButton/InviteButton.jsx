@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './InviteButton.module.css'
 import { useColorMode } from '@docusaurus/theme-common'; //theme detector
-
+import Link from '@docusaurus/Link';
 
 /**
  * @param children invite button label
@@ -18,11 +18,11 @@ const InviteButton = ({link, children}) => {
     <div id={styles.wrap}>
       <table className={styles.cover_table}>
         <tr id={styles.scaled_element}><th className={styles.invite_table}>
-          <a className={styles.invite_button} href={link} target="_blank">
+          <Link className={styles.invite_button} to={link}>
             <b>{children}</b>
             <svg pointsAtY="1" width="18" height="18" aria-hidden="true" viewBox="0 -2 24 25">
             <path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg>
-          </a>
+          </Link>
         </th></tr>
         <tr><th style={
             isDarkTheme ? /* inline style cus im lazy */

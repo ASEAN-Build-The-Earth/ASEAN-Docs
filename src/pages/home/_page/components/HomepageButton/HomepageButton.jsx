@@ -14,7 +14,7 @@ const ButtonContents = [
         id : "donate_button",
         component: <>
             <div className={styles.button_div} style={{transform:"scaleX(-1)"}}>
-                <Link to="support" className={clsx("button button--link", styles.button_container)}>
+                <div className={clsx("button button--link", styles.button_container)}>
                     <nav aria-label="breadcrumbs">
                         <ul className={clsx("breadcrumbs breadcrumbs--lg", styles.breadcrumbs_cover)}>
                             <li class="breadcrumbs__item">
@@ -27,7 +27,7 @@ const ButtonContents = [
                             <img src={kofi_icon} alt="kofi" id={styles.button_icon} style={{backgroundColor: "#13C3FF", padding:"0px"}}/>
                         </ul>
                     </nav>
-                </Link> 
+                </div> 
                 <ButtonOverlay mirror="true" color="#FF5E5B" icon={<img src={kofi_pixel_icon} alt="↗" style={{width:"100%", position:"absolute", transform:"translateY(1rem)"}} />}>
                     <span className={styles.button_overlay_text_support} >
                         <Translate description="The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)">
@@ -35,6 +35,12 @@ const ButtonContents = [
                         </Translate>
                     </span>
                 </ButtonOverlay>
+                <Link to="/support" 
+                    className={styles.link_redirector 
+                    /*[Note]: the link that actually redirect to page is placed here 
+                      to prevent wierd prefetching html changs 
+                    */}>
+                </Link>
             </div>
         </>
     },
@@ -42,7 +48,7 @@ const ButtonContents = [
         id : "get_started_button",
         component: <>
             <div className={styles.button_div}>
-                <Link to="intro/get-started" className={clsx("button button--link", styles.button_container)}>
+                <div className={clsx("button button--link", styles.button_container)}>
                     <nav aria-label="breadcrumbs">
                         <ul className={clsx("breadcrumbs breadcrumbs--lg", styles.breadcrumbs_cover)}>
                             <li class="breadcrumbs__item">
@@ -55,7 +61,7 @@ const ButtonContents = [
                             <img src={book_icon} alt="doc↗" id={styles.button_icon} />
                         </ul>
                     </nav>
-                </Link> 
+                </div> 
                 <ButtonOverlay icon={<img src={feather_icon} alt="↗" style={{width:"100%", position:"absolute", imageRendering: "pixelated"}} />}>
                     <span className={styles.button_overlay_text_getstart} >
                         <Translate description="The pop up message when you hover to the homepage Start Building button (please keep the text count for this low)">
@@ -63,6 +69,7 @@ const ButtonContents = [
                         </Translate>
                     </span>
                 </ButtonOverlay>
+                <Link to="/intro/get-started" className={styles.link_redirector}/>
             </div>
         </>
     }

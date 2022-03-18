@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import styles from './KofiWidget.module.css';
 import kofi_icon from "@site/static/img/icons/kofi_logo.png"
 import LoadingSvg from '@site/src/components/LoadingSvg'
+import Link from '@docusaurus/Link';
 
 export default function KofiWidget({children}) {
     const [loading_anim, set_loading] = React.useState(true);   
@@ -42,9 +43,9 @@ export default function KofiWidget({children}) {
                         </div>
                     </div>
                     <div className="card__footer">
-                        <a className={clsx("button button--block", styles.kofi_button)} href="https://ko-fi.com/bteasean" target="_blank">
+                        <Link className={clsx("button button--block", styles.kofi_button)} to="https://ko-fi.com/bteasean">
                             {children}
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

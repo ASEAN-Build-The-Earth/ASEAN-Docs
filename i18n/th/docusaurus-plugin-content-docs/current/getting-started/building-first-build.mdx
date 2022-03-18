@@ -8,6 +8,7 @@ import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
 import Phattie_Gif from '@site//static/img/docs/plot-system/plot.gif';
 import Img from '@site/src/components/Img'
+import Link from '@docusaurus/Link';
 
 <p> In this section, we will start from touring you how different BTE Building is 
     to basic minecraft build then send with getting you to build your first build in <span 
@@ -19,10 +20,10 @@ import Img from '@site/src/components/Img'
 
 <MinecraftWindow 
     title={ 
-        <a href="https://www.youtube.com/watch?v=YSHpFk646ts">
+        <Link to="https://www.youtube.com/watch?v=YSHpFk646ts">
         <span style={ {color:"var(--ifm-font-color-base)"} }>
             Minecraft
-        </span></a> } 
+        </span></Link> } 
     maxWidth="100vw">
 {/* children */}
     <Img imgWidth="100vw" maxWidth="100vw" width="800" height="450" src={Phattie_Gif} alt="Guide Image"/>
