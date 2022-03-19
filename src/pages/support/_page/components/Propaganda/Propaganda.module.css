@@ -1,0 +1,120 @@
+.propaganda_div {
+    padding: 6px;
+    transform-origin: center right;
+    animation: 2s linear -1s 1 propaganda_div_fadein;
+}
+.propaganda_arrow {
+    max-width: 6vw !important;
+    /* ref: [https://css-tricks.com/snippets/css/css-triangle/] */
+    height: 0; 
+    border-top: 0 solid transparent;
+    border-bottom: 4vw solid transparent;
+    border-left: 6vw solid rgba(255, 255, 255, 0.2);
+      
+}
+.propaganda_container {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1rem 0 1rem 1rem;
+    text-align: left;
+}
+.propaganda_text {
+    color: var(--ifm-color-emphasis-900);
+    animation: 1s linear 0s 1 propaganda_text_fadein;
+}
+
+html[data-theme='dark'] .propaganda_arrow { border-left: 6vw solid rgba(139, 139, 139, 0.2) }
+html[data-theme='dark'] .propaganda_container { background-color: rgba(139, 139, 139, 0.2) }
+
+@keyframes propaganda_div_fadein{
+    0%  { transform: scaleX(0); opacity: 0;  }
+    50% { transform: scaleX(0) }
+    80% { opacity: 0; } 
+    90% {  opacity: 0.8; } 
+    100% { transform: scaleX(1); opacity: 1; }
+}
+@keyframes propaganda_text_fadein{
+    0% { color: rgba(0, 0, 0, 0); opacity: 0;}
+    80% { color: rgba(0, 0, 0, 0); opacity: 0; }
+    100% { color: var(--ifm-color-emphasis-900); opacity: 1;}
+}
+
+@media screen and (max-width: 996px) {
+    .propaganda_div { transform-origin: center left;  }
+    .propaganda_container { border-radius: 1rem 1rem 1rem 0; }
+    .propaganda_arrow {
+        border-bottom: 3.5rem solid transparent;
+        border-left: 4rem solid rgba(255, 255, 255, 0.2);
+    }
+}
+
+/**
+ * Lerp a gredient in when the propaganda message is above the background image
+ * Improve readability
+ */
+@media screen and (min-width: 997px) and (max-width: 1720px) { 
+    html[data-theme='light'] .propaganda_container {
+        animation: .5s linear 0s 1 lerp_gradient_in;
+        background-color: rgba(255,255,255,0.2);
+        background: linear-gradient(5deg, 
+            rgb(192, 220, 255) 5%, 
+            rgba(212, 231, 255, 0.7) 25%, 
+            rgba(255, 255, 255, 0.2) 48%);
+    }
+    html[data-theme='dark'] .propaganda_container {
+        animation: .5s linear 0s 1 lerp_gradient_in;
+        background-color: rgba(139, 139, 139, 0.2);
+        background: linear-gradient(5deg,             
+            rgb(47, 58, 71) 5%,             
+            rgba(38, 47, 59, 90%) 25%,             
+            rgba(139, 139, 139, 0.2) 48%);
+    }
+}
+
+@media screen and (min-width: 1721px) { 
+    html[data-theme='light'] .propaganda_container {
+        animation: .5s linear 0s 1 lerp_gradient_out_light;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    html[data-theme='dark'] .propaganda_container {
+        animation: .5s linear 0s 1 lerp_gradient_out_dark;
+        background-color: rgba(139, 139, 139, 0.2);
+    }
+}
+
+@keyframes lerp_gradient_in {
+    0% { background-size: 100% 200%; }
+    100% { background-size: 100% 100%; }
+}
+@keyframes lerp_gradient_out_light {
+    100% {
+        background: linear-gradient(5deg, 
+            rgb(192, 220, 255) 0%, 
+            rgba(212, 231, 255,0.7) 25%, 
+            rgba(255,255,255,0.2) 48%);
+        background-size: 100% 200%;
+    }
+    0% {
+        background: linear-gradient(5deg, 
+            rgb(192, 220, 255) 0%, 
+            rgba(212, 231, 255, 0.7) 25%, 
+            rgba(255,255,255,0.2) 48%);
+        background-size: 100% 100%;
+    }
+}
+@keyframes lerp_gradient_out_dark {
+    100% {
+        background: linear-gradient(5deg,             
+            rgb(47, 58, 71) 5%,             
+            rgba(38, 47, 59, 90%) 25%,             
+            rgba(139, 139, 139, 0.2) 48%);
+        background-size: 100% 200%;
+    }
+    0% {
+        background: linear-gradient(5deg,             
+            rgb(47, 58, 71) 5%,             
+            rgba(38, 47, 59, 90%) 25%,             
+            rgba(139, 139, 139, 0.2) 48%);
+        background-size: 100% 100%;
+    }
+}

@@ -1,0 +1,62 @@
+.banner_container {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    pointer-events: none;
+}
+
+.banner_loader {
+    background-color: #101f28;
+    
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: blur(20px);
+    -webkit-filter: blur(20px); /* Safari 6.0 - 9.0 */
+}
+html[data-theme="light"] .banner_loader {
+    background-color: #e0e5eb;
+}
+.banner_img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    pointer-events: none;
+    animation: 1s linear 0s 1 first_loaded;
+}
+
+.contents_container {
+    z-index: 1;
+    width: 100%;
+    padding: 4rem;
+    margin-left: 10rem;
+}
+
+@keyframes first_loaded {
+    0% { filter: blur(20px); }
+    100% { filter: blur(0px); }
+}
+
+@media screen and (max-width: 1240px) {
+    .contents_container {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .contents_container {
+        padding: 1rem;
+    }
+}
+
+.hero_banner {
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
