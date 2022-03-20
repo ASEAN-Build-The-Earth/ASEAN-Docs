@@ -19,7 +19,7 @@ const ButtonContents = [
                         <ul className={clsx("breadcrumbs breadcrumbs--lg", styles.breadcrumbs_cover)}>
                             <li class="breadcrumbs__item">
                                 <a class="breadcrumbs__link" style={{transform:"scaleX(-1)"}}>
-                                    <Translate description="The big Start building button (please keep the text count very low to prevent newline)">
+                                    <Translate id="home.bannerButton.support.label" description="The big Start building button (please keep the text count very low to prevent newline)">
                                         Support Us
                                     </Translate>     
                                 </a>
@@ -30,7 +30,7 @@ const ButtonContents = [
                 </div> 
                 <ButtonOverlay mirror="true" color="#FF5E5B" icon={<img src={kofi_pixel_icon} alt="↗" style={{width:"100%", position:"absolute", transform:"translateY(1rem)"}} />}>
                     <span className={styles.button_overlay_text_support} >
-                        <Translate description="The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)">
+                        <Translate id="home.bannerButton.support.labelOverlay" description="The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)">
                             Donate on kofi
                         </Translate>
                     </span>
@@ -53,7 +53,7 @@ const ButtonContents = [
                         <ul className={clsx("breadcrumbs breadcrumbs--lg", styles.breadcrumbs_cover)}>
                             <li class="breadcrumbs__item">
                                 <a class="breadcrumbs__link">
-                                    <Translate description="The big Start building button (please keep the text count very low to prevent newline)">
+                                    <Translate id="home.bannerButton.getStart.label" description="The big Start building button (please keep the text count very low to prevent newline)">
                                         Get Started
                                     </Translate>     
                                 </a>
@@ -64,7 +64,7 @@ const ButtonContents = [
                 </div> 
                 <ButtonOverlay icon={<img src={feather_icon} alt="↗" style={{width:"100%", position:"absolute", imageRendering: "pixelated"}} />}>
                     <span className={styles.button_overlay_text_getstart} >
-                        <Translate description="The pop up message when you hover to the homepage Start Building button (please keep the text count for this low)">
+                        <Translate id="home.bannerButton.getStart.labelOverlay" description="The pop up message when you hover to the homepage Start Building button (please keep the text count for this low)">
                             Go To Document
                         </Translate>
                     </span>

@@ -36,12 +36,12 @@ function BannerRanderer() {
         isDarkTheme ? (
             darkBanner.error? <DecayBanner /> : darkBanner.isLoading? <DecayBanner />
             : <div className={styles.banner_container}>
-                <img src={darkBanner.src} className={styles.banner_img} />
+                <img src={darkBanner.src} className={styles.banner_img} alt="support.banner.dark" />
             </div>
         ) : (
             lightBanner.error? <DecayBanner /> : lightBanner.isLoading? <DecayBanner />
             : <div className={styles.banner_container}>
-                <img src={lightBanner.src} className={styles.banner_img} />
+                <img src={lightBanner.src} className={styles.banner_img} alt="support.banner.light" />
             </div>
         )
     )

@@ -18,12 +18,12 @@ import grassblock_icon from "@site/static/img/icons/dancing_grassblock.gif"
 
 const ContentList = [
   {
-    title: <Translate description="Homepage ASEAN BTE label">ASEAN BuildTheEarth</Translate>,
+    title: <Translate id="home.label" description="Homepage ASEAN BTE label">ASEAN BuildTheEarth</Translate>,
     description: (
       <>
         <br/>
         <MarkdownBlock>
-          <Translate description="ASEAN BTE long description at the homepage">
+          <Translate id="home.description" description="ASEAN BTE long description at the homepage">
             We are The Association of Southeast Asian Nations Build the Earth. 
             We are part of the [build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! 
             We currently oversee the progress of Brunei, Myanmar, 
@@ -44,17 +44,17 @@ const ContentList = [
           <div className={styles.ip_div}>
             <table className={styles.ip_box} ><td id={styles.box_styles}>
               <div align="Left"><i><b>
-                <Translate description="'Server ip' box at the homepage">
+                <Translate id="home.ipBox" description="'Server ip' box at the homepage">
                   Server IP
                 </Translate>
               </b></i></div>
               <sub>
                 <CodeBlock className="language-js" 
-                  title={<Translate description="Java label at homepage">Java</Translate>}>
+                  title={<Translate id="home.ipBox.java" description="Java label at homepage">Java</Translate>}>
                   139.99.91.188:25569
                 </CodeBlock>
                 <CodeBlock className="language-js" 
-                  title={<Translate description="Bedrock label at homepage">Bedrock</Translate>}>
+                  title={<Translate id="home.ipBox.bedrock" description="Bedrock label at homepage">Bedrock</Translate>}>
                   IP: 139.99.91.188 
                   PORT: 19132
                 </CodeBlock>
@@ -64,18 +64,18 @@ const ContentList = [
           <div className={styles.req_div} >
             <table className={styles.req_box}><td id={styles.box_styles}>
               <div align="Left"><i><b><sub>
-                <Translate description="Requirements box at homepage">
+                <Translate id="home.requirementBox" description="Requirements box at homepage">
                   Requirements
                 </Translate>
               </sub></b></i></div>
               <div align="Left">
                 <Details summary={
-                <summary><Translate description="the first and only requirement in the homepage requirement box">
+                <summary><Translate id="home.requirementBox.content" description="the first and only requirement in the homepage requirement box">
                     Minecraft
                 </Translate></summary>}>
                   <sub>
                     <MarkdownBlock>
-                      <Translate description="Extra foldout section of Minecraft in homepage describing we supports all version of it">
+                      <Translate id="home.requirementBox.content.description" description="Extra foldout section of Minecraft in homepage describing we supports all version of it">
                           [Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and 
                           [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) are supported.
                       </Translate>
@@ -87,11 +87,11 @@ const ContentList = [
                 <Admonition type="caution">
                   <sub>
                     <strong><text.Hl color="#C03A3A" textColor="#FEF6E8">
-                      <Translate description="section of 'Cracked Minecraft is not allowed'">
+                      <Translate id="home.requirementBox.cracked-1" description="section of 'Cracked Minecraft is not allowed'">
                         Cracked Minecraft
                       </Translate>
                     </text.Hl> </strong> 
-                    <Translate description="section of 'Cracked Minecraft is not allowed'">
+                    <Translate id="home.requirementBox.cracked-2" description="section of 'Cracked Minecraft is not allowed'">
                       is not allowed.
                     </Translate>
                   </sub>
@@ -142,7 +142,7 @@ function BannerRanderer() {
     const { src, error, isLoading } = useImage({ srcList: HeaderBanner, useSuspense: false })
     return error !== null? <DecayBanner /> : isLoading?  <DecayBanner />
       : <div className={styles.banner_container}>
-            <img src={src} className={styles.banner_img} />
+            <img src={src} className={styles.banner_img} alt="homepage banner"/>
     </div>
 }
 
@@ -153,12 +153,12 @@ function Header() {
       <div className={clsx("container", styles.header_container)}>
         {/*these title is based on {siteConfig.title & tagline} but exports raw to use Translate tag */}
         <h1 className={clsx('hero__title', styles.title, styles.shadowed)}>     
-          <Translate description="A hero title of homepage document">
+          <Translate id="home.banner.title" description="A hero title of homepage document">
             ASEAN BTE
           </Translate>
         </h1>
         <p className={clsx("hero__subtitle", styles.title, styles.shadowed)}>
-          <Translate description="A hero description of homepage document">
+          <Translate id="home.banner.subtitle" description="A hero description of homepage document">
             We are building southeast asia in Minecraft 1:1 scale!
           </Translate>
         </p>
