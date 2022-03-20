@@ -8,17 +8,16 @@ export default function ToHomepage(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return <>
     <Head>
-      <meta title="Home" />
+      <meta title="ASEAN BTE" />
       <meta property="og:title" content="ASEAN BTE" />
-      <meta
-        property="og:description"
-        content={siteConfig.tagline}
-      />
-      <meta
-        property="description"
-        content={siteConfig.tagline}
-      />
-      <link rel="canonical" href="https://builders-doc.netlify.app" />
+      <meta name="theme-color" content="#ffc561" />
+      <meta data-rh="true" property="og:image" content={`${siteConfig.url}/img/icons/aseanbte_full_logo.jpg`} />
+      <meta name="twitter:card" content="summary_large_image" data-rh="true" />
+      <meta data-rh="true" name="twitter:image" content={`${siteConfig.url}/img/icons/aseanbte_full_logo.jpg`} />
+      <meta property="og:description" content={siteConfig.tagline} />
+      <meta property="description" content={siteConfig.tagline} />
+      <meta property="og:url" content={siteConfig.url} />
+      <link rel="canonical" href={siteConfig.url} />
     </Head>
     <Redirect to="/" />
   </>

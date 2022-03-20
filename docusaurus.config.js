@@ -77,7 +77,7 @@ const config = {
       colorMode: { defaultMode: "dark", },
       autoCollapseSidebarCategories: true,
       hideableSidebar: true, // idk what this do
-      image: "img/icons/aseanbte_logo.png", //meta og image
+      image: "img/icons/aseanbte_full_logo.jpg", //meta og image
       metadata: [{name: 'theme-color', content: '#ffc561'}],
       navbar: {
         title: 'ASEAN BTE',
