@@ -77,7 +77,7 @@ const ContentList = [
                     <MarkdownBlock>
                       <Translate description="Extra foldout section of Minecraft in homepage describing we supports all version of it">
                           [Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and 
-                          [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) is supported.
+                          [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) are supported.
                       </Translate>
                     </MarkdownBlock>
                   </sub>

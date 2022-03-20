@@ -4,7 +4,7 @@ id: what-next
 ---
 ## Improve your builder skill
 There's many thing to learn at building in bte, you're not even half way through the full builder knowledge here.
-we suggest reading our document [Builder Guide](../../../guide/builder-guide) to get the detailed infomation of it.
+we suggest reading our document [Builder Guide](../../../guide/builder-guide) to get the detailed information of it.
 
 :::info
 

@@ -18,7 +18,7 @@ Before submitting your plot, please check everything and if everything is ready 
 <MinecraftWindow maxWidth="30rem"><Img src={GuideSubmit} width="600" height="482" alt="Guide Image"/></MinecraftWindow>
 ```
 
-The plot will be submitted and reviews within 24 hours. Our reviewers would review your plot and give feedback and a score for your build.
+The plot will be submitted and reviews within 24 hours. Our reviewers will review your plot and give feedback and a score for your build.
 
 :::info
 
@@ -27,8 +27,8 @@ If you get score that is lower than 2 in every category this means your build ha
 
 <details>
 <summary>My build is rejected <small>❔❔❔</small></summary> 
-Don't worry, everyone makes mistakes. Go back to your plot and you'll see improvement message from reviewer to you to fix it.
-Submit your plot again with your improvement and you'll suddenly get approve by our member!
+Don't worry, everyone makes mistakes. Go back to your plot and you'll see improvement message from the reviewer to you to fix it.
+Submit your plot again with your improvement and you'll suddenly get approved by our member!
 </details>
 
 ```mdx-code-block
@@ -41,5 +41,5 @@ Accepted plots will be pasted on the [Master world](../../visiting#1-master-serv
 ---
 
 ```mdx-code-block
-<dd><h2>That's it. You successfully built your first building in <Text.Hl textColor="#4fb925">BuildTheEarth</Text.Hl> project in name of <Text.Hl textColor="var(--ifm-color-primary)">ASEAN BTE Team</Text.Hl>!!!</h2></dd>
+<dd><h2>That's it. You successfully built your first building in the<Text.Hl textColor="#4fb925">BuildTheEarth</Text.Hl> project in name of <Text.Hl textColor="var(--ifm-color-primary)">ASEAN BTE Team</Text.Hl>!!!</h2></dd>
 ```

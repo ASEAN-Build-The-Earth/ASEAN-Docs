@@ -20,7 +20,7 @@ import IMG_NorminalIRLRoof from '@site/static/img/docs/bte-buildings/normal_roof
 
 Before we build anything, you first need to know  what its look like to build with us
 
-## Most building are diagnal❕
+## Most building are diagonal❕
 <Text.Tab>As we are building the earth one to one scale, buildings have to be accurate and aligned properly which makes it impossible to have every build being in a straight line.</Text.Tab>
 
 ```mdx-code-block
