@@ -33,8 +33,8 @@ Before we build anything, you first need to know  what its look like to build wi
 
 ## Every build looks smaller than you think
 <Text.Tab/>Many newcomers think 1:1 scale is relative to your minecraft character and misunderstand it.<br/>
-for example if you built a normal house with 4 blocks tall floor its means you have built a 4 meter high building and make it looks out of place.
-A typical building in our project only has 2 - 3 blocks height as you can see in the example below.<br/><br/>
+For example if you built a normal house with 4 blocks tall floor it means you have built a 4 meter high building and make it look out of place.
+A typical buildings in our project only has 2 - 3 blocks height as you can see in the example below.<br/><br/>
 
 <!-- good bad card -->
 ```mdx-code-block
@@ -72,7 +72,7 @@ A typical building in our project only has 2 - 3 blocks height as you can see in
 
 ```
 
-## Roof is not 90 degree steep!
+## Roof is not 90 degrees steep!
 <!-- custom document card -->
 ```mdx-code-block
 
@@ -90,7 +90,7 @@ A typical building in our project only has 2 - 3 blocks height as you can see in
         </div>
         <div class="card__body" style={{padding:"0 var(--ifm-card-horizontal-spacing) var(--ifm-card-vertical-spacing) "}}>
             <p>
-                As you can see, its very hard to find a steep 45 degrees roof in real world.<br/>
+                As you can see, it's very hard to find a steep 45 degrees roof in the real world.<br/>
                 It turns out we have many new builders that build their roofs with  a 45 degree block or stair that makes the building seems unnatural.
             </p>
         </div>

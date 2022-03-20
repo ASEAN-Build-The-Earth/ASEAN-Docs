@@ -28,15 +28,16 @@ export default function SupportPage() {
                         </h1>
                         <h4><MarkdownBlock className={styles.propaganda_msg}>
                                 <Translate id="support.subtitle" description="Propaganda message for supporting aseanbte (recommended to edit the '1 U.S. Dollar' to local currency translating to) ">
-                                    Hey if you want to see the server grow.
-                                    Consider donating to us at the minimum of [1 U.S. Dollar](https://www.google.com/search?q=1+usd)! 
+                                    Hello, if you want to see the server grow.
+                                    Consider donating to us at the minimum of [1 U.S. Dollar](https://www.google.com/search?q=1+usd),
                                     \n                   
+                                    you are helping us go one step further in achieving our goal.
                                 </Translate>
                             </MarkdownBlock>
                         </h4>
                         <br/>
                         <h1><Translate id="support.propaganda.title" description="The topic in support page propaganda">
-                                Where will my money go?
+                                Where would my funds go?
                             </Translate>
                         </h1>
                         <div className="row">
@@ -55,7 +56,7 @@ export default function SupportPage() {
                                     <dt id={styles.quote_description}><sup>
                                         <Translate id="support.propaganda.1.description" description="Description of 'Supports minecraft server' from support page quote">
                                             90% of the funding here would go to server funding which is paying for our virtual private server (VPS)  
-                                            which hosts our servers as well as discord bots. By providing funding you are keeping our servers alive literally.
+                                            which hosts our servers as well as discord bots. By providing funding you are keeping our servers alive day by day.
                                         </Translate>
                                     </sup></dt>
                                 </blockquote>
