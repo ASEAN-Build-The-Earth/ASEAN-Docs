@@ -60,8 +60,8 @@ Due to the fact this system is new, you can only choose build site at `Malaysia,
 
 :::
 
-:::tip Choose your difficulty first
-The system sets the default difficulty as automatic, you could accidentally have to build hard plot if you forget to choose the difficulty.
+:::tip Remember to choose your difficulty first
+The system sets the default difficulty as automatic, you could accidentally have to build hard plot if you forgot to choose the difficulty.
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="600px" useDropdown="true">

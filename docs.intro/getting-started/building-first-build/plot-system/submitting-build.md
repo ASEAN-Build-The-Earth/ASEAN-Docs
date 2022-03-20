@@ -12,18 +12,18 @@ import GuideFeedback from "@site/static/img/docs/plot-system/plot-feedback.png"
 
 ```
 
-Before submitting your plot, please check everything first if everything is ready to be reviewed. You can submit the plot to our reviewer by using your companion's plot profile or quickly type out `/plot submit` to submit it.
+Before submitting your plot, please check everything and if everything is ready to be reviewed. You can submit the plot to our reviewers by using your companion's plot profile or quickly type out `/plot submit` to submit it.
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="30rem"><Img src={GuideSubmit} width="600" height="482" alt="Guide Image"/></MinecraftWindow>
 ```
 
-The plot will be submitted and within 24 hours our reviewers would review your plot and give feedback and the score of your build.
+The plot will be submitted and reviews within 24 hours. Our reviewers would review your plot and give feedback and a score for your build.
 
 :::info
 
-Feedback given will be a score of your build which would have been decided by our reviewers.
-If you get score lower than 2 in every category that means your build has been rejected.
+Feedback given will be a score for your build which would have been decided by our reviewers.
+If you get score that is lower than 2 in every category this means your build has been rejected.
 
 <details>
 <summary>My build is rejected <small>❔❔❔</small></summary> 
