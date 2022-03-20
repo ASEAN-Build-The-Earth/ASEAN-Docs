@@ -29,9 +29,9 @@ export default function SupportPage() {
                         <h4><MarkdownBlock className={styles.propaganda_msg}>
                                 <Translate description="Propaganda message for supporting aseanbte (able to edit the '1 dollar USD' to local currency) ">
                                     Hey if you want to see the server grow.
-                                    Consider donating to us at the minimum of [1 dollar USD](https://www.google.com/search?q=1+usd)! 
+                                    Consider donating to us at the minimum of [$1 USD](https://www.google.com/search?q=1+usd)! 
                                     \n
-                                    Feel free to donate any number you'd like.
+                                    
                                 </Translate>
                             </MarkdownBlock>
                         </h4>
