@@ -20,8 +20,8 @@ import IMG_NorminalIRLRoof from '@site/static/img/docs/bte-buildings/normal_roof
 
 Before we build anything, you first need to know  what its look like to build with us
 
-## Most building is diagnal❕
-<Text.Tab>As we are building the earth one by one scale, everything has to be accurate and align to each other that makes it impossible to have every build being in straight line. well think of it our Erth is not square and flat!</Text.Tab>
+## Most building are diagonal❕
+<Text.Tab>As we are building the earth one to one scale, buildings have to be accurate and aligned properly which makes it impossible to have every build being in a straight line.</Text.Tab>
 
 ```mdx-code-block
 
@@ -32,9 +32,9 @@ Before we build anything, you first need to know  what its look like to build wi
 ```
 
 ## Every build looks smaller than you think
-<Text.Tab/>Many newcomer think 1:1 scale like its relative to your minecraft character and missunderstand it.<br/>
-for example if you built a normal house with 4 blocks tall floor its mean u built a 4 meter high building and make it looks out of place while
-typical building in our project only have 2 - 3 blocks height as you can see in the example below.<br/><br/>
+<Text.Tab/>Many newcomers think 1:1 scale is relative to your minecraft character and misunderstand it.<br/>
+for example if you built a normal house with 4 blocks tall floor its means you have built a 4 meter high building and make it looks out of place.
+A typical building in our project only has 2 - 3 blocks height as you can see in the example below.<br/><br/>
 
 <!-- good bad card -->
 ```mdx-code-block
@@ -47,7 +47,7 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
                 icon = { <svg width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg> }
                 title = {
                     <p style={ { display: "inline-flex", textTransform:"none", fontStyle:"italic" } }>
-                        Typical in-real-life building ain't this tall
+                        A typical real-life building is not this tall
                     </p>
                 } 
             >
@@ -60,7 +60,7 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
                 icon = { <svg width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg> } 
                 title = {
                     <p style={ { display: "inline-flex", textTransform:"none", fontStyle:"italic" } }>
-                        BTE building is just this small
+                        A BTE building in south east asia is about this size
                     </p>
                 } 
             >
@@ -90,8 +90,8 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
         </div>
         <div class="card__body" style={{padding:"0 var(--ifm-card-horizontal-spacing) var(--ifm-card-vertical-spacing) "}}>
             <p>
-                As you can see, its very hard to actually find steep 45 degrees roof in real world.<br/>
-                It turns out we have many new builder built every roof with full 45 degrees block or stair that makes the building seems unatural.
+                As you can see, its very hard to find a steep 45 degrees roof in real world.<br/>
+                It turns out we have many new builders that build their roofs with  a 45 degree block or stair that makes the building seems unnatural.
             </p>
         </div>
         <div class="container">
@@ -102,7 +102,7 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
                         icon = { <svg width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg> }
                         title = {
                             <p style={ { display: "inline-flex", textTransform:"none", fontStyle:"italic" } }>
-                                Very steep roof is bad and inaccurate
+                                The roof is too steep hence it is bad and inaccurate
                             </p>
                         } 
                     >
@@ -115,7 +115,7 @@ typical building in our project only have 2 - 3 blocks height as you can see in 
                         icon = { <svg width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg> } 
                         title = {
                             <p style={ { display: "inline-flex", textTransform:"none", fontStyle:"italic" } }>
-                                Good roof have natural looking steepness
+                                The roof has a natural looking steepness. 
                             </p>
                         } 
                     >
