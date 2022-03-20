@@ -17,27 +17,27 @@ import GuideWindows from "@site/static/img/docs/finishing-plot/guide_windows.gif
 ```
 
 Now its time to start building your plot!<br/>
-In this page we'll guide you how yu can build your plot in beginner way
+In this page we'll guide you how you as a beginner can build your plot
 
 ## Basic Workflow
 ### 1. See your building outline
-This might be hard but you have to check how your building looks like vs in minecraft. Because the blockyness of minecraft 
-dont be confuse if your plot outline looks off, you can also adjust the outline to fit your real life building better.
+This might be hard but you have to check how your building looks like vs in minecraft. Because of the blocky-ness of minecraft.
+It is normal if the outline looks a bit off compared to the real life building. 
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="53rem"><Img src={Guide_0} width="1902" height="616" alt="guild_1_image" /></MinecraftWindow>
 ```
 
 ### 2. Build a rough building shell
-After you're good with understanding your build, pick a few block, it doesnt need to fit your building's color at first 
-and use those block to build a rough shell of your build covering every important point of your build.
+After you're happy with your building outline, pick a few blocks, it doesn't need to fit your building's color at first 
+then use those blocks to build a rough shell of your build covering every important point of your build.
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="53rem"><Img src={Guide_1} width="1920" height="1080" alt="guild_1_image" /></MinecraftWindow>
 ```
 
 ### 3. Fill up your outlined shell
-Choose a block choice of your for building, it has to fit the building color but since minecraft has very few color choice especially with minecraft version 1.12.2 we only supports. its fine to bend your color with closet minecraft has.<br/>
+Choose a block of your choice for building, it has to fit the building color but since minecraft has very few color choices especially with minecraft version 1.12.2. it's fine to choose a color that is close to what minecraft has.<br/>
 Then fill the outlined shell with blocks you choosed. 
 
 ```mdx-code-block
@@ -45,11 +45,11 @@ Then fill the outlined shell with blocks you choosed.
 ```
 
 ### 4. Build assets and decoration
-See your in-real-life build, see around it does it has extra roof extended around? does it has a garage somewhere? does it has chimney extended from the roof? 
-then build it! dont miss anything.
+See your in-real-life building, does it have an extra roof extended around? Does it has a garage somewhere? Does it has chimney extended from the roof? 
+Then build it! don't miss anything.
 
-:::caution you dont have to build cars or interior of the build
-however if you feels like to build it, go ahead but we don't encouraged
+:::caution You must not build interior of houses.
+Due to laws on many country's we are not allowed to map private property that being Houses, Schools, Government buildings etcetera.
 :::
 
 ```mdx-code-block
@@ -57,15 +57,15 @@ however if you feels like to build it, go ahead but we don't encouraged
 ```
 
 ### 5. Polish the build and exterior
-Last final step is to polish out your build<br/>
+The final step is to polish your building<br/>
 <table><td> 
 <sup>try checking this list if you've built everything already</sup>
 
-- [x] floor's material
-- [x] tree and bushes
-- [x] gate and doors
-- [x] pole and shed
-- [x] windows all around the building
+- [x] Floor's material is correct 
+- [x] Tree and bushes
+- [x] Gate and doors
+- [x] Poles and sheds
+- [x] Windows all around the building
 
 </td></table>
 
@@ -76,7 +76,7 @@ Last final step is to polish out your build<br/>
 
 :::info
 
-dont forget to fill up inside of all your window with any dark block you want.
+Don't forget to fill up the inside of all your windows with any dark block you want.
 ```mdx-code-block
 <MinecraftWindow maxWidth="30rem"><Img src={GuideWindows} width="600" height="329" alt="guild_windows" /></MinecraftWindow>
 ```

@@ -9,7 +9,7 @@ const ErrorImage = ({error, width, height, ...props}) => {
     console.log("[Error]: Could not load an image: ", error);
     return (
         <ImgManager.Loader width={width} height={height} {...props} fillColor="var(--ifm-color-danger-dark)">
-            <em><Translate description="Error message when any image could not be loaded.">
+            <em><Translate id="image.loader.error" description="Error message when any image could not be loaded.">
                 Sorry, could not load this image :(
             </Translate></em>
         </ImgManager.Loader> 
@@ -26,7 +26,7 @@ function ImageRenderer({width, height, src, srcList, ...props})
     return ( 
         img.error !== null? <ErrorImage error={img.error} width={width} height={height} {...props}/> : 
         img.isLoading? <ImgManager.Loader width={width} height={height} {...props}>
-            <Translate description="Loading message of all image in document">
+            <Translate id="image.loader.loading" description="Loading message of all image in document">
                 Loading image...  
             </Translate>
         </ImgManager.Loader>
@@ -48,7 +48,7 @@ function ImageRenderer({width, height, src, srcList, ...props})
                 alt={ props.alt? props.alt : "image" }>
             </img>
             <ImgManager.LoaderDissolve {...props}>
-                <Translate description="A message on any image when the loading is done">
+                <Translate id="image.loader.success" description="A message on any image when the loading is done">
                     Loading done!
                 </Translate>
             </ImgManager.LoaderDissolve>

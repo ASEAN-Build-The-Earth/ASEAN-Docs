@@ -21,7 +21,7 @@ In this page we'll guide you how you as a beginner can build your plot
 
 ## Basic Workflow
 ### 1. See your building outline
-This might be hard but you have to check how your building looks like vs in minecraft. Because the blockyness of minecraft .
+This might be hard but you have to check how your building looks like vs in minecraft. Because of the blocky-ness of minecraft.
 It is normal if the outline looks a bit off compared to the real life building. 
 
 ```mdx-code-block
@@ -29,15 +29,15 @@ It is normal if the outline looks a bit off compared to the real life building.
 ```
 
 ### 2. Build a rough building shell
-After you're happy with your building outline, pick a few block, it doesn't need to fit your building's color at first 
-then use those block to build a rough shell of your build covering every important point of your build.
+After you're happy with your building outline, pick a few blocks, it doesn't need to fit your building's color at first 
+then use those blocks to build a rough shell of your build covering every important point of your build.
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="53rem"><Img src={Guide_1} width="1920" height="1080" alt="guild_1_image" /></MinecraftWindow>
 ```
 
 ### 3. Fill up your outlined shell
-Choose a block for building, it has to fit the building color but since minecraft has very few color choice especially with minecraft version 1.12.2. its fine to choose a color that is close to what minecraft has.<br/>
+Choose a block of your choice for building, it has to fit the building color but since minecraft has very few color choices especially with minecraft version 1.12.2. it's fine to choose a color that is close to what minecraft has.<br/>
 Then fill the outlined shell with blocks you choosed. 
 
 ```mdx-code-block
@@ -45,8 +45,8 @@ Then fill the outlined shell with blocks you choosed.
 ```
 
 ### 4. Build assets and decoration
-See your in-real-life building,does it have  a extra roof extended around? does it has a garage somewhere? does it has chimney extended from the roof? 
-then build it! don't miss anything.
+See your in-real-life building, does it have an extra roof extended around? Does it has a garage somewhere? Does it has chimney extended from the roof? 
+Then build it! don't miss anything.
 
 :::caution You must not build interior of houses.
 Due to laws on many country's we are not allowed to map private property that being Houses, Schools, Government buildings etcetera.

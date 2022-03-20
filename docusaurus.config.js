@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'ASEAN BTE',
   tagline: 'We are building southeast asia in Minecraft 1:1 scale!',
-  url: 'https://ASEAN-Docs.netlify.app',
+  url: 'https://builders-doc.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -77,7 +77,8 @@ const config = {
       colorMode: { defaultMode: "dark", },
       autoCollapseSidebarCategories: true,
       hideableSidebar: true, // idk what this do
-      image: "img/icons/aseanbte_logo.png", //meta og image
+      image: "img/icons/aseanbte_full_logo.jpg", //meta og image
+      metadata: [{name: 'theme-color', content: '#ffc561'}],
       navbar: {
         title: 'ASEAN BTE',
         logo: {

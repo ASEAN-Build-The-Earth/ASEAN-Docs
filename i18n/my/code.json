@@ -1,109 +1,125 @@
 {
-  "IP": {
+  "util.keyword.ip": {
     "message": "IP",
     "description": "IP label at the get-start page"
   },
-  "PORT": {
+  "util.keyword.port": {
     "message": "PORT",
     "description": "PORT label at the get-start page"
   },
-  "Minecraft": {
-    "message": "Minecraft",
-    "description": "the first and only requirement in the homepage requirement box"
+  "image.loader.error": {
+    "message": "Sorry, could not load this image :(",
+    "description": "Error message when any image could not be loaded."
   },
-  "ASEAN BuildTheEarth": {
+  "image.loader.loading": {
+    "message": "Loading image...",
+    "description": "Loading message of all image in document"
+  },
+  "image.loader.success": {
+    "message": "Loading done!",
+    "description": "A message on any image when the loading is done"
+  },
+  "util.keyword.minecraft": {
+    "message": "Minecraft",
+    "description": "Minecraft label of the MinecraftWindow style"
+  },
+  "home.label": {
     "message": "ASEAN BuildTheEarth",
     "description": "Homepage ASEAN BTE label"
   },
-  "We are The Association of Southeast Asian Nations Build the Earth. We are part of the [build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! We currently oversee the progress of Brunei, Myanmar, Cambodia, Timor-Leste, Indonesia, Laos, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.": {
+  "home.description": {
     "message": "We are The Association of Southeast Asian Nations Build the Earth. We are part of the [build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! We currently oversee the progress of Brunei, Myanmar, Cambodia, Timor-Leste, Indonesia, Laos, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.",
     "description": "ASEAN BTE long description at the homepage"
   },
-  "Server IP": {
+  "home.ipBox": {
     "message": "Server IP",
     "description": "'Server ip' box at the homepage"
   },
-  "Java": {
+  "home.ipBox.java": {
     "message": "Java",
     "description": "Java label at homepage"
   },
-  "Bedrock": {
+  "home.ipBox.bedrock": {
     "message": "Bedrock",
     "description": "Bedrock label at homepage"
   },
-  "Requirements": {
+  "home.requirementBox": {
     "message": "Requirements",
     "description": "Requirements box at homepage"
   },
-  "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) is supported.": {
-    "message": "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) is supported.",
+  "home.requirementBox.content": {
+    "message": "Minecraft",
+    "description": "the first and only requirement in the homepage requirement box"
+  },
+  "home.requirementBox.content.description": {
+    "message": "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) are supported.",
     "description": "Extra foldout section of Minecraft in homepage describing we supports all version of it"
   },
-  "Cracked Minecraft": {
+  "home.requirementBox.cracked-1": {
     "message": "Cracked Minecraft",
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
-  "is not allowed.": {
+  "home.requirementBox.cracked-2": {
     "message": "is not allowed.",
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
-  "ASEAN BTE": {
+  "home.banner.title": {
     "message": "ASEAN BTE",
     "description": "A hero title of homepage document"
   },
-  "We are building southeast asia in Minecraft 1:1 scale!": {
+  "home.banner.subtitle": {
     "message": "We are building southeast asia in Minecraft 1:1 scale!",
     "description": "A hero description of homepage document"
   },
-  "Support ASEAN BTE": {
+  "support.title": {
     "message": "Support ASEAN BTE",
     "description": "Header title of support page"
   },
-  "Hey if you want to see the server grow. Consider donating to us at the minimum of [1 dollar USD](https://www.google.com/search?q=1+usd)! \\n Feel free to donate any number you'd like.": {
-    "message": "Hey if you want to see the server grow. Consider donating to us at the minimum of [1 dollar USD](https://www.google.com/search?q=1+usd)! \\n Feel free to donate any number you'd like.",
-    "description": "Propaganda message for supporting aseanbte (able to edit the '1 dollar USD' to local currency) "
+  "support.subtitle": {
+    "message": "Hello, if you want to see the server grow. Consider donating to us at the minimum of [1 U.S. Dollar](https://www.google.com/search?q=1+usd), \\n you are helping us go one step further in achieving our goal.",
+    "description": "Propaganda message for supporting aseanbte (recommended to edit the '1 U.S. Dollar' to local currency translating to) "
   },
-  "Where will my money go?": {
-    "message": "Where will my money go?",
+  "support.propaganda.title": {
+    "message": "Where would my funds go?",
     "description": "The topic in support page propaganda"
   },
-  "main focus": {
+  "support.propaganda.1.badge": {
     "message": "main focus",
     "description": "The badge-like component below the First support quote"
   },
-  "Supports minecraft server quality and performance.": {
+  "support.propaganda.1.title": {
     "message": "Supports minecraft server quality and performance.",
     "description": "First quote of 'Where will my money go?' topic"
   },
-  "90% of the funding here would go to server funding which is paying for our virtual private server (VPS) which hosts our servers as well as discord bots. By providing funding you are keeping our servers alive literally.": {
-    "message": "90% of the funding here would go to server funding which is paying for our virtual private server (VPS) which hosts our servers as well as discord bots. By providing funding you are keeping our servers alive literally.",
+  "support.propaganda.1.description": {
+    "message": "90% of the funding here would go to server funding which is paying for our virtual private server (VPS) which hosts our servers as well as discord bots. By providing funding you are keeping our servers alive day by day.",
     "description": "Description of 'Supports minecraft server' from support page quote"
   },
-  "Savings": {
+  "support.propaganda.2.title": {
     "message": "Savings",
     "description": "Second quote of 'Where will my money go?' topic"
   },
-  "The 10% would be saved up and only be spent in the team investing in new systems or products or if a major incident happens": {
+  "support.propaganda.2.description": {
     "message": "The 10% would be saved up and only be spent in the team investing in new systems or products or if a major incident happens",
     "description": "Description of 'Supports our builder workflow' from support page quote"
   },
-  "Visit Donation Site": {
+  "support.kofiBox.visitPageButton": {
     "message": "Visit Donation Site",
     "description": "The visit kofi site button at the bottom of kofi widget"
   },
-  "Support Us": {
+  "home.bannerButton.support.label": {
     "message": "Support Us",
     "description": "The big Start building button (please keep the text count very low to prevent newline)"
   },
-  "Donate on kofi": {
+  "home.bannerButton.support.labelOverlay": {
     "message": "Donate on kofi",
     "description": "The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)"
   },
-  "Get Started": {
+  "home.bannerButton.getStart.label": {
     "message": "Get Started",
     "description": "The big Start building button (please keep the text count very low to prevent newline)"
   },
-  "Go To Document": {
+  "home.bannerButton.getStart.labelOverlay": {
     "message": "Go To Document",
     "description": "The pop up message when you hover to the homepage Start Building button (please keep the text count for this low)"
   },
@@ -131,10 +147,6 @@
     "message": "Close",
     "description": "The ARIA label for close button of announcement bar"
   },
-  "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
-    "description": "The ARIA label for the back to top button"
-  },
   "theme.blog.archive.title": {
     "message": "Archive",
     "description": "The page & hero title of the blog archive page"
@@ -142,6 +154,10 @@
   "theme.blog.archive.description": {
     "message": "Archive",
     "description": "The page & hero description of the blog archive page"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
   },
   "theme.blog.paginator.navAriaLabel": {
     "message": "Blog list page navigation",
@@ -329,17 +345,5 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
-  },
-  "Sorry, could not load this image :(": {
-    "message": "Sorry, could not load this image :(",
-    "description": "Error message when any image could not be loaded."
-  },
-  "Loading image...": {
-    "message": "Loading image...",
-    "description": "Loading message of all image in document"
-  },
-  "Loading done!": {
-    "message": "Loading done!",
-    "description": "A message on any image when the loading is done"
   }
 }

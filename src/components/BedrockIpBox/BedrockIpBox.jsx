@@ -12,12 +12,12 @@ const BedrockIpBox = ({IP, PORT}) => {
     return (
       <>
         <span className={styles.ip_box}>
-          <CodeBlock className="language-js" title={<Translate description="IP label at the get-start page">IP</Translate>}>
+          <CodeBlock className="language-js" title={<Translate id="util.keyword.ip" description="IP label at the get-start page">IP</Translate>}>
             {IP}
           </CodeBlock>
         </span>
         <span className={styles.ip_box}>
-          <CodeBlock className="language-js" title={<Translate description="PORT label at the get-start page">PORT</Translate>}>
+          <CodeBlock className="language-js" title={<Translate id="util.keyword.port" description="PORT label at the get-start page">PORT</Translate>}>
             {PORT}
           </CodeBlock>
         </span>

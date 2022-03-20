@@ -53,7 +53,7 @@ const MinecraftWindow = (
       children,
       width,
       maxWidth,
-      title = <Translate description="Minecraft label of the MinecraftWindow style">Minecraft</Translate>,
+      title = <Translate id="util.keyword.minecraft" description="Minecraft label of the MinecraftWindow style">Minecraft</Translate>,
       useDropdown = "false",
       dropdownContents = DEFAULT_IP_BOX
     }
