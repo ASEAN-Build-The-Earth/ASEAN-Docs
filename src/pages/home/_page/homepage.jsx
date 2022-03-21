@@ -92,7 +92,7 @@ const ContentList = [
                       </Translate>
                     </text.Hl> </strong> 
                     <Translate id="home.requirementBox.cracked-2" description="section of 'Cracked Minecraft is not allowed'">
-                      is not allowed.
+                      is not ALLOWED.
                     </Translate>
                   </sub>
                 </Admonition>
@@ -152,12 +152,12 @@ function Header() {
       <BannerRanderer/>
       <div className={clsx("container", styles.header_container)}>
         {/*these title is based on {siteConfig.title & tagline} but exports raw to use Translate tag */}
-        <h1 className={clsx('hero__title', styles.title, styles.shadowed)}>     
+        <h1 className={clsx('hero__title', styles.banner_title, styles.shadowed)}>     
           <Translate id="home.banner.title" description="A hero title of homepage document">
             ASEAN BTE
           </Translate>
         </h1>
-        <p className={clsx("hero__subtitle", styles.title, styles.shadowed)}>
+        <p className={clsx("hero__subtitle", styles.banner_description, styles.shadowed)}>
           <Translate id="home.banner.subtitle" description="A hero description of homepage document">
             We are building southeast asia in Minecraft 1:1 scale!
           </Translate>
