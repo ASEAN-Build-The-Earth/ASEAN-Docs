@@ -27,7 +27,7 @@ If you get score that is lower than 2 in every category this means your build ha
 
 <details>
 <summary>My build is rejected <small>❔❔❔</small></summary> 
-Don't worry, everyone makes mistakes. Go back to your plot and you'll see improvement message from the reviewer to you to fix it.
+Don't worry, everyone makes mistakes. Go back to your plot and you'll see improvement message from the reviewer to help you fix it.
 Submit your plot again with your improvement and you'll suddenly get approved by our member!
 </details>
 

@@ -1,4 +1,12 @@
 {
+  "util.keyword.ip": {
+    "message": "IP",
+    "description": "IP label at the get-start page"
+  },
+  "util.keyword.port": {
+    "message": "PORT",
+    "description": "PORT label at the get-start page"
+  },
   "image.loader.error": {
     "message": "Sorry, could not load this image :(",
     "description": "Error message when any image could not be loaded."
@@ -10,14 +18,6 @@
   "image.loader.success": {
     "message": "Loading done!",
     "description": "A message on any image when the loading is done"
-  },
-  "util.keyword.ip": {
-    "message": "IP",
-    "description": "IP label at the get-start page"
-  },
-  "util.keyword.port": {
-    "message": "PORT",
-    "description": "PORT label at the get-start page"
   },
   "util.keyword.minecraft": {
     "message": "Minecraft",
@@ -60,7 +60,7 @@
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
   "home.requirementBox.cracked-2": {
-    "message": "is not allowed.",
+    "message": "is not ALLOWED.",
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
   "home.banner.title": {
@@ -92,7 +92,7 @@
     "description": "First quote of 'Where will my money go?' topic"
   },
   "support.propaganda.1.description": {
-    "message": "90% of the funding here would go to server funding which is paying for our virtual private server (VPS) which hosts our servers as well as discord bots. By providing funding you are keeping our servers alive day by day.",
+    "message": "The 90% of the funds would go to our Virtual Private Server (VPS) which hosts our Minecraft servers as well as Discord bots. By donating, you are keeping our Minecraft servers alive day by day.",
     "description": "Description of 'Supports minecraft server' from support page quote"
   },
   "support.propaganda.2.title": {
@@ -100,7 +100,7 @@
     "description": "Second quote of 'Where will my money go?' topic"
   },
   "support.propaganda.2.description": {
-    "message": "The 10% would be saved up and only be spent in the team investing in new systems or products or if a major incident happens",
+    "message": "The 10% of the funds would be saved up and only be spent on the team’s investments of new systems or products or major accidents.",
     "description": "Description of 'Supports our builder workflow' from support page quote"
   },
   "support.kofiBox.visitPageButton": {
@@ -147,10 +147,6 @@
     "message": "Close",
     "description": "The ARIA label for close button of announcement bar"
   },
-  "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
-    "description": "The ARIA label for the back to top button"
-  },
   "theme.blog.archive.title": {
     "message": "Archive",
     "description": "The page & hero title of the blog archive page"
@@ -158,6 +154,10 @@
   "theme.blog.archive.description": {
     "message": "Archive",
     "description": "The page & hero description of the blog archive page"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
   },
   "theme.blog.paginator.navAriaLabel": {
     "message": "Blog list page navigation",

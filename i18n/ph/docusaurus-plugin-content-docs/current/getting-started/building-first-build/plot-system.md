@@ -18,7 +18,7 @@ Continue to the next page to get started on it.
 <!-- Main Topic -->
 ## What is Plot System ?
 <Text.Tab/>Plot system is a BuildTheEarth Building system made for newcomer and beginner builders to try out building.<br/>
-Builders entering the server will have an option to build on any build site created by official builder.<br/><br/>
+Builders entering the server will have an option to build on any build site created by official builders.<br/><br/>
 <details><summary>What is a Build Site ?</summary>
 
 Build site is an on-going team project in every country we're building on(ASEAN).<br/>
@@ -38,7 +38,7 @@ The outline is a rough representation of the building's shell by [Google Map](ht
 </Text.Tab>
 
 :::tip Before you go to next page
-- We recommend log in to our [Plot server](../visiting#2-plot-server) and follow along with this document.
+- We recommend you to log in to our [Plot server](../visiting#2-plot-server) and follow along with this document.
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="600px" useDropdown="true"><Img src={JoiningPlotImage} width="600" height="318" alt="Guide Image"/></MinecraftWindow>

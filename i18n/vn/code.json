@@ -60,7 +60,7 @@
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
   "home.requirementBox.cracked-2": {
-    "message": "is not allowed.",
+    "message": "is not ALLOWED.",
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
   "home.banner.title": {
@@ -92,7 +92,7 @@
     "description": "First quote of 'Where will my money go?' topic"
   },
   "support.propaganda.1.description": {
-    "message": "90% of the funding here would go to server funding which is paying for our virtual private server (VPS) which hosts our servers as well as discord bots. By providing funding you are keeping our servers alive day by day.",
+    "message": "90% quỹ sẽ đổ vào Virtual Private Server (VPS), nơi host các server Minecraft cũng như bot Discord của chúng tôi. Bằng cách donate, bạn đang giúp cho các server Minecraft của chúng tôi hoạt động từng ngày.",
     "description": "Description of 'Supports minecraft server' from support page quote"
   },
   "support.propaganda.2.title": {
@@ -100,7 +100,7 @@
     "description": "Second quote of 'Where will my money go?' topic"
   },
   "support.propaganda.2.description": {
-    "message": "The 10% would be saved up and only be spent in the team investing in new systems or products or if a major incident happens",
+    "message": "The 10% of the funds would be saved up and only be spent on the team’s investments of new systems or products or major accidents.",
     "description": "Description of 'Supports our builder workflow' from support page quote"
   },
   "support.kofiBox.visitPageButton": {
