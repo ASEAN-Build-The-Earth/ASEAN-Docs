@@ -102,18 +102,9 @@ html[data-theme='dark'] .hero--primary {
 
 /* LOCALIZED FONTS */
 /* Thai */
-@font-face {
-  font-family: "NotoSansThai--Regular";
-  src: url(@site/static/font/th/NotoSansThai-Regular.ttf) format("truetype");
-}
-@font-face {
-  font-family: "NotoSansThai--Medium";
-  src: url(@site/static/font/th/NotoSansThai-Medium.ttf) format("truetype");
-}
-
 html[lang=th-TH] {
-  font-family: var(--ifm-font-family-base), "NotoSansThai--Regular";
-  --ifm-heading-font-family: var(--ifm-font-family-base), "NotoSansThai--Medium";
+  font-family: var(--ifm-font-family-base), 'Noto Sans Thai';
+  --ifm-heading-font-family: var(--ifm-font-family-base), 'Noto Sans Thai';
 }
 
 /* DEFAULT PATELLATE

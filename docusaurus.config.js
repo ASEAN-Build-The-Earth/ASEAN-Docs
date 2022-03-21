@@ -12,6 +12,7 @@ const config = {
   favicon: 'img/icons/aseanbte_logo.png',
   organizationName: 'ASEAN-Build-The-Earth',
   projectName: 'ASEAN-Docs',
+  clientModules: [require.resolve('./src/global/client_module.js')],
 
   presets: [
     [
@@ -44,7 +45,7 @@ const config = {
         },
         */
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/global/global.css'),
         },
       }),
     ],
@@ -186,7 +187,6 @@ const config = {
       },
     }),
     
-
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'th', 'my', 'id', 'vn', 'ph'],
