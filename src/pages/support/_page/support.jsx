@@ -55,8 +55,9 @@ export default function SupportPage() {
                                     </h4>
                                     <dt id={styles.quote_description}><sup>
                                         <Translate id="support.propaganda.1.description" description="Description of 'Supports minecraft server' from support page quote">
-                                            90% of the funding here would go to server funding which is paying for our virtual private server (VPS)  
-                                            which hosts our servers as well as discord bots. By providing funding you are keeping our servers alive day by day.
+                                            The 90% of the funds would go to our Virtual Private Server (VPS) 
+                                            which hosts our Minecraft servers as well as Discord bots. By donating, 
+                                            you are keeping our Minecraft servers alive day by day. 
                                         </Translate>
                                     </sup></dt>
                                 </blockquote>
@@ -70,7 +71,7 @@ export default function SupportPage() {
                                     </h4>
                                     <dt id={styles.quote_description}><sup>
                                         <Translate id="support.propaganda.2.description" description="Description of 'Supports our builder workflow' from support page quote">
-                                            The 10% would be saved up and only be spent in the team investing in new systems or products or if a major incident happens 
+                                            The 10% of the funds would be saved up and only be spent on the team’s investments of new systems or products or major accidents.
                                         </Translate>
                                     </sup></dt>
                                 </blockquote>

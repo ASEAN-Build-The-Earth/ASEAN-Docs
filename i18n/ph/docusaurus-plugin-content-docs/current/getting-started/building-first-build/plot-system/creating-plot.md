@@ -18,9 +18,10 @@ import guide_difficulty from "@site/static/img/docs/creating-plot/plot-difficult
 
 ```
 <div class="container"><div class="row">
-    <div class="col col--6"><dd>After you joined our plot server, you'll have a netherstar (Companion) in your inventory.</dd><hr/></div>
+    <div class="col col--6"><dd>After you joined our plot server, you'll have a netherstar (<Text.Hl textColor="#54fcfc">Companion</Text.Hl>) in your inventory.</dd><hr/></div>
     <div class="col col--6"><Img src={guide_companion} alt="companion" width="844" height="352" 
-        style={{borderRadius:"6px", transformOrigin:"top center",transform:"scale(0.8)"}} className="item shadow--md" /></div>
+        style={{borderRadius:"6px", transformOrigin:"top center",transform:"scale(0.8)"}} className="item shadow--md" />
+    </div>
 </div></div>
 
 ## Companion panel
@@ -35,19 +36,19 @@ import guide_difficulty from "@site/static/img/docs/creating-plot/plot-difficult
 Switch to your companion in the inventory then <kbd>Right Click</kbd> or <kbd>/companion</kbd> to open your Plot system server panel.
 The server panel is basically your plot system hub and your builder profile, it is included with many things such as..
 - The main inventory grid displays the available build sites that you can build in
-- down in the bottom right of the grid is your builder profile and utility, you can see your builder points and your on-going plots here
-- at the top right corner is the plot's difficulty filter, you can select the building difficulty that you would like.
+- Down in the bottom right of the grid is your builder profile and utility, you can see your builder points and your on-going plots here
+- At the top right corner is the plot's difficulty filter, you can select the building difficulty that you would like.
 
 ```mdx-code-block
 
 <Admonition type="info">
     <div style={{lineHeight:"200%"}}>
         <strong><Text.Hl color="#55FF55" textColor="rgb(80, 110, 15)">Easy</Text.Hl> </strong>
-            1 - 2 small houses and simple details.<br/>
+            1 - 2 Small houses with simple details.<br/>
         <strong><Text.Hl color="#FFAA00" textColor="rgb(102, 125, 53)">Medium</Text.Hl> </strong> 
-            detailed row houses or medium sized city block buildings.<br/>
+            Detailed row houses or medium sized city block buildings.<br/>
         <strong><Text.Hl color="#FF5555" textColor="rgb(120, 45, 45)">Hard</Text.Hl> </strong>
-            big city block to big skyscraper <br/>
+            Big city block to big skyscraper <br/>
     </div>
 </Admonition>
 
@@ -56,7 +57,7 @@ The server panel is basically your plot system hub and your builder profile, it 
 ## Choosing your plot 
 :::caution 
 
-Due to the fact this system is new, you can only choose build site at `Malaysia, Klang` for now, more build sites are coming soon!
+Due to the fact this system is new, you can only choose build site at `Malaysia, Klang` and `Philippine, Davao City` for now, more build sites are coming soon!
 
 :::
 

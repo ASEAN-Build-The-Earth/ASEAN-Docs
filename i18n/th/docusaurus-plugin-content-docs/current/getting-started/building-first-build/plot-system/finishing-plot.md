@@ -16,7 +16,7 @@ import GuideWindows from "@site/static/img/docs/finishing-plot/guide_windows.gif
 
 ```
 
-Now its time to start building your plot!<br/>
+Now it's time to start building your plot!<br/>
 In this page we'll guide you how you as a beginner can build your plot
 
 ## Basic Workflow
