@@ -103,8 +103,8 @@ html[data-theme='dark'] .hero--primary {
 /* LOCALIZED FONTS */
 /* Thai */
 html[lang=th-TH] {
-  font-family: var(--ifm-font-family-base), 'Noto Sans Thai';
-  --ifm-heading-font-family: var(--ifm-font-family-base), 'Noto Sans Thai';
+  font-family: 'Noto Sans Thai',  var(--ifm-font-family-base);
+  --ifm-heading-font-family: 'Noto Sans Thai', var(--ifm-font-family-base);
 }
 
 /* DEFAULT PATELLATE
