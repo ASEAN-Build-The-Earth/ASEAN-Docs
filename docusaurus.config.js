@@ -74,7 +74,8 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+  (
+    {
       colorMode: { defaultMode: "dark", },
       autoCollapseSidebarCategories: true,
       hideableSidebar: true, // idk what this do
@@ -122,6 +123,7 @@ const config = {
       },
       footer: {
         style: 'dark',
+        copyright: `Copyright © ${new Date().getFullYear()} Association of Southeast Asian Nation Build The Earth.`,
         links: [
           {
             title: 'Docs',
@@ -185,7 +187,8 @@ const config = {
         textColor: '#091E42',
         isCloseable: false,
       },
-    }),
+    }
+  ),
     
   i18n: {
     defaultLocale: 'en',
@@ -220,6 +223,13 @@ const config = {
       },
     },
   },
+
+  scripts: [
+    { /* kofi widget button script, will be drawn on footer */
+      src: 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js',
+      async: false,
+    }
+  ],
 };
 
 module.exports = config;
