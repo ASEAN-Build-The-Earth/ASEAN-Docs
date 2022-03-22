@@ -11,11 +11,16 @@ function drawKofiWidget() {
 }
 
 function fetchLocale() {
-    /* get document's locale by accessing the baseUrl prefix of that local */
-    const locale = document.baseURI.charAt(document.baseURI.length - 3) 
-        + document.baseURI.charAt(document.baseURI.length - 2) 
-        + document.baseURI.charAt(document.baseURI.length - 1);
-    Locale.fetch(locale.replace("/", ""));
+    /* get document's locale by accessing the Url prefix of that local
+     * the regex extract first sub path from url and output in groups.locale
+     * ref: [https://regex101.com/r/kkqwRJ/2]
+     */
+    const baseURL = document.URL.charAt(document.URL.length - 1) == "/" ? document.URL : document.URL.concat("/");
+    const baseLocale = baseURL.match("http[s]?:\/\/([^\/]+\/){1}(?<locale>[^\/]+)\/");
+    if(baseLocale !== null) {
+        const locale = baseLocale.groups.locale;
+        Locale.fetch(locale);
+    }
 }
 
 function customLocale() {
@@ -29,10 +34,10 @@ function customLocale() {
             // font.type = "text/css";
             document.head.appendChild(font);
         }
-        case "id": {}
-        case "my": {}
-        case "vn": {}
-        case "ph": {}
+        case "id": {/*soon*/}
+        case "my": {/*soon*/}
+        case "vn": {/*soon*/}
+        case "ph": {/*soon*/}
     }
 }
 
