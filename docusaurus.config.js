@@ -12,6 +12,7 @@ const config = {
   favicon: 'img/icons/aseanbte_logo.png',
   organizationName: 'ASEAN-Build-The-Earth',
   projectName: 'ASEAN-Docs',
+  clientModules: [require.resolve('./src/global/client_module.js')],
 
   presets: [
     [
@@ -44,7 +45,7 @@ const config = {
         },
         */
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/global/global.css'),
         },
       }),
     ],
@@ -73,7 +74,8 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+  (
+    {
       colorMode: { defaultMode: "dark", },
       autoCollapseSidebarCategories: true,
       hideableSidebar: true, // idk what this do
@@ -121,6 +123,7 @@ const config = {
       },
       footer: {
         style: 'dark',
+        copyright: `Copyright © ${new Date().getFullYear()} Association of Southeast Asian Nation Build The Earth.`,
         links: [
           {
             title: 'Docs',
@@ -184,9 +187,9 @@ const config = {
         textColor: '#091E42',
         isCloseable: false,
       },
-    }),
+    }
+  ),
     
-
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'th', 'my', 'id', 'vn', 'ph'],
@@ -220,6 +223,13 @@ const config = {
       },
     },
   },
+
+  scripts: [
+    { /* kofi widget button script, will be drawn on footer */
+      src: 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js',
+      async: false,
+    }
+  ],
 };
 
 module.exports = config;

@@ -82,6 +82,12 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 html[data-theme='dark'] .hero--primary {
   --ifm-hero-text-color: white !important;
 }
+.footer__copyright {
+  margin-top: 2rem;
+  opacity: 0.5;
+  font-style: oblique;
+  font-size:  small;
+}
 
 /**
  * Support and respect for whoever prefer their display animation to be reduced
@@ -100,20 +106,63 @@ html[data-theme='dark'] .hero--primary {
   }
 }
 
-/* LOCALIZED FONTS */
-/* Thai */
-@font-face {
-  font-family: "NotoSansThai--Regular";
-  src: url(@site/static/font/th/NotoSansThai-Regular.ttf) format("truetype");
+/**Kofi widget override
+ * this will snap the buttom to site footer
+ */
+.floatingchat-container-wrap {
+  position: absolute !important;
+  top: unset !important;
+  bottom: unset !important;
+  transform: translateY(-120px) !important;
 }
-@font-face {
-  font-family: "NotoSansThai--Medium";
-  src: url(@site/static/font/th/NotoSansThai-Medium.ttf) format("truetype");
+.floating-chat-kofi-popup-iframe {
+  position: absolute !important;
+  bottom: unset !important;
+  transform: scale(1) translateY(-800px) !important;
+} 
+.floatingchat-container-wrap-mobi {
+  position: absolute !important;
+  top: unset !important;
+  bottom: unset !important;
+  transform: translateY(-120px) !important;
+}
+.floating-chat-kofi-popup-iframe-mobi {
+  position: absolute !important;
+  bottom: unset !important;
+  transform: scale(1) translateY(-800px) !important;
+}
+@media screen and (min-width: 1791px) { 
+  .floatingchat-container-wrap { transform: translateY(-120px) !important; margin-left: 12.5vw; } 
+  .floating-chat-kofi-popup-iframe { transform: scale(1) translateY(-800px) translateX(65px) !important; }
+  .floatingchat-container-wrap-mobi { transform: translateY(-120px) !important; margin-left: 12.5vw; } 
+  .floating-chat-kofi-popup-iframe-mobi { transform: scale(1) translateY(-800px) translateX(65px) !important; }
+}
+@media screen and (min-width: 1671px) and (max-width: 1790px) { 
+  .floatingchat-container-wrap { margin-left: 10vw; } 
+  .floatingchat-container-wrap-mobi { margin-left: 10vw; } 
+}
+@media screen and (min-width: 1290px) and (max-width: 1670px) { 
+  .floatingchat-container-wrap { margin-left: 5vw; } 
+  .floatingchat-container-wrap-mobi { margin-left: 5vw; } 
+}
+@media screen and (min-width: 997px) and (max-width: 1289px){
+  .floatingchat-container-wrap { transform: translateY(-123px) !important; }
+  .floating-chat-kofi-popup-iframe { transform: scale(1) translateY(-820px) !important; }
+  .floatingchat-container-wrap-mobi { transform: translateY(-123px) !important; }
+  .floating-chat-kofi-popup-iframe-mobi { transform: scale(1) translateY(-820px) !important; }
+}
+@media screen and (max-width: 996px) {
+  .floatingchat-container-wrap { transform: translateY(-140px) !important; }
+  .floating-chat-kofi-popup-iframe { transform: scale(1) translateY(-820px) !important; }
+  .floatingchat-container-wrap-mobi { transform: translateY(-135px) !important; }
+  .floating-chat-kofi-popup-iframe-mobi { transform: scale(1) translateY(-830px) !important; }
 }
 
+/* LOCALIZED FONTS */
+/* Thai */
 html[lang=th-TH] {
-  font-family: var(--ifm-font-family-base), "NotoSansThai--Regular";
-  --ifm-heading-font-family: var(--ifm-font-family-base), "NotoSansThai--Medium";
+  font-family: 'Noto Sans Thai',  var(--ifm-font-family-base);
+  --ifm-heading-font-family: 'Noto Sans Thai', var(--ifm-font-family-base);
 }
 
 /* DEFAULT PATELLATE
