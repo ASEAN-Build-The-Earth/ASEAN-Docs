@@ -1,0 +1,6 @@
+/* LOCALIZED FONTS */
+/* Thai */
+html[lang=th-TH] {
+    font-family: 'Noto Sans Thai',  var(--ifm-font-family-base);
+    --ifm-heading-font-family: 'Noto Sans Thai', var(--ifm-font-family-base);
+}
