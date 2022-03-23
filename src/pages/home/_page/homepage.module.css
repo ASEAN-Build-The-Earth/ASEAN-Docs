@@ -60,6 +60,12 @@
     padding: 2rem 0 25rem 0;
   }
 }
+@media (max-width: 996px) {
+  /* swap get-started button to top in mobile mode*/
+  .reverse_row {
+      flex-direction: column-reverse;
+  }
+}
 .intro_button_contents {
   display: flex;
   align-items: center;
