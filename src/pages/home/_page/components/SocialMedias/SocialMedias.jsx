@@ -34,7 +34,7 @@ const SocialMedias = ({contents}) => {
             <div className={styles.social_media_logo}>
                 <div id={styles.youtube_logo_div}></div>
                 <YoutubeLogo id={styles.youtube_logo}/>
-                <svg id={styles.youtube_logo_background}><line x1="5%" y1="50%" x2="95%" y2="50%" /></svg>
+                <div id={styles.youtube_logo_background}></div>
             </div> 
         </Link>
     </>)

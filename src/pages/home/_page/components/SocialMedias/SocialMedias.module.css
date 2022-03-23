@@ -49,11 +49,6 @@
     .social_media_logo {
         width: 3.9rem;
     }
-    #youtube_logo_background {
-        width: 3.9rem !important;
-        padding: 1.3rem !important;
-        height: 3.4rem !important;
-    }
 }
 @media screen and (max-width: 332px) {
     .social_media_logo {
@@ -66,6 +61,7 @@
     border-radius: 1rem;
     padding: 0.5rem;
     transition: .2s;
+    width: 100%;
 }
 #facebook_logo_pointer:hover #facebook_logo {
     fill: #1877F2;
@@ -77,6 +73,7 @@
     border-radius: 1rem;
     padding: 0.5rem;
     transition: .2s;
+    width: 100%;
 }
 #twitter_logo_pointer:hover #twitter_logo {
     fill: #1d9bf0;
@@ -88,7 +85,7 @@
     border-radius: 1rem;
     padding: 0.5rem;
     transition: .2s;
-
+    width: 100%;
 }
 #instagram_logo_div {
     position: relative;
@@ -126,21 +123,19 @@
     top: 0;
     left: 0;
     z-index: 2;
-    position: none;
+    width: 100%;
 }
 #youtube_logo_background {
     position: absolute;
-    width: 4.9rem;
-    padding: 1rem;
-    height: 4.9rem;
+    width: 100%;
+    padding-top: 100%;
     top: 0;
     left: 0;
-    transform: scaleY(2);
-    stroke: var(--ifm-card-background-color);
-    stroke-width: 20;
     z-index: 1;
     transition: .2s;
-    position: none;
+    background-color: var(--ifm-card-background-color);
+    transform-origin: center;
+    scale: 0.5;
 }
 #youtube_logo_div {
     display: inherit;
@@ -150,13 +145,12 @@
     border-radius: 1.1rem;
     background-color: var(--ifm-card-background-color);
     transition: .2s;
-    position: none;
 }
 #youtube_logo_pointer:hover #youtube_logo {
     fill: #ff0000;
 }
 #youtube_logo_pointer:hover #youtube_logo_background {
-    stroke: #ffffff;
+    background-color: #ffffff;
 }
 html[data-theme="light"] #youtube_logo_pointer:hover #youtube_logo_div{
     background-color: #212121;  
