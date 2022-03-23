@@ -19,8 +19,9 @@ html[data-theme="light"] .img_loader {
 }
 .loader_asset_container {
     position: absolute;
-    display: grid;
-    place-content: center;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     height: 100%;
 }
@@ -33,12 +34,15 @@ html[data-theme="light"] .img_loader {
     transform: translate(25%, 0%);
 }
 .loading_description_dissolve {
-    position: static;
+    position: absolute;
+    top: 40%;
+    transform: translateY(50px);
     opacity: 0;
     animation: 0.2s linear 0s 1 first_loaded_text;
 }
 .loading_svg_dissolve {
-    position: static; 
+    position: absolute; 
+    top: 40%;
     width: 260px;
     transform: translate(25%, 0%);
     opacity: 0;
@@ -48,8 +52,9 @@ html[data-theme="light"] .img_loader {
     width: 100%;
     height: 100%;
     position: absolute;
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     top: 0;
     left: 0;
@@ -69,30 +74,30 @@ html[data-theme="light"] .img_loader_dissolve {
         rgba(232,230,230,1) 46%, 
         rgba(205,204,204,1) 100%);
 }
-.img_unloader {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: grid;
-    place-content: center;
-    text-align: center;
-    top: 0;
-    left: 0;
-
-    background-color: rgba(54, 54, 54, 1);
-    background: linear-gradient(45deg, 
-        rgba(54,54,54,1) 0%,
-        rgba(54,54,54,1) 46%, 
-        rgba(45,45,45,1) 100%);  
-    opacity: 0;
-}
-html[data-theme="light"] .img_unloader {
-    background: rgb(217,217,217);
-    background: linear-gradient(45deg, 
-        rgba(217,217,217,1) 0%, 
-        rgba(232,230,230,1) 46%, 
-        rgba(205,204,204,1) 100%);
-}
+@supports (display: grid) 
+{   /* use grid on modern browser */
+    .img_loader_dissolve {
+        place-content: center;
+        display: grid !important;    
+        flex-direction: unset !important;
+        align-items: unset !important;
+    }
+    .loader_asset_container {
+        display: grid;
+        place-content: center;
+        top: unset;
+        flex-direction: unset;
+    }
+    .loading_svg_dissolve {
+        position: static;
+        top: unset;
+    }
+    .loading_description_dissolve {
+        position: static;
+        top: unset;
+        transform: unset;
+    }
+} 
 
 @keyframes first_loaded {
     0% { opacity: 100%; }
