@@ -12,13 +12,14 @@ import ReactMarkdown from 'react-markdown';
  * @param textColor display text's color
  * @returns styled text by color and textColor
  */
- const Hl = ({children, color, textColor}) => {
+ const Hl = ({children, color, textColor, ...props}) => {
     return <span
       style={{
         backgroundColor: color? color : null,
         borderRadius: '2px',
         color: textColor? textColor : '#fff',
         padding: '0.2rem',
+        ...props.style,
       }}>
       {children}
     </span>

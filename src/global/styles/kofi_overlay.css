@@ -49,3 +49,10 @@
     .floatingchat-container-wrap-mobi { transform: translateY(-135px) !important; }
     .floating-chat-kofi-popup-iframe-mobi { transform: scale(1) translateY(-830px) !important; }
 }
+
+@media print {
+    .floatingchat-container-wrap { display: none; }
+    .floating-chat-kofi-popup-iframe { display: none; }
+    .floatingchat-container-wrap-mobi { display: none; }
+    .floating-chat-kofi-popup-iframe-mobi { display: none; }
+}

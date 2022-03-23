@@ -2,19 +2,48 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './homepage.module.css';
 import { useImage } from 'react-image'
-
 import Translate from '@docusaurus/Translate';
-import CodeBlock from '@theme/CodeBlock';
-import Admonition from '@theme/Admonition';
-import Details from '@theme/Details'
-import ButtonHeader from "./components/HomepageButton"
-import MarkdownBlock from "@site/src/components/MarkdownBlock"
 
-import HeaderBanner from "@site/static/img/background/homepage_banner.png"
-import CompressedHeaderBanner from "@site/static/img/background/homepage_banner.min.png"
-import text from "@site/src/components/TextDecoration"
-import grassblock_icon from "@site/static/img/icons/dancing_grassblock.gif"
+import MarkdownBlock from "@site/src/components/MarkdownBlock";
+import HeaderBanner from "@site/static/img/background/homepage_banner.png";
+import CompressedHeaderBanner from "@site/static/img/background/homepage_banner.min.png";
+import grassblock_icon from "@site/static/img/icons/dancing_grassblock.gif";
 
+import ButtonHeader from "./components/HomepageButton";
+import InfoBox from "./components/InfoBox";
+import SocialMedias from "./components/SocialMedias";
+
+
+const socialMediaContents = {
+  facebook: {
+      label: <Translate id="home.socialMedias.facebook" 
+        description="label of facebook on homepage">
+          Facebook
+        </Translate>,
+      link: "imma just make it facebook but link does nothing"
+  },
+  twitter: {
+      label: <Translate id="home.socialMedias.twitter" 
+        description="label of twitter on homepage">
+          Twitter
+        </Translate>,
+      link: "https://twitter.com/AseanBte"
+  },
+  instagram: {
+      label: <Translate id="home.socialMedias.instagram" 
+        description="label of instagram on homepage">
+          Instagram
+        </Translate>,
+      link: "https://www.instagram.com/bte.asean/"
+  },
+  youtube: {
+      label: <Translate id="home.socialMedias.youtube" 
+        description="label of youtube on homepage">
+          Youtube
+        </Translate>,
+      link: "https://www.youtube.com/c/ASEANBTE"
+  },
+}
 
 const ContentList = [
   {
@@ -25,13 +54,14 @@ const ContentList = [
         <MarkdownBlock>
           <Translate id="home.description" description="ASEAN BTE long description at the homepage">
             We are The Association of Southeast Asian Nations Build the Earth. 
-            We are part of the [build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! 
+            We are part of the [Build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! 
             We currently oversee the progress of Brunei, Myanmar, 
             Cambodia, Timor-Leste, Indonesia, Laos, Malaysia, the Philippines, 
             Singapore, Thailand, and Vietnam.
           </Translate>
         </MarkdownBlock>
-        <hr/> 
+        <hr/>
+        <SocialMedias contents={socialMediaContents} />
       </>
     ),
   },
@@ -40,66 +70,7 @@ const ContentList = [
     description: (
       <>
         {/* Server IP and Requirement box */}
-        <div className={styles.container}>
-          <div className={styles.ip_div}>
-            <table className={styles.ip_box} ><td id={styles.box_styles}>
-              <div align="Left"><i><b>
-                <Translate id="home.ipBox" description="'Server ip' box at the homepage">
-                  Server IP
-                </Translate>
-              </b></i></div>
-              <sub>
-                <CodeBlock className="language-js" 
-                  title={<Translate id="home.ipBox.java" description="Java label at homepage">Java</Translate>}>
-                  139.99.91.188:25569
-                </CodeBlock>
-                <CodeBlock className="language-js" 
-                  title={<Translate id="home.ipBox.bedrock" description="Bedrock label at homepage">Bedrock</Translate>}>
-                  IP: 139.99.91.188 
-                  PORT: 19132
-                </CodeBlock>
-              </sub>
-            </td></table>
-          </div>
-          <div className={styles.req_div} >
-            <table className={styles.req_box}><td id={styles.box_styles}>
-              <div align="Left"><i><b><sub>
-                <Translate id="home.requirementBox" description="Requirements box at homepage">
-                  Requirements
-                </Translate>
-              </sub></b></i></div>
-              <div align="Left">
-                <Details summary={
-                <summary><Translate id="home.requirementBox.content" description="the first and only requirement in the homepage requirement box">
-                    Minecraft
-                </Translate></summary>}>
-                  <sub>
-                    <MarkdownBlock>
-                      <Translate id="home.requirementBox.content.description" description="Extra foldout section of Minecraft in homepage describing we supports all version of it">
-                          [Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and 
-                          [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) are supported.
-                      </Translate>
-                    </MarkdownBlock>
-                  </sub>
-                </Details>
-              </div>
-              <div align="Left">
-                <Admonition type="caution">
-                  <sub>
-                    <strong><text.Hl color="#C03A3A" textColor="#FEF6E8">
-                      <Translate id="home.requirementBox.cracked-1" description="section of 'Cracked Minecraft is not allowed'">
-                        Cracked Minecraft
-                      </Translate>
-                    </text.Hl> </strong> 
-                    <Translate id="home.requirementBox.cracked-2" description="section of 'Cracked Minecraft is not allowed'">
-                      is not ALLOWED.
-                    </Translate>
-                  </sub>
-                </Admonition>
-              </div>
-            </td></table>
-          </div>  
-        </div>
+        <InfoBox />     
       </>
     ),
   }

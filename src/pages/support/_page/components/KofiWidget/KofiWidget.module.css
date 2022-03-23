@@ -56,7 +56,7 @@
     background: linear-gradient(45deg, 
         rgba(54,54,54,1) 0%, 
         rgba(54,54,54,1) 46%,
-         rgba(45,45,45,1) 100%);
+        rgba(45,45,45,1) 100%);
     width: 100%;
     height: 100%;;
     padding: 20px;
@@ -110,4 +110,10 @@ html[data-theme='light'] .kofi_overlay {
     50% { background-color: #13C3FF; transform: scaleX(-1) rotateZ(0deg); }
     66% { transform: scaleX(-1) rotateZ(20deg); }
     100% { transform: scaleX(-1); background-color: var(--ifm-color-emphasis-200); }
+}
+
+@media print {
+    .kofi_card {
+        display: none;
+    }
 }

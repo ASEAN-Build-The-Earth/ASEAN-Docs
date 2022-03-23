@@ -48,29 +48,4 @@ const LoaderDissolve = ({children, ...props}) => {
     );
 }
 
-const Unloader = ({fillColor, children, ...props}) => {
-
-    return (
-        <div 
-            className={ props.className? clsx(styles.img_unloader, props.className) : styles.img_unloader} 
-            style={{ ...props.style }}
-        > {
-            fillColor? <> 
-                <LoadingSvg 
-                    className={styles.loading_svg} 
-                    fillColor={fillColor}>
-                </LoadingSvg>
-                <span className={styles.loading_description} style={{ color:fillColor }}>
-                    {children}
-                </span>
-            </> : <>
-                <LoadingSvg className={styles.loading_svg} />
-                <span className={styles.loading_description} style={{ opacity:"0.5" }}>
-                    {children}
-                </span>
-            </>
-        }</div> 
-    );
-}
-
-export default { Loader, LoaderDissolve, Unloader }
+export default { Loader, LoaderDissolve }
