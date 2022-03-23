@@ -18,7 +18,7 @@ import guide_difficulty from "@site/static/img/docs/creating-plot/plot-difficult
 
 ```
 <div class="container"><div class="row">
-    <div class="col col--6"><dd>After you joined our plot server, you'll have a netherstar (<Text.Hl textColor="#54fcfc">Companion</Text.Hl>) in your inventory.</dd><hr/></div>
+    <div class="col col--6"><dd>After you joined our plot server, you'll have a netherstar <b>(<Text.Hl textColor="#54d7d7">Companion</Text.Hl>)</b> in your inventory.</dd><hr/></div>
     <div class="col col--6"><Img src={guide_companion} alt="companion" width="844" height="352" 
         style={{borderRadius:"6px", transformOrigin:"top center",transform:"scale(0.8)"}} className="item shadow--md" />
     </div>
