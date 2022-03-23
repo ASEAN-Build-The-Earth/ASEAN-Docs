@@ -9,6 +9,29 @@ import kofi_icon from "@site/static/img/icons/kofi_logo.png"
 import feather_icon from "@site/static/img/icons/feather.png"
 import kofi_pixel_icon from "@site/static/img/icons/kofi_pixel_logo.png";
 
+const Contents = {
+    Support: {
+        Label: <Translate id="home.bannerButton.support.label" 
+            description="The big Start building button (please keep the text count very low to prevent newline)">
+            Support Us
+        </Translate>,
+        OverlayLabel: <Translate id="home.bannerButton.support.labelOverlay" 
+            description="The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)">
+            Donate on kofi
+        </Translate>,
+    },
+    GetStarted: {
+        Label: <Translate id="home.bannerButton.getStart.label" 
+            description="The big Start building button (please keep the text count very low to prevent newline)">
+            Get Started
+        </Translate>,
+        OverlayLabel: <Translate id="home.bannerButton.getStart.labelOverlay" 
+            description="The pop up message when you hover to the homepage Start Building button (please keep the text count for this low)">
+            Go To Document
+        </Translate>,
+    }
+}
+
 const ButtonContents = [
     {
         id : "donate_button",
@@ -17,29 +40,27 @@ const ButtonContents = [
                 <div className={clsx("button button--link", styles.button_container)}>
                     <nav aria-label="breadcrumbs">
                         <ul className={clsx("breadcrumbs breadcrumbs--lg", styles.breadcrumbs_cover)}>
-                            <li class="breadcrumbs__item">
-                                <a class="breadcrumbs__link" style={{transform:"scaleX(-1)"}}>
-                                    <Translate id="home.bannerButton.support.label" description="The big Start building button (please keep the text count very low to prevent newline)">
-                                        Support Us
-                                    </Translate>     
-                                </a>
+                            <li className="breadcrumbs__item">
+                                <span className="breadcrumbs__link" style={{transform:"scaleX(-1)"}}>
+                                    {Contents.Support.Label}
+                                </span>
                             </li>
-                            <img src={kofi_icon} alt="kofi" id={styles.button_icon} style={{backgroundColor: "#13C3FF", padding:"0px"}}/>
+                            <li className={styles.icon_holder}>
+                                <img src={kofi_icon} alt="kofi" id={styles.button_icon} style={{backgroundColor: "#13C3FF", padding:"0px"}}/>
+                            </li>
                         </ul>
                     </nav>
                 </div> 
                 <ButtonOverlay mirror="true" color="#FF5E5B" icon={<img src={kofi_pixel_icon} alt="↗" style={{width:"100%", position:"absolute", transform:"translateY(1rem)"}} />}>
                     <span className={styles.button_overlay_text_support} >
-                        <Translate id="home.bannerButton.support.labelOverlay" description="The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)">
-                            Donate on kofi
-                        </Translate>
+                        {Contents.Support.OverlayLabel}
                     </span>
                 </ButtonOverlay>
-                <Link to="/support" 
+                <Link to="/support" aria-label="Donate on kofi"
                     className={styles.link_redirector 
                     /*[Note]: the link that actually redirect to page is placed here 
-                      to prevent wierd prefetching html changs 
-                    */}>
+                     * to prevent wierd prefetching html changs 
+                     */}>
                 </Link>
             </div>
         </>
@@ -51,25 +72,23 @@ const ButtonContents = [
                 <div className={clsx("button button--link", styles.button_container)}>
                     <nav aria-label="breadcrumbs">
                         <ul className={clsx("breadcrumbs breadcrumbs--lg", styles.breadcrumbs_cover)}>
-                            <li class="breadcrumbs__item">
-                                <a class="breadcrumbs__link">
-                                    <Translate id="home.bannerButton.getStart.label" description="The big Start building button (please keep the text count very low to prevent newline)">
-                                        Get Started
-                                    </Translate>     
-                                </a>
+                            <li className="breadcrumbs__item">
+                                <span className="breadcrumbs__link">
+                                    {Contents.GetStarted.Label}
+                                </span>
                             </li>
-                            <img src={book_icon} alt="doc↗" id={styles.button_icon} />
+                            <li className={styles.icon_holder}>
+                                <img src={book_icon} alt="doc↗" id={styles.button_icon} />
+                            </li>
                         </ul>
                     </nav>
                 </div> 
-                <ButtonOverlay icon={<img src={feather_icon} alt="↗" style={{width:"100%", position:"absolute", imageRendering: "pixelated"}} />}>
+                <ButtonOverlay icon={<img src={feather_icon} alt="↗" style={{width:"100%", position:"absolute"}} />}>
                     <span className={styles.button_overlay_text_getstart} >
-                        <Translate id="home.bannerButton.getStart.labelOverlay" description="The pop up message when you hover to the homepage Start Building button (please keep the text count for this low)">
-                            Go To Document
-                        </Translate>
+                        {Contents.GetStarted.OverlayLabel}
                     </span>
                 </ButtonOverlay>
-                <Link to="/intro/get-started" className={styles.link_redirector}/>
+                <Link to="/intro/get-started" className={styles.link_redirector} aria-label="Go To Document" />
             </div>
         </>
     }
@@ -140,22 +159,17 @@ function ButtonOverlay ({color, children, icon, mirror}) {
 }
 
 const ButtonHeader = () => {
-    return (
-        <>
-            {
-                ButtonContents.map((item) => ( /* loop thru drop down items */
-                        <div className={clsx('col col--6', styles.contents_column)}>
-                            <div className="text--center padding-horiz--md">
-                                <div key={item.id}>
-                                    { item.component }                         
-                                </div>
-                            </div>
-                        </div>
-                    )
-                )
-            }
-        </>
-    );
+    return (<>{
+        ButtonContents.map((item) => (
+            <div className={clsx('col col--6', styles.contents_column)} key={item.id}>
+                <div className="text--center padding-horiz--md">
+                    <div>
+                        { item.component }                         
+                    </div>
+                </div>
+            </div>
+        ))
+    }</>);
 }
 
 export default ButtonHeader;
