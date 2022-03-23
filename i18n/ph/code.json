@@ -23,6 +23,22 @@
     "message": "Minecraft",
     "description": "Minecraft label of the MinecraftWindow style"
   },
+  "home.socialMedias.facebook": {
+    "message": "Facebook",
+    "description": "label of facebook on homepage"
+  },
+  "home.socialMedias.twitter": {
+    "message": "Twitter",
+    "description": "label of twitter on homepage"
+  },
+  "home.socialMedias.instagram": {
+    "message": "Instagram",
+    "description": "label of instagram on homepage"
+  },
+  "home.socialMedias.youtube": {
+    "message": "Youtube",
+    "description": "label of youtube on homepage"
+  },
   "home.label": {
     "message": "ASEAN BuildTheEarth",
     "description": "Homepage ASEAN BTE label"
@@ -30,38 +46,6 @@
   "home.description": {
     "message": "We are The Association of Southeast Asian Nations Build the Earth. We are part of the [Build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! We currently oversee the progress of Brunei, Myanmar, Cambodia, Timor-Leste, Indonesia, Laos, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.",
     "description": "ASEAN BTE long description at the homepage"
-  },
-  "home.ipBox": {
-    "message": "Server IP",
-    "description": "'Server ip' box at the homepage"
-  },
-  "home.ipBox.java": {
-    "message": "Java",
-    "description": "Java label at homepage"
-  },
-  "home.ipBox.bedrock": {
-    "message": "Bedrock",
-    "description": "Bedrock label at homepage"
-  },
-  "home.requirementBox": {
-    "message": "Requirements",
-    "description": "Requirements box at homepage"
-  },
-  "home.requirementBox.content": {
-    "message": "Minecraft",
-    "description": "the first and only requirement in the homepage requirement box"
-  },
-  "home.requirementBox.content.description": {
-    "message": "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) are supported.",
-    "description": "Extra foldout section of Minecraft in homepage describing we supports all version of it"
-  },
-  "home.requirementBox.cracked-1": {
-    "message": "Cracked Minecraft",
-    "description": "section of 'Cracked Minecraft is not allowed'"
-  },
-  "home.requirementBox.cracked-2": {
-    "message": "is not ALLOWED.",
-    "description": "section of 'Cracked Minecraft is not allowed'"
   },
   "home.banner.title": {
     "message": "ASEAN BTE",
@@ -106,6 +90,38 @@
   "support.kofiBox.visitPageButton": {
     "message": "Visit Donation Site",
     "description": "The visit kofi site button at the bottom of kofi widget"
+  },
+  "home.infoBox.ip": {
+    "message": "Server IP",
+    "description": "'Server ip' box at the homepage"
+  },
+  "home.infoBox.ip.java": {
+    "message": "Java",
+    "description": "Java label at homepage"
+  },
+  "home.infoBox.ip.bedrock": {
+    "message": "Bedrock",
+    "description": "Bedrock label at homepage"
+  },
+  "home.infoBox.requirement": {
+    "message": "Requirements",
+    "description": "Requirements box at homepage"
+  },
+  "home.infoBox.requirement.content": {
+    "message": "Minecraft",
+    "description": "the first and only requirement in the homepage requirement box"
+  },
+  "home.infoBox.requirement.content.description": {
+    "message": "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) are supported.",
+    "description": "Extra foldout section of Minecraft in homepage describing we supports all version of it"
+  },
+  "home.infoBox.requirement.cracked-1": {
+    "message": "Cracked Minecraft",
+    "description": "section of 'Cracked Minecraft is not allowed'"
+  },
+  "home.infoBox.requirement.cracked-2": {
+    "message": "is not ALLOWED.",
+    "description": "section of 'Cracked Minecraft is not allowed'"
   },
   "home.bannerButton.support.label": {
     "message": "Support Us",

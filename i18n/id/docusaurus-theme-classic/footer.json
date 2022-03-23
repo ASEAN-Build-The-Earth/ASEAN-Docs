@@ -42,5 +42,9 @@
   "link.item.label.Official BTE Website": {
     "message": "Official BTE Website",
     "description": "The label of footer link with label=Official BTE Website linking to https://buildtheearth.net/"
+  },
+  "copyright": {
+    "message": "Copyright © 2022 Association of Southeast Asian Nation Build The Earth.",
+    "description": "The footer copyright"
   }
 }
