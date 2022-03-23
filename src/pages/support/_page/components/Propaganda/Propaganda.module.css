@@ -118,3 +118,12 @@ html[data-theme='dark'] .propaganda_container { background-color: rgba(139, 139,
         background-size: 100% 100%;
     }
 }
+
+@media print {
+    .propaganda_arrow {
+        display: none;
+    }
+    .propaganda_container {
+        transform: scale(1.2);
+    }
+}

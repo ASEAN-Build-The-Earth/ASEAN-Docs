@@ -1,9 +1,23 @@
+.propaganda_msg {
+    font-weight: 700;
+    line-height: 130%;
+}
+
 #propaganda_quote {
     display: inline-block;
 }
-
+#quote_container {
+    margin: 0;
+}
+#quote_label {
+    margin-bottom: 1rem;
+    line-height: 130%;
+    font-weight: 700;
+}
 #quote_description {
-    line-height: 65%;
+    line-height: 130%;
+    font-size: small;
+    margin: 0;
 }
 
 #badge {

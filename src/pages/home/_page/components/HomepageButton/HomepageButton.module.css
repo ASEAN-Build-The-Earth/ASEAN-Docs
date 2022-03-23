@@ -5,7 +5,9 @@
     top: 0;
     left: 0;
 }
-
+.icon_holder {
+    display: contents;
+}
 .button_container {
     width: 100%;
     cursor: pointer;

@@ -8,6 +8,12 @@ function drawKofiWidget() {
         'floating-chat.donateButton.background-color': '#434B57',
         'floating-chat.donateButton.text-color': '#fff',
     });
+
+    /* support screen reader by adding title to iframe */
+    var foterKofiIframeMobi = document.getElementsByClassName("floatingchat-container-mobi");
+    var foterKofiIframe = document.getElementsByClassName("floatingchat-container");
+    foterKofiIframeMobi[0].title ="Support me on kofi";
+    foterKofiIframe[0].title ="Support me on kofi";
 }
 
 function fetchLocale() {

@@ -90,4 +90,9 @@
       flex-direction: column-reverse;
     }
   }
-  
+  @media print {
+    .browserWindow {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  }
