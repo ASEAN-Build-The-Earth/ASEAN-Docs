@@ -32,13 +32,13 @@ if (children?.type === Translate) {
     }
 }
 
-export default function MarkdownBlock({children}) {
+export default function MarkdownBlock({children, ...props}) {
     const markdown = getMarkdown(children);
     const source =  markdown.replace("\\n", `&nbsp;  
 `);
     return (
         <div>
-            <span>
+            <span {...props}>
                 <ReactMarkdown components={renderers}>{source}</ReactMarkdown>
             </span>
         </div>

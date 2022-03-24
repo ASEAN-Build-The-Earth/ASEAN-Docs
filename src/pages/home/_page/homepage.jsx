@@ -67,7 +67,7 @@ const ContentList = [
     ),
   },
   {
-    title: <img src={grassblock_icon} alt="Our Server" id={styles.info_section_icon} />,
+    title: <img src={grassblock_icon} alt="Our Server" id={styles.info_section_icon} width="50" height="45" />,
     description: <InfoBox />
   }
 ];
@@ -126,7 +126,7 @@ function Header() {
         </h1>
         <p className={clsx("hero__subtitle", styles.banner_description, styles.shadowed)}>
           <Translate id="home.banner.subtitle" description="A hero description of homepage document">
-            We are building southeast asia in Minecraft 1:1 scale!
+            We are building Southeast Asia in Minecraft 1:1 scale!
           </Translate>
         </p>
         <div className={styles.intro_button}>

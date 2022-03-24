@@ -5,7 +5,7 @@ import styles from './HomepageButton.module.css'
 import Translate from '@docusaurus/Translate';;
 import Link from '@docusaurus/Link';
 import book_icon from "@site/static/img/icons/book_1.png"
-import kofi_icon from "@site/static/img/icons/kofi_logo.png"
+import KofiIcon from "@site/static/img/icons/social-medias/kofi.svg"
 import feather_icon from "@site/static/img/icons/feather.png"
 import kofi_pixel_icon from "@site/static/img/icons/kofi_pixel_logo.png";
 
@@ -36,17 +36,17 @@ const ButtonContents = [
     {
         id : "donate_button",
         component: <>
-            <div className={styles.button_div} style={{transform:"scaleX(-1)"}}>
+            <div className={styles.button_div} id={styles.flip}>
                 <div className={clsx("button button--link", styles.button_container)}>
                     <nav aria-label="breadcrumbs">
                         <ul className={clsx("breadcrumbs breadcrumbs--lg", styles.breadcrumbs_cover)}>
                             <li className="breadcrumbs__item">
-                                <span className="breadcrumbs__link" style={{transform:"scaleX(-1)"}}>
+                                <span className="breadcrumbs__link" id={styles.flip}>
                                     {Contents.Support.Label}
                                 </span>
                             </li>
-                            <li className={styles.icon_holder}>
-                                <img src={kofi_icon} alt="kofi" id={styles.button_icon} style={{backgroundColor: "#13C3FF", padding:"0px"}}/>
+                            <li className={styles.icon_container}>
+                                <KofiIcon id={styles.flip}/>
                             </li>
                         </ul>
                     </nav>
@@ -77,8 +77,11 @@ const ButtonContents = [
                                     {Contents.GetStarted.Label}
                                 </span>
                             </li>
-                            <li className={styles.icon_holder}>
-                                <img src={book_icon} alt="doc↗" id={styles.button_icon} />
+                            <li className={styles.icon_container}>
+                                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                    <circle id={styles.book_icon_background} cx="50" cy="50" r="50"/>
+                                    <image href={book_icon} x="10%" y="10%" height="80%" width="80%" alt="get started ↗"/>
+                                </svg>
                             </li>
                         </ul>
                     </nav>

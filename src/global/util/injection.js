@@ -4,7 +4,7 @@ function drawKofiWidget() {
     /* the widget parent script is loaded in docusaurus config file */
     kofiWidgetOverlay.draw('bteasean', {
         'type': 'floating-chat',
-        'floating-chat.donateButton.text': 'Support me',
+        'floating-chat.donateButton.text': 'Support Us',
         'floating-chat.donateButton.background-color': '#434B57',
         'floating-chat.donateButton.text-color': '#fff',
     });

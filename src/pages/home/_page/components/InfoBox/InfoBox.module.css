@@ -197,6 +197,7 @@ html[data-theme='light'] #slider_button_svg {
     }
     @keyframes slider_ip_lerpout{
         0% { transform: translateX(0%); opacity: 1; }
+        60% {  opacity: 0; }
         100% { transform: translateX(-50%); opacity: 0; }
     }
     @keyframes slider_req_lerpout{
