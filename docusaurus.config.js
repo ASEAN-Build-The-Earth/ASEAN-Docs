@@ -146,13 +146,13 @@ const config = {
                 href: 'https://discord.gg/buildtheearth',
               },
               {
-                label: 'ASEAN BTE',
-                href: 'https://discord.gg/DNwnKmkQpw',
+                label: 'BuildTheEarth.Asia',
+                href: 'https://discord.gg/R5dfd4Fc8b'
               },
               {
-                label: 'Asia BTE',
-                href: 'https://discord.gg/R5dfd4Fc8b'
-              }
+                label: 'BuildTheEarth ASEAN',
+                href: 'https://discord.gg/DNwnKmkQpw',
+              },             
             ],
           },
           {
@@ -167,7 +167,7 @@ const config = {
                 href: 'https://github.com/ASEAN-Build-The-Earth',
               },
               {
-                label: 'Official BTE Website',
+                label: 'BuildTheEarth Website',
                 href: 'https://buildtheearth.net/'
               }
             ],

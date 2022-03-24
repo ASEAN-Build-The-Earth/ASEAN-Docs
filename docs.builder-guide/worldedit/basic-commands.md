@@ -10,7 +10,7 @@ Because this project is not using normal cubes, we most of the time have to chan
 
 ## Circles
 
-![](@site/static/img/docs/world-edit/beginner-commands/circles.png)
+![](@site/static/img/docs/builder-guide/world-edit/beginner-commands/circles.png)
 
 Circles can be created easily using WorldEdit. 
 
@@ -23,11 +23,11 @@ Unfilled: <kbd>//hcyl [blocktype] [radius] 1</kbd>
 - With <kbd>//sel</kbd> you can change your <kbd>//wand</kbd> to create non square structures. The command that is the most useful is <kbd>//sel poly</kbd>. This will change your wand into a tool that can zone out a location that is not a full square or rectangle, also known as a polygon.
 - After you have done <kbd>//sel poly</kbd>, you can start marking your area. Left click where you want to start your polygon, and then right click all the other corners. You can select as many as you want, but the less the better. 
 
-![](@site/static/img/docs/world-edit/beginner-commands/polygon_1.png)
+![](@site/static/img/docs/builder-guide/world-edit/beginner-commands/polygon_1.png)
 
 - After you have selected the area, you can use the normal <kbd>//set</kbd>, <kbd>//replace</kbd>, <kbd>//copy</kbd> and <kbd>//paste</kbd> commands to change your build.
 
-![](@site/static/img/docs/world-edit/beginner-commands/polygon_2.png)
+![](@site/static/img/docs/builder-guide/world-edit/beginner-commands/polygon_2.png)
 
 - When you are finished with your polygon, you can turn it back to a normal cube wand, with <kbd>//sel cuboid</kbd>.
 
@@ -72,7 +72,7 @@ If you pick a too large radius number, it can crash both the server and your wor
 
 The copy command is used to take a copy of something you have built, and move it to wherever you want it. The commands are <kbd>//copy</kbd> and <kbd>//paste</kbd>.
 
-![](@site/static/img/docs/world-edit/beginner-commands/copy.png)
+![](@site/static/img/docs/builder-guide/world-edit/beginner-commands/copy.png)
 
 You have to remember where you took the copy, because it pastes in relation to where you stood. The best idea is to stand either on a corner or in the middle of the building, on ground level. Then you move to where you want to paste it, and stand on the exact same block you stood when you did <kbd>//copy</kbd>.
 
@@ -88,7 +88,7 @@ A known bug is that the biome only changes in a few chunks or that the biome rev
 
 ## Stacking
 
-![](@site/static/img/docs/world-edit/beginner-commands/stacking.gif)
+![](@site/static/img/docs/builder-guide/world-edit/beginner-commands/stacking.gif)
 
 <kbd>//stack [floor amount] [direction]</kbd>. This will rise your building up the amounts of floors you have chosen. The direction can be up, down, north, south, east or west.
 Make sure the building height is correct after doing the stack command, as it might not be exactly as high as it is supposed to be.

@@ -14,7 +14,7 @@ There are 2 ways to find  the corners
 Go to the [`website`](https://buildtheearth.net) and log into your “MyBuildTheEarth” account.
 Open the region you want to find the borders to.
 
-![finding-borders-using-method1](@site/static/img/docs/finding-borders/method1.png)
+![finding-borders-using-method1](@site/static/img/docs/builder-guide/finding-borders/method1.png)
 
 The X and Z coordinates given here are the Minecraft coordinates of the 4 corners of your plot.
 
@@ -34,7 +34,7 @@ Choose a sensible y-coordinate (it will be in meters above sea level)
 
 There will be a faster version of this being released by the development team, but for now, this is what we have.
 
-![finding-borders-using-method2](@site/static/img/docs/finding-borders/method2.png)
+![finding-borders-using-method2](@site/static/img/docs/builder-guide/finding-borders/method2.png)
 
 1. Log onto the website, and find your claim on the [`map`](https://buildtheearth.net/map)
 2. Move the center of the map to one of the corners, and use the <kbd>/tpll</kbd> command above the map.
@@ -44,9 +44,9 @@ There will be a faster version of this being released by the development team, b
 3. When you have teleported to your corner location, you can do <kbd>[F3] + [G]</kbd>. This will bring up the chunk borders
 4. I am now standing on the inside of the claim, and then I build a pillar about 20 blocks tall on the corner <u>outside of the claim</u>, like this. If you place it on the inside, it will be in the world file when you upload it, and we do not want that
 
-![](@site/static/img/docs/finding-borders/demo1.png)
+![](@site/static/img/docs/builder-guide/finding-borders/demo1.png)
 
 1. Then you can repeat step 2 to 4 until you have done all the corners. When that is completed, you can use WorldEdit with the <kbd>//line [Block-id]</kbd> command, to create a line from each corner. This will create a line of blocks outside of your claim, so you know to stay inside the borders.
 
-![](@site/static/img/docs/finding-borders/demo2.png)
+![](@site/static/img/docs/builder-guide/finding-borders/demo2.png)
    

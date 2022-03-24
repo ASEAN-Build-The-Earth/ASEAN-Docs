@@ -6,10 +6,11 @@ id: plot-system
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
 import Img from '@site/src/components/Img'
 import Text from '@site/src/components/TextDecoration';
-import BuildsiteImage from '@site/static/img/docs/plot-system/buildsite_exmp.png';
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
-import JoiningPlotImage from '@site/static/img/docs/plot-system/plot_join.gif';
+
+import BuildsiteImage from '@site/static/img/docs/intro/plot-system/buildsite_exmp.png';
+import JoiningPlotImage from '@site/static/img/docs/intro/plot-system/plot_join.gif';
 ```
 <!-- Brief Intro -->
 As we introduced before we have a server dedicated for newcomer to try building their first build called <em style={{color:"var(--ifm-link-color)"}}>Plot System</em>,<br/>
