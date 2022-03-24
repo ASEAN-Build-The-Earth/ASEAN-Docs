@@ -133,6 +133,9 @@
 @media screen and (min-width: 997px) and (max-width: 1028px) {
     #button_icon { transform: scale(1.5) translate3d(7px, 7px, 17px) !important; }
 }
+@media screen and (min-width: 596px) and (max-width: 996px) {
+    #button_icon { width: 8.5% !important; }
+}
 @media screen and (min-width: 442px) and (max-width: 550px) {
     .breadcrumbs_cover { --ifm-breadcrumb-size-multiplier: 1.5; }
     .button_overlay_div {
@@ -192,7 +195,6 @@
         transform: scale(1.2);
     }
 }
-    
 .button_overlay_text_support {
     color: #FF5E5B;
     text-shadow: 2px 2px 4px #832f2d;

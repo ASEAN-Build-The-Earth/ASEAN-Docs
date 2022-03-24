@@ -1,4 +1,3 @@
-/*#region HEADER */
 .hero_banner {
   padding: 8rem 0 16rem 0;
   text-align: center;
@@ -60,6 +59,12 @@
     padding: 2rem 0 25rem 0;
   }
 }
+@media (max-width: 996px) {
+  /* swap get-started button to top in mobile mode*/
+  .reverse_row {
+      flex-direction: column-reverse;
+  }
+}
 .intro_button_contents {
   display: flex;
   align-items: center;
@@ -99,9 +104,16 @@ html[data-theme='light'] .banner_container::before {
 html[data-theme='light'] .intro_button {
   background: rgba(255, 255, 255, 0.7);
 }
-/*#endregion HEADER */
 
-/*#region CONTENTS */
+
+#info_section_icon {
+  transition: 0.2s;
+  border-bottom: #495157 solid 2px; 
+}
+html[data-theme='light'] #info_section_icon {
+  border-bottom-color: gainsboro;
+}
+
 .contents {
   display: flex;
   align-items: center;
@@ -118,7 +130,7 @@ html[data-theme='light'] .button_container {
 html[data-theme='light'] .button_overlay_text {
   text-shadow: 2px 2px 4px #898989;
 }
-/*#endregion CONTENTS */
+
 
 @media print {
   .intro_button_contents {

@@ -14,13 +14,14 @@ import InfoBox from "./components/InfoBox";
 import SocialMedias from "./components/SocialMedias";
 
 
+
 const socialMediaContents = {
   facebook: {
       label: <Translate id="home.socialMedias.facebook" 
         description="label of facebook on homepage">
           Facebook
         </Translate>,
-      link: "imma just make it facebook but link does nothing"
+      link: "/"
   },
   twitter: {
       label: <Translate id="home.socialMedias.twitter" 
@@ -66,13 +67,8 @@ const ContentList = [
     ),
   },
   {
-    title: <img src={grassblock_icon} alt="Our Server" style={{ filter: "drop-shadow(1px 1px 1px #222)"}} />,
-    description: (
-      <>
-        {/* Server IP and Requirement box */}
-        <InfoBox />     
-      </>
-    ),
+    title: <img src={grassblock_icon} alt="Our Server" id={styles.info_section_icon} />,
+    description: <InfoBox />
   }
 ];
 
@@ -81,7 +77,7 @@ function Content({ title, description }) {
     <div className={clsx('col col--6')}>
       <div className="text--center padding-horiz--md">
         <h2>{title}</h2>
-        <p>{description}</p>
+        <div>{description}</div>
       </div>
     </div>
   );

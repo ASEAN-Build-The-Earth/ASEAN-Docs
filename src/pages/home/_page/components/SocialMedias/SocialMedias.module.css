@@ -7,21 +7,12 @@
     #twitter_logo_label { color: #1d9bf0 !important; font-weight: bold !important;  }
     #instagram_logo_label { color: #d6249f !important; font-weight: bold !important;}
     #youtube_logo_label { color: #ff0000 !important; font-weight: bold !important;  }
-    #youtube_logo {
-      fill: #ff0000 !important;
-    }
-    #youtube_logo_background {
-      stroke: #ffffff !important;
-    }
-    #facebook_logo {
-      fill: #1877F2 !important;
-    }
-    #twitter_logo {
-      fill: #1d9bf0 !important;
-    }
-    #instagram_logo {
-      fill: #d6249f !important;
-    }
+    #youtube_logo { fill: #ff0000 !important; }
+    #youtube_logo_background { stroke: #ffffff !important; }
+    #facebook_logo { fill: #1877F2 !important; }
+    #twitter_logo { fill: #1d9bf0 !important; }
+    #instagram_logo { fill: #d6249f !important; }
+    #instagram_logo_pointer:hover #instagram_logo { fill: white !important; }
 }
   
 .social_media_column {
@@ -99,16 +90,21 @@
     border-radius: 1.1rem;
     top: 0;
     left: 0;
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background: var(--ifm-card-background-color);
 }
 #instagram_logo_pointer:hover #instagram_logo {
     background-color: transparent;
-    fill: white !important;
+    fill: white;
 }
-#instagram_logo_div:hover #instagram_logo_div::before{
-    background-color: transparent;
-    opacity: 0; 
+#instagram_logo_pointer:hover #instagram_logo_div::before{
+    background: #d6249f;
+    background: radial-gradient(circle 
+        at 30% 107%, 
+        #fdf497 0%, 
+        #fdf497 5%, 
+        #fd5949 45%,
+        #d6249f 60%,
+        #285AEB 90%);
 }
 
 #youtube_logo_pointer {
@@ -135,7 +131,7 @@
     transition: .2s;
     background-color: var(--ifm-card-background-color);
     transform-origin: center;
-    scale: 0.5;
+    transform: scale(0.5);
 }
 #youtube_logo_div {
     display: inherit;
@@ -150,6 +146,9 @@
     fill: #ff0000;
 }
 #youtube_logo_pointer:hover #youtube_logo_background {
+    background-color: #ffffff;
+}
+#youtube_logo_pointer:hover #youtube_logo_div {
     background-color: #ffffff;
 }
 html[data-theme="light"] #youtube_logo_pointer:hover #youtube_logo_div{
