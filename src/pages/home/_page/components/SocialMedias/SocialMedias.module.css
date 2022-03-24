@@ -12,6 +12,7 @@
     #facebook_logo { fill: #1877F2 !important; }
     #twitter_logo { fill: #1d9bf0 !important; }
     #instagram_logo { fill: #d6249f !important; }
+    #instagram_logo_pointer:hover #instagram_logo { fill: white !important; }
 }
   
 .social_media_column {
