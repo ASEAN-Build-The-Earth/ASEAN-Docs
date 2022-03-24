@@ -67,7 +67,7 @@ const ContentList = [
     ),
   },
   {
-    title: <img src={grassblock_icon} alt="Our Server" style={{ filter: "drop-shadow(1px 1px 1px #222)"}} />,
+    title: <img src={grassblock_icon} alt="Our Server" id={styles.info_section_icon} />,
     description: <InfoBox />
   }
 ];
