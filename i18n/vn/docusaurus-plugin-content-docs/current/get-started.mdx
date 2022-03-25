@@ -16,7 +16,7 @@ import BedrockIpBox from '@site/src/components/BedrockIpBox';
 import StraightLine from '@site/src/components/StraightLine';
 import MakePair from '@site/src/components/MakePair';
 import InviteButton from '@site/src/components/InviteButton';
-import WelcomeImage from '@site/static/img/docs/getting-started/aseanbte_welcome.png'
+import WelcomeImage from '@site/static/img/docs/intro/getting-started/aseanbte_welcome.png'
 
 <!-- Heading #1 -->
 <MakePair 
@@ -34,7 +34,7 @@ import WelcomeImage from '@site/static/img/docs/getting-started/aseanbte_welcome
 <MakePair 
     pair_left = { /* a server ip box */
         <div align="Left"> 
-            <table><td>
+            <table><tbody><tr><td>
                 <b>Server IP</b>
                 <Tabs>
                     <TabItem value="java" label="Java Edition" default>
@@ -59,7 +59,7 @@ import WelcomeImage from '@site/static/img/docs/getting-started/aseanbte_welcome
                             </Admonition>
                     </TabItem>
                 </Tabs>
-            </td></table>
+            </td></tr></tbody></table>
         </div>
     }
     pair_right_m = {
@@ -95,8 +95,8 @@ import WelcomeImage from '@site/static/img/docs/getting-started/aseanbte_welcome
         </div>
     } 
     pair_right = { 
-        <div align="Left"><MinecraftWindow maxWidth="1803px" useDropdown="false">
-            <Img src={WelcomeImage} width="1803" height="1014" alt="Welsome To ASEAN BTE" />
+        <div align="Left" style={{width:"100%"}}><MinecraftWindow useDropdown="false">
+            <Img src={WelcomeImage} aspect="1803 1014" alt="Welsome To ASEAN BTE" />
         </MinecraftWindow></div>
     } 
 />

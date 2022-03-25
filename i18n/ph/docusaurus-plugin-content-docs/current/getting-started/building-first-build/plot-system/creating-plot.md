@@ -10,16 +10,18 @@ import Text from "@site/src/components/TextDecoration";
 import Admonition from '@theme/Admonition';
 import Img from '@site/src/components/Img';
 
-import guide_create from "@site/static/img/docs/creating-plot/guide_create.gif";
-import guide_companion from "@site/static/img/docs/creating-plot/your-companion.png";
-import guide_profile from "@site/static/img/docs/creating-plot/your-profile.png";
-import guide_panel from "@site/static/img/docs/creating-plot/your-panel.png";
-import guide_difficulty from "@site/static/img/docs/creating-plot/plot-difficulty.png";
+import guide_create from "@site/static/img/docs/intro/plot-system/creating-plot/guide_create.gif";
+import guide_companion from "@site/static/img/docs/intro/plot-system/creating-plot/your-companion.png";
+import guide_profile from "@site/static/img/docs/intro/plot-system/creating-plot/your-profile.png";
+import guide_panel from "@site/static/img/docs/intro/plot-system/creating-plot/your-panel.png";
+import guide_difficulty from "@site/static/img/docs/intro/plot-system/creating-plot/plot-difficulty.png";
 
 ```
 <div class="container"><div class="row">
-    <div class="col col--6"><dd>After you joined our plot server, you'll have a netherstar <b>(<Text.Hl textColor="#54d7d7">Companion</Text.Hl>)</b> in your inventory.</dd><hr/></div>
-    <div class="col col--6"><Img src={guide_companion} alt="companion" width="844" height="352" 
+    <div class="col col--6"><dd>After you joined our plot server, 
+        you'll have a netherstar <b>(<Text.Hl textColor="#54d7d7">Companion</Text.Hl>)</b> in your inventory.
+    </dd><hr/></div>
+    <div class="col col--6"><Img src={guide_companion} alt="companion" aspect="844 352" 
         style={{borderRadius:"6px", transformOrigin:"top center",transform:"scale(0.8)"}} className="item shadow--md" />
     </div>
 </div></div>
@@ -28,7 +30,7 @@ import guide_difficulty from "@site/static/img/docs/creating-plot/plot-difficult
 ```mdx-code-block
 
 <MinecraftWindow maxWidth="600px" useDropdown="true">
-    <Img src={guide_panel} width="703" height="509" alt="companion_panel" />
+    <Img src={guide_panel} aspect="703 509" alt="companion_panel" />
 </MinecraftWindow>
 
 ```
@@ -66,7 +68,7 @@ The system sets the default difficulty as automatic, you could accidentally have
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="600px" useDropdown="true">
-    <Img src={guide_difficulty} alt="difficulty" width="1088" height="499" />
+    <Img src={guide_difficulty} alt="difficulty" aspect="1088 499" />
 </MinecraftWindow>
 ```
 :::
@@ -78,7 +80,7 @@ After you decide the buildsite and difficulty, simply press the buildsite icon a
 ```mdx-code-block
 
 <MinecraftWindow maxWidth="600px" useDropdown="true">
-    <Img src={guide_create} width="600" height="318" alt="Guide Image"/>
+    <Img src={guide_create} aspect="600 318" alt="Guide Image"/>
 </MinecraftWindow>
 
 ```

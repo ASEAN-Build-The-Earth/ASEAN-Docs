@@ -7,12 +7,12 @@ id: finishing-plot
 import MinecraftWindow from "@site/src/components/MinecraftWindow";
 import Img from '@site/src/components/Img';
 
-import Guide_0 from "@site/static/img/docs/finishing-plot/guide_0.png"
-import Guide_1 from "@site/static/img/docs/finishing-plot/guide_1.png"
-import Guide_2 from "@site/static/img/docs/finishing-plot/guide_2.png"
-import Guide_3 from "@site/static/img/docs/finishing-plot/guide_3.png"
-import Guide_4 from "@site/static/img/docs/finishing-plot/guide_4.png"
-import GuideWindows from "@site/static/img/docs/finishing-plot/guide_windows.gif"
+import Guide_0 from "@site/static/img/docs/intro/plot-system/finishing-plot/guide_0.png"
+import Guide_1 from "@site/static/img/docs/intro/plot-system/finishing-plot/guide_1.png"
+import Guide_2 from "@site/static/img/docs/intro/plot-system/finishing-plot/guide_2.png"
+import Guide_3 from "@site/static/img/docs/intro/plot-system/finishing-plot/guide_3.png"
+import Guide_4 from "@site/static/img/docs/intro/plot-system/finishing-plot/guide_4.png"
+import GuideWindows from "@site/static/img/docs/intro/plot-system/finishing-plot/guide_windows.gif"
 
 ```
 
@@ -25,7 +25,7 @@ This might be hard but you have to check how your building looks like vs in mine
 It is normal if the outline looks a bit off compared to the real life building. 
 
 ```mdx-code-block
-<MinecraftWindow maxWidth="53rem"><Img src={Guide_0} width="1902" height="616" alt="guild_1_image" /></MinecraftWindow>
+<MinecraftWindow maxWidth="53rem"><Img src={Guide_0} aspect="1902 616" alt="guild_1_image" /></MinecraftWindow>
 ```
 
 ### 2. Build a rough building shell
@@ -33,7 +33,7 @@ After you're happy with your building outline, pick a few blocks, it doesn't nee
 then use those blocks to build a rough shell of your build covering every important point of your build.
 
 ```mdx-code-block
-<MinecraftWindow maxWidth="53rem"><Img src={Guide_1} width="1920" height="1080" alt="guild_1_image" /></MinecraftWindow>
+<MinecraftWindow maxWidth="53rem"><Img src={Guide_1} aspect="1920 1080" alt="guild_1_image" /></MinecraftWindow>
 ```
 
 ### 3. Fill up your outlined shell
@@ -41,7 +41,7 @@ Choose a block of your choice for building, it has to fit the building color but
 Then fill the outlined shell with blocks you choosed. 
 
 ```mdx-code-block
-<MinecraftWindow maxWidth="53rem"><Img src={Guide_2} width="1920" height="1080" alt="guild_2_image" /></MinecraftWindow>
+<MinecraftWindow maxWidth="53rem"><Img src={Guide_2} aspect="1920 1080" alt="guild_2_image" /></MinecraftWindow>
 ```
 
 ### 4. Build assets and decoration
@@ -53,12 +53,12 @@ Due to laws on many country's we are not allowed to map private property that be
 :::
 
 ```mdx-code-block
-<MinecraftWindow maxWidth="53rem"><Img src={Guide_3} width="1920" height="1080" alt="guild_3_image" /></MinecraftWindow>
+<MinecraftWindow maxWidth="53rem"><Img src={Guide_3} aspect="1920 1080" alt="guild_3_image" /></MinecraftWindow>
 ```
 
 ### 5. Polish the build and exterior
 The final step is to polish your building<br/>
-<table><td> 
+<table><tbody><tr><td> 
 <sup>try checking this list if you've built everything already</sup>
 
 - [x] Floor's material is correct 
@@ -67,10 +67,10 @@ The final step is to polish your building<br/>
 - [x] Poles and sheds
 - [x] Windows all around the building
 
-</td></table>
+</td></tr></tbody></table>
 
 ```mdx-code-block
-<MinecraftWindow maxWidth="53rem"><Img src={Guide_4} width="1920" height="1080" alt="guild_4_image" /></MinecraftWindow>
+<MinecraftWindow maxWidth="53rem"><Img src={Guide_4} aspect="1920 1080" alt="guild_4_image" /></MinecraftWindow>
 ```
 
 
@@ -78,7 +78,7 @@ The final step is to polish your building<br/>
 
 Don't forget to fill up the inside of all your windows with any dark block you want.
 ```mdx-code-block
-<MinecraftWindow maxWidth="30rem"><Img src={GuideWindows} width="600" height="329" alt="guild_windows" /></MinecraftWindow>
+<MinecraftWindow maxWidth="30rem"><Img src={GuideWindows} aspect="600 329" alt="guild_windows" /></MinecraftWindow>
 ```
 
 :::
