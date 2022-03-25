@@ -85,6 +85,12 @@
     transform: translateX(-15.5rem) !important;
   }
 
+  #minecraft_window_dropdown_title {
+    font-style: oblique;
+    font-weight: 600;
+    color: var(--ifm-color-primary);
+  }
+ 
   @media (max-width: 996px) {
     .reverse_column {
       flex-direction: column-reverse;

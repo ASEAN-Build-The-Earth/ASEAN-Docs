@@ -29,7 +29,7 @@ The plot's buildsite is originally outlined in the [Master server](../visiting#1
 
 :::info our buildsite at Malaysia, Klang
 <dt><sup>This buildsite is registered in the plot system too!</sup></dt>
-<Img src={BuildsiteImage} width="848" height="477" className="item shadow--md" style={{borderRadius:"6px"}} alt="Welsome To ASEAN BTE" />
+<Img src={BuildsiteImage} aspect="848 477" className="item shadow--md" style={{borderRadius:"6px"}} alt="Welsome To ASEAN BTE" />
 :::
 </details>
 
@@ -42,7 +42,7 @@ The outline is a rough representation of the building's shell by [Google Map](ht
 - We recommend you to log in to our [Plot server](../visiting#2-plot-server) and follow along with this document.
 
 ```mdx-code-block
-<MinecraftWindow maxWidth="600px" useDropdown="true"><Img src={JoiningPlotImage} width="600" height="318" alt="Guide Image"/></MinecraftWindow>
+<MinecraftWindow maxWidth="600px" useDropdown="true"><Img src={JoiningPlotImage} aspect="600 318" alt="Guide Image"/></MinecraftWindow>
 ```
 :::
 

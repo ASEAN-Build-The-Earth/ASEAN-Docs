@@ -226,8 +226,10 @@ const config = {
 
   scripts: [
     { /* kofi widget button script, will be drawn on footer */
+      defer: true,
+      async: true,
       src: 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js',
-      async: false,
+      id: "kofi-overlay-widget-script",
     }
   ],
 };

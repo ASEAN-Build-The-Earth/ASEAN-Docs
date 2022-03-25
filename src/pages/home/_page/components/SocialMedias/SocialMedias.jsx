@@ -33,7 +33,7 @@ const SocialMedias = ({contents}) => {
             <span id={styles.youtube_logo_label}>{contents.youtube.label}</span>
             <div className={styles.social_media_logo}>
                 <div id={styles.youtube_logo_div} />
-                <YoutubeLogo id={styles.youtube_logo}/>
+                    <YoutubeLogo id={styles.youtube_logo}/>
                 <div id={styles.youtube_logo_background} />
             </div> 
         </Link>

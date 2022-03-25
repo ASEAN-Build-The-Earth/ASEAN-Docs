@@ -6,9 +6,8 @@ import LoadingSvg from '@site/src/components/LoadingSvg'
 const Loader = ({children, fillColor, width, height, ...props}) => <div /* Loading div, a place holder skeleton of images */
     className={ props.className? clsx(styles.img_loader, props.className) : styles.img_loader} 
     style={{
-        maxWidth: props.maxWidth? props.maxWidth : `${width}px`,
-        paddingBottom: props.aspect? `${props.aspect}%` : `${( height / width ) * 100}%`,
-        minWidth: `${props.minWidth? props.minWidth : "320px" }`,
+        paddingBottom: `${( height / width ) * 100}%`,
+        maxWidth: props.imgWidth? props.imgWidth : `${width}px`, 
         ...props.style
     }}>
     <div className={styles.loader_asset_container}> {
@@ -30,14 +29,14 @@ const Loader = ({children, fillColor, width, height, ...props}) => <div /* Loadi
 </div>;
 
 const LoaderDissolve = ({children, ...props}) => {
-    const [firstLoaded, setFirstLoaded] = React.useState(false);
+    const [first_loaded, setFirstLoaded] = React.useState(false);
 
     return (
-        firstLoaded? <></>  
+        first_loaded? <></>  
         : <div 
             className={ props.className? clsx(styles.img_loader_dissolve, props.className) : styles.img_loader_dissolve} 
             style={{ ...props.style }}
-            firstLoaded={firstLoaded}
+            first_loaded={first_loaded.toString()}
             onAnimationEnd={() => setFirstLoaded(true)}
         >
             <LoadingSvg className={styles.loading_svg_dissolve} />

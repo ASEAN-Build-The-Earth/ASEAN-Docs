@@ -1,6 +1,12 @@
 const Locale = require("./locale");
 
-function drawKofiWidget() {
+function KofiWidget(onload) {
+    /* load the script and as soon as it's loaded we callback to a draw widget function (element id is set in docusaurus.config file) */
+    const overlayWidgetScript = document.getElementById("kofi-overlay-widget-script");
+    overlayWidgetScript.onload = function(){ onload(); }
+}
+
+function drawWidget() {
     /* the widget parent script is loaded in docusaurus config file */
     kofiWidgetOverlay.draw('bteasean', {
         'type': 'floating-chat',
@@ -37,7 +43,7 @@ function customLocale() {
             var font = document.createElement("link");
             font.rel = "stylesheet";
             font.href = "https://fonts.googleapis.com/css?family=Noto+Sans+Thai";
-            // font.type = "text/css";
+            font.type = "text/css";
             document.head.appendChild(font);
         }
         case "id": {/*soon*/}
@@ -49,7 +55,7 @@ function customLocale() {
 
 function inject() {
     fetchLocale();
-    drawKofiWidget();
+    KofiWidget(drawWidget());
     customLocale(); 
 }
 

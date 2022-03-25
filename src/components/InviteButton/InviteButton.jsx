@@ -10,13 +10,13 @@ import Link from '@docusaurus/Link';
  */
 const InviteButton = ({link, children}) => {
     const { isDarkTheme } = useColorMode();
-    const [widgetIn, setWidgetIn] = useState(0)
+    const [widget_in, setWidgetIn] = useState(0)
     let isAnimating;
     let isMouseOver;
 
     return (
     <div id={styles.wrap}>
-      <table className={styles.cover_table}>
+      <table className={styles.cover_table}><tbody>
         <tr id={styles.scaled_element}><th className={styles.invite_table}>
           <Link className={styles.invite_button} to={link}>
             <b>{children}</b>
@@ -30,18 +30,19 @@ const InviteButton = ({link, children}) => {
             { padding: "0px", backgroundColor: "#7289da", borderRadius: "4px", borderColor: "#7289da"}} 
           >
             <iframe /* discord widget iframe */
+              title="ASEAN BTE Discord Server"
               className={styles.discord_widget} 
               src={isDarkTheme ? 'https://discord.com/widget?id=702883639574396969&theme=dark' : 'https://discord.com/widget?id=702883639574396969&theme=light'} 
-              id={styles.scaled_element} allowtransparency="true" frameborder="0" 
+              id={styles.scaled_element} allowtransparency="true" frameBorder="0" 
               sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
               /* widget animation */
-              widgetIn={widgetIn}
+              widget_in={widget_in}
               onMouseEnter={() => { isMouseOver = true; if(!isAnimating) setWidgetIn(1); }}
               onMouseLeave={() => { isMouseOver = false;  if(isAnimating !== true) setWidgetIn(2); }}
               onAnimationEnd={() =>  { isAnimating = false; if(isMouseOver !== undefined)  setWidgetIn(2); }}
               onAnimationStart={() =>{ isAnimating = true; }}            
             ></iframe> 
-        </th></tr>
+        </th></tr></tbody>
       </table>
     </div>
     );

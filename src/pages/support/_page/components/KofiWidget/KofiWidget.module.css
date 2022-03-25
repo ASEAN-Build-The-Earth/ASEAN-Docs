@@ -75,15 +75,14 @@ html[data-theme='light'] .kofi_overlay {
 /* Fade out animation of the overlay when image processing is done.
  * The `loading_img` variable is set from React.useState when the preview image processing is done.
  */
-.kofi_overlay[loading_img="1"] {
+.kofi_overlay.kofi_overlay_fade {
     animation: 2s linear 0s 1 fading_bg;
-    opacity: 0;
+    opacity: 1;
 }
-.loading_svg[loading_img="1"] {
+.loading_svg.loading_svg_fade {
     animation: 2s linear 0s 1 fading_svg;
-    opacity: 0;
+    opacity: 1;
 }
-
 @keyframes fading_bg{
     0% { opacity: 1; }
     80% { opacity: 1; }
@@ -92,8 +91,9 @@ html[data-theme='light'] .kofi_overlay {
 }
 @keyframes fading_svg{
     0% { opacity: 1; }
-    80% { opacity: 1; }
-    90% { opacity: 0.8; }
+    50% { opacity: 1; }
+    65% { opacity: 0.8; }
+    75% { opacity: 0; }
     100% { opacity: 0; }
 }
 

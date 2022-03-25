@@ -59,7 +59,7 @@ export default function PageContainer({children})
         <div className={clsx('hero hero--info', styles.hero_banner)}> 
             { isDarkTheme? <BannerRandererDark /> : <BannerRandererLight /> }
             <div className={styles.contents_container}>
-                <div class="row row--no-gutters">
+                <div className="row row--no-gutters">
                     {children}
                 </div>          
             </div>

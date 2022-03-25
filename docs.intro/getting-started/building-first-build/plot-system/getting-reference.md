@@ -13,7 +13,7 @@ import MinecraftWindow from '@site/src/components/MinecraftWindow';
 import guide_links from "@site/static/img/docs/intro/plot-system/finishing-plot/guide_links.gif"
 
 <MinecraftWindow maxWidth="600px">
-    <Img src={guide_links} width="600" height="327" alt="Guide Image"/>
+    <Img src={guide_links} aspect="600 327" alt="Guide Image"/>
 </MinecraftWindow>
 
 ```

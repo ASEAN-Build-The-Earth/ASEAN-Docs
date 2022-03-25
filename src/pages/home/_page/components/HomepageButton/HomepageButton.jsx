@@ -59,7 +59,7 @@ const ButtonContents = [
                 <Link to="/support" aria-label="Donate on kofi"
                     className={styles.link_redirector 
                     /*[Note]: the link that actually redirect to page is placed here 
-                     * to prevent wierd prefetching html changs 
+                     * to prevent wierd prefetching html changes 
                      */}>
                 </Link>
             </div>
