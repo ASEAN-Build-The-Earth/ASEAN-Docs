@@ -1,4 +1,6 @@
 const Locale = require("./locale");
+const { translate } = require("@docusaurus/Translate");
+const { globalConfig } = require("@site/config");
 
 function KofiWidget(onload) {
     /* load the script and as soon as it's loaded we callback to a draw widget function (element id is set in docusaurus.config file) */
@@ -8,11 +10,16 @@ function KofiWidget(onload) {
 
 function drawWidget() {
     /* the widget parent script is loaded in docusaurus config file */
-    kofiWidgetOverlay.draw('bteasean', {
-        'type': 'floating-chat',
-        'floating-chat.donateButton.text': 'Support Us',
-        'floating-chat.donateButton.background-color': '#434B57',
-        'floating-chat.donateButton.text-color': '#fff',
+    kofiWidgetOverlay.draw("bteasean", {
+        "type": "floating-chat",
+        "floating-chat.donateButton.text": translate({
+            id: "footer.kofiWidget.label",
+            message: "Support Us",
+            description: "Support Us button label at footer."
+            }),
+        "floating-chat.donateButton.background-color": "#434B57",
+        "floating-chat.donateButton.text-color": "#fff",
+        "floating-chat.donatebutton.image": `${globalConfig.siteUrl}/img/icons/social-medias/kofi_logo_pure.svg`,
     });
 
     /* support screen reader by adding title to iframe */

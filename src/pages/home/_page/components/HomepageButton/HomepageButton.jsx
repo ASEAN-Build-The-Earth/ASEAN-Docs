@@ -5,7 +5,7 @@ import styles from './HomepageButton.module.css'
 import Translate from '@docusaurus/Translate';;
 import Link from '@docusaurus/Link';
 import book_icon from "@site/static/img/icons/book_1.png"
-import KofiIcon from "@site/static/img/icons/social-medias/kofi.svg"
+import KofiIcon from "@site/static/img/icons/social-medias/kofi_logo.svg"
 import feather_icon from "@site/static/img/icons/feather.png"
 import kofi_pixel_icon from "@site/static/img/icons/kofi_pixel_logo.png";
 
