@@ -198,7 +198,7 @@ const config = {
     
   i18n: {
     defaultLocale: i18nConfig.defaultLocale,
-    locales: isDeployPreview? i18nConfig.defaultLocale : i18nConfig.registeredLocales,
+    locales: isDeployPreview? [i18nConfig.defaultLocale] : i18nConfig.registeredLocales,
     localeConfigs: i18nConfig.localeConfigs
   },
 
