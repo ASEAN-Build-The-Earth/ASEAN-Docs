@@ -1,5 +1,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const isDeployPreview = process.env.CONTEXT === "deploy-preview";
+// const isProductionDeployment = process.env.CONTEXT === "production";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -192,7 +194,7 @@ const config = {
     
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'th', 'my', 'id', 'vn', 'ph'],
+    locales: isDeployPreview? ['en'] : ['en', 'th', 'my', 'id', 'vn', 'ph'],
     localeConfigs: {
       /**
        * htmlLang code: [https://gist.github.com/JamieMason/3748498]
