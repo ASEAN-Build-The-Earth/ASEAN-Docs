@@ -13,7 +13,7 @@ import GIF_Fill from '@site/static/media/docs/intro/exam/building-process/fill.g
 In this page, we will get you some tips to finish your exam plot faster.
 
 ## Outline
-Use the tpll trick from trick to outline your exam plot's building.
+Use the tpll trick from the previous page to outline your exam plot's building.
 After you get building outline and roads done you can start recreate your build in minecraft.
 
 
