@@ -53,8 +53,7 @@ function BannerRandererLight() {
 
 export default function PageContainer({children}) 
 {
-    const { isDarkTheme } = useColorMode();
-
+    const isDarkTheme = useColorMode().colorMode === 'dark';
     return ( 
         <div className={clsx('hero hero--info', styles.hero_banner)}> 
             { isDarkTheme? <BannerRandererDark /> : <BannerRandererLight /> }

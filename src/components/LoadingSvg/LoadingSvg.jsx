@@ -43,7 +43,7 @@ const Svg = ({color, ...props}) => {
 }
 
 export default function LoadingSvg({fillColor, ...props}) {
-    const { isDarkTheme } = useColorMode();
+    const isDarkTheme = useColorMode().colorMode === 'dark';
     return (<>{
      fillColor ? 
         <Svg color={fillColor} {...props}/> 

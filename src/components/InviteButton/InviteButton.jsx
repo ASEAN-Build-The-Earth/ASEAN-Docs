@@ -11,7 +11,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
  */
 const InviteButton = ({children}) => {
   const { siteConfig } = useDocusaurusContext();
-  const { isDarkTheme } = useColorMode();
+  const isDarkTheme = useColorMode().colorMode === 'dark';
   const [widget_in, setWidgetIn] = useState(0)
   let isAnimating;
   let isMouseOver;

@@ -12,7 +12,7 @@ function drawWidget() {
     /* the widget parent script is loaded in docusaurus config file */
     kofiWidgetOverlay.draw("bteasean", {
         "type": "floating-chat",
-        "floating-chat.donateButton.text": translate({
+        "floating-chat.donateButton.text": translate({ //note: this doesnt work
             id: "footer.kofiWidget.label",
             message: "Support Us",
             description: "Support Us button label at footer."

@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './KofiWidget.module.css';
-import kofi_icon from "@site/static/media/icons/kofi_logo.png"
+import KofiIcon from "@site/static/media/icons/social-medias/kofi_logo_pure.svg"
 import LoadingSvg from '@site/src/components/LoadingSvg'
 import Link from '@docusaurus/Link';
 import { useImage } from 'react-image';
@@ -20,12 +20,13 @@ export default function KofiWidget({children}) {
             <div className="card-demo">
                 <div className="card" >
                     <div className="card__header" style={{paddingTop:"5px"}}>
-                        <img src={kofi_icon} alt="kofi" 
+                        <div
                             tiny_kofi_btn_anim={tiny_kofi_btn_anim} 
                             onMouseDown={() => { set_tiny_kofi_btn(1); }}
                             onAnimationEnd={() => { set_tiny_kofi_btn(0); }} 
                             id={styles.button_icon}>
-                        </img>
+                            <KofiIcon id={styles.kofi_icon}/>
+                        </div>
                     </div>
                     <div className="card__body" style={{paddingTop:"0"}}>
                         <div className={styles.kofi_container}>

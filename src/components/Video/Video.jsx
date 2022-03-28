@@ -12,6 +12,7 @@ function VideoRenderer({sources, type, width, maxWidth, ...props})
         { youtube ? <>
             <iframe 
                 width="100%" height="327" 
+                loading="lazy"
                 onLoad={() => setLoading(false)} 
                 src={`https://www.youtube.com/embed/${props.VIDEO_ID}?`
                 + `playlist=${props.VIDEO_ID}`

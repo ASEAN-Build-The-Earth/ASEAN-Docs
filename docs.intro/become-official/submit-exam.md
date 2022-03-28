@@ -23,5 +23,6 @@ import GIF_Process from '@site/static/media/docs/intro/exam/building-process/pro
 ```
 
 <Text.Tab>If everything is ready, submit the plot with `/plot submit` and wait for reviewer to check your exam.
-When you passed the exam, ASEAN BTE Discord staff will notice you that you became [Official Builder](../getting-started/builder-system#official-builder) So make sure you are in out discord server :) after this you can now build anything you want in [Master Server](../getting-started/visiting#master-server) like building your dream city or hometown in ASEAN.</Text.Tab>
+\n
+When you passed the exam, ASEAN BTE Discord staff will notice you that you became [Official Builder](../getting-started/builder-system#official-builder) So make sure you are in our discord server :) after this you can now build anything you want in [Master Server](../getting-started/visiting#master-server) like building your dream city or hometown in ASEAN.</Text.Tab>
 

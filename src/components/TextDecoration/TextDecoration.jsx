@@ -47,7 +47,8 @@ const Hl = ({type, children, color, textColor, ...props}) => {
  */
 const Tab = ({children}) => {
   const  haveChildren = (children === undefined)? false : true;
-  return haveChildren? <ReactMarkdown>{"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + children}</ReactMarkdown> :
+  return haveChildren? <ReactMarkdown>{"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + children.replace("\\n", `&nbsp;  
+  `)}</ReactMarkdown> :
   <>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</>
 }
 

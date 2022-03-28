@@ -22,14 +22,21 @@
     transform: translate(-28%, -50%);
 }
 #button_icon {
-    width: 7%;
-    transform: scaleX(-1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5ch;
+    height: 4.5ch;
     background-color: var(--ifm-color-emphasis-200);
     border-radius: 100%;
     padding: 0;
     transition: 0.2s;
+    margin-bottom: 0.35rem;
 }
-
+#kofi_icon {
+    height: 50%;
+    padding-left: 2px;
+}
 .kofi_iframe {
     overflow: hidden !important;
     width: 100%;
@@ -105,11 +112,11 @@ html[data-theme='light'] .kofi_overlay {
     animation: 0.5s linear 0s 1 tiny_kofi_btn_anim
 }
 @keyframes tiny_kofi_btn_anim {
-    0% { transform: scaleX(-1); background-color: var(--ifm-color-emphasis-200); }
-    33% { transform: scaleX(-1) rotateZ(-20deg); }
-    50% { background-color: #13C3FF; transform: scaleX(-1) rotateZ(0deg); }
-    66% { transform: scaleX(-1) rotateZ(20deg); }
-    100% { transform: scaleX(-1); background-color: var(--ifm-color-emphasis-200); }
+    0% { background-color: var(--ifm-color-emphasis-200); }
+    33% { transform: rotateZ(-20deg); }
+    50% { background-color: #13C3FF; transform: rotateZ(0deg); }
+    66% { transform: rotateZ(20deg); }
+    100% { background-color: var(--ifm-color-emphasis-200); }
 }
 
 @media print {
