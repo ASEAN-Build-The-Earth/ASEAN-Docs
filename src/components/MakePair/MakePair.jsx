@@ -27,14 +27,14 @@ const MakePair = ({pair_left, pair_right, pair_right_m}) => {
                 > 
                     <div className={"col col--6"}>
                         <div className={styles.place_center}> 
-                            <div className="text--center padding-horiz--md">
+                            <div className={styles.pair_container}>
                             { pair_left }
                             </div>
                         </div>
                     </div>
                     <div className="col col--6">
                         <div className={styles.place_center}> 
-                            <div className="text--center padding-horiz--md">
+                            <div className={styles.pair_container}>
                             { isReverse.valueOf()? pair_right_m : pair_right }
                             </div>
                         </div>

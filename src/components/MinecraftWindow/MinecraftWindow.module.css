@@ -50,11 +50,11 @@
     color: var(--ifm-color-gray-300);
   }
   
-  .minecraft_icon {
-    background-image: url(@site/static//img/icons/grassblock_icon.png);
+  /* .minecraft_icon {
+    background-image: url(@site/static/media/icons/grassblock_icon.png);
     width: 2rem;
   
-  }
+  } */
   
   .browserWindowMenuIcon {
     margin-left: auto;
@@ -85,6 +85,12 @@
     transform: translateX(-15.5rem) !important;
   }
 
+  #minecraft_window_dropdown_title {
+    font-style: oblique;
+    font-weight: 600;
+    color: var(--ifm-color-primary);
+  }
+ 
   @media (max-width: 996px) {
     .reverse_column {
       flex-direction: column-reverse;

@@ -1,12 +1,25 @@
 const Locale = require("./locale");
+const { translate } = require("@docusaurus/Translate");
+const { globalConfig } = require("@site/config");
 
-function drawKofiWidget() {
+function KofiWidget(onload) {
+    /* load the script and as soon as it's loaded we callback to a draw widget function (element id is set in docusaurus.config file) */
+    const overlayWidgetScript = document.getElementById("kofi-overlay-widget-script");
+    overlayWidgetScript.onload = function(){ onload(); }
+}
+
+function drawWidget() {
     /* the widget parent script is loaded in docusaurus config file */
-    kofiWidgetOverlay.draw('bteasean', {
-        'type': 'floating-chat',
-        'floating-chat.donateButton.text': 'Support me',
-        'floating-chat.donateButton.background-color': '#434B57',
-        'floating-chat.donateButton.text-color': '#fff',
+    kofiWidgetOverlay.draw("bteasean", {
+        "type": "floating-chat",
+        "floating-chat.donateButton.text": translate({
+            id: "footer.kofiWidget.label",
+            message: "Support Us",
+            description: "Support Us button label at footer."
+            }),
+        "floating-chat.donateButton.background-color": "#434B57",
+        "floating-chat.donateButton.text-color": "#fff",
+        "floating-chat.donatebutton.image": `${globalConfig.siteUrl}/media/icons/social-medias/kofi_logo_pure.svg`,
     });
 
     /* support screen reader by adding title to iframe */
@@ -37,7 +50,7 @@ function customLocale() {
             var font = document.createElement("link");
             font.rel = "stylesheet";
             font.href = "https://fonts.googleapis.com/css?family=Noto+Sans+Thai";
-            // font.type = "text/css";
+            font.type = "text/css";
             document.head.appendChild(font);
         }
         case "id": {/*soon*/}
@@ -49,7 +62,7 @@ function customLocale() {
 
 function inject() {
     fetchLocale();
-    drawKofiWidget();
+    KofiWidget(drawWidget());
     customLocale(); 
 }
 

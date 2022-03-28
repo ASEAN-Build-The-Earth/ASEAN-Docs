@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Img.module.css'
 import clsx from 'clsx';
 import { useImage } from 'react-image'
-import ImgManager from './ImgLoader/index'
+import ImgManager from '../ImgLoader/index'
 import Translate from '@docusaurus/Translate';
 
 const ErrorImage = ({error, width, height, ...props}) => { 
@@ -23,12 +23,14 @@ function ImageRenderer({width, height, src, srcList, ...props})
         useSuspense: false
     })
 
+    const loadingMessage = <Translate id="image.loader.loading" description="Loading message of all image in document">
+        Loading image...  
+    </Translate>
+
     return ( 
         img.error !== null? <ErrorImage error={img.error} width={width} height={height} {...props}/> : 
         img.isLoading? <ImgManager.Loader width={width} height={height} {...props}>
-            <Translate id="image.loader.loading" description="Loading message of all image in document">
-                Loading image...  
-            </Translate>
+            {loadingMessage}
         </ImgManager.Loader>
         : //<- Image is loaded
         /**[Note]:
@@ -38,9 +40,8 @@ function ImageRenderer({width, height, src, srcList, ...props})
          * that the div with image ratio will hold it untill it finally loaded
          */
         <div style={{ position:"relative", 
-            paddingBottom: props.aspect? `${props.aspect}%` : `${( height / width ) * 100}%`, 
-            maxWidth: props.maxWidth? props.maxWidth : `${width}px`, 
-            minWidth: `${props.minWidth? props.minWidth : "320px" }`,
+            paddingBottom: `${( height / width ) * 100}%`, 
+            maxWidth: props.imgWidth? props.imgWidth : `${width}px`, 
         }}>
             <img src={img.src} 
                 className={ props.className? clsx(styles.img_holder, props.className) : styles.img_holder} 
@@ -48,9 +49,7 @@ function ImageRenderer({width, height, src, srcList, ...props})
                 alt={ props.alt? props.alt : "image" }>
             </img>
             <ImgManager.LoaderDissolve {...props}>
-                <Translate id="image.loader.success" description="A message on any image when the loading is done">
-                    Loading done!
-                </Translate>
+                {loadingMessage}
             </ImgManager.LoaderDissolve>
         </div>
     )
@@ -58,21 +57,29 @@ function ImageRenderer({width, height, src, srcList, ...props})
 
 /**
  * Extended component for <img> tag
- * @param width aspect ratio of width, the width has to be the exact dimension of the image in pixel in order for the Img holder to generate loading skeleton correctly
- * @param height aspect ratio of height, the height has to be the exact dimension of the image in pixel in order for the Img holder to generate loading skeleton correctly
+ * @param aspect aspect ratio of width and height, 
+ * the aspect has to be the exact dimension of the image in pixel 
+ * in order for the Img holder to generate loading skeleton correctly
+ * `aspect="100px, 300px"` / `aspect="100 300"` / `aspect="100, 300"`
+ * @param maxWidth max width image can expand to 
+ * @param imgWidth use this to expand to width of higher than original aspect ratio
  * @param src source of the image (link/react import)
  * @param srcList list of images source, if one image failed it'll use other image in the list
  * @param ...props any probs that applied to the result img tag
  * @returns final <img /> tag with loading skeleton on loading of the image
  */
-export default function Img({width, height, src, srcList, ...props}) {
-    return <ImageRenderer 
-        width={width} 
-        height={height} 
+export default function Img({maxWidth, aspect, src, srcList, ...props}) {
+    const aspectRatio = aspect.match(",")? aspect.split(", ") : aspect.split(" ")
+    const Renderer = <ImageRenderer 
+        width={aspectRatio[0].replace("px", "")} 
+        height={aspectRatio[1].replace("px", "")} 
         src={src} 
         srcList={srcList} 
         {...props}>   
-    </ImageRenderer>
+    </ImageRenderer>;
+
+    return maxWidth? <div style={{maxWidth:maxWidth}}>{Renderer}</div> : Renderer;
+
 }
 
 

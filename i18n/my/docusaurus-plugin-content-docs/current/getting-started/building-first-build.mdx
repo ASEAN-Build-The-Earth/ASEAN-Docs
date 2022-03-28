@@ -6,7 +6,7 @@ id: building-first-build
 import DocCardList from '@theme/DocCardList';
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
-import Phattie_Gif from '@site//static/img/docs/plot-system/plot.gif';
+import Phattie_Gif from '@site//static/media/docs/intro/plot-system/plot.gif';
 import Img from '@site/src/components/Img'
 import Link from '@docusaurus/Link';
 
@@ -24,9 +24,9 @@ import Link from '@docusaurus/Link';
         <span style={ {color:"var(--ifm-font-color-base)"} }>
             Minecraft
         </span></Link> } 
-    maxWidth="100vw">
+    >
 {/* children */}
-    <Img imgWidth="100vw" maxWidth="100vw" width="800" height="450" src={Phattie_Gif} alt="Guide Image"/>
+    <Img imgWidth="100vw" maxWidth="100vw" aspect="800 450" src={Phattie_Gif} alt="Guide Image"/>
 </MinecraftWindow>
 
 <DocCardList items={useCurrentSidebarCategory().items}/>

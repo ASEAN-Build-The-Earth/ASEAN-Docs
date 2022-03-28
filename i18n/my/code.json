@@ -15,13 +15,13 @@
     "message": "Loading image...",
     "description": "Loading message of all image in document"
   },
-  "image.loader.success": {
-    "message": "Loading done!",
-    "description": "A message on any image when the loading is done"
-  },
   "util.keyword.minecraft": {
     "message": "Minecraft",
     "description": "Minecraft label of the MinecraftWindow style"
+  },
+  "video.loader.loading": {
+    "message": "Loading video...",
+    "description": "Loading message of all image in document"
   },
   "home.socialMedias.facebook": {
     "message": "Facebook",
@@ -52,7 +52,7 @@
     "description": "A hero title of homepage document"
   },
   "home.banner.subtitle": {
-    "message": "We are building southeast asia in Minecraft 1:1 scale!",
+    "message": "We are building Southeast Asia in Minecraft 1:1 scale!",
     "description": "A hero description of homepage document"
   },
   "support.title": {
@@ -91,6 +91,22 @@
     "message": "Visit Donation Site",
     "description": "The visit kofi site button at the bottom of kofi widget"
   },
+  "home.bannerButton.support.label": {
+    "message": "Support Us",
+    "description": "The big Start building button (please keep the text count very low to prevent newline)"
+  },
+  "home.bannerButton.support.labelOverlay": {
+    "message": "Donate on kofi",
+    "description": "The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)"
+  },
+  "home.bannerButton.getStart.label": {
+    "message": "Get Started",
+    "description": "The big Start building button (please keep the text count very low to prevent newline)"
+  },
+  "home.bannerButton.getStart.labelOverlay": {
+    "message": "Go To Document",
+    "description": "The pop up message when you hover to the homepage Start Building button (please keep the text count for this low)"
+  },
   "home.infoBox.ip": {
     "message": "Server IP",
     "description": "'Server ip' box at the homepage"
@@ -122,22 +138,6 @@
   "home.infoBox.requirement.cracked-2": {
     "message": "is not ALLOWED.",
     "description": "section of 'Cracked Minecraft is not allowed'"
-  },
-  "home.bannerButton.support.label": {
-    "message": "Support Us",
-    "description": "The big Start building button (please keep the text count very low to prevent newline)"
-  },
-  "home.bannerButton.support.labelOverlay": {
-    "message": "Donate on kofi",
-    "description": "The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)"
-  },
-  "home.bannerButton.getStart.label": {
-    "message": "Get Started",
-    "description": "The big Start building button (please keep the text count very low to prevent newline)"
-  },
-  "home.bannerButton.getStart.labelOverlay": {
-    "message": "Go To Document",
-    "description": "The pop up message when you hover to the homepage Start Building button (please keep the text count for this low)"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",

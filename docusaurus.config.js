@@ -1,19 +1,24 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { globalConfig, i18nConfig } = require('./config');
+const isDeployPreview = process.env.CONTEXT === "deploy-preview";
+const isDeveloping = process.env.NODE_ENV === "development";
+// const isProductionDeployment = process.env.CONTEXT === "production";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ASEAN BTE',
   tagline: 'We are building southeast asia in Minecraft 1:1 scale!',
-  url: 'https://builders-doc.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/icons/aseanbte_logo.png',
+  favicon: 'media/icons/aseanbte_logo.png',
   organizationName: 'ASEAN-Build-The-Earth',
   projectName: 'ASEAN-Docs',
-  clientModules: [require.resolve('./src/global/client_module.js')],
-
+  url: globalConfig.siteUrl,
+  clientModules: [globalConfig.globalModule],
+  customFields: globalConfig,
+  trailingSlash: false,
   presets: [
     [
       'classic',
@@ -22,18 +27,18 @@ const config = {
         docs: {
           path: 'docs.intro',
           routeBasePath: "intro", // change default "doc/" root path
-          sidebarPath: require.resolve('./sidebars_intro.js'),
+          sidebarPath: require.resolve('./sidebars.intro.js'),
           editUrl: ({ locale, docPath }) => {
             if (locale !== 'en') {
-              return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/blob/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
+              return `${globalConfig.baseGithubUrl}/ASEAN-Docs/blob/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
             }
-            return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/docs/${docPath}`;
+            return `${globalConfig.baseGithubUrl}/ASEAN-Docs/tree/main/docs.intro/${docPath}`;
           },
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
         gtag: {
-          trackingID: '3352452083',
+          trackingID: globalConfig.googleGtag,
           anonymizeIP: true,
         },
         blog: false,
@@ -45,8 +50,10 @@ const config = {
         },
         */
         theme: {
-          customCss: require.resolve('./src/global/global.css'),
+          customCss: globalConfig.globalStyle,
         },
+        /* http://localhost:3000/__docusaurus/debug */
+        debug: isDeveloping? true : false,
       }),
     ],
   ],
@@ -61,17 +68,17 @@ const config = {
         routeBasePath: 'guide',
         editUrl: ({locale, docPath}) => {
           if (locale !== 'en') {
-            return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/docs/${locale}/docusaurus-plugin-content-docs-builder-guide/current/${docPath}`;
+            return `${globalConfig.baseGithubUrl}/ASEAN-Docs/tree/main/docs.builder-guide/${locale}/docusaurus-plugin-content-docs-builder-guide/current/${docPath}`;
           }
-          return `https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs/tree/main/docs/${docPath}`;
+          return `${globalConfig.baseGithubUrl}/ASEAN-Docs/tree/main/docs.builder-guide/${docPath}`;
         },
-        sidebarPath: require.resolve('./sidebars_builder-guide.js'),
+        sidebarPath: require.resolve('./sidebars.builder-guide.js'),
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       }),
     ],
   ],
-
+  
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   (
@@ -79,13 +86,13 @@ const config = {
       colorMode: { defaultMode: "dark", },
       autoCollapseSidebarCategories: true,
       hideableSidebar: true, // idk what this do
-      image: "img/icons/aseanbte_full_logo.jpg", //meta og image
+      image: "media/icons/aseanbte_full_logo.jpg", //meta og image
       metadata: [{name: 'theme-color', content: '#ffc561'}],
       navbar: {
         title: 'ASEAN BTE',
         logo: {
           alt: 'ASEAN BTE',
-          src: 'img/icons/aseanbte_logo.gif',
+          src: 'media/icons/aseanbte_logo.gif',
         },
         items: [
           {
@@ -105,7 +112,7 @@ const config = {
             position: 'left'
           },
           {
-            href: 'https://discord.gg/DNwnKmkQpw',
+            href: globalConfig.discordInviteLink,
             label: 'Discord',
             position: 'right',
           },
@@ -114,7 +121,7 @@ const config = {
             position: 'right',
             dropdownItemsBefore: [
               { // [TODO]: replace this href to our google doc translate site
-                href: 'https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs',
+                href: `${globalConfig.baseGithubUrl}/ASEAN-Docs`,
                 label: 'Help Us Translate',
               },
             ],
@@ -146,13 +153,13 @@ const config = {
                 href: 'https://discord.gg/buildtheearth',
               },
               {
-                label: 'ASEAN BTE',
-                href: 'https://discord.gg/DNwnKmkQpw',
+                label: 'BuildTheEarth.Asia',
+                href: 'https://discord.gg/R5dfd4Fc8b'
               },
               {
-                label: 'Asia BTE',
-                href: 'https://discord.gg/R5dfd4Fc8b'
-              }
+                label: 'BuildTheEarth ASEAN',
+                href: globalConfig.discordInviteLink,
+              },             
             ],
           },
           {
@@ -164,10 +171,10 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/ASEAN-Build-The-Earth',
+                href: globalConfig.baseGithubUrl,
               },
               {
-                label: 'Official BTE Website',
+                label: 'BuildTheEarth Website',
                 href: 'https://buildtheearth.net/'
               }
             ],
@@ -191,45 +198,12 @@ const config = {
   ),
     
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'th', 'my', 'id', 'vn', 'ph'],
-    localeConfigs: {
-      /**
-       * htmlLang code: [https://gist.github.com/JamieMason/3748498]
-       */
-      en: { label: 'English',
-        direction: 'ltr',
-        htmlLang: 'en-US',
-      },
-      th: { label: 'Thai',
-        direction: 'ltr',
-        htmlLang: 'th-TH',
-      },
-      my: { label: 'Malay',
-        direction: 'ltr',
-        htmlLang: 'ms-MY',
-      },
-      id: { label: 'Indonesian',
-        direction: 'ltr',
-        htmlLang: 'id-ID',
-      },
-      vn: { label: 'Vietnamese',
-        direction: 'ltr',
-        htmlLang: 'vi-VN',
-      },
-      ph: { label: 'Filipino',
-        direction: 'ltr',
-        htmlLang: 'en-PH',
-      },
-    },
+    defaultLocale: i18nConfig.defaultLocale,
+    locales: isDeployPreview? [i18nConfig.defaultLocale] : i18nConfig.registeredLocales,
+    localeConfigs: i18nConfig.localeConfigs
   },
 
-  scripts: [
-    { /* kofi widget button script, will be drawn on footer */
-      src: 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js',
-      async: false,
-    }
-  ],
+  scripts: globalConfig.globalScript,
 };
 
 module.exports = config;

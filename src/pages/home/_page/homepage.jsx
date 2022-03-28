@@ -5,9 +5,9 @@ import { useImage } from 'react-image'
 import Translate from '@docusaurus/Translate';
 
 import MarkdownBlock from "@site/src/components/MarkdownBlock";
-import HeaderBanner from "@site/static/img/background/homepage_banner.png";
-import CompressedHeaderBanner from "@site/static/img/background/homepage_banner.min.png";
-import grassblock_icon from "@site/static/img/icons/dancing_grassblock.gif";
+import HeaderBanner from "@site/static/media/background/homepage_banner.png";
+import CompressedHeaderBanner from "@site/static/media/background/homepage_banner.min.png";
+import grassblock_icon from "@site/static/media/icons/dancing_grassblock.gif";
 
 import ButtonHeader from "./components/HomepageButton";
 import InfoBox from "./components/InfoBox";
@@ -67,7 +67,7 @@ const ContentList = [
     ),
   },
   {
-    title: <img src={grassblock_icon} alt="Our Server" id={styles.info_section_icon} />,
+    title: <img src={grassblock_icon} alt="Our Server" id={styles.info_section_icon} width="50" height="45" />,
     description: <InfoBox />
   }
 ];
@@ -126,7 +126,7 @@ function Header() {
         </h1>
         <p className={clsx("hero__subtitle", styles.banner_description, styles.shadowed)}>
           <Translate id="home.banner.subtitle" description="A hero description of homepage document">
-            We are building southeast asia in Minecraft 1:1 scale!
+            We are building Southeast Asia in Minecraft 1:1 scale!
           </Translate>
         </p>
         <div className={styles.intro_button}>

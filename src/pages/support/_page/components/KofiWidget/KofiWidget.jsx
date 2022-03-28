@@ -1,40 +1,17 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './KofiWidget.module.css';
-import kofi_icon from "@site/static/img/icons/kofi_logo.png"
+import kofi_icon from "@site/static/media/icons/kofi_logo.png"
 import LoadingSvg from '@site/src/components/LoadingSvg'
 import Link from '@docusaurus/Link';
 import { useImage } from 'react-image';
-import IframeBackground from "@site/static/img/background/homepage_banner.png";
-import CompressedIframeBackground from "@site/static/img/background/homepage_banner.min.png";
+import IframeBackground from "@site/static/media/background/homepage_banner.png";
+import CompressedIframeBackground from "@site/static/media/background/homepage_banner.min.png";
 const KofiIframeLink = "https://ko-fi.com/bteasean/?hidefeed=true&widget=true&embed=true&preview=true";
 
-/**
- * [Note]: the loading overlay fade out when CompressedBackground is loaded,
- * so we'll atleast have compressed background ready when the overlay faded out.
- */
-const LoadingOverlay = ({loading_img, set_loading_img, CompressedBackground}) => {
-    const [loading_anim, set_loading] = React.useState(true);   
-    const fetch = () => set_loading_img(CompressedBackground.isLoading? 0 : 1);
-
-    fetch();
-    return ( <>{
-        loading_anim? <>
-            <div className={styles.kofi_overlay} 
-                loading_img={loading_img} 
-                loading_anim={loading_anim} 
-                onAnimationEnd={() => { set_loading(false); }}>
-            </div>
-            <div className={ styles.loading_svg } loading_img={loading_img}>
-                <LoadingSvg className={styles.svg_loader}/>
-            </div>
-        </> : <></>
-    }</> );
-}
-
 export default function KofiWidget({children}) {
-    const [loading_img, set_loading_img] = React.useState(0);
     const [tiny_kofi_btn_anim, set_tiny_kofi_btn] = React.useState(0);   
+    const [loading_anim, set_loading] = React.useState(true); 
     const Background = useImage({ srcList: IframeBackground, useSuspense: false })
     const CompressedBackground = useImage({ srcList: CompressedIframeBackground, useSuspense: false })
 
@@ -55,7 +32,7 @@ export default function KofiWidget({children}) {
                             <iframe id="kofiframe" 
                                 src={KofiIframeLink}
                                 height="712px"
-                                title="bteasean"
+                                title="ASEAN BTE Kofi Widget"
                                 loading="eager"
                                 className={styles.kofi_iframe}
                                 style={
@@ -69,13 +46,25 @@ export default function KofiWidget({children}) {
                                         { backgroundImage:`url(${CompressedBackground.src})` }
                                     : {backgroundImage:`url(${Background.src})`}
                                 }>   
-                            </iframe>
-                            <LoadingOverlay 
-                                loading_img={loading_img} 
-                                set_loading_img={set_loading_img} 
-                                CompressedBackground={CompressedBackground}>
-                            </LoadingOverlay>
-                        </div>
+                            </iframe>{
+                                /**
+                                 * [Note]: the loading overlay fade out when CompressedBackground is loaded,
+                                 * so we'll atleast have compressed background ready when the overlay faded out.
+                                 */
+                                loading_anim? CompressedBackground.isLoading? <>
+                                    <div className={styles.kofi_overlay} />
+                                    <div className={ styles.loading_svg }>
+                                        <LoadingSvg className={styles.svg_loader}/>
+                                    </div>
+                                </> : <>
+                                    <div className={clsx(styles.kofi_overlay, styles.kofi_overlay_fade)} 
+                                        onAnimationEnd={() => { set_loading(false); }}>
+                                    </div>
+                                    <div className={clsx(styles.loading_svg, styles.loading_svg_fade) }>
+                                        <LoadingSvg className={styles.svg_loader}/>
+                                    </div>
+                                </> : <></>
+                        }</div>
                     </div>
                     <div className="card__footer">
                         <Link className={clsx("button button--block", styles.kofi_button)} to="https://ko-fi.com/bteasean">

@@ -45,13 +45,13 @@
         100% { height:70px; }
         0% { height:500px; }
     }
-    .discord_widget[widgetIn="1"] {
+    .discord_widget[widget_in="1"] {
         height:500px;
         animation-name: widgetIn;
         animation-duration: 2s;
         animation-play-state: running;
     }
-    .discord_widget[widgetIn="2"] {
+    .discord_widget[widget_in="2"] {
         height:70px;
         animation-name: widgetOut;
         animation-duration: 2s;
@@ -73,30 +73,14 @@ html[data-theme='light'] .invite_table {
     border-color: #6d6d6d;
 }
 
+
 /* Incase there's actually <350px width screen */
 @media screen and (max-width: 350px) {
     #wrap {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        padding-top: 150%; 
-    }
-    
-    #scaled_element {
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
+        transform: translateX(-30px);
     }
         
     .cover_table {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
+        transform: scale(0.8);
     }
-}
+} 

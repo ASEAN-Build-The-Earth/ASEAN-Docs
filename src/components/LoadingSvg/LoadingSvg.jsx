@@ -13,7 +13,7 @@ const Svg = ({color, ...props}) => {
             id="L4" x="0px" y="0px" 
             style={{ ...props.style }}
             className={props.className? props.className : null}
-            viewBox="0 40 100 20" enable-background="new 0 0 0 0">
+            viewBox="0 40 100 20" enableBackground="new 0 0 0 0">
             <circle fill={color} stroke="none" cx="6" cy="50" r="6">
                 <animate
                 attributeName="opacity"

@@ -3,15 +3,15 @@ import clsx from 'clsx';
 import styles from './MinecraftWindow.module.css';
 import CodeBlock from "@theme/CodeBlock";
 import Translate from '@docusaurus/Translate';
-
+import MinecraftIcon from "@site/static/media/icons/grassblock_icon.png";
 const DEFAULT_IP_BOX = [
   {
     id: "title",
-    name: "Server IP",
+    content: "Server IP",
   },
   {
     id: "1",
-    name: <>
+    content: <>
       Java Edition
       <CodeBlock language="javascript">
         IP: 139.99.91.188:25569
@@ -20,7 +20,7 @@ const DEFAULT_IP_BOX = [
   },
   {
     id: "2",
-    name: <>
+    content: <>
       Bedrock Edition
       <CodeBlock language="javascript">
         IP: 139.99.91.188 
@@ -61,8 +61,7 @@ const MinecraftWindow = (
   return (
     <div className={styles.browserWindow} style={maxWidth? {maxWidth} : {width}}>
       <div className={styles.browserWindowHeader}>
-          <img src={require("@site/static/img/icons/grassblock_icon.png").default} width="40rem"></img>
-        
+          <img src={MinecraftIcon} width="40rem" alt="Minecraft"/>
         <div className={styles.browserWindowAddressBar}>{title}</div>
         <div className={styles.browserWindowMenuIcon}>
         {useDropdown.toLowerCase() == "true" ? ( 
@@ -76,9 +75,9 @@ const MinecraftWindow = (
             <ul className={clsx("dropdown__menu", styles.dropdown_menu)}> {
                 dropdownContents.map((item) => ( /* loop thru drop down items */
                   item.id == "title" ? 
-                    (<li><a key={item.id}><em>{item.name}</em></a></li>) 
+                    (<li key={item.id}><span id={styles.minecraft_window_dropdown_title}>{item.content}</span></li>) 
                     :
-                    (<li><a class="dropdown__link" ><p key={item.id}>{item.name}</p></a></li>)
+                    (<li key={item.id}><div class="dropdown__link" >{item.content}</div></li>)
                   )
                 )
               }

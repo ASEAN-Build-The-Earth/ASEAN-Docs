@@ -19,3 +19,8 @@
       flex-direction: column-reverse;
     }
 }
+
+.pair_container {
+    display: contents;
+    text-align: center;
+}

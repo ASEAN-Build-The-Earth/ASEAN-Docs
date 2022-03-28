@@ -12,30 +12,43 @@ import ReactMarkdown from 'react-markdown';
  * @param textColor display text's color
  * @returns styled text by color and textColor
  */
- const Hl = ({children, color, textColor, ...props}) => {
-    return <span
-      style={{
-        backgroundColor: color? color : null,
-        borderRadius: '2px',
-        color: textColor? textColor : '#fff',
-        padding: '0.2rem',
-        ...props.style,
-      }}>
-      {children}
-    </span>
+const Hl = ({type, children, color, textColor, ...props}) => {
+  const style = (type) => {
+    switch(type.toLowerCase()) {
+      case "primary": return({
+        color: "var(--ifm-color-primary)",
+      })
+      case "secondary": return({
+        color: "var(--ifm-color-secondary)",
+      })
+      case "info": return({
+        color: "var(--ifm-color-info)",
+      })
+    }
   }
+  return <span
+    style={type? style(type) : {
+      backgroundColor: color? color : null,
+      borderRadius: '2px',
+      color: textColor? textColor : null,
+      padding: '0.2rem',
+      ...props.style,
+    }}>
+    {children}
+  </span>
+}
 
-  /**make a paragraph with Tab at the first line. helps improve readability of the docs
-   * ```mdx
-   * <Tab>Lorem ipsum dolor sit amet, consectetur adipiscing [elit](https://www.uwu.com), sed do eiusmod tempor incididunt ut labore et dolore magna.</Tab>
-   * ```
-   * @param children element children (can pbe put as markdown sentence)
-   * @returns "\&nbsp;\&nbsp;\&nbsp;\&nbsp;\&nbsp;\&nbsp;\&nbsp;\&nbsp;" + children
-   */
-  const Tab = ({children}) => {
-    const  haveChildren = (children === undefined)? false : true;
-    return haveChildren? <ReactMarkdown>{"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + children}</ReactMarkdown> :
-    <>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</>
-  }
+/**make a paragraph with Tab at the first line. helps improve readability of the docs
+ * ```mdx
+ * <Tab>Lorem ipsum dolor sit amet, consectetur adipiscing [elit](https://www.uwu.com), sed do eiusmod tempor incididunt ut labore et dolore magna.</Tab>
+ * ```
+ * @param children element children (can pbe put as markdown sentence)
+ * @returns "\&nbsp;\&nbsp;\&nbsp;\&nbsp;\&nbsp;\&nbsp;\&nbsp;\&nbsp;" + children
+ */
+const Tab = ({children}) => {
+  const  haveChildren = (children === undefined)? false : true;
+  return haveChildren? <ReactMarkdown>{"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + children}</ReactMarkdown> :
+  <>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</>
+}
 
   export default { Hl, Tab }

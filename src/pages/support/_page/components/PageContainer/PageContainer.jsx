@@ -4,10 +4,10 @@ import styles from './PageContainer.module.css';
 import { useColorMode } from '@docusaurus/theme-common';
 import { useImage } from 'react-image'
 
-import DarkBanner from "@site/static/img/background/supportpage_banner_dark.png";
-import LightBanner from "@site/static/img/background/supportpage_banner_light.png";
-import CompressedDarkBanner from "@site/static/img/background/supportpage_banner_dark.min.png";
-import CompressedLightBanner from "@site/static/img/background/supportpage_banner_light.min.png";
+import DarkBanner from "@site/static/media/background/supportpage_banner_dark.png";
+import LightBanner from "@site/static/media/background/supportpage_banner_light.png";
+import CompressedDarkBanner from "@site/static/media/background/supportpage_banner_dark.min.png";
+import CompressedLightBanner from "@site/static/media/background/supportpage_banner_light.min.png";
 
 const DarkDecayBanner = () => {
     const darkBanner = useImage({ srcList: CompressedDarkBanner, useSuspense: false });
@@ -59,7 +59,7 @@ export default function PageContainer({children})
         <div className={clsx('hero hero--info', styles.hero_banner)}> 
             { isDarkTheme? <BannerRandererDark /> : <BannerRandererLight /> }
             <div className={styles.contents_container}>
-                <div class="row row--no-gutters">
+                <div className="row row--no-gutters">
                     {children}
                 </div>          
             </div>

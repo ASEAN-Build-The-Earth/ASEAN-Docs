@@ -2,18 +2,22 @@
  * force color to always be colored in mobile mode
  * no animation will apply since mobile can't "hover" to element
  */
-@media (hover: none) {
+@media (hover: none) and (pointer: coarse) {
     #facebook_logo_label{ color: #1877F2 !important; font-weight: bold !important;  }
     #twitter_logo_label { color: #1d9bf0 !important; font-weight: bold !important;  }
+    html[data-theme="dark"] #twitter_logo_pointer:hover #twitter_logo { background-color: #ffffff !important; }
+    html[data-theme="light"] #twitter_logo_pointer:hover #twitter_logo{ background-color: #f0f0f0 !important;  }
     #instagram_logo_label { color: #d6249f !important; font-weight: bold !important;}
     #youtube_logo_label { color: #ff0000 !important; font-weight: bold !important;  }
     #youtube_logo { fill: #ff0000 !important; }
-    #youtube_logo_background { stroke: #ffffff !important; }
+    #youtube_logo_background { background-color: #ffffff !important; }
+    html[data-theme="dark"] #facebook_logo_pointer:hover #facebook_logo { background-color: #ffffff !important; }
+    html[data-theme="light"] #facebook_logo_pointer:hover #facebook_logo { background-color: #f0f0f0 !important;  }
     #facebook_logo { fill: #1877F2 !important; }
     #twitter_logo { fill: #1d9bf0 !important; }
-    #instagram_logo { fill: #d6249f !important; }
     #instagram_logo_pointer:hover #instagram_logo { fill: white !important; }
 }
+
   
 .social_media_column {
     display: inline-flex;
@@ -72,7 +76,6 @@
 
 #instagram_logo {
     background-color: var(--ifm-card-background-color); 
-    fill: var(--ifm-color-emphasis-300);
     border-radius: 1rem;
     padding: 0.5rem;
     transition: .2s;
@@ -106,7 +109,11 @@
         #d6249f 60%,
         #285AEB 90%);
 }
-
+@media (pointer:fine) {
+    #instagram_logo {
+        fill: var(--ifm-color-emphasis-300);
+    }
+}
 #youtube_logo_pointer {
     pointer-events: all;
 }
