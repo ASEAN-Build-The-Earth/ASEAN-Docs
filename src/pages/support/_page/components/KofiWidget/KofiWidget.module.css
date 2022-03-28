@@ -37,6 +37,10 @@
     height: 50%;
     padding-left: 2px;
 }
+html[data-theme='light'] .button_icon {
+    background-color: #fbaa19;
+}
+
 .kofi_iframe {
     overflow: hidden !important;
     width: 100%;
@@ -107,18 +111,26 @@ html[data-theme='light'] .kofi_overlay {
 /*  whoever curious and click the tiny kofi img ontop of iframe
  *  gets secret flicking animtion :D 
  */
-#button_icon[tiny_kofi_btn_anim="1"] {
-    
-    animation: 0.5s linear 0s 1 tiny_kofi_btn_anim
+html[data-theme='dark'] #button_icon[tiny_kofi_btn_anim="1"] {
+    animation: 0.5s linear 0s 1 tiny_kofi_btn_anim_dark
 }
-@keyframes tiny_kofi_btn_anim {
+html[data-theme='light'] #button_icon[tiny_kofi_btn_anim="1"] {
+    animation: 0.5s linear 0s 1 tiny_kofi_btn_anim_light
+}
+@keyframes tiny_kofi_btn_anim_dark {
     0% { background-color: var(--ifm-color-emphasis-200); }
     33% { transform: rotateZ(-20deg); }
     50% { background-color: #13C3FF; transform: rotateZ(0deg); }
     66% { transform: rotateZ(20deg); }
     100% { background-color: var(--ifm-color-emphasis-200); }
 }
-
+@keyframes tiny_kofi_btn_anim_light {
+    0% { background-color: #fbaa19; }
+    33% { transform: rotateZ(-20deg); }
+    50% { background-color: #13C3FF; transform: rotateZ(0deg); }
+    66% { transform: rotateZ(20deg); }
+    100% { background-color: #fbaa19; }
+}
 @media print {
     .kofi_card {
         display: none;
