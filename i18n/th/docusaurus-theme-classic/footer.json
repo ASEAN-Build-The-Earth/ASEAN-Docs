@@ -23,14 +23,6 @@
     "message": "BuildTheEarth.net",
     "description": "The label of footer link with label=BuildTheEarth.net linking to https://discord.gg/buildtheearth"
   },
-  "link.item.label.ASEAN BTE": {
-    "message": "ASEAN BTE",
-    "description": "The label of footer link with label=ASEAN BTE linking to https://discord.gg/DNwnKmkQpw"
-  },
-  "link.item.label.Asia BTE": {
-    "message": "Asia BTE",
-    "description": "The label of footer link with label=Asia BTE linking to https://discord.gg/R5dfd4Fc8b"
-  },
   "link.item.label.Support Us": {
     "message": "Support Us",
     "description": "The label of footer link with label=Support Us linking to /support"
@@ -38,10 +30,6 @@
   "link.item.label.GitHub": {
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/ASEAN-Build-The-Earth"
-  },
-  "link.item.label.Official BTE Website": {
-    "message": "Official BTE Website",
-    "description": "The label of footer link with label=Official BTE Website linking to https://buildtheearth.net/"
   },
   "copyright": {
     "message": "Copyright © 2022 Association of Southeast Asian Nation Build The Earth.",

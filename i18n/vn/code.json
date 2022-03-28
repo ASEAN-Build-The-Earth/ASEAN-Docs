@@ -15,10 +15,6 @@
     "message": "Đang tái...",
     "description": "Loading message of all image in document"
   },
-  "image.loader.success": {
-    "message": "Loading done!",
-    "description": "A message on any image when the loading is done"
-  },
   "util.keyword.minecraft": {
     "message": "Minecraft",
     "description": "Minecraft label of the MinecraftWindow style"
@@ -361,5 +357,9 @@
   "theme.tags.tagsPageTitle": {
     "message": "Thẻ",
     "description": "The title of the tag list page"
+  },
+  "video.loader.loading": {
+    "message": "Loading video...",
+    "description": "Loading message of all image in document"
   }
 }

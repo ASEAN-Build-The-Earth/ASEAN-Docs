@@ -23,13 +23,13 @@
     "message": "BuildTheEarth.net",
     "description": "The label of footer link with label=BuildTheEarth.net linking to https://discord.gg/buildtheearth"
   },
-  "link.item.label.ASEAN BTE": {
-    "message": "ASEAN BTE",
-    "description": "The label of footer link with label=ASEAN BTE linking to https://discord.gg/DNwnKmkQpw"
+  "link.item.label.BuildTheEarth.Asia": {
+    "message": "BuildTheEarth.Asia",
+    "description": "The label of footer link with label=BuildTheEarth.Asia linking to https://discord.gg/R5dfd4Fc8b"
   },
-  "link.item.label.Asia BTE": {
-    "message": "Asia BTE",
-    "description": "The label of footer link with label=Asia BTE linking to https://discord.gg/R5dfd4Fc8b"
+  "link.item.label.BuildTheEarth ASEAN": {
+    "message": "BuildTheEarth ASEAN",
+    "description": "The label of footer link with label=BuildTheEarth ASEAN linking to https://discord.gg/DNwnKmkQpw"
   },
   "link.item.label.Support Us": {
     "message": "Support Us",
@@ -39,9 +39,9 @@
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/ASEAN-Build-The-Earth"
   },
-  "link.item.label.Official BTE Website": {
-    "message": "Official BTE Website",
-    "description": "The label of footer link with label=Official BTE Website linking to https://buildtheearth.net/"
+  "link.item.label.BuildTheEarth Website": {
+    "message": "BuildTheEarth Website",
+    "description": "The label of footer link with label=BuildTheEarth Website linking to https://buildtheearth.net/"
   },
   "copyright": {
     "message": "Copyright © 2022 Association of Southeast Asian Nation Build The Earth.",

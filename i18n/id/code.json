@@ -15,13 +15,13 @@
     "message": "Loading image...",
     "description": "Loading message of all image in document"
   },
-  "image.loader.success": {
-    "message": "Loading done!",
-    "description": "A message on any image when the loading is done"
-  },
   "util.keyword.minecraft": {
     "message": "Minecraft",
     "description": "Minecraft label of the MinecraftWindow style"
+  },
+  "video.loader.loading": {
+    "message": "Loading video...",
+    "description": "Loading message of all image in document"
   },
   "home.socialMedias.facebook": {
     "message": "Facebook",
@@ -52,7 +52,7 @@
     "description": "A hero title of homepage document"
   },
   "home.banner.subtitle": {
-    "message": "We are building southeast asia in Minecraft 1:1 scale!",
+    "message": "We are building Southeast Asia in Minecraft 1:1 scale!",
     "description": "A hero description of homepage document"
   },
   "support.title": {
@@ -163,10 +163,6 @@
     "message": "Close",
     "description": "The ARIA label for close button of announcement bar"
   },
-  "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
-    "description": "The ARIA label for the back to top button"
-  },
   "theme.blog.archive.title": {
     "message": "Archive",
     "description": "The page & hero title of the blog archive page"
@@ -174,6 +170,10 @@
   "theme.blog.archive.description": {
     "message": "Archive",
     "description": "The page & hero description of the blog archive page"
+  },
+  "theme.BackToTopButton.buttonAriaLabel": {
+    "message": "Scroll back to top",
+    "description": "The ARIA label for the back to top button"
   },
   "theme.blog.paginator.navAriaLabel": {
     "message": "Blog list page navigation",

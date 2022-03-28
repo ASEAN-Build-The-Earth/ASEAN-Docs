@@ -8,13 +8,13 @@ import Admonition from '@theme/Admonition';
 import Text from '@site/src/components/TextDecoration'
 import Img from '@site/src/components/Img'
 
-import IMG_BadBuild from '@site/static/img/docs/intro/bte-buildings/bad_build.png';
-import IMG_GoodBuild from '@site/static/img/docs/intro/bte-buildings/good_build.png';
-import IMG_BadRoof from '@site/static/img/docs/intro/bte-buildings/bad_roof.png';
-import IMG_GoodRoof from '@site/static/img/docs/intro/bte-buildings/good_roof.png';
-import IMG_DiagnalBuild from '@site/static/img/docs/intro/bte-buildings/diagnal_build.png';
-import IMG_NormalIRLRoof from '@site/static/img/docs/intro/bte-buildings/normal_roof_1.png';
-import IMG_NorminalIRLRoof from '@site/static/img/docs/intro/bte-buildings/normal_roof_2.png';
+import IMG_BadBuild from '@site/static/media/docs/intro/bte-buildings/bad_build.png';
+import IMG_GoodBuild from '@site/static/media/docs/intro/bte-buildings/good_build.png';
+import IMG_BadRoof from '@site/static/media/docs/intro/bte-buildings/bad_roof.png';
+import IMG_GoodRoof from '@site/static/media/docs/intro/bte-buildings/good_roof.png';
+import IMG_DiagnalBuild from '@site/static/media/docs/intro/bte-buildings/diagnal_build.png';
+import IMG_NormalIRLRoof from '@site/static/media/docs/intro/bte-buildings/normal_roof_1.png';
+import IMG_NorminalIRLRoof from '@site/static/media/docs/intro/bte-buildings/normal_roof_2.png';
 
 ```
 

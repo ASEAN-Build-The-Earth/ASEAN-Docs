@@ -9,8 +9,8 @@ import Text from '@site/src/components/TextDecoration';
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
-import BuildsiteImage from '@site/static/img/docs/intro/plot-system/buildsite_exmp.png';
-import JoiningPlotImage from '@site/static/img/docs/intro/plot-system/plot_join.gif';
+import BuildsiteImage from '@site/static/media/docs/intro/plot-system/buildsite_exmp.png';
+import JoiningPlotImage from '@site/static/media/docs/intro/plot-system/plot_join.gif';
 ```
 <!-- Brief Intro -->
 As we introduced before we have a server dedicated for newcomer to try building their first build called <em style={{color:"var(--ifm-link-color)"}}>Plot System</em>,<br/>
@@ -24,8 +24,6 @@ Builders entering the server will have an option to build on any build site crea
 
 Build site is an on-going team project in every country we're building on(ASEAN).<br/>
 The plot's buildsite is originally outlined in the [Master server](../visiting#1-master-server) and submitted to [Plot server](../visiting#2-plot-server) for everyone to build on.
-
-
 
 :::info our buildsite at Malaysia, Klang
 <dt><sup>This buildsite is registered in the plot system too!</sup></dt>
