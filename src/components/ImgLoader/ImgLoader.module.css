@@ -37,16 +37,16 @@ html[data-theme="light"] .img_loader {
     position: absolute;
     top: 40%;
     transform: translateY(50px);
-    opacity: 0;
-    animation: 0.2s linear 0s 1 first_loaded_text;
+    opacity: 0.5;
+    animation: loading_anim 5s 0s infinite;
 }
 .loading_svg_dissolve {
     position: absolute; 
     top: 40%;
     width: 260px;
     transform: translate(25%, 0%);
-    opacity: 0;
-    animation: 0.2s linear 0s 1 first_loaded_svg;
+    opacity: 0.5;
+    animation: loading_anim 5s 0s infinite;
 }
 .img_loader_dissolve {
     width: 100%;
@@ -64,8 +64,20 @@ html[data-theme="light"] .img_loader {
         rgba(54,54,54,1) 0%,
         rgba(54,54,54,1) 46%, 
         rgba(45,45,45,1) 100%);  
+    opacity: 0.5;
+    animation: loading_anim 5s 0s infinite;
+}
+.img_loader_dissolve[loading="true"] {
     opacity: 0;
     animation: 0.2s linear 0s 1 first_loaded;
+}
+.loading_svg_dissolve[loading="true"] {
+    opacity: 0;
+    animation: 0.2s linear 0s 1 first_loaded_svg;
+}
+.loading_description_dissolve[loading="true"] {
+    opacity: 0;
+    animation: 0.2s linear 0s 1 first_loaded_text;
 }
 html[data-theme="light"] .img_loader_dissolve {
     background: rgb(217,217,217);
@@ -100,11 +112,11 @@ html[data-theme="light"] .img_loader_dissolve {
 } 
 
 @keyframes first_loaded {
-    0% { opacity: 100%; }
+    0% { opacity: 50%; }
     100% { opacity: 0%; }
 }
 @keyframes first_loaded_svg {
-    0% { opacity: 100%; }
+    0% { opacity: 50%; }
     10% { opacity: 0%; }
     100% { opacity: 0%; }
 }

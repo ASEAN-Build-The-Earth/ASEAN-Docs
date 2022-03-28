@@ -12,12 +12,13 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/icons/aseanbte_logo.png',
+  favicon: 'media/icons/aseanbte_logo.png',
   organizationName: 'ASEAN-Build-The-Earth',
   projectName: 'ASEAN-Docs',
   url: globalConfig.siteUrl,
-  clientModules: globalConfig.globalModule,
+  clientModules: [globalConfig.globalModule],
   customFields: globalConfig,
+  trailingSlash: false,
   presets: [
     [
       'classic',
@@ -26,7 +27,7 @@ const config = {
         docs: {
           path: 'docs.intro',
           routeBasePath: "intro", // change default "doc/" root path
-          sidebarPath: require.resolve('./sidebars_intro.js'),
+          sidebarPath: require.resolve('./sidebars.intro.js'),
           editUrl: ({ locale, docPath }) => {
             if (locale !== 'en') {
               return `${globalConfig.baseGithubUrl}/ASEAN-Docs/blob/main/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`;
@@ -37,7 +38,7 @@ const config = {
           showLastUpdateTime: true,
         },
         gtag: {
-          trackingID: '3352452083',
+          trackingID: globalConfig.googleGtag,
           anonymizeIP: true,
         },
         blog: false,
@@ -71,7 +72,7 @@ const config = {
           }
           return `${globalConfig.baseGithubUrl}/ASEAN-Docs/tree/main/docs.builder-guide/${docPath}`;
         },
-        sidebarPath: require.resolve('./sidebars_builder-guide.js'),
+        sidebarPath: require.resolve('./sidebars.builder-guide.js'),
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
       }),
@@ -85,13 +86,13 @@ const config = {
       colorMode: { defaultMode: "dark", },
       autoCollapseSidebarCategories: true,
       hideableSidebar: true, // idk what this do
-      image: "img/icons/aseanbte_full_logo.jpg", //meta og image
+      image: "media/icons/aseanbte_full_logo.jpg", //meta og image
       metadata: [{name: 'theme-color', content: '#ffc561'}],
       navbar: {
         title: 'ASEAN BTE',
         logo: {
           alt: 'ASEAN BTE',
-          src: 'img/icons/aseanbte_logo.gif',
+          src: 'media/icons/aseanbte_logo.gif',
         },
         items: [
           {
@@ -111,7 +112,7 @@ const config = {
             position: 'left'
           },
           {
-            href: 'https://discord.gg/DNwnKmkQpw',
+            href: globalConfig.discordInviteLink,
             label: 'Discord',
             position: 'right',
           },
@@ -202,14 +203,7 @@ const config = {
     localeConfigs: i18nConfig.localeConfigs
   },
 
-  scripts: [
-    { /* kofi widget button script, will be drawn on footer */
-      defer: true,
-      async: true,
-      src: 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js',
-      id: "kofi-overlay-widget-script",
-    }
-  ],
+  scripts: globalConfig.globalScript,
 };
 
 module.exports = config;

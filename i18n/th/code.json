@@ -361,5 +361,9 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "video.loader.loading": {
+    "message": "Loading video...",
+    "description": "Loading message of all image in document"
   }
 }

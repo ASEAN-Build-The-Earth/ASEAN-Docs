@@ -5,9 +5,9 @@ import { useImage } from 'react-image'
 import Translate from '@docusaurus/Translate';
 
 import MarkdownBlock from "@site/src/components/MarkdownBlock";
-import HeaderBanner from "@site/static/img/background/homepage_banner.png";
-import CompressedHeaderBanner from "@site/static/img/background/homepage_banner.min.png";
-import grassblock_icon from "@site/static/img/icons/dancing_grassblock.gif";
+import HeaderBanner from "@site/static/media/background/homepage_banner.png";
+import CompressedHeaderBanner from "@site/static/media/background/homepage_banner.min.png";
+import grassblock_icon from "@site/static/media/icons/dancing_grassblock.gif";
 
 import ButtonHeader from "./components/HomepageButton";
 import InfoBox from "./components/InfoBox";

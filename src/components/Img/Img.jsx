@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Img.module.css'
 import clsx from 'clsx';
 import { useImage } from 'react-image'
-import ImgManager from './ImgLoader/index'
+import ImgManager from '../ImgLoader/index'
 import Translate from '@docusaurus/Translate';
 
 const ErrorImage = ({error, width, height, ...props}) => { 
@@ -23,12 +23,14 @@ function ImageRenderer({width, height, src, srcList, ...props})
         useSuspense: false
     })
 
+    const loadingMessage = <Translate id="image.loader.loading" description="Loading message of all image in document">
+        Loading image...  
+    </Translate>
+
     return ( 
         img.error !== null? <ErrorImage error={img.error} width={width} height={height} {...props}/> : 
         img.isLoading? <ImgManager.Loader width={width} height={height} {...props}>
-            <Translate id="image.loader.loading" description="Loading message of all image in document">
-                Loading image...  
-            </Translate>
+            {loadingMessage}
         </ImgManager.Loader>
         : //<- Image is loaded
         /**[Note]:
@@ -47,9 +49,7 @@ function ImageRenderer({width, height, src, srcList, ...props})
                 alt={ props.alt? props.alt : "image" }>
             </img>
             <ImgManager.LoaderDissolve {...props}>
-                <Translate id="image.loader.success" description="A message on any image when the loading is done">
-                    Loading done!
-                </Translate>
+                {loadingMessage}
             </ImgManager.LoaderDissolve>
         </div>
     )

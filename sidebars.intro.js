@@ -97,15 +97,41 @@ module.exports = {
         },
         {
           type: "doc",
-          label: "Modpack",
-          id: "become-official/modpack"
-        },
-        {
-          type: "doc",
           label: "Exam Plot",
           id: "become-official/exam-plot",
         },
-        "become-official/finish-the-exam",
+        {
+          type: 'category',
+          label: 'Finishing your Exam',
+          collapsible: true,
+          collapsed: false,
+          link: {
+            type: "doc",
+            id: "become-official/finish-your-exam",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "World Edit",
+              id: "become-official/finish-your-exam/world-edit"
+            },
+            {
+              type: "doc",
+              label: "Making Outline",
+              id: "become-official/finish-your-exam/making-outline"
+            },
+            {
+              type: "doc",
+              label: "Building Process",
+              id: "become-official/finish-your-exam/building-process",
+            },
+          ]
+        },
+        {
+          type: "doc",
+          label: "Submitting Exam",
+          id: "become-official/submit-exam",
+        }
       ]
     },
     {

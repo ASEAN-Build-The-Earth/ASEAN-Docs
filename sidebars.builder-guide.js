@@ -9,13 +9,20 @@
  Create as many sidebars as you want.
  */
 
+// @ts-check
 
+/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 module.exports =  {
     docs_builderGuide: [
       {
         type: 'doc',
         label: 'Intro to Builder Guide',
         id: 'builder-guide',    
+      },
+      {
+        type: "doc",
+        label: "Modpack",
+        id: "modpack"
       },
       /* "Building In BuildTheEarth" Category */
       {

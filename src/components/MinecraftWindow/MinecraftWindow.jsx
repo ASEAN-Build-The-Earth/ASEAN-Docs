@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import styles from './MinecraftWindow.module.css';
 import CodeBlock from "@theme/CodeBlock";
 import Translate from '@docusaurus/Translate';
-import MinecraftIcon from "@site/static/img/icons/grassblock_icon.png";
+import MinecraftIcon from "@site/static/media/icons/grassblock_icon.png";
 const DEFAULT_IP_BOX = [
   {
     id: "title",
@@ -62,7 +62,6 @@ const MinecraftWindow = (
     <div className={styles.browserWindow} style={maxWidth? {maxWidth} : {width}}>
       <div className={styles.browserWindowHeader}>
           <img src={MinecraftIcon} width="40rem" alt="Minecraft"/>
-        
         <div className={styles.browserWindowAddressBar}>{title}</div>
         <div className={styles.browserWindowMenuIcon}>
         {useDropdown.toLowerCase() == "true" ? ( 

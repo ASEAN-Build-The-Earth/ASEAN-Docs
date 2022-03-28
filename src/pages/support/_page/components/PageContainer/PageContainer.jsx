@@ -4,10 +4,10 @@ import styles from './PageContainer.module.css';
 import { useColorMode } from '@docusaurus/theme-common';
 import { useImage } from 'react-image'
 
-import DarkBanner from "@site/static/img/background/supportpage_banner_dark.png";
-import LightBanner from "@site/static/img/background/supportpage_banner_light.png";
-import CompressedDarkBanner from "@site/static/img/background/supportpage_banner_dark.min.png";
-import CompressedLightBanner from "@site/static/img/background/supportpage_banner_light.min.png";
+import DarkBanner from "@site/static/media/background/supportpage_banner_dark.png";
+import LightBanner from "@site/static/media/background/supportpage_banner_light.png";
+import CompressedDarkBanner from "@site/static/media/background/supportpage_banner_dark.min.png";
+import CompressedLightBanner from "@site/static/media/background/supportpage_banner_light.min.png";
 
 const DarkDecayBanner = () => {
     const darkBanner = useImage({ srcList: CompressedDarkBanner, useSuspense: false });
