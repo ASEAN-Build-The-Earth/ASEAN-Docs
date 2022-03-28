@@ -1,4 +1,4 @@
-# ASEAN BTE Docs
+# ASEAN BTE Docs [![Netlify Status](https://api.netlify.com/api/v1/badges/32b1c8b2-926b-477d-bb86-4f62fc0853af/deploy-status)](https://app.netlify.com/sites/builders-doc/deploys)
 
 [ASEAN BTE Docs](https://asean-docs.netlify.app) website consists all the important docs related to builder guide, plot system workflow, API etc..
 
