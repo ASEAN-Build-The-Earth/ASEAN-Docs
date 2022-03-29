@@ -9,8 +9,8 @@ import Text from '@site/src/components/TextDecoration';
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
-import BuildsiteImage from '@site/static/media/docs/intro/plot-system/buildsite_exmp.png';
-import JoiningPlotImage from '@site/static/media/docs/intro/plot-system/plot_join.gif';
+import BuildsiteImage from '@site/static/img/docs/intro/plot-system/buildsite_exmp.png';
+import JoiningPlotImage from '@site/static/img/docs/intro/plot-system/plot_join.gif';
 ```
 <!-- Brief Intro -->
 As we introduced before we have a server dedicated for newcomer to try building their first build called <em style={{color:"var(--ifm-link-color)"}}>Plot System</em>,<br/>

@@ -1,12 +1,12 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './KofiWidget.module.css';
-import KofiIcon from "@site/static/media/icons/social-medias/kofi_logo_pure.svg"
+import KofiIcon from "@site/static/img/icons/social-medias/kofi_logo_pure.svg"
 import LoadingSvg from '@site/src/components/LoadingSvg'
 import Link from '@docusaurus/Link';
 import { useImage } from 'react-image';
-import IframeBackground from "@site/static/media/background/homepage_banner.png";
-import CompressedIframeBackground from "@site/static/media/background/homepage_banner.min.png";
+import IframeBackground from "@site/static/img/background/homepage_banner.png";
+import CompressedIframeBackground from "@site/static/img/background/homepage_banner.min.png";
 const KofiIframeLink = "https://ko-fi.com/bteasean/?hidefeed=true&widget=true&embed=true&preview=true";
 
 export default function KofiWidget({children}) {

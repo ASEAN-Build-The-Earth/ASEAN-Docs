@@ -8,9 +8,9 @@ Exam plot is a category in [Plot system server](../getting-started/building-firs
 
 ```mdx-code-block
 import Img from '@site/src/components/Img';
-import PlotImage from '@site/static/media/docs/intro/exam/exam_guide_plot.png';
+import PlotImage from '@site/static/img/docs/intro/exam/exam_guide_plot.png';
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
-import OverviewImage from '@site/static/media/docs/intro/exam/exam_guide_overview.png';
+import OverviewImage from '@site/static/img/docs/intro/exam/exam_guide_overview.png';
 
 <MinecraftWindow useDropdown="true" maxWidth="600px">
     <Img src={PlotImage} aspect="987 432" alt="Welcome To ASEAN BTE" />

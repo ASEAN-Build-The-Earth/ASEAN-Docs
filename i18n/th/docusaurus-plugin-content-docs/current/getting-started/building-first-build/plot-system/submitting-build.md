@@ -7,8 +7,8 @@ id: submitting-plot
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
 import Img from '@site/src/components/Img';
 import Text from '@site/src/components/TextDecoration';
-import GuideSubmit from "@site/static/media/docs/intro/plot-system/finishing-plot/guide_submit.gif"
-import GuideFeedback from "@site/static/media/docs/intro/plot-system/plot-feedback.png"
+import GuideSubmit from "@site/static/img/docs/intro/plot-system/finishing-plot/guide_submit.gif"
+import GuideFeedback from "@site/static/img/docs/intro/plot-system/plot-feedback.png"
 
 ```
 

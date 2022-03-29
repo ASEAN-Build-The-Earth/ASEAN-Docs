@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'media/icons/aseanbte_logo.png',
+  favicon: 'img/icons/aseanbte_logo.png',
   organizationName: 'ASEAN-Build-The-Earth',
   projectName: 'ASEAN-Docs',
   url: globalConfig.siteUrl,
@@ -86,7 +86,7 @@ const config = {
       colorMode: { defaultMode: "dark", },
       autoCollapseSidebarCategories: true,
       hideableSidebar: true, // idk what this do
-      image: "media/icons/aseanbte_full_logo.jpg", //meta og image
+      image: "img/icons/aseanbte_full_logo.jpg", //meta og image
       metadata: [{name: 'theme-color', content: '#ffc561'}],
       navbar: {
         title: 'ASEAN BTE',

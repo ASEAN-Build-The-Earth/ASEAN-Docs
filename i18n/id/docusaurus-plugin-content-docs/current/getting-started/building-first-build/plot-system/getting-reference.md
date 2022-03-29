@@ -10,7 +10,7 @@ However if you lost the link, you can still get it by typing `/plot links`.
 
 import Img from '@site/src/components/Img';
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
-import guide_links from "@site/static/media/docs/intro/plot-system/finishing-plot/guide_links.gif"
+import guide_links from "@site/static/img/docs/intro/plot-system/finishing-plot/guide_links.gif"
 
 <MinecraftWindow maxWidth="600px">
     <Img src={guide_links} aspect="600 327" alt="Guide Image"/>

@@ -7,11 +7,11 @@ import Img from '@site/src/components/Img';
 import Video from '@site/src/components/Video';
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
 
-import GIF_Wand from '@site/static/media/docs/intro/exam/world-edit/wand.gif';
-import WEBP_Wand from '@site/static/media/docs/intro/exam/world-edit/wand.webp';
-import WEPM_Selection from '@site/static/media/docs/intro/exam/world-edit/world_edit_guide_selection.webm';
-import MP4_Selection from '@site/static/media/docs/intro/exam/world-edit/world_edit_guide_selection.mp4';
-import MP4_CuttingThings from '@site/static/media/docs/intro/exam/world-edit/exam_guide_cut.mp4';
+import GIF_Wand from '@site/static/img/docs/intro/exam/world-edit/wand.gif';
+import WEBP_Wand from '@site/static/img/docs/intro/exam/world-edit/wand.webp';
+import WEPM_Selection from '@site/static/img/docs/intro/exam/world-edit/world_edit_guide_selection.webm';
+import MP4_Selection from '@site/static/img/docs/intro/exam/world-edit/world_edit_guide_selection.mp4';
+import MP4_CuttingThings from '@site/static/img/docs/intro/exam/world-edit/exam_guide_cut.mp4';
 ```
 
 An easy to use tool to edit Minecraft buildings/worlds without having to places blocks one by one.

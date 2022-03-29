@@ -6,9 +6,9 @@ id: building-process
 import Img from '@site/src/components/Img';
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
 
-import IMG_TypicalBuilding from '@site/static/media/docs/intro/exam/building-process/typical_building.png';
-import WEBP_Fill from '@site/static/media/docs/intro/exam/building-process/fill.webp';
-import GIF_Fill from '@site/static/media/docs/intro/exam/building-process/fill.gif';
+import IMG_TypicalBuilding from '@site/static/img/docs/intro/exam/building-process/typical_building.png';
+import WEBP_Fill from '@site/static/img/docs/intro/exam/building-process/fill.webp';
+import GIF_Fill from '@site/static/img/docs/intro/exam/building-process/fill.gif';
 ```
 In this page, we will get you some tips to finish your exam plot faster.
 

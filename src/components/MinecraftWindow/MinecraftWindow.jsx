@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import styles from './MinecraftWindow.module.css';
 import CodeBlock from "@theme/CodeBlock";
 import Translate from '@docusaurus/Translate';
-import MinecraftIcon from "@site/static/media/icons/grassblock_icon.png";
+import MinecraftIcon from "@site/static/img/icons/grassblock_icon.png";
 const DEFAULT_IP_BOX = [
   {
     id: "title",

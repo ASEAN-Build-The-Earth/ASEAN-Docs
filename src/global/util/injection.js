@@ -19,7 +19,7 @@ function drawWidget() {
             }),
         "floating-chat.donateButton.background-color": "#434B57",
         "floating-chat.donateButton.text-color": "#fff",
-        "floating-chat.donatebutton.image": `${globalConfig.siteUrl}/media/icons/social-medias/kofi_logo_pure.svg`,
+        "floating-chat.donatebutton.image": `${globalConfig.siteUrl}/img/icons/social-medias/kofi_logo_pure.svg`,
     });
 
     /* support screen reader by adding title to iframe */

@@ -14,8 +14,8 @@ Try checking these things bellow.
 import Img from '@site/src/components/Img';
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
 import Text from '@site/src/components/TextDecoration';
-import WEBP_Process from '@site/static/media/docs/intro/exam/building-process/process.webp';
-import GIF_Process from '@site/static/media/docs/intro/exam/building-process/process.gif';
+import WEBP_Process from '@site/static/img/docs/intro/exam/building-process/process.webp';
+import GIF_Process from '@site/static/img/docs/intro/exam/building-process/process.gif';
 
 <MinecraftWindow useDropdown="true" maxWidth="600px">
     <Img src={[WEBP_Process, GIF_Process]} aspect="1200 655" alt="Exam Plot building process" />

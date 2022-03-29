@@ -10,11 +10,11 @@ import Text from "@site/src/components/TextDecoration";
 import Admonition from '@theme/Admonition';
 import Img from '@site/src/components/Img';
 
-import guide_create from "@site/static/media/docs/intro/plot-system/creating-plot/guide_create.gif";
-import guide_companion from "@site/static/media/docs/intro/plot-system/creating-plot/your-companion.png";
-import guide_profile from "@site/static/media/docs/intro/plot-system/creating-plot/your-profile.png";
-import guide_panel from "@site/static/media/docs/intro/plot-system/creating-plot/your-panel.png";
-import guide_difficulty from "@site/static/media/docs/intro/plot-system/creating-plot/plot-difficulty.png";
+import guide_create from "@site/static/img/docs/intro/plot-system/creating-plot/guide_create.gif";
+import guide_companion from "@site/static/img/docs/intro/plot-system/creating-plot/your-companion.png";
+import guide_profile from "@site/static/img/docs/intro/plot-system/creating-plot/your-profile.png";
+import guide_panel from "@site/static/img/docs/intro/plot-system/creating-plot/your-panel.png";
+import guide_difficulty from "@site/static/img/docs/intro/plot-system/creating-plot/plot-difficulty.png";
 
 ```
 <div class="container"><div class="row">

@@ -7,7 +7,7 @@ id: official-builder-req
 import Img from '@site/src/components/Img';
 import Text from '@site/src/components/TextDecoration';
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
-import PointsImage from '@site/static/media/docs/intro/exam/plot_points.png';
+import PointsImage from '@site/static/img/docs/intro/exam/plot_points.png';
 
 ```
 
