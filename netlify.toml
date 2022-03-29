@@ -10,7 +10,7 @@
 
 # If skip_processing = true, all other settings are ignored
 [build.processing]
-  skip_processing = false
+  skip_processing = true
 [build.processing.css]
   bundle = false
   minify = false
