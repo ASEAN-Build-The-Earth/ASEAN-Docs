@@ -72,7 +72,7 @@ A typical buildings in our project only has 2 - 3 blocks height as you can see i
 
 ```
 
-## Roof is not 90 degrees steep!
+## Roof is not 45 degrees steep!
 <!-- custom document card -->
 ```mdx-code-block
 
