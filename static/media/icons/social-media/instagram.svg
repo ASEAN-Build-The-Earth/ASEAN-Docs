@@ -1,4 +1,8 @@
-<!-- -->
+<!--Instagram Logo 
+    from: https://simpleicons.org/
+    source: https://github.com/simple-icons/simple-icons
+    full license: https://github.com/simple-icons/simple-icons/blob/develop/_data/simple-icons.json 
+-->
 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="url('#instagram_gradient')">
     <title>Instagram</title>
     <defs><radialGradient id="instagram_gradient" cx="30%" cy="107%" cr="200%" gradientTransform="matrix(2.5 0 0 2.5 -.6 -1.7)">

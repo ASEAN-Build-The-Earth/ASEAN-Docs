@@ -2,12 +2,14 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './homepage.module.css';
 import { useImage } from 'react-image'
+import { Img } from 'react-image'
 import Translate from '@docusaurus/Translate';
 
 import MarkdownBlock from "@site/src/components/MarkdownBlock";
 import HeaderBanner from "@site/static/media/background/homepage_banner.png";
 import CompressedHeaderBanner from "@site/static/media/background/homepage_banner.min.png";
-import grassblock_icon from "@site/static/media/icons/dancing_grassblock.gif";
+import WEPB_GrassblockIcon from "@site/static/media/icons/minecraft/dancing_grassblock.webp";
+import GIF_GrassblockIcon from "@site/static/media/icons/minecraft/dancing_grassblock.gif";
 
 import ButtonHeader from "./components/HomepageButton";
 import InfoBox from "./components/InfoBox";
@@ -67,7 +69,7 @@ const ContentList = [
     ),
   },
   {
-    title: <img src={grassblock_icon} alt="Our Server" id={styles.info_section_icon} width="50" height="45" />,
+    title: <Img src={[WEPB_GrassblockIcon, GIF_GrassblockIcon]} alt="Our Server" id={styles.info_section_icon} width="50" height="45" />,
     description: <InfoBox />
   }
 ];

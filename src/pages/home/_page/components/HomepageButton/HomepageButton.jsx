@@ -2,12 +2,12 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageButton.module.css'
 
-import Translate from '@docusaurus/Translate';;
+import Translate from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
-import book_icon from "@site/static/media/icons/book_1.png"
-import KofiIcon from "@site/static/media/icons/social-medias/kofi_logo.svg"
-import feather_icon from "@site/static/media/icons/feather.png"
-import kofi_pixel_icon from "@site/static/media/icons/kofi_pixel_logo.png";
+import book_icon from "@site/static/media/icons/minecraft/book_and_quill.png"
+import feather_icon from "@site/static/media/icons/minecraft/feather.png"
+import KofiIcon from "@site/static/media/icons/social-media/kofi_logo.svg"
+import kofi_pixel_icon from "@site/static/media/icons/social-media/kofi_pixel_logo.png";
 
 const Contents = {
     Support: {

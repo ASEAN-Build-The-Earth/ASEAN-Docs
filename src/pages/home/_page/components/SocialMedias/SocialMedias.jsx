@@ -2,10 +2,10 @@ import React from 'react';
 import styles from "./SocialMedias.module.css";
 import Link from '@docusaurus/Link';
 
-import FacebookLogo from "@site/static/media/icons/social-medias/facebook.svg";
-import InstagramLogo from "@site/static/media/icons/social-medias/instagram.svg";
-import TwitterLogo from "@site/static/media/icons/social-medias/twitter.svg";
-import YoutubeLogo from "@site/static/media/icons/social-medias/youtube.svg";
+import FacebookLogo from "@site/static/media/icons/social-media/facebook.svg";
+import InstagramLogo from "@site/static/media/icons/social-media/instagram.svg";
+import TwitterLogo from "@site/static/media/icons/social-media/twitter.svg";
+import YoutubeLogo from "@site/static/media/icons/social-media/youtube.svg";
 
 const SocialMedias = ({contents}) => {
     return (<>

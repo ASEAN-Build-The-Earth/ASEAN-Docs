@@ -1,5 +1,4 @@
 const Locale = require("./locale");
-const { translate } = require("@docusaurus/Translate");
 const { globalConfig } = require("@site/config");
 
 function KofiWidget(onload) {
@@ -12,14 +11,10 @@ function drawWidget() {
     /* the widget parent script is loaded in docusaurus config file */
     kofiWidgetOverlay.draw("bteasean", {
         "type": "floating-chat",
-        "floating-chat.donateButton.text": translate({ //note: this doesnt work
-            id: "footer.kofiWidget.label",
-            message: "Support Us",
-            description: "Support Us button label at footer."
-            }),
+        "floating-chat.donateButton.text": "Support Us", //[TODO]: find a way to translate this
         "floating-chat.donateButton.background-color": "#434B57",
         "floating-chat.donateButton.text-color": "#fff",
-        "floating-chat.donatebutton.image": `${globalConfig.siteUrl}/media/icons/social-medias/kofi_logo_pure.svg`,
+        "floating-chat.donatebutton.image": `${globalConfig.siteUrl}/media/icons/social-media/kofi_logo_pure.svg`,
     });
 
     /* support screen reader by adding title to iframe */

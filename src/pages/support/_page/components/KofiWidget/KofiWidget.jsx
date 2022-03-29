@@ -1,10 +1,12 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './KofiWidget.module.css';
-import KofiIcon from "@site/static/media/icons/social-medias/kofi_logo_pure.svg"
+import KofiIcon from "@site/static/media/icons/social-media/kofi_logo_pure.svg"
+import kofi_icon from "@site/static/media/icons/social-media/kofi_logo.png"
 import LoadingSvg from '@site/src/components/LoadingSvg'
 import Link from '@docusaurus/Link';
 import { useImage } from 'react-image';
+import { useColorMode } from '@docusaurus/theme-common';
 import IframeBackground from "@site/static/media/background/homepage_banner.png";
 import CompressedIframeBackground from "@site/static/media/background/homepage_banner.min.png";
 const KofiIframeLink = "https://ko-fi.com/bteasean/?hidefeed=true&widget=true&embed=true&preview=true";
@@ -14,6 +16,7 @@ export default function KofiWidget({children}) {
     const [loading_anim, set_loading] = React.useState(true); 
     const Background = useImage({ srcList: IframeBackground, useSuspense: false })
     const CompressedBackground = useImage({ srcList: CompressedIframeBackground, useSuspense: false })
+    const isDarkTheme = useColorMode().colorMode === 'dark';
 
     return (
         <div className={clsx("col", styles.kofi_card)}>
@@ -25,7 +28,7 @@ export default function KofiWidget({children}) {
                             onMouseDown={() => { set_tiny_kofi_btn(1); }}
                             onAnimationEnd={() => { set_tiny_kofi_btn(0); }} 
                             id={styles.button_icon}>
-                            <KofiIcon id={styles.kofi_icon}/>
+                            {isDarkTheme? <KofiIcon id={styles.kofi_icon}/> : <img src={kofi_icon} alt="kofi" id={styles.kofi_icon_light} />}
                         </div>
                     </div>
                     <div className="card__body" style={{paddingTop:"0"}}>
