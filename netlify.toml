@@ -8,15 +8,15 @@
 [context.branch-deploy.environment]
   NODE_ENV = "development"
 
-# If skip_processing = true, all other settings are ignored
+# assets processing config
 [build.processing]
   skip_processing = false
 [build.processing.css]
   bundle = false
-  minify = false
+  minify = true
 [build.processing.js]
   bundle = false
-  minify = false
+  minify = true
 [build.processing.html]
   pretty_urls = false
 [build.processing.images]
