@@ -14,3 +14,8 @@
     position: absolute;
     pointer-events: all;
 }
+@media screen and (max-width: 521px) {
+    #youtube_iframe {
+        max-height: 50vw;
+    }
+}

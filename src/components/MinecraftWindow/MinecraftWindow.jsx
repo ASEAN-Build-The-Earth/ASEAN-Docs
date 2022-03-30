@@ -66,8 +66,8 @@ const MinecraftWindow = (
         <div className={styles.browserWindowMenuIcon}>
         {useDropdown.toLowerCase() == "true" ? ( 
             /* we have cute little ip box as default content */
-            <div class="dropdown dropdown--hoverable">
-            <button className={clsx("button button--link", styles.dropdown_button)}>
+            <div className="dropdown dropdown--hoverable">
+            <button className={clsx("button button--link", styles.dropdown_button)} aria-label="Hover to see tips" >
               <span className={styles.bar} />
               <span className={styles.bar} />
               <span className={styles.bar} />
@@ -77,7 +77,7 @@ const MinecraftWindow = (
                   item.id == "title" ? 
                     (<li key={item.id}><span id={styles.minecraft_window_dropdown_title}>{item.content}</span></li>) 
                     :
-                    (<li key={item.id}><div class="dropdown__link" >{item.content}</div></li>)
+                    (<li key={item.id}><div className="dropdown__link" >{item.content}</div></li>)
                   )
                 )
               }
