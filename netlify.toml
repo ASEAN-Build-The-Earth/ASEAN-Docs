@@ -20,7 +20,7 @@
 [build.processing.html]
   pretty_urls = false
 [build.processing.images]
-  compress = false
+  compress = true
 
 # Uncomment this if we got legit domain
 #[[redirects]]
