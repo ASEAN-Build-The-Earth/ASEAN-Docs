@@ -9,16 +9,14 @@
   NODE_ENV = "development"
 
 # assets processing config
-# * note that skip asset optimizing must be true 
-# because we tested that netlify asset optimizing somehow break IOS device asset loading
 [build.processing]
   skip_processing = true
 [build.processing.css]
   bundle = false
-  minify = false
+  minify = true
 [build.processing.js]
   bundle = false
-  minify = false
+  minify = true
 [build.processing.html]
   pretty_urls = false
 [build.processing.images]

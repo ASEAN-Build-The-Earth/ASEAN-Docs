@@ -12,7 +12,7 @@ const globalConfig = {
   globalScript: [{ 
     /* kofi widget button script, will be drawn on footer */
     defer: false,
-    async: true,
+    async: false,
     src: 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js',
     id: "kofi-overlay-widget-script",
   }],
