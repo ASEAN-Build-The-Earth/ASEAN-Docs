@@ -3,41 +3,56 @@ import ImgManager from '../ImgLoader'
 import Translate from '@docusaurus/Translate';
 import styles from './Video.module.css';
 
-function VideoRenderer({sources, type, width, maxWidth, ...props})  
+const VideoTypes = ({type, onLoaded, ...props}) => {
+    switch(type) 
+    {
+        case "youtube": {
+            return <>
+                <iframe 
+                    width="100%" height={`${!!props.height? props.height : "327"}`}
+                    loading="lazy"
+                    onLoad={onLoaded} 
+                    id={styles.youtube_iframe}
+                    src={`https://www.youtube.com/embed/${props.VIDEO_ID}?`
+                    + `${!!props.loop? props.loop ==="1"? 
+                        `playlist=${props.VIDEO_ID}` 
+                        : "" // youtube embed required to set blank playlist in order to loop
+                        : `playlist=${props.VIDEO_ID}`}`
+                    + `&start=${!!props.start?       props.start    : "1"}`
+                    + `&controls=${!!props.controls? props.controls : "0"}`
+                    + `&loop=${!!props.loop?         props.loop     : "1"}`
+                    + `&autoplay=${!!props.autoplay? props.autoplay : "1"}`
+                    + `&showinfo=${!!props.showinfo? props.showinfo : "0"}`
+                    + `&mute=${!!props.mute?         props.mute     : "1"}`
+                    + `&amp;rel=${!!props.rel?       props.rel      : "0"}`}
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen={false}>
+                </iframe> 
+                <div id={styles.youtube_header_blocker} />
+            </>
+        }
+        default: {
+            return <>
+                <video width="100%" onCanPlayThrough={onLoaded}  controls="" name="media" autoPlay="true" loop muted>
+                    {props.sources}
+                    <Translate id="video.loader.loading" description="Loading message of all image in document">
+                        Sorry, your browser does not support the video displayer.
+                    </Translate>
+                </video>
+            </>
+        }
+    }
+}
+
+function VideoRenderer({type, width, maxWidth, ...props})  
 {
     const [loading, setLoading] = React.useState(true); 
     const [loaded, setLoaded] = React.useState(false); 
     const youtube = type === "youtube" ? true : false;
     const Renderer = <>
-        { youtube ? <>
-            <iframe 
-                width="100%" height="327" 
-                loading="lazy"
-                onLoad={() => setLoading(false)} 
-                src={`https://www.youtube.com/embed/${props.VIDEO_ID}?`
-                + `playlist=${props.VIDEO_ID}`
-                + `&start=1`
-                + `&controls=0`
-                + `&loop=1`
-                + `&autoplay=1`
-                + `&showinfo=0`
-                + `&mute=1`
-                + `&amp;rel=0`}
-                title="YouTube video player" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen={false}
-                muted>
-            </iframe> 
-            <div id={styles.youtube_header_blocker} />
-        </> : <>
-            <video width="100%" onCanPlayThrough={() => setLoading(false)}  controls="" name="media" autoPlay="true" loop muted>
-                {sources}
-                <Translate id="video.loader.loading" description="Loading message of all image in document">
-                    Sorry, your browser does not support the video displayer.
-                </Translate>
-            </video>
-        </>}
+        <VideoTypes type={type} {...props} onLoaded={() => setLoading(false)}/>
         <ImgManager.LoaderOverlay loading={loading} onLoaded={setLoaded} {...props}>
             <Translate id="video.loader.loading" description="Loading message of all image in document">
                 Loading video...  
