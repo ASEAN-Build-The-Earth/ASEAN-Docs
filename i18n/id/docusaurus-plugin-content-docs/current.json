@@ -19,8 +19,8 @@
     "message": "Become Official Builder",
     "description": "The label for category Become Official Builder in sidebar docs_intro"
   },
-  "sidebar.docs_intro.category.Finishing your Exam": {
-    "message": "Finishing your Exam",
-    "description": "The label for category Finishing your Exam in sidebar docs_intro"
+  "sidebar.docs_intro.category.Exam Plot Process": {
+    "message": "Exam Plot Process",
+    "description": "The label for category Exam Plot Process in sidebar docs_intro"
   }
 }

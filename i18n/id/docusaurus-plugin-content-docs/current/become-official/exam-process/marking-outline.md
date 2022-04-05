@@ -35,7 +35,7 @@ In this example we will use [google map](https://www.google.com/maps) to mark it
 > 6. Don't move around yet, place a block right where you are standing to mark out the tpll-ed point.
 > 7. Repeat this as many times as you want and you will learn how to connect it together in the next section. 
 ```mdx-code-block
-<MinecraftWindow useDropdown="true" maxWidth="600px">
+<MinecraftWindow useDropdown="true" maxWidth="580px">
     <Video width="1920" type="youtube" VIDEO_ID="tBBFkyCni2Y"/>
 </MinecraftWindow>
 ```
@@ -68,8 +68,8 @@ We will be using [World Edit](./world-edit) commands to connect the marker up.
 * type the command `//line` followed by [Block ID](./making-outline#block-id) you wanted to make a line with.
 * A straight line will then be inserted from first position to second position you selected.
 ```mdx-code-block
-<MinecraftWindow useDropdown="true" maxWidth="600px">
-    <Video width="1920" type="youtube" VIDEO_ID="3XV9Dvn1k44"/>
+<MinecraftWindow useDropdown="true" maxWidth="576px">
+    <Video width="1920" height="325" type="youtube" VIDEO_ID="3XV9Dvn1k44"/>
 </MinecraftWindow>
 ```
 
@@ -78,7 +78,7 @@ We prefer the gray concrete powder block for roads in ASEAN Team.
 To select your selection for the roads, we will use the `//sel poly` command.<br/>
 
 ### Setting roads with `//sel poly`
-`//sel poly` will change the wand selection mode to polygon,<br/> you can now select first position with <kbd>Left-Click</kbd>
+This command will change your wand selection mode to polygon,<br/> you can now select first position with <kbd>Left-Click</kbd>
 then <kbd>Right-Click</kbd> position 2, 3, 4, ... to create polygon selection.
 > * `//sel poly` to enter polygon selection mode.
 > * Select the first position of your road with <kbd>Left-Click</kbd>.
@@ -88,6 +88,7 @@ then <kbd>Right-Click</kbd> position 2, 3, 4, ... to create polygon selection.
 > :::tip
 > You can use command like `//replace grass 252:7`which will replace all grass block in selected polygon to gray concrete powder.
 > :::
+> * Type the command `//sel cuboid` to switch back to default cuboid selection mode.
 >
 ```mdx-code-block
 <MinecraftWindow useDropdown="true" maxWidth="600px">

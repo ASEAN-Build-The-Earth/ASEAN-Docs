@@ -21,6 +21,7 @@
     border-color: #495157;
     border-radius: 5px;
     width: 100%;
+    height: 300px;
 }
 #req_box_caution {
     font-weight: 400;

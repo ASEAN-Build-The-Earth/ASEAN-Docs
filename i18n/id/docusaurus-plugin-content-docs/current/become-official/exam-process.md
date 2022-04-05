@@ -1,5 +1,5 @@
 ---
-title: The exam process
+title: The Exam Plot Building Process
 id: exam-process
 ---
 ```mdx-code-block

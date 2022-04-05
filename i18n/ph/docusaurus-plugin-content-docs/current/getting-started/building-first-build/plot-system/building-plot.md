@@ -31,10 +31,15 @@ It is normal if the outline looks a bit off compared to the real life building.
 ### 2. Build a rough building shell
 After you're happy with your building outline, pick a few blocks, it doesn't need to fit your building's color at first 
 then use those blocks to build a rough shell of your build covering every important point of your build.
+:::tip
+Some plots may have prebuilt shells so if you have a prebuilt shell you can skip this step.
+:::
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="53rem"><Img src={Guide_1} aspect="1920 1080" alt="guild_1_image" /></MinecraftWindow>
 ```
+
+
 
 ### 3. Fill up your outlined shell
 Choose a block of your choice for building, it has to fit the building color but since minecraft has very few color choices especially with minecraft version 1.12.2. it's fine to choose a color that is close to what minecraft has.<br/>
@@ -49,7 +54,7 @@ See your in-real-life building, does it have an extra roof extended around? Does
 Then build it! don't miss anything.
 
 :::caution You must not build interior of houses.
-Due to laws on many country's we are not allowed to map private property that being Houses, Schools, Government buildings etcetera.
+Due to laws of many country's we are not allowed to map private property that being Houses, Schools, Government buildings etcetera. 
 :::
 
 ```mdx-code-block
@@ -58,8 +63,9 @@ Due to laws on many country's we are not allowed to map private property that be
 
 ### 5. Polish the build and exterior
 The final step is to polish your building<br/>
-<table><tbody><tr><td> 
-<sup>try checking this list if you've built everything already</sup>
+
+:::info tip
+<details><summary>try checking this list if you've built everything already</summary>
 
 - [x] Floor's material is correct 
 - [x] Tree and bushes
@@ -67,7 +73,9 @@ The final step is to polish your building<br/>
 - [x] Poles and sheds
 - [x] Windows all around the building
 
-</td></tr></tbody></table>
+</details>
+
+:::
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="53rem"><Img src={Guide_4} aspect="1920 1080" alt="guild_4_image" /></MinecraftWindow>

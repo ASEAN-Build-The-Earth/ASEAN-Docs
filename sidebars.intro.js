@@ -102,7 +102,7 @@ module.exports = {
         },
         {
           type: 'category',
-          label: 'Finishing your Exam',
+          label: 'Exam Plot Process',
           collapsible: true,
           collapsed: false,
           link: {

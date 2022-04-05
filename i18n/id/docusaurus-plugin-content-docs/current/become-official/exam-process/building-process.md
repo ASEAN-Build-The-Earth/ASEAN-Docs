@@ -14,7 +14,7 @@ In this page, we will get you some tips to finish your exam plot faster.
 
 ## Outline
 Use the tpll command from the previous page to build your outline for the exam plot's buildings.
-After you finsihed  building the outlines for the buildings and roads you can start to build.
+After you finished  building the outlines for the buildings and roads you can start to build.
 
 
 ## Building

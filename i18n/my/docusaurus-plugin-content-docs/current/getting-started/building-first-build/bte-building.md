@@ -33,7 +33,7 @@ Before we build anything, you first need to know  what its look like to build wi
 
 ## Every build looks smaller than you think
 <Text.Tab/>Many newcomers think 1:1 scale is relative to your minecraft character and misunderstand it.<br/>
-For example if you built a normal house with 4 blocks tall floor it means you have built a 4 meter high building and make it look out of place.
+For example if you built a normal house with 4 blocks tall roof it means you have built a building with a 4 meter tall roof and it makes it look out of place.
 A typical buildings in our project only has 2 - 3 blocks height as you can see in the example below.<br/><br/>
 
 <!-- good bad card -->

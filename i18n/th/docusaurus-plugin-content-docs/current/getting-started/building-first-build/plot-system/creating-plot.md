@@ -35,10 +35,10 @@ import guide_difficulty from "@site/static/media/docs/intro/plot-system/creating
 
 ```
 
-Switch to your companion in the inventory then <kbd>Right Click</kbd> or <kbd>/companion</kbd> to open your Plot system server panel.
+Switch to your companion in your inventory then <kbd>Right Click</kbd> or <kbd>/companion</kbd> to open your Plot system server panel.
 The server panel is basically your plot system hub and your builder profile, it is included with many things such as..
 - The main inventory grid displays the available build sites that you can build in
-- Down in the bottom right of the grid is your builder profile and utility, you can see your builder points and your on-going plots here
+- Down in the bottom right of the grid is your builder profile and builder utility, you can see your builder points and your on-going plots here
 - At the top right corner is the plot's difficulty filter, you can select the building difficulty that you would like.
 
 ```mdx-code-block
@@ -59,12 +59,12 @@ The server panel is basically your plot system hub and your builder profile, it 
 ## Choosing your plot 
 :::caution 
 
-Due to the fact this system is new, you can only choose build site at `Malaysia, Klang` and `Philippine, Davao City` for now, more build sites are coming soon!
+Due to the fact this system is new, you can only choose the following build sites `Malaysia, Klang` and `Philippine, Davao City` for now, more build sites are coming soon!
 
 :::
 
 :::tip Remember to choose your difficulty first
-The system sets the default difficulty as automatic, you could accidentally have to build hard plot if you forgot to choose the difficulty.
+The system sets the default difficulty as automatic, you could accidentally have to build a hard plot if you forgot to set the difficulty.
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="600px" useDropdown="true">
