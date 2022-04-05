@@ -49,7 +49,7 @@ See your in-real-life building, does it have an extra roof extended around? Does
 Then build it! don't miss anything.
 
 :::caution You must not build interior of houses.
-Due to laws on many country's we are not allowed to map private property that being Houses, Schools, Government buildings etcetera.
+Due to laws of many country's we are not allowed to map private property that being Houses, Schools, Government buildings etcetera. 
 :::
 
 ```mdx-code-block
