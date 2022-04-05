@@ -1,6 +1,6 @@
 ---
-title: Finishing your Exam
-id: finish-your-exam
+title: The exam process
+id: exam-process
 ---
 ```mdx-code-block
 import DocCardList from '@theme/DocCardList';

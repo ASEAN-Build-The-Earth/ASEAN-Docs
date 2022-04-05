@@ -107,23 +107,23 @@ module.exports = {
           collapsed: false,
           link: {
             type: "doc",
-            id: "become-official/finish-your-exam",
+            id: "become-official/exam-process",
           },
           items: [
             {
               type: "doc",
               label: "World Edit",
-              id: "become-official/finish-your-exam/world-edit"
+              id: "become-official/exam-process/world-edit"
             },
             {
               type: "doc",
               label: "Making Outline",
-              id: "become-official/finish-your-exam/making-outline"
+              id: "become-official/exam-process/making-outline"
             },
             {
               type: "doc",
               label: "Building Process",
-              id: "become-official/finish-your-exam/building-process",
+              id: "become-official/exam-process/building-process",
             },
           ]
         },
