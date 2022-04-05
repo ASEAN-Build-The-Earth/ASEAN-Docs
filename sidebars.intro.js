@@ -68,8 +68,8 @@ module.exports = {
                 },
                 {
                   type: "doc",
-                  label: "Finishing your plot",
-                  id: "getting-started/building-first-build/plot-system/finishing-plot"
+                  label: "Building on your plot",
+                  id: "getting-started/building-first-build/plot-system/building-plot"
                 },
                 "getting-started/building-first-build/plot-system/submitting-plot",
               ],
@@ -102,28 +102,28 @@ module.exports = {
         },
         {
           type: 'category',
-          label: 'Finishing your Exam',
+          label: 'Exam Plot Process',
           collapsible: true,
           collapsed: false,
           link: {
             type: "doc",
-            id: "become-official/finish-your-exam",
+            id: "become-official/exam-process",
           },
           items: [
             {
               type: "doc",
               label: "World Edit",
-              id: "become-official/finish-your-exam/world-edit"
+              id: "become-official/exam-process/world-edit"
             },
             {
               type: "doc",
               label: "Making Outline",
-              id: "become-official/finish-your-exam/making-outline"
+              id: "become-official/exam-process/making-outline"
             },
             {
               type: "doc",
               label: "Building Process",
-              id: "become-official/finish-your-exam/building-process",
+              id: "become-official/exam-process/building-process",
             },
           ]
         },

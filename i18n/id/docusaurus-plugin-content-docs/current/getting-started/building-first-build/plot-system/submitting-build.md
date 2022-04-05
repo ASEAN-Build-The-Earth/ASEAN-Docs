@@ -7,7 +7,7 @@ id: submitting-plot
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
 import Img from '@site/src/components/Img';
 import Text from '@site/src/components/TextDecoration';
-import GuideSubmit from "@site/static/media/docs/intro/plot-system/finishing-plot/guide_submit.gif"
+import GuideSubmit from "@site/static/media/docs/intro/plot-system/building-plot/guide_submit.gif"
 import GuideFeedback from "@site/static/media/docs/intro/plot-system/plot-feedback.png"
 
 ```
@@ -18,17 +18,12 @@ Before submitting your plot, please check everything and if everything is ready 
 <MinecraftWindow maxWidth="30rem"><Img src={GuideSubmit} aspect="600 482" alt="Guide Image"/></MinecraftWindow>
 ```
 
-The plot will be submitted and reviews within 24 hours. Our reviewers will review your plot and give feedback and a score for your build.
-
-:::info
-
-Feedback given will be a score for your build which would have been decided by our reviewers.
-If you get score that is lower than 2 in every category this means your build has been rejected.
+The plot will be submitted and our reviewers will take a look at it within 24 hours and give feedback abd a score for your build.
 
 <details>
 <summary>My build is rejected <small>❔❔❔</small></summary> 
-Don't worry, everyone makes mistakes. Go back to your plot and you'll see improvement message from the reviewer to help you fix it.
-Submit your plot again with your improvement and you'll suddenly get approved by our member!
+Don't worry, everyone makes mistakes. Go back to your plot and you'll see improvement messages from the reviewers to help you fix your building.
+Submit your plot again with your improvements and you'll may get suddenly get approved by our member!
 </details>
 
 ```mdx-code-block
