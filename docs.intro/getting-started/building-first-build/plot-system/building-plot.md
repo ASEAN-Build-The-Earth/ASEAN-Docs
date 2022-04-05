@@ -35,6 +35,8 @@ then use those blocks to build a rough shell of your build covering every import
 ```mdx-code-block
 <MinecraftWindow maxWidth="53rem"><Img src={Guide_1} aspect="1920 1080" alt="guild_1_image" /></MinecraftWindow>
 ```
+(Some plots may have prebuilt shells so if you have a prebuilt shell you can skip this step)
+
 
 ### 3. Fill up your outlined shell
 Choose a block of your choice for building, it has to fit the building color but since minecraft has very few color choices especially with minecraft version 1.12.2. it's fine to choose a color that is close to what minecraft has.<br/>
