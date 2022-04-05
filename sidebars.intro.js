@@ -68,8 +68,8 @@ module.exports = {
                 },
                 {
                   type: "doc",
-                  label: "Finishing your plot",
-                  id: "getting-started/building-first-build/plot-system/finishing-plot"
+                  label: "Building on your plot",
+                  id: "getting-started/building-first-build/plot-system/building-plot"
                 },
                 "getting-started/building-first-build/plot-system/submitting-plot",
               ],

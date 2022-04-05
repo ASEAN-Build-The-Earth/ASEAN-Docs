@@ -1,18 +1,18 @@
 ---
-title: Finishing your plot
-id: finishing-plot
+title: Building on your plot
+id: building-plot
 ---
 ```mdx-code-block
 
 import MinecraftWindow from "@site/src/components/MinecraftWindow";
 import Img from '@site/src/components/Img';
 
-import Guide_0 from "@site/static/media/docs/intro/plot-system/finishing-plot/guide_0.png"
-import Guide_1 from "@site/static/media/docs/intro/plot-system/finishing-plot/guide_1.png"
-import Guide_2 from "@site/static/media/docs/intro/plot-system/finishing-plot/guide_2.png"
-import Guide_3 from "@site/static/media/docs/intro/plot-system/finishing-plot/guide_3.png"
-import Guide_4 from "@site/static/media/docs/intro/plot-system/finishing-plot/guide_4.png"
-import GuideWindows from "@site/static/media/docs/intro/plot-system/finishing-plot/guide_windows.gif"
+import Guide_0 from "@site/static/media/docs/intro/plot-system/building-plot/guide_0.png"
+import Guide_1 from "@site/static/media/docs/intro/plot-system/building-plot/guide_1.png"
+import Guide_2 from "@site/static/media/docs/intro/plot-system/building-plot/guide_2.png"
+import Guide_3 from "@site/static/media/docs/intro/plot-system/building-plot/guide_3.png"
+import Guide_4 from "@site/static/media/docs/intro/plot-system/building-plot/guide_4.png"
+import GuideWindows from "@site/static/media/docs/intro/plot-system/building-plot/guide_windows.gif"
 
 ```
 

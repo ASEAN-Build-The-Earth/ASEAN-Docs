@@ -19,7 +19,7 @@ After you finsihed  building the outlines for the buildings and roads you can st
 
 ## Building
 If you are familiar with building in our plot system, the building process in exam plot is about the same.<br/>
-Please go back to read our [Plot System Guide](../../getting-started/building-first-build/plot-system/finishing-plot) if you do not have alot of experience with our plot system.
+Please go back to read our [Plot System Guide](../../getting-started/building-first-build/plot-system/building-plot) if you do not have alot of experience with our plot system.
 
 :::info
 
