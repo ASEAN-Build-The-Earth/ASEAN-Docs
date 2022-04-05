@@ -25,7 +25,7 @@ You can always ask people in our discord if you get stuck on any of the topics.
 ## Wand
 The wand is the main tool for world edit,<br/>
 you can get it by typing `//wand` and a wooden axe will pop in your inventory.<br/>
-(grab a `wooden axe` straight from inventory works too)
+(Grabbing a `wooden axe` from your inventory works too)
 
 ```mdx-code-block
 <Img srcList={[WEBP_Wand, GIF_Wand]} maxWidth="400px" aspect="600 330" className="item shadow--md" style={{borderRadius:"6px"}} alt="Getting Wand" />
