@@ -12,7 +12,7 @@ import PointsImage from '@site/static/media/docs/intro/exam/plot_points.png';
 ```
 
 Our only requirement is to build in [Plot system server](./getting-started/building-first-build/plot-system) 
-and have at least <Text.Hl type="primary">16 points</Text.Hl> on average.
+and have at least <Text.Hl type="primary">20 points</Text.Hl> .
 
 :::info
 To check your point you've gained, go to your companion's plot profile and hover over character head to see your current stats
