@@ -28,16 +28,14 @@ export default function SupportPage() {
                         </h1>
                         <span className={styles.propaganda_msg}><MarkdownBlock>
                                 <Translate id="support.subtitle" description="Propaganda message for supporting aseanbte (recommended to edit the '1 U.S. Dollar' to local currency translating to) ">
-                                    Hello, if you want to see the server grow.
-                                    Consider donating to us at the minimum of [1 U.S. Dollar](https://www.google.com/search?q=1+usd),
-                                    \n                   
-                                    you are helping us go one step further in achieving our goal.
+                                    If you would like to see ASEAN BTE grow please
+                                    consider donating [1 U.S. Dollar](https://www.google.com/search?q=1+usd),
                                 </Translate>
                             </MarkdownBlock>
                         </span>
                         <br/>
                         <h1><Translate id="support.propaganda.title" description="The topic in support page propaganda">
-                                Where would my funds go?
+                                Where would the funds go?
                             </Translate>
                         </h1>
                         <div className="row">
@@ -52,14 +50,13 @@ export default function SupportPage() {
                                     <dl id={styles.quote_container}>  
                                         <dt id={styles.quote_label}>
                                             <Translate id="support.propaganda.1.title" description="First quote of 'Where will my money go?' topic">
-                                                Supports minecraft server quality and performance.
+                                                Supporting the Virtual Private Server.
                                             </Translate>
                                         </dt>
                                         <dd id={styles.quote_description}>
                                             <Translate id="support.propaganda.1.description" description="Description of 'Supports minecraft server' from support page quote">
-                                                The 90% of the funds would go to our Virtual Private Server (VPS) 
-                                                which hosts our Minecraft servers as well as Discord bots. By donating, 
-                                                you are keeping our Minecraft servers alive day by day. 
+                                                90% of the funds would go to our Virtual Private Server (VPS) 
+                                                which hosts our Minecraft servers as well as Discord bots.
                                             </Translate>
                                         </dd>
                                     </dl>
@@ -76,7 +73,7 @@ export default function SupportPage() {
                                         </dt>
                                         <dd id={styles.quote_description}>
                                             <Translate id="support.propaganda.2.description" description="Description of 'Supports our builder workflow' from support page quote">
-                                                The 10% of the funds would be saved up and only be spent on the team’s investments of new systems or products or major accidents.
+                                                10% of the funds would be saved up and to be spent on the team’s investments of new system or to fix major accidents.
                                             </Translate>
                                         </dd>
                                     </dl>    
