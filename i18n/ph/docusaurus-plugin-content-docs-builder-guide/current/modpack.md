@@ -1,9 +1,9 @@
 ---
-title: Official Builder Madpack
+title: Official Builder Modpack
 id: modpack
 ---
 :::caution
-Only use modpack for Building in [Master Server](../intro/getting-started/visiting#1-master-server) as a [Official Builder](../intro/getting-started/builder-system) or building in singleplayer
+Only use modpack for building in [Master Server](../intro/getting-started/visiting#1-master-server) as an [Official Builder](../intro/getting-started/builder-system) or building in singleplayer
 :::
 
 ## Installing modpack 
@@ -11,8 +11,8 @@ Only use modpack for Building in [Master Server](../intro/getting-started/visiti
 import Video from '@site/src/components/Video';
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
 
-<MinecraftWindow useDropdown="false" maxWidth="600px" title="Build The Earth">
-    <Video width="1920" type="youtube" VIDEO_ID="T174gWwD1MU"/>
+<MinecraftWindow useDropdown="false" maxWidth="800px" title="Build The Earth">
+    <Video width="1920" height="450" type="youtube" VIDEO_ID="T174gWwD1MU" mute="0" controls="1"/>
 </MinecraftWindow>
 ```
 

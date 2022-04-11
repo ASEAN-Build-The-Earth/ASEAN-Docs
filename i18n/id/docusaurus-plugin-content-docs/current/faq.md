@@ -4,7 +4,7 @@ id: faq
 ---
 
 ## 💬<small>Does this server require modpack?</small>
-<details><summary>No but it is recommended for better performance</summary>
+<details><summary>No</summary>
 
 However we do have BTE [modpack](../guide/modpack) for [Official Builder](./getting-started/builder-system#official-builder) only.<br/>
 But you can install it too if you want to build in BuildTheEarth singleplayer (Not recommended).
