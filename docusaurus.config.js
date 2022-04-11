@@ -121,7 +121,7 @@ const config = {
             position: 'right',
             dropdownItemsBefore: [
               { // [TODO]: replace this href to our google doc translate site
-                href: `${globalConfig.baseGithubUrl}/ASEAN-Docs`,
+                href: `${globalConfig.baseGithubUrl}/ASEAN-Docs#translation`,
                 label: 'Help Us Translate',
               },
             ],
@@ -187,9 +187,9 @@ const config = {
       },
       // extra annoucement
       announcementBar: {
-        id: 'annouce_wip-caution',
+        id: 'annouce-translation',
         content:
-          '<strong>Hey, This website is still in a heavy development, If you want to help us, ask our admin in discord server or contribute directly in our <a href="https://github.com/ASEAN-Build-The-Earth/ASEAN-Docs">github repository</a></strong>',
+          '<strong>Make a ticket in our discord server and message us your email to gain access to our google spreadsheet and help us translate this site. (you can preview it <a href="https://docs.google.com/spreadsheets/d/1SMr3F7tv2HIj4bqk0YDECXhJhLZVJPfs12SxFEVHm9c/edit?usp=sharing">here</a>)</strong>',
         backgroundColor: '#99ffcc',
         textColor: '#091E42',
         isCloseable: false,

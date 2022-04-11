@@ -5,7 +5,7 @@
 const globalConfig = {
   globalModule: require.resolve('./src/global/client_module.js'),
   globalStyle: require.resolve('./src/global/global.css'),
-  siteUrl: "https://builders-doc.netlify.app",
+  siteUrl: "https://asean.buildtheearth.asia",
   baseGithubUrl: "https://github.com/ASEAN-Build-The-Earth",
   discordInviteLink: "https://discord.gg/DNwnKmkQpw",
   googleGtag: "G-FT2L3SS4RX",  
