@@ -28,7 +28,11 @@
  to = "https://asean.buildtheearth.asia"
  status = 301
  force = true
-
+[[redirects]]
+ from = "https://builders-doc.netlify.app/*"
+ to = "https://asean.buildtheearth.asia/:splat"
+ status = 301
+ force = true
 
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
