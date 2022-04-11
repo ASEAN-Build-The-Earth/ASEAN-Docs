@@ -22,12 +22,12 @@
 [build.processing.images]
   compress = true
 
-# Uncomment this if we got legit domain
-#[[redirects]]
-#  from = "https://builders-doc.netlify.app"
-#  to = "https://asia.buildtheearth.asean"
-#  status = 301
-#  force = true
+# force redirect to our domain if someone is still using the netlify domain
+[[redirects]]
+ from = "https://builders-doc.netlify.app"
+ to = "https://asean.buildtheearth.asia"
+ status = 301
+ force = true
 
 
 [[headers]]

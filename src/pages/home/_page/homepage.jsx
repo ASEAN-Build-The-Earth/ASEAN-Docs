@@ -8,7 +8,6 @@ import Translate from '@docusaurus/Translate';
 import MarkdownBlock from "@site/src/components/MarkdownBlock";
 import HeaderBanner from "@site/static/media/background/homepage_banner.png";
 import CompressedHeaderBanner from "@site/static/media/background/homepage_banner.min.png";
-import WEPB_GrassblockIcon from "@site/static/media/icons/minecraft/dancing_grassblock.webp";
 import GIF_GrassblockIcon from "@site/static/media/icons/minecraft/dancing_grassblock.gif";
 
 import ButtonHeader from "./components/HomepageButton";
@@ -57,7 +56,7 @@ const ContentList = [
         <MarkdownBlock>
           <Translate id="home.description" description="ASEAN BTE long description at the homepage">
             We are The Association of Southeast Asian Nations Build the Earth. 
-            We are part of the [Build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! 
+            We are part of the [Build The Earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! 
             We currently oversee the progress of Brunei, Myanmar, 
             Cambodia, Timor-Leste, Indonesia, Laos, Malaysia, the Philippines, 
             Singapore, Thailand, and Vietnam.
@@ -69,7 +68,7 @@ const ContentList = [
     ),
   },
   {
-    title: <Img src={[WEPB_GrassblockIcon, GIF_GrassblockIcon]} alt="Our Server" id={styles.info_section_icon} width="50" height="45" />,
+    title: <Img src={[GIF_GrassblockIcon]} alt="Our Server" id={styles.info_section_icon} width="50" height="45" />,
     description: <InfoBox />
   }
 ];

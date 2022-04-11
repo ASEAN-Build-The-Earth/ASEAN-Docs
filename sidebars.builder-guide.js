@@ -46,8 +46,8 @@ module.exports =  {
               /* Advance Building Documents */
               {
                 type: "doc",
-                label: "Diagnal Build",
-                id: "building/basic/diagnal-build"
+                label: "Building Diagonally",
+                id: "building/basic/diagonal-build"
               },
             ],
           },
