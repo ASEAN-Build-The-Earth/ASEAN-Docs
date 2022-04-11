@@ -72,15 +72,13 @@ const MinecraftWindow = (
               <span className={styles.bar} />
               <span className={styles.bar} />
             </button>
-            <ul className={clsx("dropdown__menu", styles.dropdown_menu)}> {
-                dropdownContents.map((item) => ( /* loop thru drop down items */
+            <ul className={clsx("dropdown__menu", styles.dropdown_menu)}> 
+              { dropdownContents.map((item) => ( /* loop thru drop down items */
                   item.id == "title" ? 
-                    (<li key={item.id}><span id={styles.minecraft_window_dropdown_title}>{item.content}</span></li>) 
-                    :
-                    (<li key={item.id}><div className="dropdown__link" >{item.content}</div></li>)
-                  )
+                  ( <li key={item.id}><span id={styles.minecraft_window_dropdown_title}>{item.content}</span></li> ) 
+                  : ( <li key={item.id}><div className="dropdown__link" >{item.content}</div></li> )
                 )
-              }
+              )}
             </ul>
           </div>
           ) : (

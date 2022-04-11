@@ -28,8 +28,8 @@ export default function SupportPage() {
                         </h1>
                         <span className={styles.propaganda_msg}><MarkdownBlock>
                                 <Translate id="support.subtitle" description="Propaganda message for supporting aseanbte (recommended to edit the '1 U.S. Dollar' to local currency translating to) ">
-                                    If you would like to see ASEAN BTE grow please
-                                    consider donating [1 U.S. Dollar](https://www.google.com/search?q=1+usd),
+                                    Hello. If you want to see the server building up,\n please consider donating to us at a minimum of [1 U.S. Dollar](https://www.google.com/search?q=1+usd).
+                                    By doing that action,  you are helping us go one step further in achieving our goal.
                                 </Translate>
                             </MarkdownBlock>
                         </span>
@@ -50,13 +50,14 @@ export default function SupportPage() {
                                     <dl id={styles.quote_container}>  
                                         <dt id={styles.quote_label}>
                                             <Translate id="support.propaganda.1.title" description="First quote of 'Where will my money go?' topic">
-                                                Supporting the Virtual Private Server.
+                                                Supporting Minecraft server quality and performance
                                             </Translate>
                                         </dt>
                                         <dd id={styles.quote_description}>
                                             <Translate id="support.propaganda.1.description" description="Description of 'Supports minecraft server' from support page quote">
-                                                90% of the funds would go to our Virtual Private Server (VPS) 
-                                                which hosts our Minecraft servers as well as Discord bots.
+                                                The 90% of the funds would go to our Virtual Private Server (VPS) 
+                                                which hosts our Minecraft servers as well as Discord bots. By donating, 
+                                                you are keeping our Minecraft servers alive day by day. 
                                             </Translate>
                                         </dd>
                                     </dl>

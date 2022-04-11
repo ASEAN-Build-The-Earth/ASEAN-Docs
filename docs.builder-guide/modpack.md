@@ -1,9 +1,9 @@
 ---
-title: Official Builder Madpack
+title: Official Builder Modpack
 id: modpack
 ---
 :::caution
-Only use modpack for Building in [Master Server](../intro/getting-started/visiting#1-master-server) as a [Official Builder](../intro/getting-started/builder-system) or building in singleplayer
+Only use modpack for building in [Master Server](../intro/getting-started/visiting#1-master-server) as an [Official Builder](../intro/getting-started/builder-system) or building in singleplayer
 :::
 
 ## Installing modpack 
