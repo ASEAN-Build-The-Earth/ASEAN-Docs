@@ -24,7 +24,7 @@
     "description": "The label of footer link with label=BuildTheEarth.net linking to https://discord.gg/buildtheearth"
   },
   "link.item.label.Support Us": {
-    "message": "Ủng Hộ Chúng Tôi",
+    "message": "Ủng Hộ",
     "description": "The label of footer link with label=Support Us linking to /support"
   },
   "link.item.label.GitHub": {
