@@ -4,15 +4,15 @@
     "description": "The title in the navbar"
   },
   "item.label.Get Started": {
-    "message": "Get Started",
+    "message": "Bắt Đầu",
     "description": "Navbar item with label Get Started"
   },
   "item.label.Builder Guide": {
-    "message": "Builder Guide",
+    "message": "Hướng Dẫn Builder",
     "description": "Navbar item with label Builder Guide"
   },
   "item.label.Support Us": {
-    "message": "Support Us",
+    "message": "Ủng Hộ Chúng Tôi",
     "description": "Navbar item with label Support Us"
   },
   "item.label.Discord": {

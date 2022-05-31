@@ -17,12 +17,12 @@ import SocialMedias from "./components/SocialMedias";
 
 
 const socialMediaContents = {
-  facebook: {
-      label: <Translate id="home.socialMedias.facebook" 
-        description="label of facebook on homepage">
-          Facebook
+  reddit: {
+      label: <Translate id="home.socialMedias.reddit" 
+        description="label of redddit on homepage">
+          Reddit
         </Translate>,
-      link: "/"
+      link: "https://www.reddit.com/r/ASEANBTE/"
   },
   twitter: {
       label: <Translate id="home.socialMedias.twitter" 

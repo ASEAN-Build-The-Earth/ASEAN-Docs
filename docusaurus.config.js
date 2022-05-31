@@ -84,10 +84,14 @@ const config = {
   (
     {
       colorMode: { defaultMode: "dark", },
-      autoCollapseSidebarCategories: true,
-      hideableSidebar: true, // idk what this do
       image: "media/icons/aseanbte_full_logo.jpg", //meta og image
       metadata: [{name: 'theme-color', content: '#ffc561'}],
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+          hideable: true,
+        },
+      },
       navbar: {
         title: 'ASEAN BTE',
         logo: {
@@ -186,14 +190,14 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       // extra annoucement
-      announcementBar: {
-        id: 'annouce-translation',
-        content:
-          '<strong>Make a ticket in our discord server and message us your email to gain access to our google spreadsheet and help us translate this site. (you can preview it <a href="https://docs.google.com/spreadsheets/d/1SMr3F7tv2HIj4bqk0YDECXhJhLZVJPfs12SxFEVHm9c/edit?usp=sharing">here</a>)</strong>',
-        backgroundColor: '#99ffcc',
-        textColor: '#091E42',
-        isCloseable: false,
-      },
+      // announcementBar: {
+      //   id: 'annouce-translation',
+      //   content:
+      //     '<strong>Make a ticket in our discord server and message us your email to gain access to our google spreadsheet and help us translate this site. (you can preview it <a href="https://docs.google.com/spreadsheets/d/1SMr3F7tv2HIj4bqk0YDECXhJhLZVJPfs12SxFEVHm9c/edit?usp=sharing">here</a>)</strong>',
+      //   backgroundColor: '#99ffcc',
+      //   textColor: '#091E42',
+      //   isCloseable: false,
+      // },
     }
   ),
     

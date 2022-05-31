@@ -67,9 +67,9 @@
     "message": "is not ALLOWED.",
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
-  "home.socialMedias.facebook": {
-    "message": "Facebook",
-    "description": "label of facebook on homepage"
+  "home.socialMedias.reddit": {
+    "message": "Reddit",
+    "description": "label of redddit on homepage"
   },
   "home.socialMedias.twitter": {
     "message": "Twitter",
@@ -361,5 +361,17 @@
   "video.loader.loading": {
     "message": "Loading video...",
     "description": "Loading message of all image in document"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
   }
 }

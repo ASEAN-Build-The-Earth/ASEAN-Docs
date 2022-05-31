@@ -2,17 +2,19 @@ import React from 'react';
 import styles from "./SocialMedias.module.css";
 import Link from '@docusaurus/Link';
 
-import FacebookLogo from "@site/static/media/icons/social-media/facebook.svg";
+import RedditLogo from "@site/static/media/icons/social-media/reddit.svg";
 import InstagramLogo from "@site/static/media/icons/social-media/instagram.svg";
 import TwitterLogo from "@site/static/media/icons/social-media/twitter.svg";
 import YoutubeLogo from "@site/static/media/icons/social-media/youtube.svg";
 
 const SocialMedias = ({contents}) => {
     return (<>
-        <Link href={contents.facebook.link} className={styles.social_media_column} id={styles.facebook_logo_pointer}> 
-            <span id={styles.facebook_logo_label}>{contents.facebook.label}</span>
+        <Link href={contents.reddit.link} className={styles.social_media_column} id={styles.reddit_logo_pointer}> 
+            <span id={styles.reddit_logo_label}>{contents.reddit.label}</span>
             <div className={styles.social_media_logo}>
-                <FacebookLogo id={styles.facebook_logo}/>
+                <div id={styles.reddit_logo_div} />
+                <RedditLogo id={styles.reddit_logo}/>
+                <div id={styles.reddit_logo_background} />
             </div> 
         </Link>
         <Link href={contents.twitter.link} className={styles.social_media_column} id={styles.twitter_logo_pointer}> 
