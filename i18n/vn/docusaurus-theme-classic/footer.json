@@ -12,11 +12,11 @@
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Get Started": {
-    "message": "Get Started",
+    "message": "Bắt Đầu",
     "description": "The label of footer link with label=Get Started linking to intro/get-started"
   },
   "link.item.label.Builder Guide": {
-    "message": "Builder Guide",
+    "message": "Hướng Dẫn Builder",
     "description": "The label of footer link with label=Builder Guide linking to guide/builder-guide"
   },
   "link.item.label.BuildTheEarth.net": {
@@ -24,7 +24,7 @@
     "description": "The label of footer link with label=BuildTheEarth.net linking to https://discord.gg/buildtheearth"
   },
   "link.item.label.Support Us": {
-    "message": "Support Us",
+    "message": "Ủng Hộ Chúng Tôi",
     "description": "The label of footer link with label=Support Us linking to /support"
   },
   "link.item.label.GitHub": {

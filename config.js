@@ -41,7 +41,7 @@ const i18nConfig = {
         direction: 'ltr',
         htmlLang: 'id-ID',
       },
-      vn: { label: 'Vietnamese',
+      vn: { label: 'tiếng Việt',
         direction: 'ltr',
         htmlLang: 'vi-VN',
       },

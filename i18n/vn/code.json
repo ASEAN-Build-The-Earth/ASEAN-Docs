@@ -24,7 +24,7 @@
     "description": "Homepage ASEAN BTE label"
   },
   "home.description": {
-    "message": "We are The Association of Southeast Asian Nations Build the Earth. We are part of the [Build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! We currently oversee the progress of Brunei, Myanmar, Cambodia, Timor-Leste, Indonesia, Laos, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.",
+    "message": "Chúng tôi, ASEAN BTE, là một phần của [dự án Build The Earth](https://buildtheearth.net/) nhằm tái dựng thế giới trong Minecraft theo tỉ lệ 1:1! Chúng tôi hiện tại quản lý tiến trình xây dựng ở Brunei, Miến Điện, Campuchia, Đông Timor, Indonesia, Lào, Malaysia, Philippines, Singapore, Thái Lan, và Việt Nam.",
     "description": "ASEAN BTE long description at the homepage"
   },
   "home.banner.title": {
@@ -32,11 +32,11 @@
     "description": "A hero title of homepage document"
   },
   "home.banner.subtitle": {
-    "message": "We are building southeast asia in Minecraft 1:1 scale!",
+    "message": "Chúng tôi xây dựng Đông Nam Á trong Minecraft theo tỉ lệ 1:1!",
     "description": "A hero description of homepage document"
   },
   "home.infoBox.ip": {
-    "message": "Server IP",
+    "message": "Địa chỉ IP của Server",
     "description": "'Server ip' box at the homepage"
   },
   "home.infoBox.ip.java": {
@@ -48,7 +48,7 @@
     "description": "Bedrock label at homepage"
   },
   "home.infoBox.requirement": {
-    "message": "Requirements",
+    "message": "Yêu cầu",
     "description": "Requirements box at homepage"
   },
   "home.infoBox.requirement.content": {
@@ -56,20 +56,20 @@
     "description": "the first and only requirement in the homepage requirement box"
   },
   "home.infoBox.requirement.content.description": {
-    "message": "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) are supported.",
+    "message": "Có hỗ trợ [Phiên bản Java](https://www.minecraft.net/en-us/store/minecraft-java-edition) và [Phiên bản Bedrock](https://minecraft.fandom.com/wiki/Bedrock_Edition).",
     "description": "Extra foldout section of Minecraft in homepage describing we supports all version of it"
   },
   "home.infoBox.requirement.cracked-1": {
-    "message": "Cracked Minecraft",
+    "message": "CẤM xài",
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
   "home.infoBox.requirement.cracked-2": {
-    "message": "is not ALLOWED.",
+    "message": "Minecraft lậu.",
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
-  "home.socialMedias.facebook": {
-    "message": "Facebook",
-    "description": "label of facebook on homepage"
+  "home.socialMedias.reddit": {
+    "message": "Reddit",
+    "description": "label of redddit on homepage"
   },
   "home.socialMedias.twitter": {
     "message": "Twitter",
@@ -120,7 +120,7 @@
     "description": "The visit kofi site button at the bottom of kofi widget"
   },
   "home.bannerButton.support.label": {
-    "message": "Support Us",
+    "message": "Ủng Hộ Chúng Tôi",
     "description": "The big Start building button (please keep the text count very low to prevent newline)"
   },
   "home.bannerButton.support.labelOverlay": {
@@ -128,7 +128,7 @@
     "description": "The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)"
   },
   "home.bannerButton.getStart.label": {
-    "message": "Get Started",
+    "message": "Bắt Đầu",
     "description": "The big Start building button (please keep the text count very low to prevent newline)"
   },
   "home.bannerButton.getStart.labelOverlay": {
@@ -361,5 +361,17 @@
   "video.loader.loading": {
     "message": "Loading video...",
     "description": "Loading message of all image in document"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Home page",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Breadcrumbs",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.CodeBlock.wordWrapToggle": {
+    "message": "Toggle word wrap",
+    "description": "The title attribute for toggle word wrapping button of code block lines"
   }
 }
