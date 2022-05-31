@@ -84,10 +84,14 @@ const config = {
   (
     {
       colorMode: { defaultMode: "dark", },
-      autoCollapseSidebarCategories: true,
-      hideableSidebar: true, // idk what this do
       image: "media/icons/aseanbte_full_logo.jpg", //meta og image
       metadata: [{name: 'theme-color', content: '#ffc561'}],
+      docs: {
+        sidebar: {
+          autoCollapseCategories: true,
+          hideable: true,
+        },
+      },
       navbar: {
         title: 'ASEAN BTE',
         logo: {
