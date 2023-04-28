@@ -21,6 +21,9 @@ In this case we will be using it to clear up the Exam plot terrain and create ou
 To get better understanding of World Edit, consider reading their [World Edit documentation](https://worldedit.enginehub.org/en/latest/quickstart/).<br/>
 You can always ask people in our discord if you get stuck on any of the topics.
 :::
+:::tip
+Alternatively, you can check out our Builder Guide.
+:::
 
 ## Wand
 The wand is the main tool for world edit,<br/>

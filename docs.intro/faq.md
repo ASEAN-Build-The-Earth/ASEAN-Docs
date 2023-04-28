@@ -1,5 +1,5 @@
 ---
-title: Frequently asked question
+title: Frequently asked questions
 id: faq
 ---
 
@@ -10,14 +10,20 @@ However we do have BTE [modpack](../guide/modpack) for [Official Builder](./gett
 But you can install it too if you want to build in BuildTheEarth singleplayer (Not recommended).
 </details>
 
-## 💬<small>Does bedrock edition supported?</small>
+## 💬<small>Is bedrock edition supported?</small>
 <details><summary>Yes!</summary>
 
 Bedrock edition is supported but only in [Plot system server](./getting-started/visiting#2-plot-server) 
 </details>
 
 ## 💬<small>What's the server version?</small>
-<details><summary>Java edition Vanilla 1.12.2 - 1.18.1</summary>
+For Singapore:
+<details><summary>Java version 1.18.2</summary>
+Singapore server is hosted on a vanilla version, so it can be updated to newer versions if possible.
+</details>
+
+For Other countries:
+<details><summary>Java version 1.12.2 </summary>
 
 Note that all our building servers are still on 1.12.2, all building block in the version above will turn into another block.
 </details>
@@ -35,7 +41,7 @@ Server is not guaranteed to be online 24/7 as some times it may be under mainten
 </details>
 
 ## 💬<small>I want to build this place</small>
-<details><summary>Become Official builder</summary>
+<details><summary>Become Official builder.</summary>
 
 Due to our [Builder System](./getting-started/builder-system), New builder can only build in [Plot system server](./getting-started/visiting#2-plot-server) 
 with limited buildsite to choose, this is to prevent unfinished build laying around in our server and made it hard to organise the build team.

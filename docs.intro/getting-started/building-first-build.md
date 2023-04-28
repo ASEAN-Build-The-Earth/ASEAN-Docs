@@ -1,0 +1,35 @@
+---
+title: Building your first build
+id: building-first-build
+---
+
+import DocCardList from '@theme/DocCardList';
+import { useCurrentSidebarCategory } from '@docusaurus/theme-common';
+import MinecraftWindow from '@site/src/components/MinecraftWindow';
+import Phattie_Gif from '@site//static/media/docs/intro/plot-system/plot.gif';
+import Img from '@site/src/components/Img'
+import Link from '@docusaurus/Link';
+
+<p> In this section, we will start from touring you how different BTE Building is 
+    to a basic minecraft build then send you to build your first build in <span 
+    style={ {color:"var(--ifm-color-primary)"} }>
+        ASEAN BTE
+    </span>!
+</p>
+
+
+<MinecraftWindow 
+    title={ 
+        <Link to="https://www.youtube.com/watch?v=YSHpFk646ts">
+        <span style={ {color:"var(--ifm-font-color-base)"} }>
+            Minecraft
+        </span></Link> } 
+    >
+{/* children */}
+    <Img imgWidth="100vw" maxWidth="100vw" aspect="800 450" src={Phattie_Gif} alt="Guide Image"/>
+</MinecraftWindow>
+
+<DocCardList items={useCurrentSidebarCategory().items}/>
+
+
+

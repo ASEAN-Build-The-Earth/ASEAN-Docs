@@ -1,15 +1,29 @@
 ---
-id: finding-borders-of-my-plot
-title: How do I find the borders of my plot in Minecraft?
+id: bte-claim
+title: BTE Claiming system
+---
+In BTE, we have a claiming system on the main website. It consists of a 16x16 chunk square.
+
+## How to claim
+To claim it, log in to your discord in the [`BTE website`](https://buildtheearth.net) and under the Solo Builds section click on `Apply for another location`. Remember to fill in all the blanks.
+![claim](@site/static/media/docs/builder-guide/claiming.jpeg)
+
+![claimUI](@site/static/media/docs/builder-guide/claimUI.jpeg)
+
 ---
 
+## Borders 
 Knowing the exact borders of your plot is important as the submission system only submits your exact plot. Anything that is built outside your plot borders will not be transferred into the final world.
 
-Unfortunately, an integrated plot marker system is not included in the modpack yet.
-Firstly you have to find the corners of your plot and then mark the borders between the corners outside of your plot.
-There are 2 ways to find  the corners
+Due to the way the system is now, any building in the middle of two plots requires you to claim both of them. However, if the building is mostly on one plot, you only have to claim one.
 
-## Method 1 
+Unfortunately, an integrated plot marker system is not included in the modpack yet.
+
+Firstly you have to find the corners of your plot and then mark the borders between the corners outside of your plot.
+
+There are 2 ways to find  the corners:
+
+### Method 1 
 
 Go to the [`website`](https://buildtheearth.net) and log into your “MyBuildTheEarth” account.
 Open the region you want to find the borders to.
@@ -28,9 +42,11 @@ In my case the corners could be found at:
 <br />
 <kbd>/tp [username] 4520959 [y-coordinate] 971263</kbd>
 
-Choose a sensible y-coordinate (it will be in meters above sea level)
+:::tip
+If you ever find yourself stuck in a wall, tp yourself further up.
+:::
 
-## Method 2 
+### Method 2 
 
 There will be a faster version of this being released by the development team, but for now, this is what we have.
 

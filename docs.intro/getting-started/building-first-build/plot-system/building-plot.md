@@ -21,8 +21,10 @@ In this page we'll guide you how you as a beginner can build your plot
 
 ## Basic Workflow
 ### 1. See your building outline
-This might be hard but you have to check how your building looks like vs in minecraft. Because of the blocky-ness of minecraft.
-It is normal if the outline looks a bit off compared to the real life building. 
+This might be hard but you have to check how your building looks like vs in minecraft. 
+
+Because of the blocky-ness of minecraft,
+It is normal if the outline looks a bit off compared to the real life building. You may be able to reoutline it.
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="53rem"><Img src={Guide_0} aspect="1902 616" alt="guild_1_image" /></MinecraftWindow>
@@ -53,8 +55,8 @@ Then fill the outlined shell with blocks you choosed.
 See your in-real-life building, does it have an extra roof extended around? Does it has a garage somewhere? Does it has chimney extended from the roof? 
 Then build it! don't miss anything.
 
-:::caution You must not build interior of houses.
-Due to laws of many country's we are not allowed to map private property that being Houses, Schools, Government buildings etcetera. 
+:::caution Interiors of houses of the plots are not allowed.
+Due to privacy laws in many countries, we are not allowed to build interiors of houses. However, if street view shows the interior, you may build `only` that part.
 :::
 
 ```mdx-code-block
@@ -82,9 +84,9 @@ The final step is to polish your building<br/>
 ```
 
 
-:::info
+:::tip
 
-Don't forget to fill up the inside of all your windows with any dark block you want.
+Don't forget to fill up the inside of all your windows to cover the interior.
 ```mdx-code-block
 <MinecraftWindow maxWidth="30rem"><Img src={GuideWindows} aspect="600 329" alt="guild_windows" /></MinecraftWindow>
 ```

@@ -12,7 +12,15 @@ import GuideFeedback from "@site/static/media/docs/intro/plot-system/plot-feedba
 
 ```
 
-Before submitting your plot, please check everything and if everything is ready to be reviewed. You can submit the plot to our reviewers by using your companion's plot profile or quickly type out `/plot submit` to submit it.
+Before submitting your plot, please check everything and if everything is ready to be reviewed.
+
+:::info Things to take note of:
+   - Accuracy (whether the building follows outlines)
+   - Colors (whether the building has correct color)
+   - Detail (whether the building has enough detail)
+::: 
+
+You can submit the plot to our reviewers by using your companion's plot profile or quickly type out `/plot submit` to submit it.
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="30rem"><Img src={GuideSubmit} aspect="600 482" alt="Guide Image"/></MinecraftWindow>
@@ -31,7 +39,6 @@ Submit your plot again with your improvements and you'll may get suddenly get ap
 ```
 
 Accepted plots will be pasted on the [Master world](../../visiting#1-master-server) and will be pasted in the buildsite you built on.
-:::
 
 ---
 
