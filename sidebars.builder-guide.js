@@ -58,6 +58,11 @@ module.exports =  {
                type: "doc",
                label: "BTE Practices",
                id: "building/basic/bteStandards"
+              },
+              {
+               type: "doc",
+               label: "Modpack commands",
+               id: "building/basic/modpack-basics"
               }
             ],
           },
@@ -84,7 +89,6 @@ module.exports =  {
           },
           items: [
             "building/tips/best-practices",
-            "building/tips/bte-claim",
             "building/tips/settings",
             "building/tips/teleport",
           ],
@@ -134,7 +138,7 @@ module.exports =  {
                   id: "worldedit/advanced-commands"
                 },
                 items: [
-                  "worldedit/advanced-commands/Brush",
+                  "worldedit/advanced-commands/webrush",
                   "worldedit/advanced-commands/Generate"
                 ],
               },
