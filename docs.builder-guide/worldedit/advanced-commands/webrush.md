@@ -1,5 +1,6 @@
 ---
-id: Brush
+title: Worldedit Brush Command
+id: webrush
 ---
 Brushes can help with these things:
   - Painting gradients
