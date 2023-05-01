@@ -1,4 +1,4 @@
-git con/**
+/**
  * Creating a sidebar enables you to:
  - create an ordered group of docs
  - render a sidebar for each doc of that group
@@ -23,6 +23,11 @@ module.exports =  {
         type: "doc",
         label: "Download the Modpack",
         id: "modpack"
+      },
+      {
+        type: "doc",
+        label: "Mods included in the Modpack",
+        id: "modpackMods"
       },
       /* "Building In BuildTheEarth" Category */
       {

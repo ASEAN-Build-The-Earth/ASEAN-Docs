@@ -15,6 +15,7 @@ id: ColorBasics
 ---
 
 ## Color selection
+
 ![Minecraftcomparion](@site/static/media/docs/builder-guide/minecraftcomparison.png)
 Color selection, in BTE sense, is picking the closest color to what it looks like in real life. 
 
