@@ -12,7 +12,7 @@
 // @ts-check
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
-module.exports =  {
+module.exports =  { 
     docs_builderGuide: [
       {
         type: 'doc',
@@ -21,8 +21,13 @@ module.exports =  {
       },
       {
         type: "doc",
-        label: "Modpack",
+        label: "Download the Modpack",
         id: "modpack"
+      },
+      {
+        type: "doc",
+        label: "Mods included in the Modpack",
+        id: "modpackMods"
       },
       /* "Building In BuildTheEarth" Category */
       {
@@ -46,20 +51,34 @@ module.exports =  {
               /* Advance Building Documents */
               {
                 type: "doc",
-                label: "Building Diagonally",
-                id: "building/basic/diagonal-build"
+                label: "Color picking",
+                id: "building/basic/ColorBasics"
               },
+              {
+               type: "doc",
+               label: "BTE Practices",
+               id: "building/basic/bteStandards"
+              },
+              {
+               type: "doc",
+               label: "Modpack commands",
+               id: "building/basic/modpack-basics"
+              }
             ],
           },
           { /* "Advance Building" Category */
             type: 'category',
-            label: 'Advance Building',
+            label: 'Advanced Building',
             link: {
               type: "generated-index",
             },
             items: [
               /* Advance Building Documents */
               "building/advance-building/detailing",
+              "building/advance-building/Terraforming",
+              "building/advance-building/advancedStructures",
+              "building/advance-building/infrastructure",
+              "building/advance-building/nature",
             ],
           },
           { /* "Tips" Category */
@@ -70,7 +89,6 @@ module.exports =  {
           },
           items: [
             "building/tips/best-practices",
-            "building/tips/finding-borders-of-my-plot",
             "building/tips/settings",
             "building/tips/teleport",
           ],
@@ -79,7 +97,7 @@ module.exports =  {
       },
       { /* "World Edit" Category */
             type: 'category',
-            label: 'World Edit',
+            label: 'WorldEdit',
             link: {
               type: "doc",
               id: "worldedit/what-is-worldedit"
@@ -88,36 +106,40 @@ module.exports =  {
               /* World Edit Documents */
               { 
                 type: 'category',
-                label: 'Basic of World Edit',
+                label: 'Tips',
                 link: {
                   type: "doc",
                   id: "worldedit/basic-worldedit"
                 },
                 items: [
                   "worldedit/basic/blocks-ids",
-                  "worldedit/basic/select-region",
+                  "worldedit/basic/pline",
                 ],
               },
               { 
                 type: 'category',
-                label: 'Basic Commands',
+                label: 'Basics of WorldEdit',
                 link: {
                   type: "doc",
                   id: "worldedit/basic-commands"
                 },
                 items: [
-                  "worldedit/basic-commands/wcmd.sel-poly",
+                  "worldedit/basic-commands/Wands",
+                  "worldedit/basic-commands/Selection",
+                  "worldedit/basic-commands/Modification",
+                  "worldedit/basic/Masking",
                 ],
               },
               { 
                 type: 'category',
-                label: 'Advanced Commands',
+                label: 'Advanced Concepts',
                 link: {
                   type: "doc",
                   id: "worldedit/advanced-commands"
                 },
                 items: [
-                  "worldedit/advanced-commands/wcmd.brush",
+                  "worldedit/advanced-commands/webrush",
+                  "worldedit/advanced-commands/Generate"
                 ],
               },
 

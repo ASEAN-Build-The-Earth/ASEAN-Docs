@@ -20,8 +20,8 @@ import IMG_NorminalIRLRoof from '@site/static/media/docs/intro/bte-buildings/nor
 
 Before we build anything, you first need to know  what its look like to build with us
 
-## Most building are diagonal❕
-<Text.Tab>As we are building the earth one to one scale, buildings have to be accurate and aligned properly which makes it impossible to have every build being in a straight line.</Text.Tab>
+## Most buildings are diagonal❕
+Buildings have to be accurate and aligned properly as not all buildings in the world are parallel.
 
 ```mdx-code-block
 
@@ -32,9 +32,11 @@ Before we build anything, you first need to know  what its look like to build wi
 ```
 
 ## Every build looks smaller than you think
-<Text.Tab/>Many newcomers think 1:1 scale is relative to your minecraft character and misunderstand it.<br/>
+Many newcomers think 1:1 scale is relative to your minecraft character and misunderstand it.
+
 For example if you built a normal house with 4 blocks tall roof it means you have built a building with a 4 meter tall roof and it makes it look out of place.
-A typical buildings in our project only has 2 - 3 blocks height as you can see in the example below.<br/><br/>
+
+A typical building in our project only has 2 - 3 blocks height as you can see in the example below.
 
 <!-- good bad card -->
 ```mdx-code-block
@@ -60,7 +62,7 @@ A typical buildings in our project only has 2 - 3 blocks height as you can see i
                 icon = { <svg width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg> } 
                 title = {
                     <p style={ { display: "initial", textTransform:"none", fontStyle:"italic" } }>
-                        A BTE building in south east asia is about this size
+                        A BTE building in South East Asia is about this size
                     </p>
                 } 
             >
@@ -90,7 +92,7 @@ A typical buildings in our project only has 2 - 3 blocks height as you can see i
         </div>
         <div class="card__body" style={{padding:"0 var(--ifm-card-horizontal-spacing) var(--ifm-card-vertical-spacing) "}}>
             <p>
-                As you can see, it's very hard to find a steep 45 degrees roof in the real world.<br/>
+                If you meassure, the roof is not angled at 45 degrees. The<br/>
                 It turns out we have many new builders that build their roofs with  a 45 degree block or stair that makes the building seems unnatural.
             </p>
         </div>

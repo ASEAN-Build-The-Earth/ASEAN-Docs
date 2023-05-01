@@ -1,4 +1,4 @@
 ---
-title: Basic Of WorldEdit
+title: Basics Of WorldEdit
 id: basic-worldedit
 ---

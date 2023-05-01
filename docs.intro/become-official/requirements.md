@@ -15,7 +15,7 @@ Our only requirement is to build in [Plot system server](./getting-started/build
 and have at least <Text.Hl type="primary">20 points</Text.Hl> .
 
 :::info
-To check your point you've gained, go to your companion's plot profile and hover over character head to see your current stats
+To check the points you've gained, go to your companion's plot profile and hover over character head to see your current stats
 
 ```mdx-code-block
 <MinecraftWindow useDropdown="true" maxWidth="600px">

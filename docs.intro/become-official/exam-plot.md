@@ -3,9 +3,15 @@ title: Exam Plot
 id: exam-plot
 ---
 
-Exam plot is a category in [Plot system server](../getting-started/building-first-build/plot-system) made only for applying to be official builder. The plot is scaled up to 3 - 4 buildings per plot with default Build the earth generated terrain. After your plot gets approve in this category you will be ranked up to [Official Builder](../getting-started/builder-system#official-builder) and gain access to contribute in [Master Server](../getting-started/visiting#master-server).
+Exam plot is a category in [Plot system server](../getting-started/building-first-build/plot-system) made only for applying to be official builder. 
 
+The plot is scaled up by 3 - 4 times per plot with default Build the earth generated terrain. 
 
+After your plot gets approve in this category you will be ranked up to [Official Builder](../getting-started/builder-system#official-builder) and gain access to contribute in [Master Server](../getting-started/visiting#master-server).
+
+:::tip 
+Remember to read up on how to build on BuildTheEarth, and terms such as Terraforming.
+:::
 ```mdx-code-block
 import Img from '@site/src/components/Img';
 import PlotImage from '@site/static/media/docs/intro/exam/exam_guide_plot.png';
