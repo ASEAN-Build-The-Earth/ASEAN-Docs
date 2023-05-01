@@ -1,6 +1,6 @@
-npm---
+---
 title: Parallel and extension lines
-id: line
+id: pline
 ---
 
 :::tip Uses

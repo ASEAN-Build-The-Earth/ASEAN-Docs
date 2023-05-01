@@ -12,7 +12,7 @@
 // @ts-check
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
-module.exports =  {
+module.exports =  { 
     docs_builderGuide: [
       {
         type: 'doc',
@@ -113,7 +113,7 @@ module.exports =  {
                 },
                 items: [
                   "worldedit/basic/blocks-ids",
-                  "worldedit/basic/line"
+                  "worldedit/basic/pline",
                 ],
               },
               { 
