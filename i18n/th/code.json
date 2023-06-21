@@ -8,11 +8,11 @@
     "description": "PORT label at the get-start page"
   },
   "image.loader.error": {
-    "message": "Sorry, could not load this image :(",
+    "message": "ไม่สามารถโหลดภาพได้",
     "description": "Error message when any image could not be loaded."
   },
   "image.loader.loading": {
-    "message": "Loading image...",
+    "message": "กำลังโหลดรูปภาพ...",
     "description": "Loading message of all image in document"
   },
   "util.keyword.minecraft": {
@@ -24,7 +24,7 @@
     "description": "Homepage ASEAN BTE label"
   },
   "home.description": {
-    "message": "We are The Association of Southeast Asian Nations Build the Earth. We are part of the [Build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! We currently oversee the progress of Brunei, Myanmar, Cambodia, Timor-Leste, Indonesia, Laos, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.",
+    "message": "พวกเราเป็นสมาคมของประเทศในเอเชียตะวันออกเฉียงใต้สร้างโลก พวกเราเป็นส่วนหนึ่งของ [Build the earth project](https://buildtheearth.net/) ซึ่งมีจุดมุ่งหมายเพื่อสร้างโลก 1 ต่อ 1 ใน Minecraft! ขณะนี้พวกกำลังเราดูแลความคืบหน้าของบรูไน, พม่า, กัมพูชา, ติมอร์-เลสเต, อินโดนีเซีย, ลาว, มาเลเซีย, ฟิลิปปินส์, สิงคโปร์, ประเทศไทยและเวียดนาม",
     "description": "ASEAN BTE long description at the homepage"
   },
   "home.banner.title": {
@@ -56,15 +56,15 @@
     "description": "the first and only requirement in the homepage requirement box"
   },
   "home.infoBox.requirement.content.description": {
-    "message": "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) are supported.",
+    "message": "ทั้งสองรุ่น ของ Minecraft [Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) เเละ [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) สามารถเข้าได้",
     "description": "Extra foldout section of Minecraft in homepage describing we supports all version of it"
   },
   "home.infoBox.requirement.cracked-1": {
-    "message": "Cracked Minecraft",
+    "message": "Minecraft เถือน",
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
   "home.infoBox.requirement.cracked-2": {
-    "message": "is not ALLOWED.",
+    "message": "ไม่ได้รับอนุญาตและจะไม่สามารถเข้าร่วมได้",
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
   "home.socialMedias.reddit": {
