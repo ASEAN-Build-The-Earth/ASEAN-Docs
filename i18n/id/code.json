@@ -128,7 +128,7 @@
     "description": "the first and only requirement in the homepage requirement box"
   },
   "home.infoBox.requirement.content.description": {
-    "message": "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and [Bedrock Edition](https://minecraft.fandom.com/wiki/Bedrock_Edition) are supported.",
+    "message": "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and [Bedrock Edition](https://minecraft.wiki/w/Bedrock_Edition) are supported.",
     "description": "Extra foldout section of Minecraft in homepage describing we supports all version of it"
   },
   "home.infoBox.requirement.cracked-1": {
