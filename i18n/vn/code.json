@@ -56,7 +56,7 @@
     "description": "the first and only requirement in the homepage requirement box"
   },
   "home.infoBox.requirement.content.description": {
-    "message": "Có hỗ trợ [Phiên bản Java](https://www.minecraft.net/en-us/store/minecraft-java-edition) và [Phiên bản Bedrock](https://minecraft.fandom.com/wiki/Bedrock_Edition).",
+    "message": "Có hỗ trợ [Phiên bản Java](https://www.minecraft.net/en-us/store/minecraft-java-edition) và [Phiên bản Bedrock](https://minecraft.wiki/w/Bedrock_Edition).",
     "description": "Extra foldout section of Minecraft in homepage describing we supports all version of it"
   },
   "home.infoBox.requirement.cracked-1": {
