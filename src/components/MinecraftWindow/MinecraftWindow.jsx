@@ -14,17 +14,16 @@ const DEFAULT_IP_BOX = [
     content: <>
       Java Edition
       <CodeBlock language="javascript">
-        IP: 139.99.91.188:25569
+        IP: asean.thatsnek.asia
       </CodeBlock>
     </>,
   },
   {
     id: "2",
     content: <>
-      Bedrock Edition
+      Webmap
       <CodeBlock language="javascript">
-        IP: 139.99.91.188 
-        PORT: 19132
+        https://u.thatsnek.asia/webmap
       </CodeBlock>
     </>,
   }
