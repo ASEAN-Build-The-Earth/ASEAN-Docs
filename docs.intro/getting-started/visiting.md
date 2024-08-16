@@ -12,7 +12,7 @@ This is the main server where our Official Builders use to build the Earth.
 You can visit our build sites such as `Kuala Lumpur`, `Bangkok`, `Ho Chi Minh`, `Jakarta, Manila`, `Singapore`,... here.
 
 :::danger Bedrock Edition is not supported in the master server
-This is because we have a mod called `Cubic Chunks` in our master server that extends the world height to infinity. The mod exists only in Java edition.
+This is because of the coordinates being too big for bedrock clients to handle
 :::
 
 :::tip We support 1.20 Minecraft
