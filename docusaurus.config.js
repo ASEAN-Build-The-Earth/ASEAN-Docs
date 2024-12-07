@@ -125,7 +125,7 @@ const config = {
             position: 'right',
             dropdownItemsBefore: [
               { // [TODO]: replace this href to our google doc translate site
-                href: `${globalConfig.baseGithubUrl}/ASEAN-Docs#translation`,
+                href: `https://docs.google.com/spreadsheets/d/1SMr3F7tv2HIj4bqk0YDECXhJhLZVJPfs12SxFEVHm9c/edit?usp=sharing`,
                 label: 'Help Us Translate',
               },
             ],
@@ -203,7 +203,7 @@ const config = {
     
   i18n: {
     defaultLocale: i18nConfig.defaultLocale,
-    locales: isDeployPreview? [i18nConfig.defaultLocale] : i18nConfig.registeredLocales,
+    locales: isDeployPreview ? [i18nConfig.defaultLocale] : ['en', 'id', 'fr'],
     localeConfigs: i18nConfig.localeConfigs
   },
 

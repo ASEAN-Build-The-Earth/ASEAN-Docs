@@ -1,3 +1,5 @@
+import Translate from '@docusaurus/Translate';
+
 ---
 title: Get Started in ASEAN BuildTheEarth
 id: get-started
@@ -22,11 +24,11 @@ import WelcomeImage from '@site/static/media/docs/intro/getting-started/aseanbte
 <MakePair 
     pair_left = {
         <div>
-            <h2 id="discord">1. Join our discord server!</h2><br/>
-            We use Discord as our community hub.<hr/>
+            <h2 id="discord"><Translate>1. Bergabunglah dengan server Discord kami!</Translate></h2><br/>
+            <Translate>Kami menggunakan Discord sebagai pusat komunitas kami.</Translate><hr/>
         </div>
     } 
-    pair_right = { <InviteButton>Go to Discord Server </InviteButton> } 
+    pair_right = { <InviteButton><Translate>Go to Discord Server</Translate></InviteButton> } 
 />
 <StraightLine bend="Right"/>
 
@@ -35,16 +37,15 @@ import WelcomeImage from '@site/static/media/docs/intro/getting-started/aseanbte
     pair_left = { /* a server ip box */
         <div align="Left"> 
             <table><tbody><tr><td>
-                <b>Server IP</b>
+                <b><Translate>Server IP</Translate></b>
                 <Tabs>
                     <TabItem value="java" label="Java Edition" default>
-                        <CodeBlock className="language-js" title="IP">
+                        <CodeBlock className="language-js" title="<Translate>IP</Translate>">
                             139.99.91.188:25569
                         </CodeBlock>
                         <Admonition type="note">
-                            <sub><div style={{ lineHeight: 1.5}}>
-                                <b>Java edition includes:</b><br/>
-                                The versions of Minecraft which are on Windows, Linux and macOS<br/>
+                            <sub><div style={{ lineHeight: 1.5}}><b><Translate>Java edition includes:</Translate></b><br/>
+                                <Translate>Versi Minecraft yang tersedia di Windows, Linux, dan macOS</Translate><br/>
                             </div></sub>
                         </Admonition>
                     </TabItem>
@@ -52,9 +53,8 @@ import WelcomeImage from '@site/static/media/docs/intro/getting-started/aseanbte
                         <BedrockIpBox IP="139.99.91.188" PORT="19132" />
                         <br/>
                             <Admonition type="note">
-                                <sub><div style={{ lineHeight: 1.5}}>
-                                    <b>Bedrock edition includes:</b><br/>
-                                    The version of Minecraft that is on PS4, XBOX, Windows 10, mobile (Pocket Edition) and Nintendo Switch.<br/>
+                                <sub><div style={{ lineHeight: 1.5}}><b><Translate>Bedrock edition includes:</Translate></b><br/>
+                                    <Translate>Versi Minecraft yang tersedia di PS4, XBOX, Windows 10, mobile (Pocket Edition), dan Nintendo Switch.</Translate><br/>
                                 </div></sub>
                             </Admonition>
                     </TabItem>
@@ -64,20 +64,19 @@ import WelcomeImage from '@site/static/media/docs/intro/getting-started/aseanbte
     }
     pair_right_m = {
         <div>
-            <h2 id="server">2. Join our Minecraft Server</h2><br/>
-            You can join our Minecraft server by using these IPs.<hr/>
-            <Admonition type="danger" title="CAUTION">
+            <h2 id="server"><Translate>2. Bergabunglah dengan Server Minecraft kami</Translate></h2><br/>
+            <Translate>Anda dapat bergabung ke server Minecraft kami dengan menggunakan IP berikut.</Translate><hr/>
+            <Admonition type="danger" title="<Translate>PERINGATAN</Translate>">
                 <Details 
                     style={{ /* danger red theme to warn cracked minecrafter */
                         "--ifm-alert-border-color": "rgb(255, 50, 56, 0.3)", 
                         "--ifm-alert-background-color": "rgba(255, 0, 0, 0.05)", 
                         "--docusaurus-details-decoration-color": "rgb(225, 50, 56, 1)"
                     }}
-                    summary={ <summary><strong>Cracked Minecraft is banned!</strong></summary>}
+                    summary={ <summary><strong><Translate>Minecraft bajakan tidak diperbolehkan!</Translate></strong></summary>}
                 >   
                 <sup style={{display: "inline-block", lineHeight:"1.2"}}>
-                    This is because we follow the BuildTheEarth’s rules as well as Mojang’s. 
-                    All of your building progress in cracked Minecraft will not be accepted!
+                    <Translate>Ini karena kami mengikuti aturan BuildTheEarth serta Mojang. Semua kemajuan pembangunan dalam Minecraft bajakan tidak akan diterima!</Translate>
                 </sup>
                 </Details>
             </Admonition>
@@ -90,13 +89,13 @@ import WelcomeImage from '@site/static/media/docs/intro/getting-started/aseanbte
 <MakePair 
     pair_left = {
         <div>
-            <h2 id="tour">3. Take a Tour in our server</h2><br/>
-            By following this tutorial you will able to know how to join our server and visit different build sites. <hr/>
+            <h2 id="tour"><Translate>3. Lakukan Tur di server kami</Translate></h2><br/>
+            <Translate>Dengan mengikuti tutorial ini, Anda akan tahu cara bergabung ke server kami dan mengunjungi berbagai lokasi pembangunan.</Translate> <hr/>
         </div>
     } 
     pair_right = { 
         <div align="Left" style={{width:"100%"}}><MinecraftWindow useDropdown="false">
-            <Img src={WelcomeImage} aspect="1803 1014" alt="Welcome To ASEAN BTE" />
+            <Img src={WelcomeImage} aspect="1803 1014" alt="<Translate>Welcome To ASEAN BTE</Translate>" />
         </MinecraftWindow></div>
     } 
 />

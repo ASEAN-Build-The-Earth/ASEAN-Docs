@@ -1,22 +1,22 @@
 {
   "link.title.Docs": {
-    "message": "Docs",
+    "message": "Dokumentasi",
     "description": "The title of the footer links column with title=Docs in the footer"
   },
   "link.title.Discord Community": {
-    "message": "Discord Community",
+    "message": "Komunitas Discord",
     "description": "The title of the footer links column with title=Discord Community in the footer"
   },
   "link.title.More": {
-    "message": "More",
+    "message": "Lainnya",
     "description": "The title of the footer links column with title=More in the footer"
   },
   "link.item.label.Get Started": {
-    "message": "Get Started",
+    "message": "Mulai",
     "description": "The label of footer link with label=Get Started linking to intro/get-started"
   },
   "link.item.label.Builder Guide": {
-    "message": "Builder Guide",
+    "message": "Panduan Builder",
     "description": "The label of footer link with label=Builder Guide linking to guide/builder-guide"
   },
   "link.item.label.BuildTheEarth.net": {
@@ -32,7 +32,7 @@
     "description": "The label of footer link with label=BuildTheEarth ASEAN linking to https://discord.gg/DNwnKmkQpw"
   },
   "link.item.label.Support Us": {
-    "message": "Support Us",
+    "message": "Dukung Kami",
     "description": "The label of footer link with label=Support Us linking to /support"
   },
   "link.item.label.GitHub": {
@@ -40,11 +40,11 @@
     "description": "The label of footer link with label=GitHub linking to https://github.com/ASEAN-Build-The-Earth"
   },
   "link.item.label.BuildTheEarth Website": {
-    "message": "BuildTheEarth Website",
+    "message": "Situs BuildTheEarth",
     "description": "The label of footer link with label=BuildTheEarth Website linking to https://buildtheearth.net/"
   },
   "copyright": {
-    "message": "Copyright © 2022 Association of Southeast Asian Nation Build The Earth.",
+    "message": "Hak Cipta © 2022 Association of Southeast Asian Nation Build The Earth.",
     "description": "The footer copyright"
   }
 }
