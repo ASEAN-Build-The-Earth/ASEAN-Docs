@@ -3,16 +3,28 @@ title: Builders FAQ
 id: builder-faq
 ---
 
-## Geneating areas/chunks
-PLease only generate what you would finish, not the entire area. If you need to generate a large area, please break it down into smaller poritions before building it all.
+## Generating areas/chunks
+Please only generate what you would finish, not the entire area. If you need to generate a large area, please break it down into smaller portions before building it all.
+
+## /tpll Not working?
+Try using `/tpll <lat> <long> <y level>` instead
 
 ## The Warp Format:
 ### What format should I use for warp names?
-Use **PascalCase** for all warp names.  
-**Examples:**
-- `joe mama` → `JoeMama`
-- `central park` → `CentralPark`
-- `new town plaza` → `NewTownPlaza`
+
+General Rules:
+- Use the 2-letter international country codes in lowercase, as listed here: Country Codes
+- Exception: Cambodia will use `cam` instead of `kh`.
+- Warp names should use PascalCase (capitalize the first letter of each word, no spaces).
+
+Examples:
+- "Joe mama" becomes `JoeMama`
+- "Taling Chan" becomes `TalingChan`
+- Warps that are a single word in each section (e.g., sg, punggol, north) do not need PascalCase.
+
+### Excluding warps from ingame menu
+For those who do not want warps to appear in the ingame menu OR webmap add ! to the start of the warp
+Example: `/warp !kfcVN`
 
 ---
 
@@ -20,7 +32,7 @@ Use **PascalCase** for all warp names.
 Use **2-letter lowercase ISO country codes** from [iban.com](https://www.iban.com/country-codes).  
 **Exception:** Use `cam` for Cambodia.
 
-**Examples:**
+Examples:
 - Thailand → `th`
 - Cambodia → `cam`
 
@@ -33,7 +45,6 @@ Format:
 ```
 /warp {country},{state/province/city},{subDistrict},{warpName}
 ```
-
 **Examples:**
 - `/warp th,bangkok,khlongsan,IconSiam`
 - `/warp cam,phnompenh,daunpenh,CentralMarket`
