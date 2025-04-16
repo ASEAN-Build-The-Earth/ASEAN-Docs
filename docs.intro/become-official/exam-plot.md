@@ -3,6 +3,12 @@ title: Exam Plot
 id: exam-plot
 ---
 
+:::warning
+
+Please note that the exam plot requirement has been discontinued and is now only required for specific builders. If our staff previously informed you that you needed to complete this exam, please proceed to the next section. 
+
+Typically, builders are only required to complete 3-4 plots before applying.
+:::
 Exam plot is a category in [Plot system server](../getting-started/building-first-build/plot-system) made only for applying to be official builder. 
 
 The plot is scaled up by 3 - 4 times per plot with default Build the earth generated terrain. 
