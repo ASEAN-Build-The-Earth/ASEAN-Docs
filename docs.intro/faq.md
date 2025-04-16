@@ -3,55 +3,35 @@ title: Frequently asked questions
 id: faq
 ---
 
-## 💬<small>Does this server require modpack?</small>
-<details><summary>Plot & Singapore server: No</summary>
-Plot & Singapore server is both hosted for vanilla clients, so no modpacks is required.
-</details>
-<details><summary>Master Server: Yes</summary>Master server is hosted on the Modpack because of the build limit, so it is much more recommended to get the Modpack instead of only Cubic Chunks.</details>
+## 💬**Does this server require a modpack?**
+<details>
+<summary>No modpacks required - Vanilla Minecraft only!</summary>
+For all our servers, you can join using any Minecraft vanilla modpack on 1.21.X. There’s also an optional modpack scheduled for release later in 2025.</details>
 
-## 💬<small>Is bedrock edition supported?</small>
-<details><summary>Yes!</summary>
+## 💬**Does Bedrock support exist?**
+<details>
+<summary>Yes, Bedrock support is available!</summary>
+Yes, Bedrock support is available on all servers. The IP address is asean.thatsnek.asia. You can test building functionality using the /server plot command.</details>
 
-Bedrock edition is supported but only in [Plot system server](./getting-started/visiting#2-plot-server) 
-</details>
+## 💬**What server version is used?**
+<details>
+<summary>The server is natively running on 1.21.1</summary>
+The server is natively running on 1.21.1, but it should be compatible with any Java version above 1.21. Please ensure other teams coordinate with their respective server versions.</details>
 
-## 💬<small>What's the server version?</small>
-For Singapore:
-<details><summary>Java version 1.18.2</summary>
-Singapore server is hosted on a vanilla version (Technically Purpur), so it can be updated to newer versions if possible.
-</details>
+## 💬**How do I request to build?**
+<details>
+<summary>Join the plotsystem and finish 3-4 good plots before messaging the support bot to apply for builder</summary>
+To request access to building plots, please join our plotsystem and successfully complete at least three (3) to four (4) good plots before contacting the support bot in our Discord server.</details>
 
-For Other countries:
-<details><summary>Java version 1.12.2 </summary> Due to one of our mods (Cubic Chunks), which allows building above Minecraft's default height limit (256 blocks), being on 1.12.2, our other servers are on 1.12.2.</details>
-
-Bedrock version:
-<details><summary>Latest</summary>Bedrock server automatically gets updated to the latest version. Do note that Bedrock version only supports Plotsystem server.</details>
-
-## 💬<small>Where can i contact staffs?</small>
-<details><summary>Discord server</summary>
-
-Please create a ticket in our discord server to contact staff/mod if you have any question.
-</details>
-
-## 💬<small>I can't join the server, why?</small>
-<details><summary>Server might be down</summary>
-
-Server is not guaranteed to be online 24/7 as some times it may be under maintenance, please see in our discord server posts for our server status.
-</details>
-
-## 💬<small>I want to build this place</small>
-<details><summary>Become Official builder.</summary>
-
-Due to our [Builder System](./getting-started/builder-system), New builder can only build in [Plot system server](./getting-started/visiting#2-plot-server) 
-with limited buildsite to choose, this is to prevent unfinished build laying around in our server and made it hard to organise the build team.
-
-You may also build a BuildTheEarth building by yourself in singleplayer world with [BuildTheEarth Modpack](../guide/modpack) installed but we DO NOT recommended this way as we cannnot review your build properly.
-</details>
+## 💬**How do I contact staff?**
+<details>
+<summary> Discord server</summary>
+Message the support bot in our Discord server.</details>
 
 <!-- FAQ TEMPLATE
 
 ## 💬<small>Question</small>
-<details><summary>Answer</summary>
+<details><summary>Answer</summary>4
 
 Detailed answer
 </details>
