@@ -63,6 +63,21 @@ module.exports =  {
                type: "doc",
                label: "Modpack commands",
                id: "building/basic/modpack-basics"
+              },
+            ],
+          },
+          { /* "Basic Building" Category */
+            type: 'category',
+            label: 'HDB Building',
+            link: {
+              type: "doc",
+              id: "building/hdb/hdb-intro"
+            },
+            items: [
+              {
+                type: "doc",
+                label: "HDB Intro",
+                id: "building/hdb/hdb-intro"
               }
             ],
           },
