@@ -29,11 +29,11 @@ const InfoBoxContents = {
             </CodeBlock>
             <CodeBlock className="language-js" 
                 title={<Translate id="home.infoBox.ip.bedrock" description="Bedrock label at homepage">Plotsystem</Translate>}>
-                  Java IP: 139.99.90.245:5000
+                  Java IP: asean.thatsnek.asia
                    <br/>
                   Bedrock IP: 139.99.90.245
                    <br/>
-                  Bedrock Port: 5000
+                  Bedrock Port: 25565
             </CodeBlock>
         </sub>
     </>,

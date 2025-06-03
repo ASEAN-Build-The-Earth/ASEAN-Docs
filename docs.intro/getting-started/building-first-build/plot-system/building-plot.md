@@ -21,20 +21,20 @@ In this page we'll guide you how you as a beginner can build your plot
 
 ## Basic Workflow
 ### 1. See your building outline
-This might be hard but you have to check how your building looks like vs in minecraft. 
+This might be hard but you have to check how your building looks like vs in Minecraft. 
 
 Because of the blocky-ness of minecraft,
-It is normal if the outline looks a bit off compared to the real life building. You may be able to reoutline it.
+It is normal if the outline looks a bit off compared to the real life building. You may be able to re-outline it.
 
 ```mdx-code-block
 <MinecraftWindow maxWidth="53rem"><Img src={Guide_0} aspect="1902 616" alt="guild_1_image" /></MinecraftWindow>
 ```
 
 ### 2. Build a rough building shell
-After you're happy with your building outline, pick a few blocks, it doesn't need to fit your building's color at first 
-then use those blocks to build a rough shell of your build covering every important point of your build.
+After you're happy with your building outline, pick a few blocks, it doesn't need to fit your building's color at first. 
+Then use those blocks to build a rough shell of your build covering every important point of your build.
 :::tip
-Some plots may have prebuilt shells so if you have a prebuilt shell you can skip this step.
+Some plots may have prebuilt shells so if you have a prebuilt shell, you can skip this step.
 :::
 
 ```mdx-code-block
@@ -46,7 +46,9 @@ Some plots may have prebuilt shells so if you have a prebuilt shell you can skip
 ### 3. Fill up your outlined shell
 Choose a block of your choice for building, it has to fit the building color but since minecraft has very few color choices especially with minecraft version 1.12.2. it's fine to choose a color that is close to what minecraft has.<br/>
 Then fill the outlined shell with blocks you choosed. 
-
+:::tip
+If you already installed BTE modpack, by pressing `g` there will be color block database popup for accurate color Hexcode
+:::
 ```mdx-code-block
 <MinecraftWindow maxWidth="53rem"><Img src={Guide_2} aspect="1920 1080" alt="guild_2_image" /></MinecraftWindow>
 ```
@@ -67,7 +69,7 @@ Due to privacy laws in many countries, we are not allowed to build interiors of 
 The final step is to polish your building<br/>
 
 :::info tip
-<details><summary>try checking this list if you've built everything already</summary>
+<details><summary>Try checking this list if you've built everything already</summary>
 
 - [x] Floor's material is correct 
 - [x] Tree and bushes

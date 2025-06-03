@@ -51,7 +51,7 @@ Remember to use TPLL
 ![distortion](@site/static/media/docs/builder-guide/dymaxion_distortion.PNG)
 Shows height adjustment after projection of a sphere (the earth) into a flat plane.
 
-Distortion in BTE only happens in the verical (y) axis. 
+Distortion in BTE only happens in the vertical (Y) axis. 
 
 Every ring in the picture above adds 0.1m to the distortion.
 

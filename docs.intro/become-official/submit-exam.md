@@ -3,12 +3,12 @@ title: Submitting your exam
 id: submit-exam
 ---
 Before submitting your exam, please check if your plot is ready to be reviewed.<br/>
-Try checking these things bellow.
+Try checking these things below.
 * Main buildings
-* Black blocks behind window
+* Black blocks behind windows
 * Street level details
 * Roads 
-* Street sidewalk
+* Street sidewalks
 
 ```mdx-code-block
 import Img from '@site/src/components/Img';
@@ -24,5 +24,5 @@ import GIF_Process from '@site/static/media/docs/intro/exam/building-process/pro
 
 <Text.Tab>If everything is ready, submit the plot with `/plot submit` and wait for a reviewer to check your exam plot.
 \n
-If you passed the exam, our staff will assign the minecraft and discord server role ([Official Builder](../getting-started/builder-system#official-builder) So make sure you are in our discord server) after this you can start building anywhere that you want in the [Master Server](../getting-started/visiting#master-server) this can be building your dream city or hometown in ASEAN.</Text.Tab>
+If you passed the exam, our staff will assign the Minecraft and Discord server role ([Official Builder](../getting-started/builder-system#official-builder) So, make sure you are in our Discord server) after this you can start building anywhere that you want in the [Master Server](../getting-started/visiting#master-server), this can be building your dream city or hometown in ASEAN.</Text.Tab>
 

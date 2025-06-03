@@ -96,15 +96,15 @@
     "description": "The topic in support page propaganda"
   },
   "support.propaganda.1.badge": {
-    "message": "main focus",
+    "message": "โฟกัสหลัก",
     "description": "The badge-like component below the First support quote"
   },
   "support.propaganda.1.title": {
-    "message": "Supports minecraft server quality and performance.",
+    "message": "รองรับคุณภาพและประสิทธิภาพของเซิร์ฟเวอร์ ไมน์คราฟ",
     "description": "First quote of 'Where will my money go?' topic"
   },
   "support.propaganda.1.description": {
-    "message": "The 90% of the funds would go to our Virtual Private Server (VPS) which hosts our Minecraft servers as well as Discord bots. By donating, you are keeping our Minecraft servers alive day by day.",
+    "message": "90% ของเงินทุนจะมอบให้กับ Virtual Private Server (VPS) ของเรา ซึ่งโฮสต์เซิร์ฟเวอร์ ไมน์คราฟ และบ็อต Discord ของเรา การบริจาคจะช่วยให้เซิร์ฟเวอร์ ไมน์คราฟ ของเราทำงานต่อไปได้ทุกวัน",
     "description": "Description of 'Supports minecraft server' from support page quote"
   },
   "support.propaganda.2.title": {
@@ -112,19 +112,19 @@
     "description": "Second quote of 'Where will my money go?' topic"
   },
   "support.propaganda.2.description": {
-    "message": "The 10% of the funds would be saved up and only be spent on the team’s investments of new systems or products or major accidents.",
+    "message": "อีก 10% จะถูกเก็บไว้และใช้จ่ายเฉพาะกับการลงทุนของทีมในระบบควบคุมหรือผลิตภัณฑ์ใหม่ หรือในกรณีเกิดอุบัติเหตุร้ายแรงเท่านั้น",
     "description": "Description of 'Supports our builder workflow' from support page quote"
   },
   "support.kofiBox.visitPageButton": {
-    "message": "Visit Donation Site",
+    "message": "สนับสนุนเรา",
     "description": "The visit kofi site button at the bottom of kofi widget"
   },
   "home.bannerButton.support.label": {
-    "message": "สนับสนุนเรา",
+    "message": "สร้างกับเรา",
     "description": "The big Start building button (please keep the text count very low to prevent newline)"
   },
   "home.bannerButton.support.labelOverlay": {
-    "message": "โดเนทใน kofi",
+    "message": "โดเนทผ่าน Ko-fi",
     "description": "The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)"
   },
   "home.bannerButton.getStart.label": {

@@ -26,10 +26,10 @@ You can submit the plot to our reviewers by using your companion's plot profile 
 <MinecraftWindow maxWidth="30rem"><Img src={GuideSubmit} aspect="600 482" alt="Guide Image"/></MinecraftWindow>
 ```
 
-The plot will be submitted and our reviewers will take a look at it within 24 hours and give feedback abd a score for your build.
+The plot will be submitted and our reviewers will take a look at it within 24 hours and give feedback and a score for your build.
 
 <details>
-<summary>My build is rejected <small>❔❔❔</small></summary> 
+<summary>My build just got rejected <small>❔❔❔</small></summary> 
 Don't worry, everyone makes mistakes. Go back to your plot and you'll see improvement messages from the reviewers to help you fix your building.
 Submit your plot again with your improvements and you'll may get suddenly get approved by our member!
 </details>

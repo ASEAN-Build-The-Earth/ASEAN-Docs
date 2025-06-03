@@ -11,12 +11,12 @@ After joining our server, We currently have two main servers which are available
 This is the main server where our Official Builders use to build the Earth.
 You can visit our build sites such as `Kuala Lumpur`, `Bangkok`, `Ho Chi Minh`, `Jakarta, Manila`, `Singapore`,... here.
 
-:::danger Bedrock Edition is not supported in the master server
-This is because of the coordinates being too big for bedrock clients to handle
+:::tip Bedrock Edition is supported in the master server
+After our latest update, we finally found a work around to support our Bedrock clients
 :::
 
-:::tip We support 1.20 Minecraft
-Since we support 1.20 Minecraft you can join on any version from 1.20.1 to 1.20.4 and you do not need the BTE Modpack
+:::tip We support 1.21 Minecraft
+Since we support 1.21 Minecraft, you can join on any version from 1.21.1 to 1.21.5 and you do not need the BTE Modpack
 :::
 
 
@@ -28,18 +28,26 @@ Since we support 1.20 Minecraft you can join on any version from 1.20.1 to 1.20.
 
 <br/>
 
+:::tip Look at the holograms
+By our holograms at the spawn, we have shown instructions, step by step information for which we included on the vertification by linking your Discord account to your Minecraft username
+:::
 ---
 
 ## 2. Plot Server
 Plot server is a server for newcomers to try out building in BTE
-:::tip Bedrock edition and most Java edition versions are supported in this server
 
+Type the command `/server plot` 
 
+:::tip Switch between servers
+By typing the command `/server plot` or `/server master`
+
+You will be switch into your designated server
 :::
+## For the server IPs
 
-Java IP: `139.99.90.245:5000`
+Java IP: `asean.thatsnek.asia`
 
 Bedrock IP: `139.99.90.245`
-Bedrock Port: `5000`
+Bedrock Port: `25565`
 
 ---

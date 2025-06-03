@@ -35,7 +35,7 @@ import guide_difficulty from "@site/static/media/docs/intro/plot-system/creating
 
 ```
 
-Switch to your companion in your inventory then <kbd>Right Click</kbd> or <kbd>/companion</kbd> to open your Plot system server panel.
+Selecting to your companion in your hotbar (aka. inventory) then <kbd>Right Click</kbd> or <kbd>/companion</kbd> to open your Plot system server panel.
 The server panel is basically your plot system hub and your builder profile, it is included with many things such as..
 - The main inventory grid displays the available build sites that you can build in
 - Down in the bottom right of the grid is your builder profile and builder utility, you can see your builder points and your on-going plots here
@@ -57,9 +57,9 @@ The server panel is basically your plot system hub and your builder profile, it 
 ```
 
 ## Choosing your plot 
-:::caution 
+:::tip Fixed
 
-Due to the fact this system is new, you can only choose the following build sites `Malaysia, Klang` and `Philippine, Davao City` for now, more build sites are coming soon!
+After improving our latest plot system, you can now choose the available build sites that we have set up! 
 
 :::
 
@@ -74,7 +74,7 @@ The system sets the default difficulty as automatic, you could accidentally have
 :::
 
 ## Create your plot!
-After you decide the buildsite and difficulty, simply press the buildsite icon and the system will auto generate you a plot to build in.
+After you decided the buildsite and difficulty, simply press the buildsite icon and the system will auto generate you a plot to build in.
 
 
 ```mdx-code-block
