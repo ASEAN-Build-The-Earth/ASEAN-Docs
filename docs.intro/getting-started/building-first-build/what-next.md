@@ -12,7 +12,7 @@ We suggest reading our document [Builder Guide](../../../guide/builder-guide) to
 
 :::info
 
-To rank up your builder role in ASEAN BTE, you'll have to pass our plot system's exam plot.
+To rank up your builder role in ASEAN BTE, you'll have to  complete 3-4 plots
 By passing it you'll gain access to our master server and build whatever you want to build!
 
 More info in [Becoming Official Builder](../../become-official) page
@@ -31,6 +31,3 @@ ask our staff member in our [discord server](../../get-started#discord) with the
 We're not the only team that is part of the Build the earth 1:1 project, we're building it all around the world!
 Join the [Official BTE](https://discord.gg/buildtheearth) discord to see every buildteam!
 
-
-## Joins our event and activity {#activities}
-In our discord server we have many activities together such as a weekly smp server and fun things to do in our voice chats!

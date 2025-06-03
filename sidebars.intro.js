@@ -90,48 +90,7 @@ module.exports = {
         id: "become-official"
       },
       items: [
-        {
-          type: "doc",
-          label: "Requirements",
-          id: "become-official/official-builder-req"
-        },
-        {
-          type: "doc",
-          label: "Exam Plot",
-          id: "become-official/exam-plot",
-        },
-        {
-          type: 'category',
-          label: 'Exam Plot Process',
-          collapsible: true,
-          collapsed: false,
-          link: {
-            type: "doc",
-            id: "become-official/exam-process",
-          },
-          items: [
-            {
-              type: "doc",
-              label: "World Edit",
-              id: "become-official/exam-process/world-edit"
-            },
-            {
-              type: "doc",
-              label: "Making Outline",
-              id: "become-official/exam-process/making-outline"
-            },
-            {
-              type: "doc",
-              label: "Building Process",
-              id: "become-official/exam-process/building-process",
-            },
-          ]
-        },
-        {
-          type: "doc",
-          label: "Submitting Exam",
-          id: "become-official/submit-exam",
-        }
+
       ]
     },
     {

@@ -16,6 +16,14 @@ import Text from '@site/src/components/TextDecoration';
 ## How to apply for official builder ?
 You are required to complete 3-4 plots on our plotsystem. Then you can message the support bot to apply for builder.
 
+Sure — here’s the corrected version:
+
+
+
+## How to Apply as a Bedrock User
+
+Once you've finished your plots and have been accepted and approved, you may request a build site from staff. We will then add it for you on the plot system to build. To start the build site application process, please message the support bot and ask how to do it.
+
 
 ```mdx-code-block
 import DocCardList from '@theme/DocCardList';
@@ -23,3 +31,4 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 <DocCardList items={useCurrentSidebarCategory().items}/>
 ```
+
