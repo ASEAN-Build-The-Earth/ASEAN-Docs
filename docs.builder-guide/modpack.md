@@ -6,16 +6,15 @@ id: modpack
 :::caution recommend
 Only use modpack for building in [Master Server](../intro/getting-started/visiting#1-master-server) as an [Official Builder](../intro/getting-started/builder-system) or building in singleplayer
 :::
-## Installing new modpack
-Import the file into your Curseforge App
+## Installing New Modpack
+Import the zip file into your Curseforge App.
 
-## Installing modpack 
-## Download Links
+## Download New Modpack Links
 - Curseforge: https://drive.google.com/file/d/1JPWXtUjANLcz8X-xQe7YIya21t61lEBU/view
 
 
 
-## Installing old modpack 
+## Installing Old Modpack 
 ```mdx-code-block
 import Video from '@site/src/components/Video';
 import MinecraftWindow from '@site/src/components/MinecraftWindow';
