@@ -2,13 +2,8 @@
 title: Submitting your plot
 id: submit-exam
 ---
-<<<<<<<< Updated upstream:docs.intro/become-official/archived-exam-plot/submit-exam.md
-Before submitting your exam, please check if your plot is ready to be reviewed.<br/>
-Try checking these things bellow.
-========
 Before submitting your plot, please check if your plot is ready to be reviewed.<br/>
 Try checking these things below.
->>>>>>>> Stashed changes:docs.intro/become-official/submit-exam.md
 * Main buildings
 * Black blocks behind window
 * Street level details
