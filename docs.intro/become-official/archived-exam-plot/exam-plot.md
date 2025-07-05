@@ -1,6 +1,5 @@
 ---
 title: Exam Plot
-title: General Builder Guide
 id: exam-plot
 ---
 
