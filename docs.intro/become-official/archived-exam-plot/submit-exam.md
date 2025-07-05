@@ -24,13 +24,9 @@ import GIF_Process from '@site/static/media/docs/intro/exam/building-process/pro
 
 <Text.Tab>If everything is ready, submit the plot with `/plot submit` and wait for a reviewer to check your plot.
 \n
-<<<<<<<< Updated upstream:docs.intro/become-official/archived-exam-plot/submit-exam.md
-If you passed the exam, our staff will assign the minecraft and discord server role ([Official Builder](../getting-started/builder-system#official-builder) So make sure you are in our discord server) after this you can start building anywhere that you want in the [Master Server](../getting-started/visiting#master-server) this can be building your dream city or hometown in ASEAN.</Text.Tab>
-========
 If you passed, our staff will assign the Minecraft and Discord server role ([Official Builder](../getting-started/builder-system#official-builder) So, make sure you are in our Discord server) after this you can start building anywhere that you want in the [Master Server](../getting-started/visiting#master-server), this can be building your dream city or hometown in ASEAN.</Text.Tab>
 
 :::tip update
 Some of the text may called Exam plot due to this was the Examination for Official Builders
 
->>>>>>>> Stashed changes:docs.intro/become-official/submit-exam.md
 
