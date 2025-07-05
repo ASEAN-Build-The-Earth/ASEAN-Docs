@@ -6,7 +6,7 @@ id: faq
 ## 💬**Does this server require a modpack?**
 <details>
 <summary>No modpacks required - Vanilla Minecraft only!</summary>
-For all our servers, you can join using any Minecraft vanilla modpack on 1.21.X. There’s also an optional modpack scheduled for release later in 2025.</details>
+For all our servers, you can join using any Minecraft vanilla modpack on 1.21.X. There’s also an optional modpack.</details>
 
 ## 💬**Does Bedrock support exist?**
 <details>
