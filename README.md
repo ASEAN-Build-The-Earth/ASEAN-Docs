@@ -29,7 +29,7 @@ Before installation, please make sure you have already installed following tools
 ### Installation Steps
 
 1. Fork the project
-2. Clone the project
+2. Clone the project+
 3. Navigate to the project directory `cd ASEAN-Docs`
 4. Install dependencies with `npm install`
 5. Run `npm start`

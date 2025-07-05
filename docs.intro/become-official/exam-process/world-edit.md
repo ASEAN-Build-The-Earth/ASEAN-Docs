@@ -15,7 +15,7 @@ import MP4_CuttingThings from '@site/static/media/docs/intro/exam/world-edit/exa
 ```
 
 An easy to use tool to edit Minecraft buildings/worlds without having to places blocks one by one.
-In this case we will be using it to clear up the Exam plot terrain and create outlines
+In this case, we will be using it to clear up the plot terrain and create outlines
 
 :::tip
 To get better understanding of World Edit, consider reading their [World Edit documentation](https://worldedit.enginehub.org/en/latest/quickstart/).<br/>
@@ -58,7 +58,7 @@ To clear or flatten uneven terrain, we will use `//cut` command to clear everyth
 > 4. Repeat untill you cleared up the whole island.
 >
 > :::tip note
-> There is no fixed y-level in this exam plot, flattern the plot up any style you prefer.
+> There is no fixed y-level in this plot, flattern the plot up any style you prefer.
 > :::
 ```mdx-code-block
 <MinecraftWindow useDropdown="true" maxWidth="600px">
