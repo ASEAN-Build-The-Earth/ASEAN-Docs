@@ -80,7 +80,7 @@ module.exports = {
       ],
     },
     /* "Becoming Official Builder" Category */
-    {
+    /*{
       type: 'category',
       label: 'Become Official Builder',
       collapsible: true,
@@ -92,7 +92,7 @@ module.exports = {
       items: [
 
       ]
-    },
+    },*/
     {
       label: "F.A.Q",
       type: "doc",
