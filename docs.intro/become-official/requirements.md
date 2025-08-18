@@ -1,5 +1,5 @@
 ---
-title: Requirements to become official builder
+title: Requirements to become Official builder
 id: official-builder-req
 ---
 ```mdx-code-block

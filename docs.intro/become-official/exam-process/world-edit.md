@@ -15,11 +15,11 @@ import MP4_CuttingThings from '@site/static/media/docs/intro/exam/world-edit/exa
 ```
 
 An easy to use tool to edit Minecraft buildings/worlds without having to places blocks one by one.
-In this case we will be using it to clear up the Exam plot terrain and create outlines
+In this case, we will be using it to clear up the Exam plot terrain and create outlines
 
 :::tip
 To get better understanding of World Edit, consider reading their [World Edit documentation](https://worldedit.enginehub.org/en/latest/quickstart/).<br/>
-You can always ask people in our discord if you get stuck on any of the topics.
+You can always ask people in our [Discord](https://discord.com/invite/DNwnKmkQpw) if you get stuck on any of the topics.
 :::
 :::tip
 Alternatively, you can check out our Builder Guide.
@@ -35,7 +35,7 @@ you can get it by typing `//wand` and a wooden axe will pop in your inventory.<b
 ```
 ## Selection
 A selection is an area selected by your [wand](./world-edit#wand), take a look at the image below, by selecting 2 positions
-you creat a 3d cuboid selection. You can then use world edit's commands and the result will be within the selected selection
+you create a 3D cuboid selection. You can then use world edit's commands and the result will be within the selected selection
 ```mdx-code-block
 <MinecraftWindow useDropdown="true" maxWidth="800px">
     <Video width="1920">

@@ -13,8 +13,8 @@ import GIF_Fill from '@site/static/media/docs/intro/exam/building-process/fill.g
 In this page, we will get you some tips to finish your exam plot faster.
 
 ## Outline
-Use the tpll command from the previous page to build your outline for the exam plot's buildings.
-After you finished  building the outlines for the buildings and roads you can start to build.
+Use the tpll command from the previous page to build your outline for the exam plot's buildings.<br/>
+After you finished, building the outlines for the buildings and roads you can start to build.
 
 
 ## Building
@@ -25,15 +25,15 @@ Please go back to read our [Plot System Guide](../../getting-started/building-fi
 
 <details>
 <summary>
-    Building in exam plot will not have 3D
+    Building in exam plot will not have 3D shell
 </summary>
 
 In ASEAN, there are only 2 - 3 cities that have full 3D scanned buildings examples of these cities are `Malaysia, Klang` and `Philippine, Davao city`.<br/>
-Since the exam plot does not have 3D Buildings to use as reference you'll have to estimate the building height, 
-length etc with only satellite and street view image.
+Since the exam plot does not have 3D Buildings to use as reference, you'll have to estimate the building height, 
+length, etc.. with only satellite and street view image.
 
-Keep in mind that you can use street view to estimate the building height this can be done by comparing humans/cars to the building.
-In most cases a floor of a building is usually 3 blocks high (3 Meters).
+Keep in mind, you can use street view to estimate the building height this can be done by comparing humans/cars to the building.
+In most cases, a floor of a building is usually 3 blocks high (3 Meters).
 ```mdx-code-block
 <Img src={IMG_TypicalBuilding} maxWidth="600px" aspect="1920 1039" className="item shadow--md" style={{borderRadius:"6px"}} alt="Typical Building in Exam Plot" />
 ```

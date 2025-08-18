@@ -18,22 +18,22 @@ Continue to the next page to get started on it.
 
 <!-- Main Topic -->
 ## What is Plot System ?
-<Text.Tab/>Plot system is a BuildTheEarth Building system made for newcomer and beginner builders to try out building.<br/>
+<Text.Tab/>Plot system is a BuildTheEarth Building system made for newcomer and beginner builders alike to try out building.<br/>
 Builders entering the server will have an option to build on any build site created by official builders.<br/><br/>
 <details><summary>What is a Build Site ?</summary>
 
-Build site is an on-going team project in every country we're building on(ASEAN).<br/>
-The plot's buildsite is originally outlined in the [Master server](../visiting#1-master-server) and submitted to [Plot server](../visiting#2-plot-server) for everyone to build on.
+Build site is an on-going team project in every country we're building on (ASEAN).<br/>
+The plot's buildsite is originally outlined in the [Master server](../visiting#1-master-server) and submitted to [Plot server](../visiting#2-plot-server) for everyone to try and build on.
 
 :::info our buildsite at Malaysia, Klang
-<dt><sup>This buildsite is registered in the plot system too!</sup></dt>
+<dt><sup>This buildsite is registered in the plot system!</sup></dt>
 <Img src={BuildsiteImage} aspect="848 477" className="item shadow--md" style={{borderRadius:"6px"}} alt="Welsome To ASEAN BTE" />
 :::
 </details>
 
 ## Overview
 <Text.Tab>Each plot given to builder is a floating island looking land with an outline of the main building in the plot.
-The outline is a rough representation of the building's shell by [Google Map](https://www.google.com/maps/) satellite image for builder to build on top of it.
+The outline is a rough representation of the building's shell by [Google Map](https://www.google.com/maps/) satelite image for builder to build on top of it.
 </Text.Tab>
 
 :::tip Before you go to next page

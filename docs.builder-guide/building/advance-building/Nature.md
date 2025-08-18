@@ -8,10 +8,10 @@ Detailing is very important here.
 ![tree](@site/static/media/docs/builder-guide/MinecraftTree.png)
 ## Trees
 Making trees by hand is not an easy process. You need to know:
-  - the correct shape of the tree
-  - correct height
-  - correct colors
-  - correct size
+  - The correct shape of the tree
+  - Correct height
+  - Correct colors
+  - Correct size
 
 :::tip
 Refer to buildings next to it for the correct position. 
@@ -41,6 +41,6 @@ Make sure the terrain block matches to the real life color the most.
 :::
 
 ## Water
-:::tip
-
+:::tip TIP not really
+D'eau 
 :::

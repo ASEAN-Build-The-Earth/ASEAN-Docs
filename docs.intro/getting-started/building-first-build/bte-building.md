@@ -31,12 +31,17 @@ Buildings have to be accurate and aligned properly as not all buildings in the w
 
 ```
 
+:::tip Reason for the oddly shape
+Due to most maps, they use some kind of a distortion to show the whole globe, even though the globe is a geoid. but for our project, we need a near 1 to 1 scale so we chosen a map that fix the relative distance and size but our map is now diagonal
+
+:::
+
 ## Every build looks smaller than you think
-Many newcomers think 1:1 scale is relative to your minecraft character and misunderstand it.
+Many newcomers think 1:1 scale is relative to your own minecraft character and misunderstood.
 
-For example if you built a normal house with 4 blocks tall roof it means you have built a building with a 4 meter tall roof and it makes it look out of place.
+For example, if you built a normal house with 4 blocks tall roof it means you have built a building with a 4 meter tall roof and it makes it look out of place.
 
-A typical building in our project only has 2 - 3 blocks height as you can see in the example below.
+A typical building in our project only has 2 - 3 blocks height, as you can see in the example below:
 
 <!-- good bad card -->
 ```mdx-code-block
@@ -74,7 +79,7 @@ A typical building in our project only has 2 - 3 blocks height as you can see in
 
 ```
 
-## Roof is not 45 degrees steep!
+## The Roof is not 45 degrees steep!
 <!-- custom document card -->
 ```mdx-code-block
 
@@ -92,8 +97,8 @@ A typical building in our project only has 2 - 3 blocks height as you can see in
         </div>
         <div class="card__body" style={{padding:"0 var(--ifm-card-horizontal-spacing) var(--ifm-card-vertical-spacing) "}}>
             <p>
-                If you meassure, the roof is not angled at 45 degrees. The<br/>
-                It turns out we have many new builders that build their roofs with  a 45 degree block or stair that makes the building seems unnatural.
+                If you measure, the roof is not angled at 45 degrees. The<br/>
+                It turns out we have many new builders that build their roofs with  a 45 degree block or stairs that makes the building seems unnatural.
             </p>
         </div>
         <div class="container">
