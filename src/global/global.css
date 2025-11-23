@@ -1,0 +1,9 @@
+/**global.css
+ * This file contains custom color patellate and css style for docusaurus website
+ * This file is pinned in root element so using any var from this file will be 100% safe
+ * the style is seperated in chunks by ./styles folder
+ */
+@import url(./styles/kofi_overlay.css);
+@import url(./styles/palette.css);
+@import url(./styles/custom.css);
+@import url(./styles/locale.css);

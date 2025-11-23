@@ -1,0 +1,139 @@
+.hero_banner {
+  padding: 8rem 0 16rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #646464;
+}
+.header_container { z-index: 3; }
+.banner_container {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  position: absolute;
+  pointer-events: none;
+}
+
+.banner_loader {
+  background-color: #646464;
+  background-size: cover;
+  background-position: 50% 50%;
+  filter: blur(20px) grayscale(100%);
+  -webkit-filter: blur(20px)  grayscale(100%); /* Safari 6.0 - 9.0 */
+}
+.banner_img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  pointer-events: none;
+  animation: 1s linear 0s 1 first_loaded;
+}
+
+@keyframes first_loaded {
+  0% { filter: blur(20px) grayscale(100%); -webkit-filter: blur(20px)  grayscale(100%); }
+  100% { filter: unset; -webkit-filter: unset; }
+}
+
+
+.intro_button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(15, 15, 15, 0.5);
+  transition: .2s;
+}
+
+@media screen and (max-width: 997px) {
+  .hero_banner {
+    padding: 2rem 0 30rem 0;
+  }
+}
+@media screen and (max-width: 607px) {
+  .hero_banner {
+    padding: 2rem 0 25rem 0;
+  }
+}
+@media (max-width: 996px) {
+  /* swap get-started button to top in mobile mode*/
+  .reverse_row {
+      flex-direction: column-reverse;
+  }
+}
+.intro_button_contents {
+  display: flex;
+  align-items: center;
+  padding: 0.65rem 0;
+  width: 100%;
+  transition: .2s;
+}
+.shadowed {
+  text-shadow: 4px 6px 50px black;
+}
+.banner_title {
+  font-size: 5rem !important;
+  transition: .2s;
+  color: white;
+}
+.banner_description {
+  color: white;
+  transition: .2s;
+  font-weight: 500;
+}
+
+/* banner darkender overlay for themes */
+.banner_container::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  transition: .2s;
+}
+html[data-theme='light'] .banner_container::before {
+  background: rgba(255, 255, 255, 0.1)
+}
+html[data-theme='light'] .intro_button {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+
+#info_section_icon {
+  transition: 0.2s;
+  border-bottom: #495157 solid 2px; 
+}
+html[data-theme='light'] #info_section_icon {
+  border-bottom-color: gainsboro;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+html[data-theme='light'] .button_container {
+  border-color: #cbd2d6;
+  box-shadow: 3px 4px 7px #e2e2e2;
+  background-color: rgb(226, 226, 226);
+}
+
+html[data-theme='light'] .button_overlay_text {
+  text-shadow: 2px 2px 4px #898989;
+}
+
+
+@media print {
+  .intro_button_contents {
+    display: none;
+  }
+}

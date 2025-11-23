@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+
+/* place the pair on center by grid */
+.place_center 
+{
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+@media (max-width: 996px) {
+    .reverse_column {
+      flex-direction: column-reverse;
+    }
+}
+
+.pair_container {
+    display: contents;
+    text-align: center;
+}

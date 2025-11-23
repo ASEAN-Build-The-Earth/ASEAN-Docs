@@ -1,0 +1,212 @@
+.info_box_container {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 1rem;
+    pointer-events: none;
+}
+#box_label {
+    justify-content: left;
+    display: flex;
+    font-style: oblique;
+    font-weight: bold;
+}
+#req_box_quote {
+    font-size: small;
+}
+#req_box_quote p{
+    margin-bottom: 0.5rem;
+}
+#box_styles {
+    border-color: #495157;
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+}
+#req_box_caution {
+    font-weight: 400;
+    font-size: medium;
+}
+html[data-theme='light'] #box_styles {
+    border-color: #cbd2d6;
+    box-shadow: inset -1px -2px 3px 1px #e2e2e2;
+}
+.ip_div { display: inline-block; }
+.ip_box, .req_box { display: flex; overflow: hidden; pointer-events: all; background-color: var(--ifm-background-color);}
+
+/* Wide Desktop and Tablet Screen */
+@media screen and (min-width: 1440px),  screen and (min-width: 768px) and (max-width: 996px){
+    .req_div { width: 50%; float: right; padding-left: 20px; padding-right: 20px;}
+    .ip_div { width: 50%; float: left; padding-right: 20px;}
+    .ip_box { float: right; }
+    .req_box { float: left; width: 100%; }
+}
+/* Center small width Desktop and Mobile */
+@media screen and (min-width: 997px) and (max-width: 1439px), screen and (min-width: 551px) and (max-width: 767px) {
+    .ip_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .req_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        display: inline-flex
+    }
+    
+}
+/* very smol width */
+@media screen and (max-width: 550px) {
+    .req_box { 
+        width: 100%; 
+        justify-content: center;
+    }
+}
+
+.svg_arrow {
+    width: 38px;
+    height: 46px;
+    transform: scale(-1);
+}
+
+#slider_button_svg {
+    transform: scale(0.5) translateX(-50%) translateY(-50%);
+    fill: #5c5c5d;
+    width: 110px;
+}
+html[data-theme='light'] #slider_button_svg {
+    fill: #979797;
+}
+
+.slider_button_container { display: none; }
+/* special animation for tablet / medium-width screen user */
+@media screen and (min-width: 997px) and (max-width: 1439px) {
+    .info_box_container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slider_button_container {
+        display: flex;
+        position: absolute;
+        left: 55.3%;
+        padding-left: 4%;
+        transform: translateY(7rem);
+        color: var(--ifm-tabs-color);
+        font-weight: var(--ifm-font-weight-bold);
+        margin-bottom: 0;
+        overflow: hidden;
+        margin: 0 0 1rem;
+        pointer-events: none;
+    }
+    .slider_button {
+        padding: 0.5rem;
+        border-bottom: unset;
+        border-radius: .5rem 0 0 .5rem;
+        background-color: var(--ifm-card-background-color);
+        pointer-events: all;
+        cursor: pointer;
+        border-right: 2rem solid var(--ifm-card-background-color);
+    }
+    /* button slider animation life cycle */
+    #slider_button_2[clicked_state="0 0"] {
+        transform: translateX(-100%);
+        display: none;
+    }
+    #slider_button_1[clicked_state="1 0"] {
+        pointer-events: none;
+        animation: 1s ease-in-out 0s 1 slider_button_lerpout;
+    }
+    #slider_button_2[clicked_state="1 0"] {
+        display: unset;
+        transform: translateX(-100%);
+        pointer-events: none;
+        animation: 1s ease-in-out 0s 1 slider_button_right_lerpin;
+    }
+    #slider_button_1[clicked_state="1 1"] {
+        display: none;
+    }
+    #slider_button_2[clicked_state="2 0"] {
+        pointer-events: none;
+        animation: 1s ease-in-out 0s 1 slider_button_right_lerpout;
+    }
+    #slider_button_1[clicked_state="2 0"] 
+    {
+        pointer-events: none;
+        animation: 1s ease-in-out 0s 1 slider_button_lerpin;
+    }
+
+    @keyframes slider_button_lerpout{
+        0% { transform: translateX(0%); opacity: 1; border-radius: 0.5rem; border-right: unset; }
+        100% { transform: translateX(-100%); opacity: 0; border-radius: 0.5rem; border-right: unset; }
+    }
+    @keyframes slider_button_right_lerpout{
+        0% { transform: translateX(-100%); opacity: 1; border-radius: 0.5rem; border-right: unset; }
+        100% { transform: translateX(-200%); opacity: 0; border-radius: 0.5rem; border-right: unset; }
+    }
+    @keyframes slider_button_lerpin{
+        0% { transform: translateX(100%); opacity: 0; border-radius: 0.5rem; border-right: unset; }
+        100% { transform: translateX(0%); opacity: 1; border-radius: 0.5rem; border-right: unset; }
+    }
+    @keyframes slider_button_right_lerpin{
+        0% { transform: translateX(0%); opacity: 0; border-radius: 0.5rem; border-right: unset; }
+        100% { transform: translateX(-100%); opacity: 1; border-radius: 0.5rem; border-right: unset; }
+    }
+
+    /* the actual info boxes animation life cycle */
+    .ip_div[clicked_state="0 0"] {
+        position: absolute;
+        pointer-events: none;
+        display: none;
+    }
+    .req_box_anim[clicked_state="1 0"] {
+        pointer-events: none;
+        animation: 1s ease-in-out 0s 1 slider_req_lerpout;
+    }
+    .ip_box_anim[clicked_state="1 0"] {
+        pointer-events: none;
+        animation: 1s ease-in-out 0s 1 slider_ip_lerpin;
+    }
+    .req_div[clicked_state="1 1"] {
+        display: none;
+    }
+    .ip_box_anim[clicked_state="2 0"] {
+        pointer-events: none;
+        animation: 1s ease-in-out 0s 1 slider_ip_lerpout;
+    }
+    .req_box_anim[clicked_state="2 0"] {
+        pointer-events: none;
+        animation: 1s ease-in-out 0s 1 slider_req_lerpin;
+    }
+    .req_div[clicked_state="2 0"] {
+        animation: 1s ease-in-out 0s 1 set_absolute;
+    }
+    .ip_div[clicked_state="1 0"] {
+        animation: 1s ease-in-out 0s 1 set_absolute;
+    }
+
+    @keyframes set_absolute{
+        0% { position: absolute; top: 0; width: 100%; }
+        100% { position: absolute; top: 0; width: 100%; }
+    }
+
+    @keyframes slider_req_lerpin{
+        0% { transform: translateX(100%); opacity: 0; }
+        100% { transform: translateX(0%); opacity: 1; }
+    }
+    @keyframes slider_ip_lerpout{
+        0% { transform: translateX(0%); opacity: 1; }
+        60% {  opacity: 0; }
+        100% { transform: translateX(-50%); opacity: 0; }
+    }
+    @keyframes slider_req_lerpout{
+        0% { transform: translateX(0%); opacity: 1; }
+        100% { transform: translateX(-60%); opacity: 0; }
+    }
+    @keyframes slider_ip_lerpin{
+        0% { transform: translateX(100%); opacity: 0; }
+        100% { transform: translateX(0%); opacity: 1; }
+    }
+}

@@ -1,0 +1,81 @@
+:root {
+  --ifm-code-font-size: 95%; 
+  /* Docusaurus Color Palette */
+/* ASEAN BTE Palette*/
+  --ifm-color-primary: #3c9c16;
+  --ifm-color-primary-dark: #368c14;
+  --ifm-color-primary-darker: #338513;
+  --ifm-color-primary-darkest: #2a6d0f;
+  --ifm-color-primary-light: #42ac18;
+  --ifm-color-primary-lighter: #45b319;
+  --ifm-color-primary-lightest: #4ecb1d;
+
+  --ifm-color-info: #83a249;
+  --ifm-color-info-dark: #769242;
+  --ifm-color-info-darker: #6f8a3e;
+  --ifm-color-info-darkest: #5c7133;
+  --ifm-color-info-light: #90b152;
+  --ifm-color-info-lighter: #95b55a;
+  --ifm-color-info-lightest: #a4bf72;
+  --ifm-color-info-contrast-background: #edf0e8;
+}
+[data-theme='dark'] {
+  --ifm-color-primary-lightest: #ffeccb;
+  --ifm-color-primary-lighter: #ffd896;
+  --ifm-color-primary-light: #ffd284;
+  --ifm-color-primary: #ffc561;
+  --ifm-color-primary-dark: #ffb83e;
+  --ifm-color-primary-darker: #ffb22c;
+  --ifm-color-primary-darkest: #f69c00;
+
+  --ifm-color-info: #566c2d;
+  --ifm-color-info-dark: #4d6129;
+  --ifm-color-info-darker: #495c26;
+  --ifm-color-info-darkest: #3c4c20;
+  --ifm-color-info-light: #5f7732;
+  --ifm-color-info-lighter: #637c34;
+  --ifm-color-info-lightest: #708c3b;
+}
+
+/*this is the case where foldout and info have the same colour*/
+.alert--info * .alert--info {
+  --ifm-color-info-contrast-background: #e3e6de;
+}
+html[data-theme='dark'] .alert--info * .alert--info {
+  --ifm-color-info-contrast-background: #303a1d;
+}
+html[data-theme='dark'] { 
+  --ifm-color-info-contrast-background: #283018;
+}
+.alert a { /* hyperlink's underline on foldout and info style */
+  text-decoration-color: #1fc25d;
+  color: #4fb925;
+}
+[data-theme='light'] .navbar{
+  --ifm-navbar-background-color: #fcfcfc;
+}
+[data-theme='light'] {
+--ifm-card-background-color: rgb(249 249 249);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero--primary {
+  --ifm-hero-text-color: black !important;
+}
+html[data-theme='dark'] .hero--primary {
+  --ifm-hero-text-color: white !important;
+}
+
+/* DEFAULT PATELLATE
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: rgb(33, 175, 144);
+  --ifm-color-primary-darker: rgb(31, 165, 136);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(70, 203, 174);
+  --ifm-color-primary-lighter: rgb(102, 212, 189);
+  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-code-font-size: 95%; 
+*/

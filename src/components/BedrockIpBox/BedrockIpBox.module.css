@@ -1,0 +1,11 @@
+.ip_box { 
+    display: inline-block;
+    width: 45%;
+    height: 7rem;
+    padding: 5px;
+}
+@media screen and (min-width: 997px) and (max-width: 1400px), screen and (max-width: 441px) {
+   .ip_box {
+       width: 100%;
+    } 
+}

@@ -1,0 +1,58 @@
+/**Kofi widget override
+ * this will snap the buttom to site footer
+ */
+.floatingchat-container-wrap {
+    position: absolute !important;
+    top: unset !important;
+    bottom: unset !important;
+    transform: translateY(-120px) !important;
+}
+.floating-chat-kofi-popup-iframe {
+    position: absolute !important;
+    bottom: unset !important;
+    transform: scale(1) translateY(-800px) !important;
+} 
+.floatingchat-container-wrap-mobi {
+    position: absolute !important;
+    top: unset !important;
+    bottom: unset !important;
+    transform: translateY(-120px) !important;
+}
+.floating-chat-kofi-popup-iframe-mobi {
+    position: absolute !important;
+    bottom: unset !important;
+    transform: scale(1) translateY(-800px) !important;
+}
+@media screen and (min-width: 1791px) { 
+    .floatingchat-container-wrap { transform: translateY(-120px) !important; margin-left: 12.5vw; } 
+    .floating-chat-kofi-popup-iframe { transform: scale(1) translateY(-800px) translateX(65px) !important; }
+    .floatingchat-container-wrap-mobi { transform: translateY(-120px) !important; margin-left: 12.5vw; } 
+    .floating-chat-kofi-popup-iframe-mobi { transform: scale(1) translateY(-800px) translateX(65px) !important; }
+}
+@media screen and (min-width: 1671px) and (max-width: 1790px) { 
+    .floatingchat-container-wrap { margin-left: 10vw; } 
+    .floatingchat-container-wrap-mobi { margin-left: 10vw; } 
+}
+@media screen and (min-width: 1290px) and (max-width: 1670px) { 
+    .floatingchat-container-wrap { margin-left: 5vw; } 
+    .floatingchat-container-wrap-mobi { margin-left: 5vw; } 
+}
+@media screen and (min-width: 997px) and (max-width: 1289px){
+    .floatingchat-container-wrap { transform: translateY(-123px) !important; }
+    .floating-chat-kofi-popup-iframe { transform: scale(1) translateY(-820px) !important; }
+    .floatingchat-container-wrap-mobi { transform: translateY(-123px) !important; }
+    .floating-chat-kofi-popup-iframe-mobi { transform: scale(1) translateY(-820px) !important; }
+}
+@media screen and (max-width: 996px) {
+    .floatingchat-container-wrap { transform: translateY(-140px) !important; }
+    .floating-chat-kofi-popup-iframe { transform: scale(1) translateY(-820px) !important; }
+    .floatingchat-container-wrap-mobi { transform: translateY(-135px) !important; }
+    .floating-chat-kofi-popup-iframe-mobi { transform: scale(1) translateY(-830px) !important; }
+}
+
+@media print {
+    .floatingchat-container-wrap { display: none; }
+    .floating-chat-kofi-popup-iframe { display: none; }
+    .floatingchat-container-wrap-mobi { display: none; }
+    .floating-chat-kofi-popup-iframe-mobi { display: none; }
+}

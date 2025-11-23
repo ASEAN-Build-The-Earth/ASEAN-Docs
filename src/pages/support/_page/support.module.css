@@ -1,0 +1,31 @@
+.propaganda_msg {
+    font-weight: 700;
+    line-height: 130%;
+}
+
+#propaganda_quote {
+    display: inline-block;
+}
+#quote_container {
+    margin: 0;
+}
+#quote_label {
+    margin-bottom: 1rem;
+    line-height: 130%;
+    font-weight: 700;
+}
+#quote_description {
+    line-height: 130%;
+    font-size: small;
+    margin: 0;
+}
+
+#badge {
+    color: rgb(51, 70, 9);
+}
+
+@media screen and (min-width: 997px) and (max-width: 1360px) {
+   .quote_row {
+    --ifm-col-width: 100% !important;
+    } 
+}

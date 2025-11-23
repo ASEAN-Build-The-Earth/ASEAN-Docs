@@ -1,0 +1,86 @@
+.invite_button {
+    background-color: #5865F2; /* Discord's old blurplue */
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+#scaled_element {
+    pointer-events: all;
+}
+.cover_table {
+    display: table-caption;
+    background-color: #23272a;
+    border-radius: 4px;
+}
+
+.invite_button:hover {
+    background-color: #4b57d6;
+    color: #ffb22c;
+}
+.invite_table { 
+    padding: 0px;
+    background-color: #5865F2;
+    border-radius: 4px;
+    border-color: #23272a;
+    transition: 0.3s; 
+}
+.invite_table:hover {
+    background-color: #4b57d6;
+}
+
+/*#region widget animation - heavily inspired by [https://codepen.io/Syera/pen/wvBZrBr] thanks*/
+    @keyframes widgetIn {
+        0% { height:70px; }
+        100% { height:500px; }
+    }
+    @keyframes widgetOut {
+        100% { height:70px; }
+        0% { height:500px; }
+    }
+    .discord_widget[widget_in="1"] {
+        height:500px;
+        animation-name: widgetIn;
+        animation-duration: 2s;
+        animation-play-state: running;
+    }
+    .discord_widget[widget_in="2"] {
+        height:70px;
+        animation-name: widgetOut;
+        animation-duration: 2s;
+        animation-play-state: running;
+    }
+    .discord_widget {
+        /* default height when loading site first time */
+        height:70px;
+    }  
+/*#endregion widget animation*/
+
+/* add some cool shadow for light themer */
+html[data-theme='light'] .cover_table {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #c7c7c7;
+}
+html[data-theme='light'] .invite_table {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-color: #6d6d6d;
+}
+
+
+/* Incase there's actually <350px width screen */
+@media screen and (max-width: 350px) {
+    #wrap {
+        transform: translateX(-30px);
+    }
+        
+    .cover_table {
+        transform: scale(0.8);
+    }
+} 

@@ -1,0 +1,47 @@
+/* https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
+#wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+    
+  #scaled_frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+   
+  /* Tablet */
+  @media screen and (min-width: 768px) and (max-width: 996px) {
+      #scaled_frame {
+        -webkit-transform: scale(0.8);
+        -webkit-transform-origin: 0 0;
+                transform: scale(0.8); /* to fix the "Also define the standard property 'transform' for compatibility" warning*/
+                transform-origin: 0 0;
+        width: 120%;
+        height: 120%;
+      }
+      #wrap {
+        padding-top: 75%; 
+      }
+  }
+  /* Mobile */
+  @media screen and (max-width: 767px) {
+    #scaled_frame {
+      -webkit-transform: scale(0.75);
+      -webkit-transform-origin:  0 0;
+              transform: scale(0.75);
+              transform-origin:  0 0;
+      width: 125%;
+      height: 125%;
+    }
+    #wrap {
+      padding-top: 100%; /* 1:1 Aspect Ratio (Rectangle) */
+    }
+  }

@@ -1,0 +1,29 @@
+.docusaurus-highlight-code-line {
+    background-color: rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
+}
+.footer__copyright {
+    margin-top: 2rem;
+    opacity: 0.5;
+    font-style: oblique;
+    font-size:  small;
+}
+
+/**
+ * Support and respect for whoever prefer their display animation to be reduced
+ * src: [https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion]
+ * ref: [https://web.dev/prefers-reduced-motion/#(bonus)-forcing-reduced-motion-on-all-websites]
+ */
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto i !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+    }
+}

@@ -1,0 +1,193 @@
+/**
+ * force color to always be colored in mobile mode
+ * no animation will apply since mobile can't "hover" to element
+ */
+@media (hover: none) and (pointer: coarse) {
+    #reddit_logo_label { color: #ff4300 !important; font-weight: bold !important;  }
+    #reddit_logo_background { background-color: #ffffff !important; }
+    #twitter_logo_label { color: #1d9bf0 !important; font-weight: bold !important;  }
+    html[data-theme="dark"] #twitter_logo_pointer:hover #twitter_logo { background-color: #ffffff !important; }
+    html[data-theme="light"] #twitter_logo_pointer:hover #twitter_logo{ background-color: #f0f0f0 !important;  }
+    #instagram_logo_label { color: #d6249f !important; font-weight: bold !important;}
+    #youtube_logo_label { color: #ff0000 !important; font-weight: bold !important;  }
+    #youtube_logo { fill: #ff0000 !important; }
+    #youtube_logo_background { background-color: #ffffff !important; }
+    html[data-theme="dark"] #reddit_logo_pointer:hover #reddit_logo { background-color: #ffffff !important; }
+    html[data-theme="light"] #reddit_logo_pointer:hover #reddit_logo { background-color: #f0f0f0 !important;  }
+    #reddit_logo { fill: #ff4300 !important; }
+    #twitter_logo { fill: #1d9bf0 !important; }
+    #instagram_logo_pointer:hover #instagram_logo { fill: white !important; }
+}
+
+  
+.social_media_column {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#reddit_logo_label { font-size: small; color: var(--ifm-color-emphasis-300); }
+#reddit_logo_pointer:hover  #reddit_logo_label{ color: #ff4300; font-weight: bold; }
+#twitter_logo_label { font-size: small; color: var(--ifm-color-emphasis-300); }
+#twitter_logo_pointer:hover #twitter_logo_label { color: #1d9bf0; font-weight: bold; }
+#instagram_logo_label { font-size: small; color: var(--ifm-color-emphasis-300); }
+#instagram_logo_pointer:hover #instagram_logo_label { color: #d6249f; font-weight: bold; }
+#youtube_logo_label { font-size: small; color: var(--ifm-color-emphasis-300); }
+#youtube_logo_pointer:hover #youtube_logo_label { color: #ff0000; font-weight: bold; }
+
+.social_media_logo {
+    width: 4.9rem;
+    display: inline-block;
+    position: relative;
+    margin: 0.69vw;
+    transition: .2s;
+}
+@media screen and (min-width: 333px) and (max-width: 512px) {
+    .social_media_logo {
+        width: 3.9rem;
+    }
+}
+@media screen and (max-width: 332px) {
+    .social_media_logo {
+        width: 5.3rem;
+    }
+} 
+#reddit_logo {
+    fill: var(--ifm-color-emphasis-300);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    transition: .2s;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+#reddit_logo_background {
+    position: absolute;
+    width: 100%;
+    padding-top: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .2s;
+    background-color: var(--ifm-card-background-color);
+    transform-origin: center;
+    transform: scale(0.7);
+    border-radius: 100%;
+}
+#reddit_logo_div {
+    display: inherit;
+    width: 100%;
+    height: 100%;
+    padding-top: 100%;
+    border-radius: 1.1rem;
+    background-color: var(--ifm-card-background-color);
+    transition: .2s;
+}
+#reddit_logo_pointer:hover #reddit_logo {
+    fill: #ff4300;
+}
+#reddit_logo_pointer:hover #reddit_logo_background {
+    background-color: #ffffff;
+}
+
+#twitter_logo {
+    background-color: var(--ifm-card-background-color); 
+    fill: var(--ifm-color-emphasis-300);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    transition: .2s;
+    width: 100%;
+}
+#twitter_logo_pointer:hover #twitter_logo {
+    fill: #1d9bf0;
+}
+
+#instagram_logo {
+    background-color: var(--ifm-card-background-color); 
+    border-radius: 1rem;
+    padding: 0.5rem;
+    transition: .2s;
+    width: 100%;
+}
+#instagram_logo_div {
+    position: relative;
+}
+#instagram_logo_div::before {
+    z-index: -3;
+    content: "";
+    position: absolute;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 1.1rem;
+    top: 0;
+    left: 0;
+    background: var(--ifm-card-background-color);
+}
+#instagram_logo_pointer:hover #instagram_logo {
+    background-color: transparent;
+    fill: white;
+}
+#instagram_logo_pointer:hover #instagram_logo_div::before{
+    background: #d6249f;
+    background: radial-gradient(circle 
+        at 30% 107%, 
+        #fdf497 0%, 
+        #fdf497 5%, 
+        #fd5949 45%,
+        #d6249f 60%,
+        #285AEB 90%);
+}
+@media (pointer:fine) {
+    #instagram_logo {
+        fill: var(--ifm-color-emphasis-300);
+    }
+}
+#youtube_logo_pointer {
+    pointer-events: all;
+}
+#youtube_logo {
+    fill: var(--ifm-color-emphasis-300);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    transition: .2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+#youtube_logo_background {
+    position: absolute;
+    width: 100%;
+    padding-top: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .2s;
+    background-color: var(--ifm-card-background-color);
+    transform-origin: center;
+    transform: scale(0.5);
+}
+#youtube_logo_div {
+    display: inherit;
+    width: 100%;
+    height: 100%;
+    padding-top: 100%;
+    border-radius: 1.1rem;
+    background-color: var(--ifm-card-background-color);
+    transition: .2s;
+}
+#youtube_logo_pointer:hover #youtube_logo {
+    fill: #ff0000;
+}
+#youtube_logo_pointer:hover #youtube_logo_background {
+    background-color: #ffffff;
+}
+#youtube_logo_pointer:hover #youtube_logo_div {
+    background-color: #ffffff;
+}
+html[data-theme="light"] #youtube_logo_pointer:hover #youtube_logo_div{
+    background-color: #212121;  
+}
+  
