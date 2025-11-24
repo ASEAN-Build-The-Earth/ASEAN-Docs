@@ -47,6 +47,7 @@ const config = {
         // ... other options
       },
     ],
+    require.resolve('docusaurus-lunr-search'),
   ],
   presets: [
     [
@@ -78,25 +79,34 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
-      navbar: {
-        title: 'My Site',
+     navbar: {
+        title: 'ASEAN BTE',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'ASEAN BTE',
+          src: 'media/icons/aseanbte_logo.gif',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'doc',
+            docId: 'get-started',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Get Started',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { 
+            to: 'guide/builder-guide',
+            position: 'left',
+            label: 'Builder Guide',
+          },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            to: 'support', 
+            label: 'Support Us', 
+            position: 'left'
           },
+          // {
+          //   href: globalConfig.discordInviteLink,
+          //   label: 'Discord',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
