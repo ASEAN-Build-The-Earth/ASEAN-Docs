@@ -2,8 +2,8 @@
 title: Introduction to Builder Guide
 id: builder-guide
 ---
-:::info Coming Soon:
-In-game Builder's Guide
+:::info BOB:
+In-game Builder's Guide has been testing right now, go to `/server plot` and go to Bob for the guide
 :::
 
 The builder guide will cover things like building in BTE and Worldedit. 
@@ -17,3 +17,5 @@ Street view refers to looking from ground level. For example, if you're walking 
 
 ![streetview](@site/static/media/docs/builder-guide/streetview.jpeg)
 :::
+
+

@@ -20,14 +20,9 @@ module.exports =  {
         id: 'builder-guide',    
       },
       {
-        type: "doc",
-        label: "Download the Modpack",
-        id: "modpack"
-      },
-      {
-        type: "doc",
-        label: "Mods included in the Modpack",
-        id: "modpackMods"
+        type: 'doc',
+        label: 'Welcome to new builders',
+        id: 'welcome-builder',    
       },
       /* "Building In BuildTheEarth" Category */
       {
@@ -61,7 +56,7 @@ module.exports =  {
               },
               {
                type: "doc",
-               label: "Modpack commands",
+               label: "Useful commands",
                id: "building/basic/modpack-basics"
               }
             ],
@@ -81,18 +76,6 @@ module.exports =  {
               "building/advance-building/nature",
             ],
           },
-          { /* "Tips" Category */
-          type: 'category',
-          label: 'Tips',
-          link: {
-            type: "generated-index",
-          },
-          items: [
-            "building/tips/best-practices",
-            "building/tips/settings",
-            "building/tips/teleport",
-          ],
-        },
         ]
       },
       { /* "World Edit" Category */

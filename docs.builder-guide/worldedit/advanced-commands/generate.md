@@ -10,5 +10,7 @@ You will need good understanding of these math topics:
   - Degrees and radians 
   - Conic sections
   - Functions vs equations
+  - High School Diploma
+
 :::
 ## Coming soon!

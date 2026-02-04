@@ -18,9 +18,11 @@ const globalConfig = {
   }],
 }
 
+
+// Removed for now
 const i18nConfig = {
   defaultLocale: 'en',
-  registeredLocales: ['en', 'th', 'my', 'id', 'vn', 'ph'],
+  registeredLocales: ['en'],
   localeConfigs: {
       /**
        * htmlLang code: [https://gist.github.com/JamieMason/3748498]

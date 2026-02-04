@@ -14,27 +14,17 @@ const SliderButtonSvg = () => <div className={styles.svg_arrow}>
     style={{transform:"scale(0.35)"}}/></g>
   </svg>
 </div>;
-
 const InfoBoxContents = {
     ServerIpBox: <>
         <div id={styles.box_label}>
-            <Translate id="home.infoBox.ip" description="'Server ip' box at the homepage">
+            <Translate id="home.infoBox.ip" description="'Server IP' box at the homepage">
                 Server IP
             </Translate>
         </div>
         <sub>
-            <CodeBlock className="language-js" 
-                title={<Translate id="home.infoBox.ip.java" description="Java label at homepage">Master Server</Translate>}>
-                asean.thatsnek.asia
-            </CodeBlock>
-            <CodeBlock className="language-js" 
-                title={<Translate id="home.infoBox.ip.bedrock" description="Bedrock label at homepage">Plotsystem</Translate>}>
-                  Java IP: 139.99.90.245:5000
-                   <br/>
-                  Bedrock IP: 139.99.90.245
-                   <br/>
-                  Bedrock Port: 5000
-            </CodeBlock>
+            <p>
+                Please visit our <a href="/docs/get-started" target="_blank" rel="noopener noreferrer">Server IP page</a> to get the IPs and instructions for joining.
+            </p>
         </sub>
     </>,
     RequirementBox: <>
@@ -51,10 +41,9 @@ const InfoBoxContents = {
             </summary>}>
                 <span id={styles.req_box_quote}>
                     <MarkdownBlock>
-                    <Translate id="home.infoBox.requirement.content.description" description="Extra foldout section of Minecraft in homepage describing we supports all version of it">
-                        [Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and 
-                        [Bedrock Edition](https://minecraft.wiki/w/Bedrock_Edition) are supported.
-                    </Translate>
+                        <Translate id="home.infoBox.requirement.content.description" description="Extra foldout section of Minecraft in homepage describing we supports all version of it">
+                            Java Edition and Bedrock Edition are supported.
+                        </Translate>
                     </MarkdownBlock>
                 </span>
             </Details>

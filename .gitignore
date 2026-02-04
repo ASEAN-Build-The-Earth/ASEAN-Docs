@@ -1,6 +1,3 @@
-### ignore all file with local.<filename>
-local.*
-
 # Dependencies
 /node_modules
 

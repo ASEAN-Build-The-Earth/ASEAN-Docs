@@ -2,6 +2,13 @@
 title: BTE Modpack commands
 id: modpack-basics
 ---
+
+:::note
+
+Some of the content here might be out of date as the modpack is no longer in use, but some of it may be useful for the master server
+
+:::
+
 There are two types of coordinates in this world. Degrees Minutes Seconds (DMS) and Decimal Degrees. For our case, we use Decimal degrees.
 
 ### TPLL
