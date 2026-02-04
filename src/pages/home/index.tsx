@@ -4,7 +4,7 @@ import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 /* supports for `@site/home` index. But, will redirect to `@site/` for the actual page */
-export default function ToHomepage(): JSX.Element {
+export default function ToHomepage(): React.JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return <>
     <Head>

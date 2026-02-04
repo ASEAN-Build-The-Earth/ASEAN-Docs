@@ -23,7 +23,7 @@ const InfoBoxContents = {
         </div>
         <sub>
             <p>
-                Please visit our <a href="/docs/get-started" target="_blank" rel="noopener noreferrer">Server IP page</a> to get the IPs and instructions for joining.
+                Please visit our <a href="/intro/get-started" target="_blank" rel="noopener noreferrer">Server IP page</a> to get the IPs and instructions for joining.
             </p>
         </sub>
     </>,
