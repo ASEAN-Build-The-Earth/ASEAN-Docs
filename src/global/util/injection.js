@@ -56,9 +56,9 @@ function customLocale() {
 }
 
 function inject() {
-    fetchLocale();
-    KofiWidget(drawWidget());
-    customLocale(); 
+    // fetchLocale();
+    // KofiWidget(drawWidget());
+    // customLocale(); 
 }
 
 module.exports = { inject }
