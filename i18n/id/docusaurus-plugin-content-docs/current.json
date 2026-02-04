@@ -1,26 +1,70 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Berikutnya",
     "description": "The label for version current"
   },
   "sidebar.docs_intro.category.Getting Started": {
-    "message": "Getting Started",
+    "message": "Memulai",
     "description": "The label for category Getting Started in sidebar docs_intro"
   },
   "sidebar.docs_intro.category.Building Your First Build": {
-    "message": "Building Your First Build",
+    "message": "Membangun Bangunan Pertama Anda",
     "description": "The label for category Building Your First Build in sidebar docs_intro"
   },
   "sidebar.docs_intro.category.Plot System": {
-    "message": "Plot System",
+    "message": "Sistem Plot",
     "description": "The label for category Plot System in sidebar docs_intro"
   },
   "sidebar.docs_intro.category.Become Official Builder": {
-    "message": "Become Official Builder",
+    "message": "Menjadi Builder Resmi",
     "description": "The label for category Become Official Builder in sidebar docs_intro"
   },
   "sidebar.docs_intro.category.Exam Plot Process": {
-    "message": "Exam Plot Process",
+    "message": "Proses Plot Ujian",
     "description": "The label for category Exam Plot Process in sidebar docs_intro"
+  },
+  "sidebar.docs_intro.doc.Visiting": {
+    "message": "Visiting",
+    "description": "The label for the doc item Visiting in sidebar docs_intro, linking to the doc getting-started/visiting"
+  },
+  "sidebar.docs_intro.doc.BTE Building": {
+    "message": "BTE Building",
+    "description": "The label for the doc item BTE Building in sidebar docs_intro, linking to the doc getting-started/building-first-build/bte-building"
+  },
+  "sidebar.docs_intro.doc.Where is your plot ?": {
+    "message": "Where is your plot ?",
+    "description": "The label for the doc item Where is your plot ? in sidebar docs_intro, linking to the doc getting-started/building-first-build/plot-system/getting-reference"
+  },
+  "sidebar.docs_intro.doc.Building on your plot": {
+    "message": "Building on your plot",
+    "description": "The label for the doc item Building on your plot in sidebar docs_intro, linking to the doc getting-started/building-first-build/plot-system/building-plot"
+  },
+  "sidebar.docs_intro.doc.Requirements": {
+    "message": "Requirements",
+    "description": "The label for the doc item Requirements in sidebar docs_intro, linking to the doc become-official/official-builder-req"
+  },
+  "sidebar.docs_intro.doc.Exam Plot": {
+    "message": "Exam Plot",
+    "description": "The label for the doc item Exam Plot in sidebar docs_intro, linking to the doc become-official/exam-plot"
+  },
+  "sidebar.docs_intro.doc.World Edit": {
+    "message": "World Edit",
+    "description": "The label for the doc item World Edit in sidebar docs_intro, linking to the doc become-official/exam-process/world-edit"
+  },
+  "sidebar.docs_intro.doc.Making Outline": {
+    "message": "Making Outline",
+    "description": "The label for the doc item Making Outline in sidebar docs_intro, linking to the doc become-official/exam-process/making-outline"
+  },
+  "sidebar.docs_intro.doc.Building Process": {
+    "message": "Building Process",
+    "description": "The label for the doc item Building Process in sidebar docs_intro, linking to the doc become-official/exam-process/building-process"
+  },
+  "sidebar.docs_intro.doc.Submitting Exam": {
+    "message": "Submitting Exam",
+    "description": "The label for the doc item Submitting Exam in sidebar docs_intro, linking to the doc become-official/submit-exam"
+  },
+  "sidebar.docs_intro.doc.F.A.Q": {
+    "message": "F.A.Q",
+    "description": "The label for the doc item F.A.Q in sidebar docs_intro, linking to the doc faq"
   }
 }

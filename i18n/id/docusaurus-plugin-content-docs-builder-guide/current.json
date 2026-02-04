@@ -1,18 +1,18 @@
 {
   "version.label": {
-    "message": "Next",
+    "message": "Berikutnya",
     "description": "The label for version current"
   },
   "sidebar.docs_builderGuide.category.Building in BTE": {
-    "message": "Building in BTE",
+    "message": "Membangun di BTE",
     "description": "The label for category Building in BTE in sidebar docs_builderGuide"
   },
   "sidebar.docs_builderGuide.category.Basic BTE Building": {
-    "message": "Basic BTE Building",
+    "message": "Bangunan Dasar BTE",
     "description": "The label for category Basic BTE Building in sidebar docs_builderGuide"
   },
   "sidebar.docs_builderGuide.category.Advance Building": {
-    "message": "Advance Building",
+    "message": "Bangunan Lanjutan",
     "description": "The label for category Advance Building in sidebar docs_builderGuide"
   },
   "sidebar.docs_builderGuide.category.Tips": {
@@ -24,15 +24,55 @@
     "description": "The label for category World Edit in sidebar docs_builderGuide"
   },
   "sidebar.docs_builderGuide.category.Basic of World Edit": {
-    "message": "Basic of World Edit",
+    "message": "Dasar World Edit",
     "description": "The label for category Basic of World Edit in sidebar docs_builderGuide"
   },
   "sidebar.docs_builderGuide.category.Basic Commands": {
-    "message": "Basic Commands",
+    "message": "Perintah Dasar",
     "description": "The label for category Basic Commands in sidebar docs_builderGuide"
   },
   "sidebar.docs_builderGuide.category.Advanced Commands": {
-    "message": "Advanced Commands",
+    "message": "Perintah Lanjutan",
     "description": "The label for category Advanced Commands in sidebar docs_builderGuide"
+  },
+  "sidebar.docs_builderGuide.category.Advanced Building": {
+    "message": "Advanced Building",
+    "description": "The label for category Advanced Building in sidebar docs_builderGuide"
+  },
+  "sidebar.docs_builderGuide.category.WorldEdit": {
+    "message": "WorldEdit",
+    "description": "The label for category WorldEdit in sidebar docs_builderGuide"
+  },
+  "sidebar.docs_builderGuide.category.Basics of WorldEdit": {
+    "message": "Basics of WorldEdit",
+    "description": "The label for category Basics of WorldEdit in sidebar docs_builderGuide"
+  },
+  "sidebar.docs_builderGuide.category.Advanced Concepts": {
+    "message": "Advanced Concepts",
+    "description": "The label for category Advanced Concepts in sidebar docs_builderGuide"
+  },
+  "sidebar.docs_builderGuide.doc.Intro to Builder Guide": {
+    "message": "Intro to Builder Guide",
+    "description": "The label for the doc item Intro to Builder Guide in sidebar docs_builderGuide, linking to the doc builder-guide"
+  },
+  "sidebar.docs_builderGuide.doc.Download the Modpack": {
+    "message": "Download the Modpack",
+    "description": "The label for the doc item Download the Modpack in sidebar docs_builderGuide, linking to the doc modpack"
+  },
+  "sidebar.docs_builderGuide.doc.Mods included in the Modpack": {
+    "message": "Mods included in the Modpack",
+    "description": "The label for the doc item Mods included in the Modpack in sidebar docs_builderGuide, linking to the doc modpackMods"
+  },
+  "sidebar.docs_builderGuide.doc.Color picking": {
+    "message": "Color picking",
+    "description": "The label for the doc item Color picking in sidebar docs_builderGuide, linking to the doc building/basic/ColorBasics"
+  },
+  "sidebar.docs_builderGuide.doc.BTE Practices": {
+    "message": "BTE Practices",
+    "description": "The label for the doc item BTE Practices in sidebar docs_builderGuide, linking to the doc building/basic/bteStandards"
+  },
+  "sidebar.docs_builderGuide.doc.Modpack commands": {
+    "message": "Modpack commands",
+    "description": "The label for the doc item Modpack commands in sidebar docs_builderGuide, linking to the doc building/basic/modpack-basics"
   }
 }

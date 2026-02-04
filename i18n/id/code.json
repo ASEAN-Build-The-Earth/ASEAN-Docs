@@ -1,6 +1,6 @@
 {
   "util.keyword.ip": {
-    "message": "IP",
+    "message": "Alamat IP",
     "description": "IP label at the get-start page"
   },
   "util.keyword.port": {
@@ -8,11 +8,11 @@
     "description": "PORT label at the get-start page"
   },
   "image.loader.error": {
-    "message": "Sorry, could not load this image :(",
+    "message": "Maaf, tidak dapat memuat gambar ini :(",
     "description": "Error message when any image could not be loaded."
   },
   "image.loader.loading": {
-    "message": "Loading image...",
+    "message": "Memuat gambar...",
     "description": "Loading message of all image in document"
   },
   "util.keyword.minecraft": {
@@ -20,7 +20,7 @@
     "description": "Minecraft label of the MinecraftWindow style"
   },
   "video.loader.loading": {
-    "message": "Loading video...",
+    "message": "Memuat video...",
     "description": "Loading message of all image in document"
   },
   "home.socialMedias.reddit": {
@@ -40,11 +40,11 @@
     "description": "label of youtube on homepage"
   },
   "home.label": {
-    "message": "ASEAN BuildTheEarth",
+    "message": "BuildTheEarth ASEAN",
     "description": "Homepage ASEAN BTE label"
   },
   "home.description": {
-    "message": "We are The Association of Southeast Asian Nations Build the Earth. We are part of the [Build the earth project](https://buildtheearth.net/) which aims to build the world 1:1 scale in Minecraft! We currently oversee the progress of Brunei, Myanmar, Cambodia, Timor-Leste, Indonesia, Laos, Malaysia, the Philippines, Singapore, Thailand, and Vietnam.",
+    "message": "Kami adalah The Association of Southeast Asian Nations Build the Earth. Kami adalah bagian dari [Build the earth project](https://buildtheearth.net/) yang bertujuan untuk membangun dunia dengan skala 1:1 di Minecraft! Saat ini kami mengawasi kemajuan Brunei, Myanmar, Kamboja, Timor-Leste, Indonesia, Laos, Malaysia, Filipina, Singapura, Thailand, dan Vietnam.",
     "description": "ASEAN BTE long description at the homepage"
   },
   "home.banner.title": {
@@ -52,63 +52,63 @@
     "description": "A hero title of homepage document"
   },
   "home.banner.subtitle": {
-    "message": "We are building Southeast Asia in Minecraft 1:1 scale!",
+    "message": "Kami sedang membangun Asia Tenggara di Minecraft skala 1:1!",
     "description": "A hero description of homepage document"
   },
   "support.title": {
-    "message": "Support ASEAN BTE",
+    "message": "Dukung ASEAN BTE",
     "description": "Header title of support page"
   },
   "support.subtitle": {
-    "message": "Hello, if you want to see the server grow. Consider donating to us at the minimum of [1 U.S. Dollar](https://www.google.com/search?q=1+usd), \\n you are helping us go one step further in achieving our goal.",
+    "message": "Halo, jika Anda ingin melihat server ini berkembang, pertimbangkan untuk berdonasi kepada kami dengan jumlah minimum [1 Dolar AS](https://www.google.com/search?q=1+usd), \n Anda membantu kami selangkah lebih dekat untuk mencapai tujuan kami.",
     "description": "Propaganda message for supporting aseanbte (recommended to edit the '1 U.S. Dollar' to local currency translating to) "
   },
   "support.propaganda.title": {
-    "message": "Where would my funds go?",
+    "message": "Ke mana dana saya akan digunakan?",
     "description": "The topic in support page propaganda"
   },
   "support.propaganda.1.badge": {
-    "message": "main focus",
+    "message": "fokus utama",
     "description": "The badge-like component below the First support quote"
   },
   "support.propaganda.1.title": {
-    "message": "Supports minecraft server quality and performance.",
+    "message": "Mendukung kualitas dan performa server Minecraft.",
     "description": "First quote of 'Where will my money go?' topic"
   },
   "support.propaganda.1.description": {
-    "message": "The 90% of the funds would go to our Virtual Private Server (VPS) which hosts our Minecraft servers as well as Discord bots. By donating, you are keeping our Minecraft servers alive day by day.",
+    "message": "90% dari dana akan digunakan untuk Virtual Private Server (VPS) kami yang menjadi host server Minecraft serta bot Discord kami. Dengan berdonasi, Anda menjaga server Minecraft kami tetap aktif setiap hari.",
     "description": "Description of 'Supports minecraft server' from support page quote"
   },
   "support.propaganda.2.title": {
-    "message": "Savings",
+    "message": "Tabungan",
     "description": "Second quote of 'Where will my money go?' topic"
   },
   "support.propaganda.2.description": {
-    "message": "The 10% of the funds would be saved up and only be spent on the team’s investments of new systems or products or major accidents.",
+    "message": "10% dari dana akan disimpan dan hanya akan digunakan untuk investasi tim dalam sistem atau produk baru atau kejadian besar.",
     "description": "Description of 'Supports our builder workflow' from support page quote"
   },
   "support.kofiBox.visitPageButton": {
-    "message": "Visit Donation Site",
+    "message": "Kunjungi Situs Donasi",
     "description": "The visit kofi site button at the bottom of kofi widget"
   },
   "home.bannerButton.support.label": {
-    "message": "Support Us",
+    "message": "Dukung Kami",
     "description": "The big Start building button (please keep the text count very low to prevent newline)"
   },
   "home.bannerButton.support.labelOverlay": {
-    "message": "Donate on kofi",
+    "message": "Donasi di kofi",
     "description": "The pop up message when you hover to the homepage Donate us button (please keep the text count for this low)"
   },
   "home.bannerButton.getStart.label": {
-    "message": "Get Started",
+    "message": "Mulai",
     "description": "The big Start building button (please keep the text count very low to prevent newline)"
   },
   "home.bannerButton.getStart.labelOverlay": {
-    "message": "Go To Document",
+    "message": "Buka Dokumen",
     "description": "The pop up message when you hover to the homepage Start Building button (please keep the text count for this low)"
   },
   "home.infoBox.ip": {
-    "message": "Server IP",
+    "message": "Alamat IP Server",
     "description": "'Server ip' box at the homepage"
   },
   "home.infoBox.ip.java": {
@@ -120,7 +120,7 @@
     "description": "Bedrock label at homepage"
   },
   "home.infoBox.requirement": {
-    "message": "Requirements",
+    "message": "Persyaratan",
     "description": "Requirements box at homepage"
   },
   "home.infoBox.requirement.content": {
@@ -128,242 +128,242 @@
     "description": "the first and only requirement in the homepage requirement box"
   },
   "home.infoBox.requirement.content.description": {
-    "message": "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) and [Bedrock Edition](https://minecraft.wiki/w/Bedrock_Edition) are supported.",
+    "message": "[Java Edition](https://www.minecraft.net/en-us/store/minecraft-java-edition) dan [Bedrock Edition](https://minecraft.wiki/w/Bedrock_Edition) didukung.",
     "description": "Extra foldout section of Minecraft in homepage describing we supports all version of it"
   },
   "home.infoBox.requirement.cracked-1": {
-    "message": "Cracked Minecraft",
+    "message": "Minecraft Bajakan",
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
   "home.infoBox.requirement.cracked-2": {
-    "message": "is not ALLOWED.",
+    "message": "tidak DIIZINKAN.",
     "description": "section of 'Cracked Minecraft is not allowed'"
   },
   "theme.ErrorPageContent.title": {
-    "message": "This page crashed.",
+    "message": "Halaman ini rusak.",
     "description": "The title of the fallback page when the page crashed"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "Try again",
-    "description": "The label of the button to try again when the page crashed"
+    "message": "Coba lagi",
+    "description": "The label of the button to try again rendering when the React error boundary captures an error"
   },
   "theme.NotFound.title": {
-    "message": "Page Not Found",
+    "message": "Halaman Tidak Ditemukan",
     "description": "The title of the 404 page"
   },
   "theme.NotFound.p1": {
-    "message": "We could not find what you were looking for.",
+    "message": "Kami tidak dapat menemukan apa yang Anda cari.",
     "description": "The first paragraph of the 404 page"
   },
   "theme.NotFound.p2": {
-    "message": "Please contact the owner of the site that linked you to the original URL and let them know their link is broken.",
+    "message": "Silakan hubungi pemilik situs yang mengarahkan Anda ke URL asli dan beri tahu mereka bahwa tautannya rusak.",
     "description": "The 2nd paragraph of the 404 page"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "Close",
+    "message": "Tutup",
     "description": "The ARIA label for close button of announcement bar"
   },
   "theme.blog.archive.title": {
-    "message": "Archive",
+    "message": "Arsip",
     "description": "The page & hero title of the blog archive page"
   },
   "theme.blog.archive.description": {
-    "message": "Archive",
+    "message": "Arsip",
     "description": "The page & hero description of the blog archive page"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "Scroll back to top",
+    "message": "Kembali ke atas",
     "description": "The ARIA label for the back to top button"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "Blog list page navigation",
+    "message": "Navigasi halaman daftar blog",
     "description": "The ARIA label for the blog pagination"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "Newer Entries",
+    "message": "Entri Lebih Baru",
     "description": "The label used to navigate to the newer blog posts page (previous page)"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "Older Entries",
+    "message": "Entri Lebih Lama",
     "description": "The label used to navigate to the older blog posts page (next page)"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
+    "message": "Satu menit baca|{readingTime} menit baca",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Read more about {title}",
+    "message": "Baca lebih lanjut tentang {title}",
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readMore": {
-    "message": "Read More",
+    "message": "Baca Lebih Lanjut",
     "description": "The label used in blog post item excerpts to link to full blog posts"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "Blog post page navigation",
+    "message": "Navigasi halaman pos blog",
     "description": "The ARIA label for the blog posts pagination"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "Newer Post",
+    "message": "Pos Lebih Baru",
     "description": "The blog post button label to navigate to the newer/previous post"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "Older Post",
+    "message": "Pos Lebih Lama",
     "description": "The blog post button label to navigate to the older/next post"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "Blog recent posts navigation",
+    "message": "Navigasi pos blog terbaru",
     "description": "The ARIA label for recent posts in the blog sidebar"
   },
   "theme.blog.post.plurals": {
-    "message": "One post|{count} posts",
+    "message": "Satu pos|{count} pos",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} tagged with \"{tagName}\"",
+    "message": "{nPosts} ditandai dengan \"{tagName}\"",
     "description": "The title of the page for a blog tag"
   },
   "theme.tags.tagsPageLink": {
-    "message": "View All Tags",
+    "message": "Lihat Semua Tag",
     "description": "The label of the link targeting the tag list page"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "Copy code to clipboard",
+    "message": "Salin kode ke clipboard",
     "description": "The ARIA label for copy code blocks button"
   },
   "theme.CodeBlock.copied": {
-    "message": "Copied",
+    "message": "Tersalin",
     "description": "The copied button label on code blocks"
   },
   "theme.CodeBlock.copy": {
-    "message": "Copy",
+    "message": "Salin",
     "description": "The copy button label on code blocks"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Switch between dark and light mode (currently {mode})",
+    "message": "Beralih antara mode gelap dan terang (saat ini {mode})",
     "description": "The ARIA label for the navbar color mode toggle"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "dark mode",
+    "message": "mode gelap",
     "description": "The name for the dark color mode"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "light mode",
+    "message": "mode terang",
     "description": "The name for the light color mode"
   },
   "theme.docs.DocCard.categoryDescription": {
-    "message": "{count} items",
+    "message": "{count} item",
     "description": "The default description for a category card in the generated index about how many items this category includes"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expand sidebar",
+    "message": "Perluas sidebar",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expand sidebar",
+    "message": "Perluas sidebar",
     "description": "The ARIA label and title attribute for expand button of doc sidebar"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "Docs pages navigation",
+    "message": "Navigasi halaman dokumen",
     "description": "The ARIA label for the docs pagination"
   },
   "theme.docs.paginator.previous": {
-    "message": "Previous",
+    "message": "Sebelumnya",
     "description": "The label used to navigate to the previous doc"
   },
   "theme.docs.paginator.next": {
-    "message": "Next",
+    "message": "Berikutnya",
     "description": "The label used to navigate to the next doc"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "Collapse sidebar",
+    "message": "Tutup sidebar",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "Collapse sidebar",
+    "message": "Tutup sidebar",
     "description": "The title attribute for collapse button of doc sidebar"
   },
   "theme.DocSidebarItem.toggleCollapsedCategoryAriaLabel": {
-    "message": "Toggle the collapsible sidebar category '{label}'",
+    "message": "Alihkan kategori sidebar yang dapat dilipat '{label}'",
     "description": "The ARIA label to toggle the collapsible sidebar category"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "One doc tagged|{count} docs tagged",
+    "message": "Satu dokumen ditandai|{count} dokumen ditandai",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} with \"{tagName}\"",
+    "message": "{nDocsTagged} dengan \"{tagName}\"",
     "description": "The title of the page for a docs tag"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
+    "message": "Versi: {versionLabel}"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
+    "message": "Ini adalah dokumentasi yang belum dirilis untuk versi {siteTitle} {versionLabel}.",
     "description": "The label used to tell the user that he's browsing an unreleased doc version"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
+    "message": "Ini adalah dokumentasi untuk {siteTitle} {versionLabel}, yang tidak lagi dikelola secara aktif.",
     "description": "The label used to tell the user that he's browsing an unmaintained doc version"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
+    "message": "Untuk dokumentasi terbaru, lihat {latestVersionLink} ({versionLabel}).",
     "description": "The label used to tell the user to check the latest version"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
-    "message": "latest version",
+    "message": "versi terbaru",
     "description": "The label used for the latest version suggestion link label"
   },
   "theme.common.editThisPage": {
-    "message": "Edit this page",
+    "message": "Edit halaman ini",
     "description": "The link label to edit the current page"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Direct link to heading",
+    "message": "Tautan langsung ke heading",
     "description": "Title for link to heading"
   },
   "theme.lastUpdated.atDate": {
-    "message": " on {date}",
+    "message": " pada {date}",
     "description": "The words used to describe on which date a page has been last updated"
   },
   "theme.lastUpdated.byUser": {
-    "message": " by {user}",
+    "message": " oleh {user}",
     "description": "The words used to describe by who the page has been last updated"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Last updated{atDate}{byUser}",
+    "message": "Terakhir diperbarui{atDate}{byUser}",
     "description": "The sentence used to display when a page has been last updated, and by who"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "← Back to main menu",
+    "message": "← Kembali ke menu utama",
     "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
-    "message": "Versions",
+    "message": "Versi",
     "description": "The label for the navbar versions dropdown on mobile view"
   },
   "theme.common.skipToMainContent": {
-    "message": "Skip to main content",
+    "message": "Lewati ke konten utama",
     "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
   },
   "theme.tags.tagsListLabel": {
-    "message": "Tags:",
+    "message": "Tag:",
     "description": "The label alongside a tag list"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "On this page",
+    "message": "Pada halaman ini",
     "description": "The label used by the button on the collapsible TOC component"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "Languages",
+    "message": "Bahasa",
     "description": "The label for the mobile language switcher dropdown"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "Tags",
+    "message": "Tag",
     "description": "The title of the tag list page"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "Home page",
+    "message": "Halaman Utama",
     "description": "The ARIA label for the home page in the breadcrumbs"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
@@ -371,7 +371,43 @@
     "description": "The ARIA label for the breadcrumbs"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "Toggle word wrap",
+    "message": "Alihkan pembungkusan kata",
     "description": "The title attribute for toggle word wrapping button of code block lines"
+  },
+  "theme.admonition.note": {
+    "message": "note",
+    "description": "The default label used for the Note admonition (:::note)"
+  },
+  "theme.admonition.tip": {
+    "message": "tip",
+    "description": "The default label used for the Tip admonition (:::tip)"
+  },
+  "theme.admonition.danger": {
+    "message": "danger",
+    "description": "The default label used for the Danger admonition (:::danger)"
+  },
+  "theme.admonition.info": {
+    "message": "info",
+    "description": "The default label used for the Info admonition (:::info)"
+  },
+  "theme.admonition.caution": {
+    "message": "caution",
+    "description": "The default label used for the Caution admonition (:::caution)"
+  },
+  "theme.NavBar.navAriaLabel": {
+    "message": "Main",
+    "description": "The ARIA label for the main navigation"
+  },
+  "theme.docs.sidebar.navAriaLabel": {
+    "message": "Docs sidebar",
+    "description": "The ARIA label for the sidebar navigation"
+  },
+  "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+    "message": "Close navigation bar",
+    "description": "The ARIA label for close button of mobile sidebar"
+  },
+  "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+    "message": "Toggle navigation bar",
+    "description": "The ARIA label for hamburger menu button of mobile navigation"
   }
 }
