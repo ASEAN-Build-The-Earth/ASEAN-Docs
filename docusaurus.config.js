@@ -5,33 +5,27 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
-
+;
+const { globalConfig, i18nConfig } = require('./config');
+const isDeployPreview = process.env.CONTEXT === "deploy-preview";
+const isDeveloping = process.env.NODE_ENV === "development";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ASEAN BTE',
   tagline: 'We are building southeast asia in Minecraft 1:1 scale!',
-  favicon: 'media/icons/aseanbte_logo.png',
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
-
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ASEAN-Build-The-Earth',  projectName: 'docsite-v2',
   onBrokenLinks: 'ignore',
-
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'media/icons/aseanbte_logo.png',
+  organizationName: 'ASEAN-Build-The-Earth',
+  projectName: 'ASEAN-Docs',
+  url: globalConfig.siteUrl,
+  clientModules: [globalConfig.globalModule],
+  customFields: globalConfig,
+  trailingSlash: false,
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -109,42 +103,73 @@ const config = {
           // },
         ],
       },
-      footer: {
+     footer: {
         style: 'dark',
+        copyright: `Copyright © ${new Date().getFullYear()} Association of Southeast Asian Nation Build The Earth.`,
         links: [
           {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Get Started',
+                to: 'intro/get-started',
+              },
+              {
+                label: 'Builder Guide',
+                to: 'guide/builder-guide',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Discord Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'BuildTheEarth.net',
+                href: 'https://discord.gg/buildtheearth',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'BuildTheEarth.Asia',
+                href: 'https://discord.gg/R5dfd4Fc8b'
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'BuildTheEarth ASEAN',
+                href: globalConfig.discordInviteLink,
+              },             
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Support Us',
+                to: '/support',
               },
+              {
+                label: 'GitHub',
+                href: globalConfig.baseGithubUrl,
+              },
+              {
+                label: 'BuildTheEarth Website',
+                href: 'https://buildtheearth.net/'
+              }
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      // extra annoucement
+      // announcementBar: {
+      //   id: 'annouce-translation',
+      //   content:
+      //     '<strong>Make a ticket in our discord server and message us your email to gain access to our google spreadsheet and help us translate this site. (you can preview it <a href="https://docs.google.com/spreadsheets/d/1SMr3F7tv2HIj4bqk0YDECXhJhLZVJPfs12SxFEVHm9c/edit?usp=sharing">here</a>)</strong>',
+      //   backgroundColor: '#99ffcc',
+      //   textColor: '#091E42',
+      //   isCloseable: false,
+      // },
+
     }),
 };
 
