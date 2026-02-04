@@ -1,0 +1,139 @@
+---
+title: Get Started in ASEAN BuildTheEarth
+id: get-started
+sidebar_position: 0
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import CodeBlock from '@theme/CodeBlock';
+import Details from '@theme/Details';
+import Admonition from '@theme/Admonition';
+
+import Img from '@site/src/components/Img';
+import MinecraftWindow from '@site/src/components/MinecraftWindow';
+import BedrockIpBox from '@site/src/components/BedrockIpBox';
+import StraightLine from '@site/src/components/StraightLine';
+import MakePair from '@site/src/components/MakePair';
+import InviteButton from '@site/src/components/InviteButton';
+import WelcomeImage from '@site/static/media/docs/intro/getting-started/aseanbte_welcome.png';
+
+<MakePair 
+  pair_left={
+    <div>
+      <h2 id="discord">1. Join our discord server!</h2>
+      <br />
+      We use Discord as our community hub.
+      <hr />
+    </div>
+  } 
+  pair_right={
+    <InviteButton>Go to Discord Server</InviteButton>
+  } 
+/>
+<StraightLine bend="Right"/>
+
+<MakePair 
+  pair_left={
+    <div align="left">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <b>Server IP</b>
+              <Tabs>
+                <TabItem value="java" label="Java Edition" default>
+                  <div>
+                    <CodeBlock className="language-js" title="IP">
+                      asean.thatsnek.asia
+                    </CodeBlock>
+                    <Admonition type="note">
+                      <sub>
+                        <div style={{ lineHeight: 1.5 }}>
+                          <b>Java edition includes:</b><br />
+                          The versions of Minecraft on Windows, Linux, and macOS
+                        </div>
+                      </sub>
+                    </Admonition>
+                  </div>
+                </TabItem>
+                <TabItem value="bedrock" label="Bedrock Edition">
+                  <div>
+                    <CodeBlock className="language-js" title="IP">
+                      139.99.90.245:25565
+                    </CodeBlock>
+                    <Admonition type="note">
+                      <sub>
+                        <div style={{ lineHeight: 1.5 }}>
+                          <b>Bedrock edition includes:</b><br />
+                          Versions of Minecraft on PS4, XBOX, Windows 10, mobile, and Nintendo Switch
+                        </div>
+                      </sub>
+                    </Admonition>
+                  </div>
+                </TabItem>
+                <TabItem value="plotsystem" label="Plotsystem">
+                  <div>
+                    <p>
+                      To start with our plotsystem, do <code>/server plot</code> after joining the IP above. You will receive a code—send it to <b>@Plot Server</b>. Complete at least 3 plots, then DM <b>@ASEAN Support</b> for instructions to apply for the Official Builder role.
+                    </p>
+                    <p>
+                      If you are already a builder in BTE, DM <b>@ASEAN Support</b> and staff will assign the Official Builder role after consideration.
+                    </p>
+                  </div>
+                </TabItem>
+              </Tabs>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  }
+  pair_right_m={
+    <div>
+      <h2 id="server">2. Join our Minecraft Server to visit</h2>
+      <br />
+      You can join our Minecraft server using these IPs.
+      <hr />
+      <Admonition type="danger" title="CAUTION">
+        <Details
+          style={{
+            "--ifm-alert-border-color": "rgba(255, 50, 56, 0.3)",
+            "--ifm-alert-background-color": "rgba(255, 0, 0, 0.05)",
+            "--docusaurus-details-decoration-color": "rgb(225, 50, 56, 1)"
+          }}
+          summary={<summary><strong>Cracked Minecraft is banned!</strong></summary>}
+        >
+          <sup style={{ display: "inline-block", lineHeight: "1.2" }}>
+            We follow BuildTheEarth’s rules and Mojang’s policies. Building progress from cracked Minecraft will not be accepted.
+          </sup>
+        </Details>
+      </Admonition>
+      <Admonition type="info" title="Need Help?">
+        <p>
+          Any questions or issues? Please message <b>@ASEAN Support</b>.
+        </p>
+      </Admonition>
+    </div>
+  }
+/>
+<StraightLine bend="Left"/>
+
+<MakePair 
+  pair_left={
+    <div>
+      <h2 id="tour">3. Take a Tour in our server</h2>
+      <br />
+      By following this tutorial you will able to know how to join our server and visit different build sites.
+      <hr />
+    </div>
+  }
+  pair_right={
+    <div align="left" style={{ width: "100%" }}>
+      <MinecraftWindow useDropdown="false">
+        <Img src={WelcomeImage} aspect="1803 1014" alt="Welcome To ASEAN BTE" />
+      </MinecraftWindow>
+    </div>
+  }
+/>
+<StraightLine bend="Right"/>
